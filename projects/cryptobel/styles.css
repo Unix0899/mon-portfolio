@@ -150,3 +150,5 @@ a{color:inherit}.topbar{position:sticky;top:0;z-index:10;display:flex;justify-co
 .more a:hover img{border-color:var(--teal)}
 .more small{font-size:12px}
 .shot img[height]{height:auto}
+
+.repo-btn{flex:none;white-space:nowrap}
