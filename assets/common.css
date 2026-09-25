@@ -1,0 +1,31 @@
+/* Shared by every page: language switcher, reveal animation, progress bar. */
+
+/* Avoid a flash of English while another language loads */
+.i18n-pending body{visibility:hidden}
+
+.topbar-right{display:flex;align-items:center;gap:18px}
+
+.lang-switch{display:inline-flex;padding:3px;border:1px solid #dce4ea;border-radius:10px;background:#fff}
+.lang-switch button{appearance:none;border:0;background:transparent;font:inherit;font-size:12px;font-weight:700;letter-spacing:.04em;color:#607086;padding:5px 9px;border-radius:7px;cursor:pointer;transition:background .2s,color .2s}
+.lang-switch button:hover{color:#102033}
+.lang-switch button[aria-pressed="true"]{background:#0d2a45;color:#fff}
+.lang-switch button:focus-visible{outline:2px solid #0f8b8d;outline-offset:2px}
+
+.topbar nav a.active{color:#102033}
+
+/* Reveal on scroll (only when JS runs) */
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+
+/* Reading progress */
+.progress{position:fixed;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#0f8b8d,#65b8b5);transform:scaleX(0);transform-origin:0 50%;z-index:20}
+
+@media(max-width:440px){
+  .brand .brand-name{display:none}
+  .topbar-right{gap:10px}
+}
+@media(prefers-reduced-motion:reduce){
+  .js .reveal{opacity:1;transform:none;transition:none}
+}
+h1,h2,h3,blockquote{overflow-wrap:break-word;hyphens:auto}
+.section-heading>*,.about-grid>*,.split>*{min-width:0}

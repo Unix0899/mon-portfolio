@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="meta.title">ODRES Case Study | Harry Mulembwe</title>
+  <meta name="description" content="Marketing and commercial performance analytics: SQL, Python, data quality, Power BI and business recommendations. Public reconstruction with synthetic data." data-i18n-attr="content:meta.desc" />
+  <meta name="theme-color" content="#0d2a45" />
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" />
+  <script>
+    (function(){var r=document.documentElement,l;r.classList.add('js');
+    try{l=new URLSearchParams(location.search).get('lang')||localStorage.getItem('lang')}catch(e){}
+    if(!l){var n=(navigator.language||'').slice(0,2).toLowerCase();l=(n==='fr'||n==='nl')?n:'en'}
+    if(['en','fr','nl'].indexOf(l)<0)l='en';r.setAttribute('data-lang',l);
+    if(l!=='en'){r.classList.add('i18n-pending');setTimeout(function(){r.classList.remove('i18n-pending')},1500)}})();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="../../assets/common.css" />
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="../../index.html">← <span class="brand-name">Harry Mulembwe</span></a>
+    <div class="topbar-right">
+      <nav>
+        <a href="#problem" data-i18n="nav.problem">Problem</a>
+        <a href="#architecture" data-i18n="nav.method">Method</a>
+        <a href="#proof" data-i18n="nav.proof">Proof</a>
+        <a href="#recommendations" data-i18n="nav.recs">Recommendations</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:ui.lang">
+        <button type="button" data-lang-btn="en" lang="en" title="English" aria-pressed="true">EN</button>
+        <button type="button" data-lang-btn="fr" lang="fr" title="Français" aria-pressed="false">FR</button>
+        <button type="button" data-lang-btn="nl" lang="nl" title="Nederlands" aria-pressed="false">NL</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- 1 HERO -->
+    <section class="hero section">
+      <div class="eyebrow" data-i18n="hero.eyebrow">Case study · Marketing / Commercial analytics</div>
+      <h1>ODRES Group</h1>
+      <p class="hero-sub" data-i18n="hero.sub">Marketing &amp; Commercial Performance Analytics</p>
+      <p class="hero-copy" data-i18n="hero.copy">How acquisition spend, lead quality, sales pipeline and recurring revenue can be connected in one reliable reporting model, and turned into budget decisions.</p>
+      <p class="disclosure"><b data-i18n="hero.discL">Confidentiality</b><span data-i18n="hero.disc">Professional context based on a real ODRES Group experience. Public technical reconstruction using synthetic data: no ODRES client, prospect, revenue or internal data is shown.</span></p>
+      <div class="meta-grid">
+        <div><span data-i18n="m.role">Role</span><strong>Digital Marketing &amp; Data Assistant</strong></div>
+        <div><span data-i18n="m.company">Company</span><strong>ODRES Group, Charleroi</strong></div>
+        <div><span data-i18n="m.period">Period</span><strong data-i18n="m.periodV">Nov 2025 – Jun 2026</strong></div>
+        <div><span data-i18n="m.data">Public data</span><strong data-i18n="m.dataV">Synthetic reconstruction</strong></div>
+      </div>
+      <div class="stack">
+        <span>SQL</span><span>SQLite</span><span>Python</span><span>pandas</span><span>Power BI</span><span>DAX</span><span>TMDL</span><span data-i18n="tag.dq">Data quality</span><span data-i18n="tag.kpi">KPI reporting</span>
+      </div>
+    </section>
+
+    <section class="stats section narrow">
+      <article><strong data-i18n="num.443">443</strong><span data-i18n="stat.1">data-quality issues detected in the raw exports, 0 blocking issues left after cleaning</span></article>
+      <article><strong>38</strong><span data-i18n="stat.2">SQL analysis queries on 6 reusable reporting views, all executed automatically</span></article>
+      <article><strong>47</strong><span data-i18n="stat.3">DAX measures in a star-schema Power BI model</span></article>
+      <article><strong>6</strong><span data-i18n="stat.4">management dashboard pages, from executive overview to data quality</span></article>
+    </section>
+
+    <!-- 2 CONTEXT + 3 PROBLEM -->
+    <section id="problem" class="section split">
+      <div>
+        <div class="eyebrow" data-i18n="pb.eyebrow">01 · Context &amp; business problem</div>
+        <h2 data-i18n="pb.title">Every tool had its own numbers. Nobody saw the chain from a euro spent to a customer who stays.</h2>
+      </div>
+      <div class="prose">
+        <p data-i18n="pb.p1">ODRES Group develops an ERP (odres.io) that lets restaurants, shops and other businesses manage their establishment through several connected applications. Growth depends on acquiring these businesses as subscribers through several channels: paid ads, organic search, direct traffic, email, partners and referrals.</p>
+        <p data-i18n="pb.p2">Spend lives in the ad platforms, sessions in web analytics, leads and deals in the CRM, customers and recurring revenue in billing. Channels are easily compared on lead volume instead of customers and revenue, and data issues silently distort totals.</p>
+        <p class="question" data-i18n="pb.q">Which acquisition channels deserve more investment, which ones create low-quality volume, and where does the funnel lose value?</p>
+      </div>
+    </section>
+
+    <!-- 4 MY ROLE -->
+    <section id="role" class="section role-card">
+      <div class="eyebrow" data-i18n="ro.eyebrow">02 · My role</div>
+      <h2 data-i18n="ro.title">What I did at ODRES, and what I rebuilt publicly.</h2>
+      <p class="lead-p" data-i18n="ro.p">During my ODRES Group experience, I worked on acquisition performance, KPI monitoring, reporting and business recommendations. To make the analytical workflow publicly inspectable without exposing company information, I rebuilt a representative reporting environment using synthetic data.</p>
+      <div class="contrib-split">
+        <div>
+          <h3 data-i18n="ro.realT">Real experience · ODRES Group</h3>
+          <ul class="ticks">
+            <li data-i18n="ro.r1">Acquisition and digital performance analysis</li>
+            <li data-i18n="ro.r2">KPI monitoring</li>
+            <li data-i18n="ro.r3">Recurring management reporting</li>
+            <li data-i18n="ro.r4">Marketing and business recommendations</li>
+          </ul>
+        </div>
+        <div class="shared">
+          <h3 data-i18n="ro.pubT">Public reconstruction · this case study</h3>
+          <ul class="ticks">
+            <li data-i18n="ro.p1">Synthetic dataset with realistic trade-offs</li>
+            <li data-i18n="ro.p2">SQL model and reporting views</li>
+            <li data-i18n="ro.p3">Python data pipeline and quality checks</li>
+            <li data-i18n="ro.p4">Power BI model and DAX measures</li>
+            <li data-i18n="ro.p5">Power BI dashboard (6 pages)</li>
+            <li data-i18n="ro.p6">Reproducible technical repository</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 DATA -->
+    <section id="data" class="section">
+      <div class="eyebrow" data-i18n="da.eyebrow">03 · Data</div>
+      <h2 data-i18n="da.title">Five source exports, like the tools of a real sales team.</h2>
+      <p class="lead-p" data-i18n="da.p">A Belgian ERP business, simulated from November 2025 to June 2026 on a hospitality customer base (restaurants, bars, snacks, cafés, hotels). Every row is generated by a Python script with a fixed seed, so the whole dataset can be rebuilt identically.</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th data-i18n="da.th1">Source</th><th data-i18n="da.th2">What it contains</th><th data-i18n="da.th3">Clean rows</th></tr></thead>
+          <tbody>
+            <tr><td data-i18n="da.s1">Ad platform export</td><td data-i18n="da.c1">Impressions, clicks, sessions and spend per campaign per day (7 channels, 21 campaigns)</td><td>4,535</td></tr>
+            <tr><td data-i18n="da.s2">CRM leads</td><td data-i18n="da.c2">Source, region, company size, business type, lead score, MQL and SQL flags</td><td>5,477</td></tr>
+            <tr><td data-i18n="da.s3">CRM opportunities</td><td data-i18n="da.c3">Plan, expected and won value, status, sales cycle</td><td>1,222</td></tr>
+            <tr><td data-i18n="da.s4">Billing customers</td><td data-i18n="da.c4">New customers and starting monthly recurring revenue</td><td>350</td></tr>
+            <tr><td data-i18n="da.s5">Billing MRR history</td><td data-i18n="da.c5">Monthly recurring revenue, active and churned customers</td><td>1,254</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 6 ARCHITECTURE -->
+    <section id="architecture" class="section">
+      <div class="eyebrow" data-i18n="ar.eyebrow">04 · Data architecture</div>
+      <h2 data-i18n="ar.title">From raw exports to a management decision, in one command.</h2>
+      <ol class="chain">
+        <li><span>01</span><b data-i18n="ar.1">Raw exports</b><small data-i18n="ar.1s">Ads · CRM · billing</small></li>
+        <li><span>02</span><b data-i18n="ar.2">Validation</b><small data-i18n="ar.2s">22 checks</small></li>
+        <li><span>03</span><b data-i18n="ar.3">Cleaning</b><small>Python · pandas</small></li>
+        <li><span>04</span><b data-i18n="ar.4">Database</b><small>SQLite</small></li>
+        <li><span>05</span><b data-i18n="ar.5">Data model</b><small data-i18n="ar.5s">Star schema</small></li>
+        <li><span>06</span><b data-i18n="ar.6">SQL views</b><small data-i18n="ar.6s">6 reporting views</small></li>
+        <li><span>07</span><b>KPI</b><small data-i18n="ar.7s">SQL + DAX</small></li>
+        <li><span>08</span><b>Power BI</b><small data-i18n="ar.8s">Semantic model</small></li>
+        <li><span>09</span><b data-i18n="ar.9">Dashboard</b><small data-i18n="ar.9s">6 pages</small></li>
+        <li><span>10</span><b data-i18n="ar.10">Insights</b><small data-i18n="ar.10s">Evidence-based</small></li>
+        <li class="last"><span>11</span><b data-i18n="ar.11">Recommendations</b><small data-i18n="ar.11s">Budget decisions</small></li>
+      </ol>
+      <p class="note"><code>python run_pipeline.py</code> · <span data-i18n="ar.note">rebuilds the dataset, the database, the exports, the charts and runs every SQL test in about 30 seconds.</span></p>
+    </section>
+
+    <!-- 7 DATA QUALITY -->
+    <section id="quality" class="section split">
+      <div>
+        <div class="eyebrow" data-i18n="dq.eyebrow">05 · Data quality</div>
+        <h2 data-i18n="dq.title">The raw data is messy on purpose, and the pipeline has to prove it fixed it.</h2>
+        <ul class="clean-list">
+          <li data-i18n="dq.a1">Duplicate rows</li>
+          <li data-i18n="dq.a2">Inconsistent labels</li>
+          <li data-i18n="dq.a3">Invalid dates</li>
+          <li data-i18n="dq.a4">Negative spend</li>
+          <li data-i18n="dq.a5">Outliers</li>
+          <li data-i18n="dq.a6">SQL without MQL</li>
+          <li data-i18n="dq.a7">Unknown campaigns</li>
+          <li data-i18n="dq.a8">Orphan deals</li>
+        </ul>
+      </div>
+      <div class="prose">
+        <p data-i18n="dq.p1">The exports contain 20 kinds of controlled anomalies. The same 22 checks run before and after cleaning; the pipeline stops if a blocking issue remains.</p>
+        <div class="before-after">
+          <div class="ba raw"><span data-i18n="dq.before">Before cleaning</span><code data-i18n="dq.beforeV">443 issues · 20 of 22 checks failing</code></div>
+          <div class="ba-arrow" aria-hidden="true">↓</div>
+          <div class="ba clean"><span data-i18n="dq.after">After cleaning</span><code data-i18n="dq.afterV">0 blocking issues · 2 documented warnings</code></div>
+        </div>
+        <p data-i18n="dq.p2">Two choices matter: a missing lead score stays <em>unknown</em> instead of being guessed, and a channel without spend has <em>no</em> CAC rather than a CAC of zero.</p>
+      </div>
+    </section>
+
+    <!-- 8 SQL -->
+    <section id="sql" class="section">
+      <div class="eyebrow" data-i18n="sq.eyebrow">06 · SQL analysis</div>
+      <h2 data-i18n="sq.title">The reporting layer is built in SQL, not assembled by hand.</h2>
+      <div class="sql-grid">
+        <div class="prose">
+          <p data-i18n="sq.p1">A schema with keys and business rules as constraints, six reusable views and 38 analysis queries: funnel by channel and campaign, CPL and CAC, conversion at each stage, revenue share, deal value, sales cycle, month-over-month growth, MRR and churn.</p>
+          <div class="stack"><span>CTE</span><span>JOIN / LEFT JOIN</span><span>CASE WHEN</span><span>GROUP BY / HAVING</span><span data-i18n="sq.t1">Subqueries</span><span>LAG</span><span>RANK / DENSE_RANK</span><span>NULLIF / COALESCE</span></div>
+        </div>
+        <pre class="code-shot sql-snippet">-- Campaigns with high spend and weak conversion
+SELECT campaign_name, channel_name, spend, leads,
+       ROUND(100.0 * lead_to_sql_rate, 1) AS lead_to_sql_pct,
+       customers, cac, recommendation
+FROM vw_campaign_performance
+WHERE spend > (SELECT AVG(spend) FROM vw_campaign_performance
+               WHERE spend > 0)
+  AND lead_to_sql_rate < (SELECT 1.0 * SUM(is_sql) / COUNT(*)
+                          FROM fact_leads)
+ORDER BY spend DESC;</pre>
+      </div>
+    </section>
+
+    <!-- 9 KPI FRAMEWORK -->
+    <section id="kpi" class="section">
+      <div class="eyebrow" data-i18n="kp.eyebrow">07 · KPI framework</div>
+      <h2 data-i18n="kp.title">Volume, quality, cost and value, read together.</h2>
+      <div class="kpi-grid">
+        <article><b data-i18n="kp.1t">Acquisition</b><p>Spend · Sessions · CTR · CPC · CPL</p></article>
+        <article><b data-i18n="kp.2t">Funnel</b><p>Leads → MQL → SQL → <span data-i18n="kp.opp">Opportunity</span> → <span data-i18n="kp.cust">Customer</span></p></article>
+        <article><b data-i18n="kp.3t">Efficiency</b><p>CAC · <span data-i18n="kp.rs">Revenue / spend</span> · <span data-i18n="kp.dv">CAC vs deal value</span></p></article>
+        <article><b data-i18n="kp.4t">Revenue</b><p><span data-i18n="kp.wr">Won revenue</span> · <span data-i18n="kp.win">Win rate</span> · <span data-i18n="kp.deal">Deal value</span> · <span data-i18n="kp.cyc">Sales cycle</span></p></article>
+        <article><b data-i18n="kp.5t">Customers</b><p>MRR · <span data-i18n="kp.act">Active customers</span> · Churn · MoM %</p></article>
+      </div>
+      <p class="note" data-i18n="kp.note">Each KPI has one definition, written once in SQL (views) and once in DAX (measures), then reused everywhere.</p>
+    </section>
+
+    <!-- 10 DASHBOARD -->
+    <section id="dashboard" class="section findings">
+      <div class="eyebrow" data-i18n="db.eyebrow">08 · Dashboard</div>
+      <h2 data-i18n="db.title">Six pages, each answering one management question.</h2>
+      <p class="proto-note" data-i18n="db.note">Screenshots of the Power BI report built on the star-schema model (47 DAX measures). Click a page to see it full size.</p>
+      <div class="dash-gallery">
+        <a href="proof/powerbi_01_executive_overview.jpg" target="_blank" rel="noopener"><img src="proof/powerbi_01_executive_overview.jpg" alt="Power BI report: executive overview" loading="lazy" width="1288" height="724" /><span data-i18n="db.1">1 · Executive overview</span></a>
+        <a href="proof/powerbi_02_acquisition_funnel.jpg" target="_blank" rel="noopener"><img src="proof/powerbi_02_acquisition_funnel.jpg" alt="Power BI report: acquisition funnel" loading="lazy" width="1288" height="724" /><span data-i18n="db.2">2 · Acquisition funnel</span></a>
+        <a href="proof/powerbi_03_channel_campaign_performance.jpg" target="_blank" rel="noopener"><img src="proof/powerbi_03_channel_campaign_performance.jpg" alt="Power BI report: channel and campaign performance" loading="lazy" width="1288" height="724" /><span data-i18n="db.3">3 · Channel &amp; campaign performance</span></a>
+        <a href="proof/powerbi_04_pipeline_revenue.jpg" target="_blank" rel="noopener"><img src="proof/powerbi_04_pipeline_revenue.jpg" alt="Power BI report: pipeline and revenue" loading="lazy" width="1288" height="724" /><span data-i18n="db.4">4 · Pipeline &amp; revenue</span></a>
+        <a href="proof/powerbi_05_customer_value.jpg" target="_blank" rel="noopener"><img src="proof/powerbi_05_customer_value.jpg" alt="Power BI report: customer value" loading="lazy" width="1288" height="724" /><span data-i18n="db.5">5 · Customer value</span></a>
+        <a href="proof/powerbi_06_data_quality.jpg" target="_blank" rel="noopener"><img src="proof/powerbi_06_data_quality.jpg" alt="Power BI report: data quality" loading="lazy" width="1288" height="724" /><span data-i18n="db.6">6 · Data quality</span></a>
+      </div>
+    </section>
+
+    <!-- 11 PROOF OF WORK -->
+    <section id="proof" class="section">
+      <div class="eyebrow" data-i18n="pw.eyebrow">09 · Proof of work</div>
+      <h2 data-i18n="pw.title">Proof of work.</h2>
+      <p class="lead-p" data-i18n="pw.p">Generated from the working repository. Click an image to see it full size.</p>
+      <div class="evidence-grid">
+        <figure class="evidence" id="ev1">
+          <a class="shot" href="proof/proof_01_database.jpg" target="_blank" rel="noopener"><img src="proof/proof_01_database.jpg" alt="SQLite database tables" loading="lazy" width="1600" height="900" /></a>
+          <figcaption><span class="ev-n" data-i18n="pw.e1n">Evidence 01</span><b data-i18n="pw.e1t">Database</b><span data-i18n="pw.e1p">9 tables with keys and business-rule constraints, 7 reporting views.</span></figcaption>
+        </figure>
+        <figure class="evidence" id="ev2">
+          <a class="shot" href="proof/proof_02_sql.jpg" target="_blank" rel="noopener"><img src="proof/proof_02_sql.jpg" alt="SQL query and its result" loading="lazy" width="1600" height="900" /></a>
+          <figcaption><span class="ev-n" data-i18n="pw.e2n">Evidence 02</span><b>SQL</b><span data-i18n="pw.e2p">A real query and its result: campaigns that spend a lot and convert poorly.</span></figcaption>
+        </figure>
+        <figure class="evidence" id="ev3">
+          <a class="shot" href="proof/proof_03_data_quality.jpg" target="_blank" rel="noopener"><img src="proof/proof_03_data_quality.jpg" alt="Data quality before and after cleaning" loading="lazy" width="1288" height="724" /></a>
+          <figcaption><span class="ev-n" data-i18n="pw.e3n">Evidence 03</span><b data-i18n="pw.e3t">Data quality</b><span data-i18n="pw.e3p">Issues per check, raw export vs clean layer, and rows before / after.</span></figcaption>
+        </figure>
+        <figure class="evidence" id="ev4">
+          <a class="shot" href="proof/proof_04_model.jpg" target="_blank" rel="noopener"><img src="proof/proof_04_model.jpg" alt="Star-schema data model" loading="lazy" width="1600" height="900" /></a>
+          <figcaption><span class="ev-n" data-i18n="pw.e4n">Evidence 04</span><b data-i18n="pw.e4t">Data model</b><span data-i18n="pw.e4p">Star schema: 4 fact tables, 5 dimensions, single-direction relationships.</span></figcaption>
+        </figure>
+        <figure class="evidence" id="ev5">
+          <a class="shot" href="proof/proof_05_powerbi.jpg" target="_blank" rel="noopener"><img src="proof/proof_05_powerbi.jpg" alt="Power BI report: executive overview" loading="lazy" width="1288" height="724" /></a>
+          <figcaption><span class="ev-n" data-i18n="pw.e5n">Evidence 05</span><b data-i18n="pw.e5t">Power BI dashboard</b><span data-i18n="pw.e5p">Executive overview: spend, leads, customers, revenue, CAC and conversion.</span></figcaption>
+        </figure>
+        <figure class="evidence" id="ev6">
+          <a class="shot" href="proof/proof_06_business_insight.jpg" target="_blank" rel="noopener"><img src="proof/proof_06_business_insight.jpg" alt="Business insight with recommendation" loading="lazy" width="1288" height="914" /></a>
+          <figcaption><span class="ev-n" data-i18n="pw.e6n">Evidence 06</span><b data-i18n="pw.e6t">Business insight</b><span data-i18n="pw.e6p">From the chart to the decision: which campaigns to scale and which to reduce.</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 12 INSIGHTS -->
+    <section id="insights" class="section">
+      <div class="eyebrow" data-i18n="in.eyebrow">10 · Key insights</div>
+      <h2 data-i18n="in.title">What the synthetic dataset shows.</h2>
+      <p class="lead-p" data-i18n="in.p">In the synthetic demonstration dataset — these are not ODRES results. What matters is the reasoning from a number to a decision.</p>
+      <div class="insights-grid six">
+        <article><span data-i18n="in.1n">Insight 01</span><h3 data-i18n="in.1t">Lead volume is misleading.</h3><p data-i18n="in.1p">Meta Ads brings 28% of leads but only 2% of customers, with a CAC of €3,534 for an average deal of €892.</p></article>
+        <article><span data-i18n="in.2n">Insight 02</span><h3 data-i18n="in.2t">A third of the budget returns almost nothing.</h3><p data-i18n="in.2p">Four campaigns spent €37.6k (33% of spend) for €6.7k of first-year revenue.</p></article>
+        <article><span data-i18n="in.3n">Insight 03</span><h3 data-i18n="in.3t">A higher CAC can be the better investment.</h3><p data-i18n="in.3p">LinkedIn has the highest cost per lead, but the largest deals (€3,398) and a 40% win rate.</p></article>
+        <article><span data-i18n="in.4n">Insight 04</span><h3 data-i18n="in.4t">Non-paid channels carry growth.</h3><p data-i18n="in.4p">Referral, email and organic: 18% of spend, 84% of first-year revenue.</p></article>
+        <article><span data-i18n="in.5n">Insight 05</span><h3 data-i18n="in.5t">The lead score works.</h3><p data-i18n="in.5p">Leads scoring 80+ convert at 20.9%, those below 40 at 0.8%.</p></article>
+        <article><span data-i18n="in.6n">Insight 06</span><h3 data-i18n="in.6t">Company size drives value, not region.</h3><p data-i18n="in.6p">Companies with 50+ staff: 10% of leads, 43% of revenue. Regions convert within a narrow 5.6–8.0% band.</p></article>
+      </div>
+    </section>
+
+    <!-- 13 RECOMMENDATIONS -->
+    <section id="recommendations" class="section recommendations">
+      <div class="eyebrow" data-i18n="re.eyebrow">11 · Recommendations</div>
+      <h2 data-i18n="re.title">Every paid campaign gets a clear budget decision.</h2>
+      <div class="rec-grid">
+        <article class="rec scale"><h3>SCALE</h3><p data-i18n="re.1">Revenue ≥ 1.5× spend and above-average lead quality. Increase LinkedIn "Operations Leaders" step by step, watching CAC against deal value.</p></article>
+        <article class="rec maintain"><h3>MAINTAIN</h3><p data-i18n="re.2">Pays back in about a year. Keep Google "High Intent Search" and optimise bids rather than volume.</p></article>
+        <article class="rec optimise"><h3>OPTIMISE</h3><p data-i18n="re.3">Between 0.5× and 1×. Rework targeting and landing pages before adding budget.</p></article>
+        <article class="rec reduce"><h3>REDUCE</h3><p data-i18n="re.4">Below 0.5×. Pause Meta "Awareness Video" and Google "Competitor Search" first; test with a 3-month hold-out.</p></article>
+        <article><h3 data-i18n="re.5t">Sales follow-up</h3><p data-i18n="re.5">Route leads scoring 60+ to sales within 24 hours; send leads below 40 to automated nurture.</p></article>
+        <article><h3 data-i18n="re.6t">Growth engine</h3><p data-i18n="re.6">Formalise a customer-referral programme and expand partners: lowest CAC, highest lead quality.</p></article>
+      </div>
+    </section>
+
+    <!-- 14 TECHNICAL STACK (claim -> evidence) -->
+    <section id="stack" class="section">
+      <div class="eyebrow" data-i18n="st.eyebrow">12 · Technical stack</div>
+      <h2 data-i18n="st.title">Each skill, with what I built and where to check it.</h2>
+      <div class="claims">
+        <article><b>SQL</b><p data-i18n="st.1">Built reusable reporting views and KPI queries for acquisition, funnel and revenue analysis.</p><a href="#ev2" data-i18n="st.l1">→ SQL proof</a></article>
+        <article><b>Python / pandas</b><p data-i18n="st.2">Generated the dataset, cleaned it with 22 documented rules and validated it with 22 checks.</p><a href="#ev3" data-i18n="st.l2">→ Data-quality proof</a></article>
+        <article><b data-i18n="st.3t">Data modelling</b><p data-i18n="st.3">Designed a star schema with keys and business rules enforced in the database.</p><a href="#ev4" data-i18n="st.l3">→ Model proof</a></article>
+        <article><b>Power BI / DAX</b><p data-i18n="st.4">Designed a six-page management reporting model covering acquisition, funnel, efficiency, pipeline, customer value and data quality, with 47 DAX measures.</p><a href="#dashboard" data-i18n="st.l4">→ Dashboard</a></article>
+        <article><b>Reporting</b><p data-i18n="st.5">Built one monthly management view with spend, leads, customers, revenue, MRR, churn and month-over-month growth.</p><a href="#ev5" data-i18n="st.l5">→ Executive overview</a></article>
+        <article><b data-i18n="st.6t">Business analysis</b><p data-i18n="st.6">Turned the analysis into six insights and a budget decision for every paid campaign.</p><a href="#ev6" data-i18n="st.l6">→ Insight proof</a></article>
+      </div>
+    </section>
+
+    <!-- 15 LIMITATIONS -->
+    <section id="limitations" class="section split limitations">
+      <div>
+        <div class="eyebrow" data-i18n="li.eyebrow">13 · Limitations</div>
+        <h2 data-i18n="li.title">What this case study can and cannot claim.</h2>
+      </div>
+      <ul class="limits">
+        <li data-i18n="li.1">The data is synthetic: patterns are realistic by design, not measured at ODRES.</li>
+        <li data-i18n="li.2">Attribution is first-touch (the lead's source in the CRM); multi-touch journeys are not modelled.</li>
+        <li data-i18n="li.3">Revenue is first-year contract value; lifetime value would favour channels with lower churn.</li>
+        <li data-i18n="li.4">Some groups are small (7 Meta customers), so recommendations are framed as tests.</li>
+        <li data-i18n="li.5">The screenshots show the report without filters; the interactive version is the Power BI project in the repository.</li>
+      </ul>
+    </section>
+
+    <!-- 16 LEARNED + 17 REPOSITORY -->
+    <section id="learned" class="section takeaway">
+      <div class="eyebrow" data-i18n="le.eyebrow">14 · What I learned</div>
+      <blockquote data-i18n="le.quote">“A dashboard is only as trustworthy as the data behind it, and a KPI only matters when it changes a budget or a follow-up decision.”</blockquote>
+      <div class="repo-card">
+        <div><b data-i18n="le.repoT">Technical repository</b><p data-i18n="le.repoP">Raw and clean data, SQLite database, 7 SQL files, Python pipeline, Power BI model (TMDL) and DAX, documentation, data-quality report and QA checklist. One command rebuilds everything: <code>python run_pipeline.py</code>.</p></div>
+        <span class="soon-pill" data-i18n="le.soon">GitHub link coming soon</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn" href="mailto:Harrymulembwe09@gmail.com" data-i18n="le.contact">Contact me</a>
+        <a class="btn ghost" href="https://linkedin.com/in/harry-mulembwe" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn ghost" href="../../index.html#projects" data-i18n="le.all">All projects</a>
+      </div>
+    </section>
+  </main>
+
+  <footer data-i18n="footer">Harry Mulembwe · Data &amp; Business Analyst · Brussels · Synthetic data, not ODRES figures</footer>
+
+  <script src="../../assets/i18n/odres.js"></script>
+  <script src="../../assets/i18n.js"></script>
+  <script src="../../assets/site.js"></script>
+</body>
+</html>

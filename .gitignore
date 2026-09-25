@@ -1,0 +1,12 @@
+.vercel
+.DS_Store
+Thumbs.db
+*.sqlite
+*.db
+# Only the public CVs are published; never the full TFE or other PDFs
+*.pdf
+!assets/cv/*.pdf
+# Internal notes stay out of the public site
+SOURCE_NOTES.md
+case-study-copy.md
+README_FR.md

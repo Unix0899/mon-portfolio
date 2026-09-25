@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="meta.title">LexLau / Klavis.app Case Study | Harry Mulembwe</title>
+  <meta name="description" content="Testing and improving AI-enabled workflows that turn legal documents into structured, reviewable case information. Public reconstruction with synthetic data." data-i18n-attr="content:meta.desc" />
+  <meta name="theme-color" content="#0d2a45" />
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" />
+  <script>
+    (function(){var r=document.documentElement,l;r.classList.add('js');
+    try{l=new URLSearchParams(location.search).get('lang')||localStorage.getItem('lang')}catch(e){}
+    if(!l){var n=(navigator.language||'').slice(0,2).toLowerCase();l=(n==='fr'||n==='nl')?n:'en'}
+    if(['en','fr','nl'].indexOf(l)<0)l='en';r.setAttribute('data-lang',l);
+    if(l!=='en'){r.classList.add('i18n-pending');setTimeout(function(){r.classList.remove('i18n-pending')},1500)}})();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="../../assets/common.css" />
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="../../index.html">← <span class="brand-name">Harry Mulembwe</span></a>
+    <div class="topbar-right">
+      <nav>
+        <a href="#role" data-i18n="nav.role">My role</a>
+        <a href="#workflow" data-i18n="nav.workflow">Workflow</a>
+        <a href="#testing" data-i18n="nav.testing">Testing</a>
+        <a href="#proof" data-i18n="nav.proof">Proof</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:ui.lang">
+        <button type="button" data-lang-btn="en" lang="en" title="English" aria-pressed="true">EN</button>
+        <button type="button" data-lang-btn="fr" lang="fr" title="Français" aria-pressed="false">FR</button>
+        <button type="button" data-lang-btn="nl" lang="nl" title="Nederlands" aria-pressed="false">NL</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- 1 HERO -->
+    <section class="hero section">
+      <div class="eyebrow" data-i18n="hero.eyebrow">Case study · AI workflows / Data / QA</div>
+      <h1>LexLau / Klavis.app</h1>
+      <p class="hero-sub" data-i18n="hero.sub">AI-Assisted Legal Case Management</p>
+      <p class="hero-quote" data-i18n="hero.quote">“Testing and improving AI-enabled workflows that transform legal documents into structured, reviewable case information.”</p>
+      <p class="hero-copy" data-i18n="hero.copy">Professional experience under technical supervision. Public reconstruction uses fully synthetic data.</p>
+      <p class="disclosure"><b data-i18n="hero.discL">Synthetic data</b><span data-i18n="hero.disc">Synthetic demonstration data. No real client, legal-case or confidential LexLau/Klavis data is included. The public project is an independent reconstruction, not a copy of Klavis code.</span></p>
+      <div class="meta-grid">
+        <div><span data-i18n="m.role">Role</span><strong>AI Engineer &amp; Data Analyst Intern</strong></div>
+        <div><span data-i18n="m.company">Company</span><strong>LexLau, Brussels</strong></div>
+        <div><span data-i18n="m.period">Period</span><strong data-i18n="m.periodV">Jun 2026 – Sep 2026</strong></div>
+        <div><span data-i18n="m.sup">Supervision</span><strong data-i18n="m.supV">CTO / technical supervisor</strong></div>
+      </div>
+      <div class="stack">
+        <span data-i18n="tag.aiw">AI Workflows</span><span data-i18n="tag.da">Data Analysis</span><span data-i18n="tag.test">Testing</span><span>QA</span><span>SQL</span><span>Python</span><span data-i18n="tag.dq">Data Quality</span><span data-i18n="tag.pf">Product Feedback</span><span>Human-in-the-loop</span>
+      </div>
+    </section>
+
+    <section class="stats section narrow">
+      <article><strong>260</strong><span data-i18n="stat.1">synthetic cases, created from 319 synthetic documents (PDF, DOCX, images) with ground truth</span></article>
+      <article><strong>892</strong><span data-i18n="stat.2">AI runs analysed: extraction, category suggestion, summary, assistant</span></article>
+      <article><strong>14</strong><span data-i18n="stat.3">AI test scenarios (TEST 001–014) inside 73 automated tests, all passing</span></article>
+      <article><strong>5</strong><span data-i18n="stat.4">synthetic bugs investigated from symptom to root cause, fix and retest</span></article>
+    </section>
+
+    <!-- 2 CONTEXT -->
+    <section id="context" class="section split">
+      <div>
+        <div class="eyebrow" data-i18n="cx.eyebrow">01 · Context</div>
+        <h2 data-i18n="cx.title">A legal application with many AI features, and a team that needed them to be reliable.</h2>
+      </div>
+      <div class="prose">
+        <p data-i18n="cx.p1">Klavis.app / KlavIA, developed by LexLau, is a legal case-management application that uses AI across its workflows. As an AI Engineer &amp; Data Analyst intern, I worked inside this environment under the supervision of the CTO.</p>
+        <p data-i18n="cx.p2">My work was on the reliability side: testing AI features systematically, structuring and analysing the data used by the workflows, reproducing bugs, documenting expected versus actual behaviour and turning the results into product and technical feedback, while handling potentially confidential data.</p>
+        <p data-i18n="cx.p3">Because that work is confidential, this case study shows a <strong>public reconstruction</strong>: the same kind of workflow, rebuilt from scratch with synthetic documents and an independent architecture.</p>
+      </div>
+    </section>
+
+    <!-- 3 PROBLEM -->
+    <section id="problem" class="section split">
+      <div>
+        <div class="eyebrow" data-i18n="pb.eyebrow">02 · Business / product problem</div>
+        <h2 data-i18n="pb.title">Extracting information is easy to demo. Doing it reliably is the real problem.</h2>
+      </div>
+      <div class="prose">
+        <p data-i18n="pb.p1">Legal professionals work with documents full of structured and unstructured information. Manual extraction is time-consuming and error-prone.</p>
+        <p data-i18n="pb.p2">AI can speed up this workflow, but incorrect extraction, missing fields or unreliable behaviour create real operational risk. So the challenge is not simply “Can AI extract information?”</p>
+        <p class="question" data-i18n="pb.q">Can the workflow produce structured information reliably enough for a professional to review and use?</p>
+      </div>
+    </section>
+
+    <!-- 4 MY ROLE -->
+    <section id="role" class="section role-card">
+      <div class="eyebrow" data-i18n="ro.eyebrow">03 · My role</div>
+      <h2 data-i18n="ro.title">What I did at LexLau, and what I rebuilt publicly.</h2>
+      <p class="lead-p" data-i18n="ro.p">I contributed to the development, testing and improvement of AI-enabled workflows within Klavis under technical supervision. I was not the CTO, the lead architect or the sole developer.</p>
+      <div class="contrib-split">
+        <div>
+          <h3 data-i18n="ro.realT">Real professional experience · LexLau</h3>
+          <ul class="ticks">
+            <li data-i18n="ro.r1">AI-enabled application testing</li>
+            <li data-i18n="ro.r2">Data analysis and structuring</li>
+            <li data-i18n="ro.r3">AI workflow validation</li>
+            <li data-i18n="ro.r4">Bug reproduction</li>
+            <li data-i18n="ro.r5">Documentation</li>
+            <li data-i18n="ro.r6">Product / technical feedback</li>
+            <li data-i18n="ro.r7">Confidential-data awareness</li>
+            <li data-i18n="ro.r8">Work under CTO / technical supervision</li>
+          </ul>
+        </div>
+        <div class="shared">
+          <h3 data-i18n="ro.pubT">Public portfolio reconstruction</h3>
+          <ul class="ticks">
+            <li data-i18n="ro.p1">Synthetic legal documents</li>
+            <li data-i18n="ro.p2">Synthetic database</li>
+            <li data-i18n="ro.p3">Public AI workflow</li>
+            <li data-i18n="ro.p4">Automated tests</li>
+            <li data-i18n="ro.p5">SQL analytics</li>
+            <li data-i18n="ro.p6">AI quality dashboard</li>
+            <li data-i18n="ro.p7">Technical documentation</li>
+            <li data-i18n="ro.p8">Reproducible demo</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note" data-i18n="ro.note">The public project is a reconstruction designed to demonstrate the workflow without exposing LexLau/Klavis intellectual property or confidential client information.</p>
+    </section>
+
+    <!-- 5 WORKING WITH A CTO -->
+    <section id="cto" class="section">
+      <div class="eyebrow" data-i18n="ct.eyebrow">04 · Working under technical supervision</div>
+      <h2 data-i18n="ct.title">A change was not finished because it worked on my machine.</h2>
+      <div class="split" style="margin-top:34px">
+        <ul class="ticks">
+          <li data-i18n="ct.1">Changes were made under technical supervision, on branches, through Merge Requests.</li>
+          <li data-i18n="ct.2">Problems were documented: what was observed, how to reproduce it, what was expected.</li>
+          <li data-i18n="ct.3">Corrections were reviewed by the supervisor. I did not approve my own changes.</li>
+          <li data-i18n="ct.4">Tests could be replayed, and results, including failures, were reported to the supervisor.</li>
+        </ul>
+        <div class="prose"><p data-i18n="ct.p">The public repository simulates this discipline with a feature-branch test report, a QA checklist for the author, a review checklist for someone else and a final validation step. The test history shows why the last step matters: a merge re-introduced a fixed bug, and the regression suite caught it.</p></div>
+      </div>
+      <ol class="sup">
+        <li data-i18n="ct.s1">Issue</li><li data-i18n="ct.s2">Reproduction</li><li data-i18n="ct.s3">Analysis</li><li data-i18n="ct.s4">Implementation</li><li data-i18n="ct.s5">Automated tests</li><li data-i18n="ct.s6">Manual tests</li><li class="rev" data-i18n="ct.s7">Review</li><li data-i18n="ct.s8">Retest</li><li data-i18n="ct.s9">Closure</li>
+      </ol>
+    </section>
+
+    <!-- 6 AI WORKFLOW -->
+    <section id="workflow" class="section">
+      <div class="eyebrow" data-i18n="wf.eyebrow">05 · AI workflow</div>
+      <h2 data-i18n="wf.title">AI proposes, a human reviews, the application persists.</h2>
+      <ol class="story">
+        <li class="qa" data-i18n="wf.1">Document arrives</li>
+        <li class="ai" data-i18n="wf.2">Application extracts the text</li>
+        <li class="ai" data-i18n="wf.3">AI structures the information</li>
+        <li class="qa" data-i18n="wf.4">System checks the fields</li>
+        <li class="human" data-i18n="wf.5">Human reviews and corrects</li>
+        <li class="qa" data-i18n="wf.6">Case is created</li>
+        <li class="ai" data-i18n="wf.7">AI assists with the case</li>
+        <li class="qa" data-i18n="wf.8">Tests measure reliability</li>
+        <li class="human" data-i18n="wf.9">Failures are investigated</li>
+        <li class="human" data-i18n="wf.10">Product feedback improves the workflow</li>
+      </ol>
+      <p class="legend"><span><i style="background:var(--teal)"></i><span data-i18n="wf.lAi">AI step</span></span><span><i style="background:#c7851a"></i><span data-i18n="wf.lHu">Human step</span></span><span><i style="background:var(--navy)"></i><span data-i18n="wf.lSys">System / quality step</span></span></p>
+      <p class="note" data-i18n="wf.note">Provider abstraction: a deterministic local engine by default (no API key), a simpler fallback engine, optional OpenAI / Anthropic providers through environment variables. If the primary fails, the fallback answers; if both fail, the user gets a structured error and nothing is saved.</p>
+    </section>
+
+    <!-- 7 DOCUMENT PROCESSING -->
+    <section id="documents" class="section">
+      <div class="eyebrow" data-i18n="dp.eyebrow">06 · Document processing</div>
+      <h2 data-i18n="dp.title">PDF, DOCX and images, in the states real documents arrive in.</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th data-i18n="dp.th1">Format</th><th data-i18n="dp.th2">How the text is read</th><th data-i18n="dp.th3">Variants</th></tr></thead>
+          <tbody>
+            <tr><td>PDF</td><td data-i18n="dp.c1">Text layer (pypdf)</td><td data-i18n="dp.v1">clean · degraded · multi-page · missing fields · contradictory</td></tr>
+            <tr><td>DOCX</td><td data-i18n="dp.c2">Document XML</td><td data-i18n="dp.v2">clean · missing fields · contradictory</td></tr>
+            <tr><td>PNG / JPG</td><td data-i18n="dp.c3">Simulated OCR text layer</td><td data-i18n="dp.v3">clean · degraded photo (rotated, blurred, noisy)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note" data-i18n="dp.note">The format is detected from the file content, not its name. Empty, oversized (over 5 MB) and unsupported files are rejected before any AI call.</p>
+    </section>
+
+    <!-- 8 STRUCTURED DATA -->
+    <section id="structured" class="section sql-grid">
+      <div>
+        <div class="eyebrow" data-i18n="sd.eyebrow">07 · Structured data</div>
+        <h2 data-i18n="sd.title">From a noisy photo to a JSON a reviewer can check.</h2>
+        <p class="lead-p" data-i18n="sd.p">Nine fields are scored against the ground truth: title, reference, client, opposing party, document type, jurisdiction, labelled dates, labelled amounts and category. Each field keeps its value, its confidence, how it was found, and whether it is missing or conflicting.</p>
+        <p class="note" data-i18n="sd.note">Real output for the degraded phone photo sample: the missing values stay null. They are never guessed and never set to zero.</p>
+      </div>
+      <pre class="json-shot">{
+  <span class="k">"case_title"</span>: "Late payment for delivered IT hardware",
+  <span class="k">"case_reference"</span>: "SYN-26-90004",
+  <span class="k">"client_name"</span>: <span class="nul">null</span>,
+  <span class="k">"opposing_party"</span>: "Lindenbrook Retail NV",
+  <span class="k">"document_type"</span>: "Invoice dispute letter",
+  <span class="k">"jurisdiction"</span>: <span class="nul">null</span>,
+  <span class="k">"important_dates"</span>: [{"label": "incident_date", "date": "2025-09-13"}],
+  <span class="k">"amounts"</span>: [{"label": "late_interest", "value": 366.26}],
+  <span class="k">"case_category"</span>: "Commercial dispute",
+  <span class="k">"case_status"</span>: "Missing Information",
+  <span class="k">"missing_fields"</span>: ["client_name", "jurisdiction", "amounts"],
+  <span class="k">"confidence_score"</span>: 0.707
+}</pre>
+    </section>
+
+    <!-- 9 HUMAN IN THE LOOP -->
+    <section id="human" class="section split">
+      <div>
+        <div class="eyebrow" data-i18n="hl.eyebrow">08 · Human-in-the-loop</div>
+        <h2 data-i18n="hl.title">The AI never creates a case on its own.</h2>
+        <ul class="ticks" style="margin-top:28px">
+          <li data-i18n="hl.1">The reviewer sees every field with its confidence; missing fields in red, conflicts in amber.</li>
+          <li data-i18n="hl.2">Any field can be corrected; the category is a suggestion.</li>
+          <li data-i18n="hl.3">The case is created only after an explicit confirmation, and the API refuses it otherwise.</li>
+          <li data-i18n="hl.4">Each correction is stored per field and becomes product feedback.</li>
+        </ul>
+        <p class="note" data-i18n="hl.note">Mandatory labels: “AI-generated draft for demonstration purposes. Human validation required.” and “Demo assistant — not legal advice.”</p>
+      </div>
+      <a class="shot" href="proof/proof_02_human_validation.jpg" target="_blank" rel="noopener" style="border-radius:18px;overflow:hidden;border:1px solid var(--line)"><img src="proof/proof_02_human_validation.jpg" alt="AI flags missing fields, a human corrects them, the case records what changed" loading="lazy" width="1800" height="1150" /></a>
+    </section>
+
+    <!-- 10 TESTING -->
+    <section id="testing" class="section">
+      <div class="eyebrow" data-i18n="te.eyebrow">09 · Testing approach</div>
+      <h2 data-i18n="te.title">Fourteen scenarios, and proof that they catch real problems.</h2>
+      <p class="lead-p" data-i18n="te.p">Unit, integration and end-to-end tests (73, all passing) include the scenario suite TEST 001–014: clean PDF, DOCX, clean and degraded images, missing field, multiple dates, provider failure, both providers down, duplicate submission, human correction, invalid file, oversized file, mixed formats and regression. Every synthetic bug can be switched back on, and the suite has to fail when it is.</p>
+      <div class="cards3">
+        <article><h3 data-i18n="te.c1t">Happy paths</h3><p data-i18n="te.c1">Every format extracts 9/9 fields on clean documents; the same case gives identical results in PDF, DOCX and PNG.</p></article>
+        <article><h3 data-i18n="te.c2t">Failure paths</h3><p data-i18n="te.c2">Timeouts, invalid provider output, both providers down, invalid and oversized files: a controlled error every time, never a crash.</p></article>
+        <article><h3 data-i18n="te.c3t">History</h3><p data-i18n="te.c3">Eight recorded runs: 7/14 → 14/14 as fixes landed, including one regression caught after a merge.</p></article>
+      </div>
+    </section>
+
+    <!-- 11 BUG INVESTIGATION -->
+    <section id="bugs" class="section">
+      <div class="eyebrow" data-i18n="bg.eyebrow">10 · Bug investigation</div>
+      <h2 data-i18n="bg.title">Symptom → reproduction → root cause → fix → retest.</h2>
+      <p class="lead-p" data-i18n="bg.p">These scenarios reproduce the type of AI workflow issues investigated during the professional experience, using fully synthetic implementations. They are not Klavis production bugs.</p>
+      <div class="table-wrap">
+        <table class="data-table bug-table">
+          <thead><tr><th data-i18n="bg.th1">Bug</th><th data-i18n="bg.th2">Root cause</th><th data-i18n="bg.th3">Fix and retest</th></tr></thead>
+          <tbody>
+            <tr><td data-i18n="bg.1">DOCX not routed correctly</td><td data-i18n="bg.1r">Routing on the file extension; “.docx” missing from the table, so files went to the PDF parser</td><td data-i18n="bg.1f">Route on the content. DOCX parse errors: 25/25 before, 0/104 after</td></tr>
+            <tr><td data-i18n="bg.2">Category mismatch</td><td data-i18n="bg.2r">Keyword “board” matched inside “cardboard”</td><td data-i18n="bg.2f">Word-boundary matching. Category corrections: 4 before, 0 after</td></tr>
+            <tr><td data-i18n="bg.3">Duplicate case creation</td><td data-i18n="bg.3r">No idempotency key, uniqueness column never filled</td><td data-i18n="bg.3f">Two guards: 12 duplicates blocked, 0 duplicate references</td></tr>
+            <tr><td data-i18n="bg.4">Provider fallback problem</td><td data-i18n="bg.4r">Fallback answers recorded under the primary provider</td><td data-i18n="bg.4f">Record the provider that answered: the fallback rate reads 9.7% instead of 0%</td></tr>
+            <tr><td data-i18n="bg.5">Missing-field bug</td><td data-i18n="bg.5r">Absent amount defaulted to 0.00, so never reported missing</td><td data-i18n="bg.5f">Missing means null: the field is flagged and the case awaits information</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 12 DATA QUALITY -->
+    <section id="quality" class="section split">
+      <div>
+        <div class="eyebrow" data-i18n="dq.eyebrow">11 · Data quality</div>
+        <h2 data-i18n="dq.title">Every output is compared with what the document really says.</h2>
+      </div>
+      <div class="prose">
+        <p data-i18n="dq.p1">Each synthetic document comes with its ground truth. The comparison rules are explicit: “absent in the document and reported missing” is correct, and a field without ground truth is unknown rather than wrong.</p>
+        <p data-i18n="dq.p2">The database enforces the rules with keys, CHECK constraints and unique guards: a case cannot be saved without a human review decision, and a test run cannot have more results than tests. Integrity checks run on every rebuild.</p>
+        <div class="before-after">
+          <div class="ba raw"><span data-i18n="dq.before">Degraded scans</span><code data-i18n="dq.beforeV">65.5% field accuracy · reviewers correct 30–43% of fields</code></div>
+          <div class="ba-arrow" aria-hidden="true">vs</div>
+          <div class="ba clean"><span data-i18n="dq.after">Clean documents</span><code data-i18n="dq.afterV">99.7% field accuracy · about 0.4% of fields corrected</code></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13 AI QUALITY METRICS -->
+    <section id="metrics" class="section">
+      <div class="eyebrow" data-i18n="mt.eyebrow">12 · AI quality metrics</div>
+      <h2 data-i18n="mt.title">One definition per metric, in SQL, DAX and the app.</h2>
+      <div class="metrics">
+        <article><strong>91.7%</strong><b data-i18n="mt.1">Document success rate</b><p data-i18n="mt.1p">extraction runs without error</p></article>
+        <article><strong>92.9%</strong><b data-i18n="mt.2">Field accuracy</b><p data-i18n="mt.2p">vs ground truth</p></article>
+        <article><strong>97.9%</strong><b data-i18n="mt.3">Completeness</b><p data-i18n="mt.3p">fields found when present</p></article>
+        <article><strong>6.4%</strong><b data-i18n="mt.4">Manual correction</b><p data-i18n="mt.4p">fields changed by reviewers</p></article>
+        <article><strong>27.8%</strong><b data-i18n="mt.5">Human review rate</b><p data-i18n="mt.5p">drafts flagged for review</p></article>
+        <article><strong>9.7%</strong><b data-i18n="mt.6">Fallback rate</b><p data-i18n="mt.6p">primary failed, fallback used</p></article>
+        <article><strong>8.3%</strong><b data-i18n="mt.7">Error rate</b><p data-i18n="mt.7p">mostly the DOCX bug</p></article>
+        <article><strong>0.89</strong><b data-i18n="mt.8">Average confidence</b><p data-i18n="mt.8p">demonstration metric</p></article>
+        <article><strong>100%</strong><b data-i18n="mt.9">Test pass rate</b><p data-i18n="mt.9p">latest suite run</p></article>
+        <article><strong>1.68 s</strong><b data-i18n="mt.10">Latency</b><p data-i18n="mt.10p">latency model</p></article>
+      </div>
+      <div id="pbi" class="pbi-block">
+        <h3 data-i18n="mt.dashT">Power BI report: 5 pages on the same metrics</h3>
+        <p class="note" data-i18n="mt.dashP">Star schema (9 tables), 42 DAX measures. Opened in Power BI Desktop and reconciled with SQL: 85/85 comparisons match. Click a page to see it full size.</p>
+        <div class="dash-gallery">
+          <a href="proof/powerbi_01_ai_quality_overview.jpg" target="_blank" rel="noopener"><img src="proof/powerbi_01_ai_quality_overview.jpg" alt="Power BI report: AI quality overview" loading="lazy" width="1288" height="768" /><span data-i18n="mt.d1">1 · AI quality overview</span></a>
+          <a href="proof/powerbi_02_document_extraction.jpg" target="_blank" rel="noopener"><img src="proof/powerbi_02_document_extraction.jpg" alt="Power BI report: document extraction" loading="lazy" width="1288" height="768" /><span data-i18n="mt.d2">2 · Document extraction</span></a>
+          <a href="proof/powerbi_03_field_quality.jpg" target="_blank" rel="noopener"><img src="proof/powerbi_03_field_quality.jpg" alt="Power BI report: field quality" loading="lazy" width="1288" height="768" /><span data-i18n="mt.d3">3 · Field quality</span></a>
+          <a href="proof/powerbi_04_testing_reliability.jpg" target="_blank" rel="noopener"><img src="proof/powerbi_04_testing_reliability.jpg" alt="Power BI report: testing and reliability" loading="lazy" width="1288" height="768" /><span data-i18n="mt.d4">4 · Testing &amp; reliability</span></a>
+          <a href="proof/powerbi_05_human_review_data_quality.jpg" target="_blank" rel="noopener"><img src="proof/powerbi_05_human_review_data_quality.jpg" alt="Power BI report: human review and data quality" loading="lazy" width="1288" height="768" /><span data-i18n="mt.d5">5 · Human review &amp; data quality</span></a>
+          <a href="proof/app_ai_quality_page.jpg" target="_blank" rel="noopener"><img src="proof/app_ai_quality_page.jpg" alt="AI Quality page of the demo app" loading="lazy" width="1800" height="1797" /><span data-i18n="mt.d6">Same metrics live in the demo app</span></a>
+        </div>
+      </div>
+      <p class="note" data-i18n="mt.note">In the synthetic demonstration dataset, not Klavis figures. Key finding: runs with confidence ≥ 0.90 have 98% field accuracy, runs below 0.70 only 54%, so confidence is a usable signal to route drafts to careful review.</p>
+    </section>
+
+    <!-- 14 PROOF OF WORK -->
+    <section id="proof" class="section">
+      <div class="eyebrow" data-i18n="pw.eyebrow">13 · Proof of work</div>
+      <h2 data-i18n="pw.title">Proof of work.</h2>
+      <p class="lead-p" data-i18n="pw.p">Screenshots of the running demo and renders of the real SQL and code. Click an image to see it full size.</p>
+      <div class="evidence-grid">
+        <figure class="evidence" id="ev1">
+          <a class="shot" href="proof/proof_01_ai_extraction.jpg" target="_blank" rel="noopener"><img src="proof/proof_01_ai_extraction.jpg" alt="Synthetic document and structured extraction" loading="lazy" width="1800" height="1915" /></a>
+          <figcaption><span class="ev-n" data-i18n="pw.e1n">Evidence 01</span><b data-i18n="pw.e1t">AI extraction</b><span data-i18n="pw.e1p">A synthetic scanned letter and the fields proposed by the AI, with confidence and method.</span></figcaption>
+        </figure>
+        <figure class="evidence" id="ev2">
+          <a class="shot" href="proof/proof_02_human_validation.jpg" target="_blank" rel="noopener"><img src="proof/proof_02_human_validation.jpg" alt="Human validation" loading="lazy" width="1800" height="1150" /></a>
+          <figcaption><span class="ev-n" data-i18n="pw.e2n">Evidence 02</span><b data-i18n="pw.e2t">Human validation</b><span data-i18n="pw.e2p">Missing fields flagged, corrected by a human; the case records AI proposal vs validated value.</span></figcaption>
+        </figure>
+        <figure class="evidence" id="ev3">
+          <a class="shot" href="proof/proof_03_data_model.jpg" target="_blank" rel="noopener"><img src="proof/proof_03_data_model.jpg" alt="Relational data model" loading="lazy" width="1738" height="946" /></a>
+          <figcaption><span class="ev-n" data-i18n="pw.e3n">Evidence 03</span><b data-i18n="pw.e3t">Data model</b><span data-i18n="pw.e3p">Cases, documents, AI runs, fields, reviews, feedback, tests and audit, with row counts.</span></figcaption>
+        </figure>
+        <figure class="evidence" id="ev4">
+          <a class="shot" href="proof/proof_04_test_suite.jpg" target="_blank" rel="noopener"><img src="proof/proof_04_test_suite.jpg" alt="Test suite results across runs" loading="lazy" width="1800" height="2226" /></a>
+          <figcaption><span class="ev-n" data-i18n="pw.e4n">Evidence 04</span><b data-i18n="pw.e4t">Test suite</b><span data-i18n="pw.e4p">TEST 001–014 across 8 runs: bugs, fixes and a regression caught.</span></figcaption>
+        </figure>
+        <figure class="evidence" id="ev5">
+          <a class="shot" href="proof/proof_05_bug_investigation.jpg" target="_blank" rel="noopener"><img src="proof/proof_05_bug_investigation.jpg" alt="Bug investigation from symptom to retest" loading="lazy" width="1800" height="1021" /></a>
+          <figcaption><span class="ev-n" data-i18n="pw.e5n">Evidence 05</span><b data-i18n="pw.e5t">Bug investigation</b><span data-i18n="pw.e5p">A synthetic bug: symptom, reproduction, root cause, fix, regression test and retest.</span></figcaption>
+        </figure>
+        <figure class="evidence" id="ev6">
+          <a class="shot" href="proof/proof_06_ai_quality_dashboard.jpg" target="_blank" rel="noopener"><img src="proof/proof_06_ai_quality_dashboard.jpg" alt="Power BI AI quality dashboard" loading="lazy" width="1288" height="768" /></a>
+          <figcaption><span class="ev-n" data-i18n="pw.e6n">Evidence 06</span><b data-i18n="pw.e6t">AI quality dashboard (Power BI)</b><span data-i18n="pw.e6p">Runs, success, field accuracy, confidence, review rate and tests; DAX reconciled with SQL, 85/85.</span></figcaption>
+        </figure>
+        <figure class="evidence" id="ev7">
+          <a class="shot" href="proof/proof_07_sql_analysis.jpg" target="_blank" rel="noopener"><img src="proof/proof_07_sql_analysis.jpg" alt="SQL analysis with results" loading="lazy" width="1800" height="880" /></a>
+          <figcaption><span class="ev-n" data-i18n="pw.e7n">Evidence 07</span><b data-i18n="pw.e7t">SQL analysis</b><span data-i18n="pw.e7p">Real queries and results: is confidence a useful signal, and did the fix work?</span></figcaption>
+        </figure>
+        <figure class="evidence" id="ev8">
+          <a class="shot" href="proof/proof_08_audit_log.jpg" target="_blank" rel="noopener"><img src="proof/proof_08_audit_log.jpg" alt="Audit log without sensitive data" loading="lazy" width="1800" height="1279" /></a>
+          <figcaption><span class="ev-n" data-i18n="pw.e8n">Evidence 08</span><b data-i18n="pw.e8t">Audit log</b><span data-i18n="pw.e8p">Every step traced with metadata only: no document text, no extracted content.</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 15 DATA PROTECTION -->
+    <section id="privacy" class="section">
+      <div class="eyebrow" data-i18n="pr.eyebrow">14 · Data protection</div>
+      <h2 data-i18n="pr.title">Built as if the documents were real.</h2>
+      <div class="cards3">
+        <article><h3 data-i18n="pr.1t">Minimisation</h3><p data-i18n="pr.1">The database stores metadata and structured fields, never document text. The summary and the assistant only receive validated fields.</p></article>
+        <article><h3 data-i18n="pr.2t">Controlled logging</h3><p data-i18n="pr.2">Allow-listed keys, redaction of e-mail, phone and IBAN patterns, length caps. A test proves a canary paragraph never reaches the logs.</p></article>
+        <article><h3 data-i18n="pr.3t">No secrets</h3><p data-i18n="pr.3">Runs without any API key; only a .env.example is published. The repository scan finds 0 blocking issues.</p></article>
+        <article><h3 data-i18n="pr.4t">Auditability</h3><p data-i18n="pr.4">1,603 audit events: uploads, rejections, AI runs, fallbacks, reviews, duplicates, test runs.</p></article>
+        <article><h3 data-i18n="pr.5t">Human review</h3><p data-i18n="pr.5">No case without an explicit validation; every correction is attributable to a (pseudonymous) reviewer.</p></article>
+        <article><h3 data-i18n="pr.6t">Separation</h3><p data-i18n="pr.6">Reference dataset, disposable runtime database and one temporary database per test scenario.</p></article>
+      </div>
+    </section>
+
+    <!-- 16 TECHNICAL STACK (claim -> evidence) -->
+    <section id="stack" class="section">
+      <div class="eyebrow" data-i18n="st.eyebrow">15 · Technical stack</div>
+      <h2 data-i18n="st.title">Each skill, with what I built and where to check it.</h2>
+      <div class="claims">
+        <article><b data-i18n="st.1t">AI testing</b><p data-i18n="st.1">Built systematic test scenarios across PDF, DOCX and image workflows and documented failures, regressions and retest results.</p><a href="#ev4" data-i18n="st.l1">→ Test suite proof</a></article>
+        <article><b data-i18n="st.2t">Data analysis</b><p data-i18n="st.2">Structured AI-run and extraction data to analyse success rates, completeness, confidence and manual correction.</p><a href="#ev6" data-i18n="st.l2">→ Quality dashboard</a></article>
+        <article><b data-i18n="st.3t">Product feedback</b><p data-i18n="st.3">Converted reproducible test findings into documented technical and product feedback.</p><a href="#ev5" data-i18n="st.l3">→ Bug investigation</a></article>
+        <article><b>SQL</b><p data-i18n="st.4">Relational schema with constraints, 6 reporting views and 26 analysis queries with window functions.</p><a href="#ev7" data-i18n="st.l4">→ SQL proof</a></article>
+        <article><b>Python</b><p data-i18n="st.5">Provider abstraction with fallback, document parsing, evaluation against ground truth and a standard-library API.</p><a href="#ev1" data-i18n="st.l5">→ Extraction proof</a></article>
+        <article><b>Power BI / DAX</b><p data-i18n="st.6">Star schema (9 tables), 42 DAX measures and a 5-page report, reconciled with SQL (85/85 checks).</p><a href="#pbi" data-i18n="st.l6">→ Power BI report</a></article>
+      </div>
+    </section>
+
+    <!-- 17 LIMITATIONS -->
+    <section id="limitations" class="section split limitations">
+      <div>
+        <div class="eyebrow" data-i18n="li.eyebrow">16 · Limitations</div>
+        <h2 data-i18n="li.title">What this case study can and cannot claim.</h2>
+        <div class="not-claim"><b data-i18n="li.ncT">Not claimed</b><span data-i18n="li.nc">I did not build Klavis. The bugs shown are synthetic, and the metrics describe the synthetic dataset, not the production system.</span></div>
+      </div>
+      <ul class="limits">
+        <li data-i18n="li.1">Synthetic documents are cleaner than some real-world legal documents.</li>
+        <li data-i18n="li.2">Mock AI cannot reproduce all behaviours of commercial LLMs; OCR is simulated.</li>
+        <li data-i18n="li.3">Confidence scores are demonstration metrics, not calibrated probabilities.</li>
+        <li data-i18n="li.4">The public reconstruction intentionally simplifies the original production architecture.</li>
+        <li data-i18n="li.5">The repository does not reproduce LexLau/Klavis proprietary code.</li>
+        <li data-i18n="li.6">The project demonstrates methodology and skills, not the production system itself.</li>
+      </ul>
+    </section>
+
+    <!-- 18 WHAT I LEARNED + 19 REPOSITORY -->
+    <section id="learned" class="section takeaway">
+      <div class="eyebrow" data-i18n="le.eyebrow">17 · What I learned</div>
+      <blockquote data-i18n="le.quote">“AI quality is not only about model output. Reliability also depends on document handling, structured data, validation, fallback behaviour, testing coverage and human review.”</blockquote>
+      <p class="lead-p" data-i18n="le.p">A feature is not finished when the model returns a plausible answer. It is finished when the complete workflow behaves predictably, failures are observable and the user can safely validate the result.</p>
+      <div class="eyebrow" style="margin-top:56px" data-i18n="rp.eyebrow">18 · Technical repository</div>
+      <div class="repo-card">
+        <div><b data-i18n="rp.t">lexlau-klavis-ai-workflow-demo</b><p data-i18n="rp.p">Demo app (8 pages), AI layer with fallback, synthetic documents and ground truth, SQLite database with SQL analyses, 73 tests, Power BI project and DAX, bug investigations, data-protection and QA documentation. One command rebuilds everything: <code>python run_pipeline.py</code>.</p></div>
+        <span class="soon-pill" data-i18n="rp.soon">GitHub link coming soon</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn" href="mailto:Harrymulembwe09@gmail.com" data-i18n="le.contact">Contact me</a>
+        <a class="btn ghost" href="https://linkedin.com/in/harry-mulembwe" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn ghost" href="../../index.html#projects" data-i18n="le.all">All projects</a>
+      </div>
+    </section>
+  </main>
+
+  <footer data-i18n="footer">Harry Mulembwe · Data &amp; Business Analyst · Brussels · Synthetic demonstration data, no LexLau/Klavis data</footer>
+
+  <script src="../../assets/i18n/lexlau.js"></script>
+  <script src="../../assets/i18n.js"></script>
+  <script src="../../assets/site.js"></script>
+</body>
+</html>
