@@ -243,3 +243,5 @@ a{color:inherit}.topbar{position:sticky;top:0;z-index:10;display:flex;justify-co
 .pbi-block .dash-gallery a{background:var(--paper);border:1px solid var(--line);color:var(--ink)}
 .pbi-block .dash-gallery a:hover{border-color:var(--teal)}
 .pbi-block .dash-gallery img{aspect-ratio:1288/768;object-fit:cover;object-position:top left}
+
+.repo-btn{flex:none;white-space:nowrap}

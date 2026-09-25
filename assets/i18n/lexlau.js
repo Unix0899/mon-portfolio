@@ -278,7 +278,7 @@ window.I18N_DICT = {
     'rp.eyebrow': '18 · Repository technique',
     'rp.t': 'lexlau-klavis-ai-workflow-demo',
     'rp.p': 'Application de démo (8 pages), couche IA avec fallback, documents synthétiques et vérité terrain, base SQLite avec analyses SQL, 73 tests, projet Power BI et DAX, investigations de bugs, documentation protection des données et QA. Une seule commande reconstruit tout : <code>python run_pipeline.py</code>.',
-    'rp.soon': 'Lien GitHub bientôt disponible',
+    'rp.soon': 'Voir sur GitHub →',
     'le.contact': 'Me contacter',
     'le.all': 'Tous les projets',
     'footer': 'Harry Mulembwe · Data &amp; Business Analyst · Bruxelles · Données de démonstration synthétiques, aucune donnée LexLau/Klavis'
@@ -562,7 +562,7 @@ window.I18N_DICT = {
     'rp.eyebrow': '18 · Technische repository',
     'rp.t': 'lexlau-klavis-ai-workflow-demo',
     'rp.p': 'Demo-applicatie (8 pagina’s), AI-laag met fallback, synthetische documenten en ground truth, SQLite-database met SQL-analyses, 73 tests, Power BI-project en DAX, bugonderzoeken, documentatie over gegevensbescherming en QA. Eén commando bouwt alles opnieuw op: <code>python run_pipeline.py</code>.',
-    'rp.soon': 'GitHub-link volgt binnenkort',
+    'rp.soon': 'Bekijk op GitHub →',
     'le.contact': 'Contacteer mij',
     'le.all': 'Alle projecten',
     'footer': 'Harry Mulembwe · Data &amp; Business Analyst · Brussel · Synthetische demonstratiedata, geen LexLau/Klavis-data'
