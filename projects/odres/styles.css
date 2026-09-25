@@ -208,3 +208,5 @@ a{color:inherit}.topbar{position:sticky;top:0;z-index:10;display:flex;justify-co
   .data-table{font-size:14px}
   .data-table td:first-child{white-space:normal}
 }
+
+.repo-btn{flex:none;white-space:nowrap}

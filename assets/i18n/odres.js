@@ -223,7 +223,7 @@ window.I18N_DICT = {
     'le.quote': '«&nbsp;Un dashboard n’est fiable que si les données derrière le sont, et un KPI n’a de valeur que s’il change une décision de budget ou de suivi.&nbsp;»',
     'le.repoT': 'Dépôt technique',
     'le.repoP': 'Données brutes et nettoyées, base SQLite, 7 fichiers SQL, pipeline Python, modèle Power BI (TMDL) et DAX, documentation, rapport qualité et checklist QA. Une seule commande reconstruit tout&nbsp;: <code>python run_pipeline.py</code>.',
-    'le.soon': 'Lien GitHub bientôt',
+    'le.soon': 'Voir sur GitHub →',
     'le.contact': 'Me contacter',
     'le.all': 'Tous les projets',
 
@@ -453,7 +453,7 @@ window.I18N_DICT = {
     'le.quote': '“Een dashboard is maar zo betrouwbaar als de data erachter, en een KPI telt pas als hij een budget- of opvolgingsbeslissing verandert.”',
     'le.repoT': 'Technische repository',
     'le.repoP': 'Ruwe en opgeschoonde data, SQLite-database, 7 SQL-bestanden, Python-pipeline, Power BI-model (TMDL) en DAX, documentatie, kwaliteitsrapport en QA-checklist. Eén commando bouwt alles opnieuw op: <code>python run_pipeline.py</code>.',
-    'le.soon': 'GitHub-link volgt binnenkort',
+    'le.soon': 'Bekijk op GitHub →',
     'le.contact': 'Contacteer me',
     'le.all': 'Alle projecten',
 
