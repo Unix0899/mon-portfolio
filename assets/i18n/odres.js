@@ -30,7 +30,7 @@ window.I18N_DICT = {
     'stat.4': 'pages de dashboard pour la direction, de la vue d’ensemble à la qualité des données',
 
     'pb.eyebrow': '01 · Contexte &amp; problème métier',
-    'pb.title': 'Chaque outil avait ses propres chiffres. Personne ne voyait le lien entre un euro dépensé et un client qui reste.',
+    'pb.title': 'Dans le scénario reconstruit, les données d’acquisition, du CRM et de facturation sont réparties entre plusieurs sources, ce qui rend difficile de relier les dépenses à la valeur client.',
     'pb.p1': 'ODRES Group développe un ERP (odres.io) qui permet aux restaurants, magasins et autres commerces de gérer leur établissement via plusieurs applications connectées. La croissance dépend de l’acquisition de ces commerces comme abonnés via plusieurs canaux&nbsp;: publicité payante, référencement naturel, trafic direct, e-mail, partenaires et recommandations.',
     'pb.p2': 'Les dépenses sont dans les plateformes publicitaires, les sessions dans l’outil d’analytics, les leads et les affaires dans le CRM, les clients et les revenus récurrents dans la facturation. On compare alors facilement les canaux sur le volume de leads plutôt que sur les clients et le chiffre d’affaires, et les erreurs de données faussent les totaux sans que personne ne le voie.',
     'pb.q': 'Quels canaux d’acquisition méritent plus d’investissement, lesquels génèrent du volume de faible qualité, et où le tunnel perd-il de la valeur&nbsp;?',
@@ -260,7 +260,7 @@ window.I18N_DICT = {
     'stat.4': 'dashboardpagina’s voor het management, van overzicht tot datakwaliteit',
 
     'pb.eyebrow': '01 · Context &amp; zakelijk probleem',
-    'pb.title': 'Elke tool had zijn eigen cijfers. Niemand zag de keten van een uitgegeven euro tot een klant die blijft.',
+    'pb.title': 'In het gereconstrueerde scenario staan acquisitie-, CRM- en facturatiedata in aparte bronnen, waardoor het moeilijk is om uitgaven te koppelen aan klantwaarde.',
     'pb.p1': 'ODRES Group ontwikkelt een ERP (odres.io) waarmee restaurants, winkels en andere zaken hun vestiging beheren via verschillende gekoppelde applicaties. De groei hangt af van het binnenhalen van die zaken als abonnees via verschillende kanalen: betaalde advertenties, organisch zoeken, direct verkeer, e-mail, partners en doorverwijzingen.',
     'pb.p2': 'De uitgaven zitten in de advertentieplatformen, de sessies in web analytics, de leads en deals in het CRM, de klanten en terugkerende omzet in de facturatie. Kanalen worden dan makkelijk vergeleken op het aantal leads in plaats van op klanten en omzet, en datafouten vertekenen ongemerkt de totalen.',
     'pb.q': 'Welke acquisitiekanalen verdienen meer investering, welke leveren volume van lage kwaliteit op, en waar verliest de funnel waarde?',

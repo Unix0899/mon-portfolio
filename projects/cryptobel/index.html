@@ -6,6 +6,27 @@
   <title data-i18n="meta.title">Cryptobel Case Study | Harry Mulembwe</title>
   <meta name="description" content="Audience segmentation & business intelligence case study: social-media data, NLP, clustering and Power BI for Cryptobel." data-i18n-attr="content:meta.desc" />
   <meta name="theme-color" content="#0d2a45" />
+  <link rel="canonical" href="https://harry-mulembwe.vercel.app/projects/cryptobel/" />
+  <link rel="alternate" hreflang="en" href="https://harry-mulembwe.vercel.app/projects/cryptobel/?lang=en" />
+  <link rel="alternate" hreflang="fr" href="https://harry-mulembwe.vercel.app/projects/cryptobel/?lang=fr" />
+  <link rel="alternate" hreflang="nl" href="https://harry-mulembwe.vercel.app/projects/cryptobel/?lang=nl" />
+  <link rel="alternate" hreflang="x-default" href="https://harry-mulembwe.vercel.app/projects/cryptobel/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Harry Mulembwe" />
+  <meta property="og:url" content="https://harry-mulembwe.vercel.app/projects/cryptobel/" />
+  <meta property="og:title" content="Cryptobel Case Study | Harry Mulembwe" />
+  <meta property="og:description" content="Audience segmentation &amp; business intelligence case study: social-media data, NLP, clustering and Power BI for Cryptobel." />
+  <meta property="og:image" content="https://harry-mulembwe.vercel.app/assets/og/og-cryptobel.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Cryptobel case study: audience segmentation and business intelligence" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:locale:alternate" content="fr_BE" />
+  <meta property="og:locale:alternate" content="nl_BE" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cryptobel Case Study | Harry Mulembwe" />
+  <meta name="twitter:description" content="Audience segmentation &amp; business intelligence case study: social-media data, NLP, clustering and Power BI for Cryptobel." />
+  <meta name="twitter:image" content="https://harry-mulembwe.vercel.app/assets/og/og-cryptobel.jpg" />
   <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" />
   <script>
     (function(){var r=document.documentElement,l;r.classList.add('js');
@@ -53,7 +74,7 @@
         <div><span data-i18n="m.team">Team</span><strong data-i18n="m.teamV">2-person project</strong></div>
       </div>
       <div class="stack">
-        <span>Python</span><span>PRAW</span><span>Apify</span><span>SQLite</span><span>CamemBERT</span><span>TF-IDF</span><span>K-means</span><span>Power BI</span>
+        <span>Python</span><span>PRAW</span><span>Apify</span><span>SQLite</span><span>DistilCamemBERT</span><span>TF-IDF</span><span>K-means</span><span>Power BI</span>
       </div>
     </section>
 
@@ -87,7 +108,7 @@
             <li data-i18n="co.m1">Reddit and Instagram data collection</li>
             <li data-i18n="co.m2">Data preparation in Python</li>
             <li data-i18n="co.m3">Storage in SQLite</li>
-            <li data-i18n="co.m4">Sentiment analysis with CamemBERT and TF-IDF features</li>
+            <li data-i18n="co.m4">Sentiment analysis with DistilCamemBERT and TF-IDF features</li>
             <li data-i18n="co.m5">K-means clustering</li>
             <li data-i18n="co.m6">Cluster analysis and interpretation</li>
             <li data-i18n="co.m7">Power BI dashboards</li>
@@ -116,7 +137,7 @@
         <li><span>03</span><b data-i18n="pl.3">Cleaning</b><small>Python · pandas</small></li>
         <li><span>04</span><b data-i18n="pl.4">Storage</b><small>SQL · SQLite</small></li>
         <li><span>05</span><b data-i18n="pl.5">NLP enrichment</b><small data-i18n="pl.5s">Text features</small></li>
-        <li><span>06</span><b data-i18n="pl.6">Sentiment</b><small>CamemBERT</small></li>
+        <li><span>06</span><b data-i18n="pl.6">Sentiment</b><small>DistilCamemBERT</small></li>
         <li><span>07</span><b data-i18n="pl.7">Features</b><small>TF-IDF</small></li>
         <li><span>08</span><b data-i18n="pl.8">Clustering</b><small>K-means</small></li>
         <li><span>09</span><b data-i18n="pl.9">Dashboards</b><small>Power BI</small></li>
@@ -168,7 +189,7 @@
       <div class="nlp-grid">
         <article class="sentiment-card">
           <h3 data-i18n="nl.st">Sentiment analysis</h3>
-          <p data-i18n="nl.sp">CamemBERT, a French language model, assigned a sentiment to each message.</p>
+          <p data-i18n="nl.sp">DistilCamemBERT (<code>cmarkea/distilcamembert-base-sentiment</code>), a French model of the CamemBERT family, assigned a sentiment to each message.</p>
           <div class="pills"><span class="pos" data-i18n="nl.pos">Positive</span><span class="neu" data-i18n="nl.neu">Neutral</span><span class="neg" data-i18n="nl.neg">Negative</span></div>
         </article>
         <article>
@@ -200,7 +221,7 @@
     <section id="segmentation" class="section">
       <div class="eyebrow" data-i18n="sg.eyebrow">08 · Audience segmentation</div>
       <h2 data-i18n="sg.title">Six audience profiles.</h2>
-      <p class="lead-p" data-i18n="sg.p">The final synthesis across both platforms produced six strategic profiles.</p>
+      <p class="lead-p" data-i18n="sg.p">Each platform was clustered separately (k = 5, ten clusters in total). The clusters were then interpreted together: clusters with the same discourse were grouped, and very small clusters were not kept as separate profiles. The result: six strategic profiles, two on Instagram and four on Reddit.</p>
       <div class="profiles">
         <article><span class="where ig">Instagram</span><h3 data-i18n="sg.1t">Enthusiastic idealists</h3><p data-i18n="sg.1p">Optimistic, value-driven discourse about Web3 and its community.</p></article>
         <article><span class="where ig">Instagram</span><h3 data-i18n="sg.2t">Disillusioned idealists</h3><p data-i18n="sg.2p">Share Web3 values but express disappointment and frustration.</p></article>

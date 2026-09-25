@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://harry-mulembwe.vercel.app/sitemap.xml

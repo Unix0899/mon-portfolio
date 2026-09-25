@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://harry-mulembwe.vercel.app/</loc>
+    <lastmod>2026-09-25</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://harry-mulembwe.vercel.app/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://harry-mulembwe.vercel.app/?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://harry-mulembwe.vercel.app/?lang=nl" />
+  </url>
+  <url>
+    <loc>https://harry-mulembwe.vercel.app/projects/cryptobel/</loc>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://harry-mulembwe.vercel.app/projects/cryptobel/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://harry-mulembwe.vercel.app/projects/cryptobel/?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://harry-mulembwe.vercel.app/projects/cryptobel/?lang=nl" />
+  </url>
+  <url>
+    <loc>https://harry-mulembwe.vercel.app/projects/odres/</loc>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://harry-mulembwe.vercel.app/projects/odres/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://harry-mulembwe.vercel.app/projects/odres/?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://harry-mulembwe.vercel.app/projects/odres/?lang=nl" />
+  </url>
+  <url>
+    <loc>https://harry-mulembwe.vercel.app/projects/lexlau/</loc>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://harry-mulembwe.vercel.app/projects/lexlau/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://harry-mulembwe.vercel.app/projects/lexlau/?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://harry-mulembwe.vercel.app/projects/lexlau/?lang=nl" />
+  </url>
+</urlset>

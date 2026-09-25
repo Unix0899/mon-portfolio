@@ -245,3 +245,13 @@ a{color:inherit}.topbar{position:sticky;top:0;z-index:10;display:flex;justify-co
 .pbi-block .dash-gallery img{aspect-ratio:1288/768;object-fit:cover;object-position:top left}
 
 .repo-btn{flex:none;white-space:nowrap}
+
+/* Minimal mobile navigation: section links on a second, scrollable row */
+@media(max-width:900px){
+  .topbar{flex-wrap:wrap;padding-top:12px;padding-bottom:0}
+  .topbar .topbar-right{display:contents}
+  .topbar .lang-switch{margin-left:auto}
+  .topbar nav{display:flex;order:3;width:100%;gap:18px;overflow-x:auto;padding:8px 0 10px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .topbar nav::-webkit-scrollbar{display:none}
+  .topbar nav a{white-space:nowrap;font-size:14px}
+}
