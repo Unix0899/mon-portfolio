@@ -6,14 +6,16 @@ Available in English, French and Dutch.
 ## Structure
 
 ```text
-index.html                    Home page
-styles.css                    Home page styles
+index.html                    Landing page: welcome + choice between the two profiles
+data/index.html               Profile 01 · Data & Business Analyst (hero, workflow, data case studies, skills, about, CV, contact)
+marketing/index.html          Profile 02 · Marketing & Communication Officer (hero, marketing projects, skills, about, CV, contact)
+styles.css                    Styles shared by the landing and the two profile pages
 projects/cryptobel/           Cryptobel case study
 projects/lexlau/              LexLau / Klavis.app case study (synthetic reconstruction)
 projects/odres/               ODRES Group case study (synthetic reconstruction)
 assets/cv/                    Public CVs (EN, FR)
 assets/i18n.js                Language switcher (EN / FR / NL)
-assets/i18n/home.js           FR + NL translations of the home page
+assets/i18n/home.js           FR + NL translations of the landing and the two profile pages
 assets/i18n/cryptobel.js      FR + NL translations of the Cryptobel case study
 assets/i18n/lexlau.js         FR + NL translations of the LexLau case study
 assets/i18n/odres.js          FR + NL translations of the ODRES case study
@@ -84,9 +86,9 @@ bug cards rendered from the repository). Every figure on the page comes from tha
 database, tests and SQL views. Synthetic demonstration data: no real client, legal-case or
 confidential LexLau/Klavis data. Never present the project as "I built Klavis".
 
-## Marketing & Communication (home section 02)
+## Marketing & Communication (profile 02)
 
-The home page has two project families: `01 · Data, Business & Analytics` (Cryptobel, ODRES, LexLau) and
+The site has two profile pages reached from the landing page: `01 · Data, Business & Analytics` (Cryptobel, ODRES, LexLau) and
 `02 · Marketing & Communication` (Komogi, Mangetsu, Akira Fashion, LJE + Mini-Entreprises Sales Day).
 The marketing case studies follow one structure: Context, Challenge, My role, Approach, Insights,
 Strategy / Solution, Deliverables, Skills, Key learnings, Next project.

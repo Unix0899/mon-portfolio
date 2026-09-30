@@ -61,8 +61,10 @@
   document.querySelectorAll('[data-path]').forEach(function (a) {
     a.addEventListener('click', function (e) {
       var href = a.getAttribute('href') || '';
-      var target = href.charAt(0) === '#' ? document.getElementById(href.slice(1)) : null;
-      if (!target || !overlay || reduced || busy) return; // plain anchor navigation
+      var isHash = href.charAt(0) === '#';
+      var target = isHash ? document.getElementById(href.slice(1)) : null;
+      if (!overlay || reduced || busy || (isHash && !target)) return; // plain navigation
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
       e.preventDefault();
       busy = true;
       var kind = a.getAttribute('data-path');
@@ -75,6 +77,7 @@
       // next frame: expand
       requestAnimationFrame(function () { requestAnimationFrame(function () { overlay.classList.add('in'); }); });
       setTimeout(function () {
+        if (!isHash) { location.href = href; return; } // next page plays its own entrance
         root.style.scrollBehavior = 'auto';
         target.scrollIntoView({ block: 'start' });
         root.style.scrollBehavior = '';
@@ -100,7 +103,7 @@
 
   // Floating family switcher: visible once the gateway has been scrolled past
   var famSwitch = document.querySelector('.fam-switch');
-  var gateway = document.getElementById('paths');
+  var gateway = document.getElementById('paths') || document.querySelector('.hero-v2');
   if (famSwitch && gateway && 'IntersectionObserver' in window) {
     var contact = document.getElementById('contact');
     var pastGateway = false, atContact = false;
@@ -113,14 +116,15 @@
       entries.forEach(function (en) { atContact = en.isIntersecting; }); refresh();
     }, { threshold: 0.4 }).observe(contact);
     var famLinks = famSwitch.querySelectorAll('a');
-    new IntersectionObserver(function (entries) {
+    var proj = document.getElementById('projects');
+    if (proj && document.getElementById('marketing')) new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
         if (!en.isIntersecting) return;
         famLinks.forEach(function (l) { l.classList.toggle('active', l.getAttribute('href') === '#' + en.target.id); });
       });
-    }, { rootMargin: '-40% 0px -50% 0px' }).observe(document.getElementById('projects'));
+    }, { rootMargin: '-40% 0px -50% 0px' }).observe(proj);
     var mk = document.getElementById('marketing');
-    if (mk) new IntersectionObserver(function (entries) {
+    if (mk && proj) new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
         if (!en.isIntersecting) return;
         famLinks.forEach(function (l) { l.classList.toggle('active', l.getAttribute('href') === '#marketing'); });

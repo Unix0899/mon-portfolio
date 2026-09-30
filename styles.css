@@ -485,7 +485,8 @@ a{color:inherit}
   .fam-switch a span{display:inline}
 }
 @media(max-width:620px){
-  .path{min-height:340px;padding:22px 20px 22px}
+  .path{min-height:360px;padding:22px 20px 22px}
+  .path-body{margin-top:96px}
   .path-no{font-size:64px;top:18px;left:20px}
   .path-title{font-size:24px}
   .path-desc{font-size:14px}
@@ -510,4 +511,28 @@ a{color:inherit}
   .path:hover{transform:none;flex-grow:1}
   .js .reveal{transition-delay:0s}
   .fam-section.is-active .fam-no{animation:none}
+}
+
+/* ===== Landing + profile pages ===== */
+.welcome{padding-bottom:30px}
+.welcome .hero-name{font-size:14px;letter-spacing:.12em;text-transform:uppercase;font-weight:850}
+.welcome h1{font-size:clamp(44px,6.4vw,84px)}
+.crumb{font-size:13px;font-weight:800;letter-spacing:.04em;text-decoration:none;color:var(--muted);margin-right:14px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:var(--paper);vertical-align:middle}
+.crumb:hover{color:var(--navy);border-color:var(--teal)}
+.nav a.nav-switch{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--paper);color:var(--navy)}
+.nav a.nav-switch b{font-size:10px;letter-spacing:.08em;color:var(--teal)}
+.nav a.nav-switch:hover{border-color:var(--teal)}
+.quick-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:34px}
+.quick-row a{display:grid;gap:4px;padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:var(--paper);text-decoration:none;min-width:0;transition:transform .2s,border-color .2s}
+.quick-row a:hover{transform:translateY(-2px);border-color:var(--teal)}
+.quick-row span{font-size:11px;font-weight:850;letter-spacing:.1em;text-transform:uppercase;color:var(--teal)}
+.quick-row strong{font-size:14px;overflow-wrap:anywhere}
+.mk-first{border-top:0}
+@media(max-width:950px){
+  .site-header .nav a.nav-switch{padding:5px 10px;font-size:13px}
+  .quick-row{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+  .quick-row{grid-template-columns:1fr}
+  .crumb{display:inline-block;margin:0 0 8px}
 }
