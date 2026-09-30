@@ -51,7 +51,7 @@
 
     <div class="topbar-right">
       <nav class="nav" aria-label="Main navigation">
-        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#projects" data-i18n="nav.projects">Data</a>
         <a href="#marketing" data-i18n="nav.marketing">Marketing</a>
         <a href="#skills" data-i18n="nav.skills">Skills</a>
         <a href="#about" data-i18n="nav.about">About</a>
@@ -77,7 +77,7 @@
       <p class="hero-loc"><span class="pin"></span><span data-i18n="hero.loc">Brussels, Belgium</span></p>
       <p class="hero-open"><span class="open-dot" aria-hidden="true"></span><span data-i18n="hero.open">Open to opportunities in Brussels</span></p>
       <div class="hero-actions">
-        <a class="btn primary" href="#projects" data-i18n="hero.cta1">View projects</a>
+        <a class="btn primary" href="#paths" data-i18n="hero.cta1">Explore my work</a>
         <a class="btn secondary" href="assets/cv/Harry_Mulembwe_CV_EN.pdf" data-i18n-attr="href:cv.href" target="_blank" rel="noopener" data-i18n="hero.cta2">Download CV</a>
       </div>
       </div>
@@ -86,8 +86,58 @@
       </figure>
     </section>
 
+
+    <!-- GATEWAY: choose a path -->
+    <section id="paths" class="gateway" aria-labelledby="gw-title">
+      <div class="shell gateway-head reveal">
+        <div class="eyebrow" data-i18n="gw.eyebrow">Two families of work · one profile</div>
+        <h2 id="gw-title" data-i18n="gw.title">Where do you want to start?</h2>
+        <p data-i18n="gw.p">Marketing taught me to understand audiences. Data gave me better ways to answer their questions. Pick a side, the other one is one scroll away.</p>
+      </div>
+      <div class="gateway-grid shell">
+        <a class="path path-data reveal" href="#projects" data-path="data" style="--i:0">
+          <span class="path-no" aria-hidden="true">01</span>
+          <span class="path-body">
+            <span class="path-kicker" data-i18n="gw.d.k">Data · Business · Analytics</span>
+            <span class="path-title" data-i18n="gw.d.t">From raw data to decisions.</span>
+            <span class="path-desc" data-i18n="gw.d.p">Segmentation, KPI reporting, marketing performance and AI testing. Three case studies, each with its evidence.</span>
+            <span class="path-tags" aria-hidden="true"><i>Power BI</i><i>SQL</i><i>Python</i><i data-i18n="gw.d.tag">Segmentation</i></span>
+            <span class="path-cta" data-i18n="gw.d.c">Explore the data work <b>→</b></span>
+          </span>
+          <span class="path-art art-data" aria-hidden="true">
+            <span class="pd-window">
+              <span class="pd-top"><i></i><i></i><i></i></span>
+              <span class="pd-kpis"><b>KPI</b><b>MRR</b><b>CAC</b></span>
+              <span class="pd-bars"><i style="--h:46%"></i><i style="--h:72%"></i><i style="--h:38%"></i><i style="--h:88%"></i><i style="--h:60%"></i><i style="--h:94%"></i><i style="--h:52%"></i></span>
+              <svg class="pd-line" viewBox="0 0 200 60" preserveAspectRatio="none"><path d="M0 48 C 25 44, 40 30, 60 34 S 95 46, 115 28 S 150 10, 200 12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+            </span>
+            <span class="pd-ring"></span>
+          </span>
+          <span class="path-count"><b data-count="3">3</b><small data-i18n="gw.d.n">case studies</small></span>
+        </a>
+        <span class="path-plus" aria-hidden="true"><i>+</i></span>
+        <a class="path path-mkt reveal" href="#marketing" data-path="mkt" style="--i:1">
+          <span class="path-no" aria-hidden="true">02</span>
+          <span class="path-body">
+            <span class="path-kicker" data-i18n="gw.m.k">Marketing · Communication · Digital</span>
+            <span class="path-title" data-i18n="gw.m.t">From audience insights to campaigns.</span>
+            <span class="path-desc" data-i18n="gw.m.p">Customer research, strategy, content, social media, branding and events. Five projects, from a budgeted 12-month plan to a nine-format campaign.</span>
+            <span class="path-tags" aria-hidden="true"><i data-i18n="gw.m.t1">Research</i><i data-i18n="gw.m.t2">Strategy</i><i data-i18n="gw.m.t3">Content</i><i data-i18n="gw.m.t4">Brand</i></span>
+            <span class="path-cta" data-i18n="gw.m.c">Explore the marketing work <b>→</b></span>
+          </span>
+          <span class="path-art art-mkt" aria-hidden="true">
+            <img src="assets/img/gw-komogi-phones.jpg" alt="" loading="lazy" width="700" height="1000" class="pm-a" />
+            <img src="assets/img/gw-collector-box.jpg" alt="" loading="lazy" width="800" height="700" class="pm-b" />
+            <img src="projects/akira/proof/akira_02_fall_winter_story.jpg" alt="" loading="lazy" width="900" height="1600" class="pm-c" />
+          </span>
+          <span class="path-count"><b data-count="5">5</b><small data-i18n="gw.m.n">projects</small></span>
+        </a>
+      </div>
+      <p class="gateway-foot shell reveal" data-i18n="gw.foot">The two are one profile: understanding people, analysing information, turning insights into decisions.</p>
+    </section>
+
     <!-- TEASER: workflow in three steps -->
-    <section class="teaser shell" aria-label="How I work">
+    <section class="teaser shell reveal" aria-label="How I work">
       <article>
         <span class="t-step">01 · <span data-i18n="t1.l">Analysis</span></span>
         <h2 data-i18n="t1.t">From raw data to reliable analysis</h2>
@@ -106,17 +156,25 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="section shell">
-      <div class="section-heading">
-        <div>
-          <div class="eyebrow"><span class="family-no" aria-hidden="true">01</span> <span data-i18n="pr.eyebrow">Data, Business &amp; Analytics</span></div>
-          <h2 data-i18n="pr.title">Real projects, explained as business problems.</h2>
+    <section id="projects" class="section shell fam-section">
+      <div class="fam-intro reveal">
+        <div class="fam-head">
+          <span class="fam-no" aria-hidden="true">01</span>
+          <div>
+            <div class="eyebrow" data-i18n="pr.eyebrow">Data, Business &amp; Analytics</div>
+            <h2 data-i18n="pr.title">Real projects, explained as business problems.</h2>
+          </div>
         </div>
-        <p data-i18n="pr.p">Three professional experiences, each presented as a case study: the problem, the data work, the decisions and the evidence.</p>
+        <div class="fam-copy">
+          <p data-i18n="pr.p">Three professional experiences, each presented as a case study: the problem, the data work, the decisions and the evidence.</p>
+          <ul class="mk-bridge" aria-label="Tools" data-i18n-attr="aria-label:pr.toolsL">
+            <li>Power BI</li><li>SQL</li><li>Python</li><li>Excel</li><li data-i18n="pr.b5">Business recommendations</li>
+          </ul>
+        </div>
       </div>
 
       <div class="projects-grid">
-        <article class="project-card featured">
+        <article class="project-card featured reveal" style="--i:0">
           <div class="project-top">
             <span class="project-number">01</span>
             <span class="project-status live" data-i18n="st.live">Case study live</span>
@@ -142,7 +200,7 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article class="project-card reveal" style="--i:1">
           <div class="project-top">
             <span class="project-number">02</span>
             <span class="project-status live" data-i18n="st.live">Case study live</span>
@@ -166,7 +224,7 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article class="project-card reveal" style="--i:2">
           <div class="project-top">
             <span class="project-number">03</span>
             <span class="project-status live" data-i18n="st.live">Case study live</span>
@@ -192,17 +250,17 @@
     </section>
 
     <!-- 02 · MARKETING & COMMUNICATION -->
-    <section id="marketing" class="section mk-section">
+    <section id="marketing" class="section mk-section fam-section">
       <div class="shell">
-        <div class="mk-intro">
-          <div class="mk-intro-head">
-            <span class="mk-family" aria-hidden="true">02</span>
+        <div class="fam-intro reveal">
+          <div class="fam-head">
+            <span class="fam-no" aria-hidden="true">02</span>
             <div>
               <div class="eyebrow" data-i18n="mk.eyebrow">Marketing &amp; Communication</div>
               <h2 data-i18n="mk.title">From audience insights to campaigns, content and brand experiences.</h2>
             </div>
           </div>
-          <div class="mk-intro-copy">
+          <div class="fam-copy">
             <p data-i18n="mk.p">My first degree is in Marketing. Before analysing performance data, I learned to study an audience, build a strategy, write, design content and communicate around events and brands. That background is what makes the analytical work useful to a business.</p>
             <ul class="mk-bridge" aria-label="Shared ground with the data work" data-i18n-attr="aria-label:mk.bridgeL">
               <li data-i18n="mk.b1">Audience research</li>
@@ -216,7 +274,7 @@
 
         <div class="mk-grid">
           <!-- 01 Komogi -->
-          <article class="mk-card mk-komogi reveal">
+          <article class="mk-card mk-komogi reveal" style="--i:0">
             <a class="mk-visual" href="projects/komogi/index.html" aria-label="Komogi case study" data-i18n-attr="aria-label:mk1.aria">
               <img src="projects/komogi/proof/komogi_05_social_campaign.jpg" alt="Social media campaign mock-ups from the Komogi marketing strategy" data-i18n-attr="alt:mk1.alt" loading="lazy" width="1600" height="900" />
             </a>
@@ -226,9 +284,9 @@
               <p class="mk-cat" data-i18n="mk1.cat">Marketing Research &amp; Campaign Strategy</p>
               <p class="mk-desc" data-i18n="mk1.desc">A 12-month acquisition and retention strategy for an independent manga publisher, built on qualitative and quantitative research with 18–35 readers in French-speaking Belgium.</p>
               <dl class="mk-figures">
-                <div><dt>135</dt><dd data-i18n="mk1.f1">survey respondents</dd></div>
-                <div><dt>8</dt><dd data-i18n="mk1.f2">qualitative interviews</dd></div>
-                <div><dt>87%</dt><dd data-i18n="mk1.f3">of surveyed readers had never heard of Komogi</dd></div>
+                <div><dt data-count="135">135</dt><dd data-i18n="mk1.f1">survey respondents</dd></div>
+                <div><dt data-count="8">8</dt><dd data-i18n="mk1.f2">qualitative interviews</dd></div>
+                <div><dt data-count="87%">87%</dt><dd data-i18n="mk1.f3">of surveyed readers had never heard of Komogi</dd></div>
               </dl>
               <div class="tags"><span data-i18n="tg.cr">Customer Research</span><span data-i18n="tg.cs">Campaign Strategy</span><span data-i18n="tg.tm">Trade Marketing</span><span data-i18n="tg.mp">Media Planning</span></div>
               <a class="text-link" href="projects/komogi/index.html" data-i18n="mk.cta">View case study <b>→</b></a>
@@ -236,7 +294,7 @@
           </article>
 
           <!-- 02 Mangetsu -->
-          <article class="mk-card mk-mangetsu reveal">
+          <article class="mk-card mk-mangetsu reveal" style="--i:1">
             <a class="mk-visual" href="projects/mangetsu/index.html" aria-label="Mangetsu case study" data-i18n-attr="aria-label:mk2.aria">
               <img src="projects/mangetsu/proof/mangetsu_12_app_series.jpg" alt="Prototype of the Mangetsu mobile app concept" data-i18n-attr="alt:mk2.alt" loading="lazy" width="1600" height="900" />
             </a>
@@ -246,8 +304,8 @@
               <p class="mk-cat" data-i18n="mk2.cat">Customer Insights &amp; Omnichannel Strategy</p>
               <p class="mk-desc" data-i18n="mk2.desc">How a manga publisher can support a series volume after volume: nine recommendations mapped on the reader's journey, from TikTok and Discord to a manga box, a QR code and an app.</p>
               <dl class="mk-figures">
-                <div><dt>4</dt><dd data-i18n="mk2.f1">journey stages, from awareness to loyalty</dd></div>
-                <div><dt>9</dt><dd data-i18n="mk2.f2">recommendations, several prototyped</dd></div>
+                <div><dt data-count="4">4</dt><dd data-i18n="mk2.f1">journey stages, from awareness to loyalty</dd></div>
+                <div><dt data-count="9">9</dt><dd data-i18n="mk2.f2">recommendations, several prototyped</dd></div>
               </dl>
               <div class="tags"><span data-i18n="tg.cj">Customer Journey</span><span data-i18n="tg.com">Community Strategy</span><span data-i18n="tg.dm">Digital Marketing</span><span data-i18n="tg.con">Content Strategy</span></div>
               <a class="text-link" href="projects/mangetsu/index.html" data-i18n="mk.cta">View case study <b>→</b></a>
@@ -255,7 +313,7 @@
           </article>
 
           <!-- 03 Akira Fashion -->
-          <article class="mk-card mk-akira reveal">
+          <article class="mk-card mk-akira reveal" style="--i:2">
             <a class="mk-visual mk-stories" href="projects/akira/index.html" aria-label="Akira Fashion case study" data-i18n-attr="aria-label:mk3.aria">
               <img src="projects/akira/proof/akira_02_fall_winter_story.jpg" alt="Akira Fashion story: Fall / Winter collection" data-i18n-attr="alt:mk3.alt1" loading="lazy" width="900" height="1600" />
               <img src="projects/akira/proof/akira_01_black_friday_story.jpg" alt="Akira Fashion story: Black Friday, save up to 25%" data-i18n-attr="alt:mk3.alt2" loading="lazy" width="900" height="1600" />
@@ -271,7 +329,7 @@
           </article>
 
           <!-- 04 LJE -->
-          <article class="mk-card mk-lje reveal">
+          <article class="mk-card mk-lje reveal" style="--i:3">
             <a class="mk-visual mk-paper" href="projects/lje/index.html" aria-label="LJE case study" data-i18n-attr="aria-label:mk4.aria">
               <img src="projects/lje/proof/lje_01_press_release.jpg" alt="Press release written during the LJE internship: Boost Your Planet at MAD Brussels" data-i18n-attr="alt:mk4.alt" loading="lazy" width="1100" height="1556" />
             </a>
@@ -281,7 +339,7 @@
               <p class="mk-cat" data-i18n="mk4.cat">Content, Communication &amp; Event Marketing</p>
               <p class="mk-desc" data-i18n="mk4.desc">Articles, a press release, social media planning, visuals and event coordination for a non-profit that develops young people's entrepreneurial skills.</p>
               <dl class="mk-figures">
-                <div><dt>~120</dt><dd data-i18n="mk4.f1">young people announced at the Boost Your Planet hackathon</dd></div>
+                <div><dt data-count="~120">~120</dt><dd data-i18n="mk4.f1">young people announced at the Boost Your Planet hackathon</dd></div>
               </dl>
               <div class="tags"><span data-i18n="tg.cw">Copywriting</span><span data-i18n="tg.pr">Press Release</span><span data-i18n="tg.sm">Social Media</span><span data-i18n="tg.ev">Event Marketing</span></div>
               <a class="text-link" href="projects/lje/index.html" data-i18n="mk.cta">View case study <b>→</b></a>
@@ -289,7 +347,7 @@
           </article>
 
           <!-- 05 Mini-Entreprises Sales Day -->
-          <article class="mk-card mk-salesday reveal">
+          <article class="mk-card mk-salesday reveal" style="--i:4">
             <a class="mk-visual mk-mosaic" href="projects/lje/index.html#salesday" aria-label="Mini-Entreprises Sales Day campaign" data-i18n-attr="aria-label:mk5.aria">
               <img src="projects/lje/proof/salesday_05_square_1200x1200.jpg" alt="Mini-Entreprises Sales Day campaign, square format" data-i18n-attr="alt:mk5.alt1" loading="lazy" width="1200" height="1200" />
               <img src="projects/lje/proof/salesday_03_web_1200x600.jpg" alt="Mini-Entreprises Sales Day campaign, web banner format" data-i18n-attr="alt:mk5.alt2" loading="lazy" width="1200" height="600" />
@@ -320,7 +378,7 @@
           <p data-i18n="sk.p">No percentage bars. Each skill, analytical or marketing, points to the project where it was applied, so you can check the evidence.</p>
         </div>
 
-        <ul class="skill-map">
+        <ul class="skill-map reveal">
           <li><b>Python</b><span class="used"><span data-i18n="sk.used">Used in</span> <a href="projects/cryptobel/index.html#pipeline">Cryptobel</a><a href="projects/odres/index.html#quality">ODRES</a><a href="projects/lexlau/index.html#stack">LexLau</a></span></li>
           <li><b>SQL</b><span class="used"><span data-i18n="sk.used">Used in</span> <a href="projects/cryptobel/index.html#collection">Cryptobel</a><a href="projects/odres/index.html#sql">ODRES</a><a href="projects/lexlau/index.html#ev7">LexLau</a></span></li>
           <li><b>Power BI</b><span class="used"><span data-i18n="sk.used">Used in</span> <a href="projects/cryptobel/index.html#proof">Cryptobel</a><a href="projects/odres/index.html#dashboard">ODRES</a></span></li>
@@ -345,7 +403,7 @@
 
     <!-- ABOUT -->
     <section id="about" class="section about-wrap">
-      <div class="shell about-grid">
+      <div class="shell about-grid reveal">
         <div>
           <div class="eyebrow" data-i18n="ab.eyebrow">About</div>
           <h2 data-i18n="ab.title">Marketing gave me the business questions. Data gave me better ways to answer them.</h2>
@@ -364,7 +422,7 @@
 
     <!-- CV -->
     <section id="cv" class="section cv-section">
-      <div class="shell cv-card">
+      <div class="shell cv-card reveal">
         <div>
           <div class="eyebrow light" data-i18n="cv.eyebrow">Resume</div>
           <h2 data-i18n="cv.title">Need the one-page version?</h2>
@@ -379,7 +437,7 @@
 
     <!-- CONTACT -->
     <section id="contact" class="section shell contact-section">
-      <div class="contact-card">
+      <div class="contact-card reveal">
         <div>
           <div class="eyebrow" data-i18n="ct.eyebrow">Contact</div>
           <h2 data-i18n="ct.title">Open to opportunities in Brussels.</h2>
@@ -402,6 +460,12 @@
       </div>
     </section>
   </main>
+
+  <nav class="fam-switch" aria-label="Project families" data-i18n-attr="aria-label:fs.label">
+    <a href="#projects" data-path="data"><b>01</b><span data-i18n="fs.data">Data</span></a>
+    <a href="#marketing" data-path="mkt"><b>02</b><span data-i18n="fs.mkt">Marketing</span></a>
+  </nav>
+  <div class="path-overlay" aria-hidden="true"><span class="po-no"></span><span class="po-label"></span></div>
 
   <footer class="footer shell">
     <span data-i18n="ft.1">Harry Mulembwe · Data &amp; Business Analyst</span>
