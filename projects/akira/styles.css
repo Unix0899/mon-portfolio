@@ -1,0 +1,26 @@
+/* Akira Fashion case study: project-specific components on top of assets/marketing-case.css */
+
+/* Two stories side by side, on a dark stage */
+.story-cover{margin-top:8px}
+.story-pair{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:44px clamp(24px,6vw,90px) 0;border-radius:26px;background:#0b0b0d;background-image:radial-gradient(circle at 25% 10%,rgba(255,255,255,.09),transparent 55%);box-shadow:var(--shadow);overflow:hidden}
+.story-pair figure{margin:0;min-width:0;display:flex;flex-direction:column}
+.story-pair img{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;object-position:top;border-radius:18px 18px 0 0;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+.story-pair figure:last-child{padding-top:40px}
+.story-pair figcaption{order:-1;padding:0 4px 14px;font-size:13px;font-weight:700;color:#c6d4de}
+
+/* Deliverables: portrait stories */
+.evidence.story .shot{background:#0b0b0d}
+.evidence.story .shot img{aspect-ratio:9/16;object-fit:contain;max-height:640px;margin:0 auto;width:auto}
+
+/* Two-column content section */
+.phases.two{grid-template-columns:1fr 1fr}
+
+@media(max-width:900px){
+  .phases.two{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .story-pair{gap:14px;padding:22px 18px 0;border-radius:18px}
+  .story-pair figure:last-child{padding-top:22px}
+  .story-pair figcaption{font-size:11px;padding-bottom:10px}
+  .story-pair img{border-radius:12px 12px 0 0}
+}

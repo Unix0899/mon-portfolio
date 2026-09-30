@@ -24,6 +24,23 @@
     });
   }
 
+  // Reveal on scroll for elements marked .reveal (CSS in common.css); no-op without IntersectionObserver
+  var revealEls = document.querySelectorAll('.reveal');
+  if (revealEls.length) {
+    if ('IntersectionObserver' in window) {
+      var rev = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          e.target.classList.add('in');
+          rev.unobserve(e.target);
+        });
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+      revealEls.forEach(function (el) { rev.observe(el); });
+    } else {
+      revealEls.forEach(function (el) { el.classList.add('in'); });
+    }
+  }
+
   // Reading progress bar (case study pages)
   var bar = document.querySelector('.progress');
   if (bar) {

@@ -1,0 +1,3 @@
+/* Komogi case study: project-specific touches on top of assets/marketing-case.css */
+.cover figure{aspect-ratio:16/9}
+.cover img{object-position:center}

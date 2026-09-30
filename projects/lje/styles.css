@@ -1,0 +1,59 @@
+/* LJE case study: project-specific components on top of assets/marketing-case.css */
+
+.cover figure{aspect-ratio:32/9}
+.cover img{object-position:center}
+
+/* Three-column solution */
+.phases.three{grid-template-columns:repeat(3,1fr)}
+
+/* Press release: sheet + facts */
+.press{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;margin-top:40px;align-items:start}
+.press-sheet{margin:0;background:linear-gradient(160deg,#0d2a45,#154c67);border-radius:22px;padding:28px 34px;box-shadow:var(--shadow)}
+.press-sheet .shot{border:0;border-radius:10px;background:transparent;box-shadow:0 22px 44px rgba(0,0,0,.32)}
+.press-sheet .shot img{border-radius:10px}
+.press-copy{min-width:0}
+.press-copy h3{font-size:clamp(22px,2.4vw,30px);letter-spacing:-.02em;line-height:1.15;margin:8px 0 14px}
+.press-copy p{color:#34475c;font-size:17px;margin:0 0 6px}
+.facts{margin:22px 0 0;display:grid;border-top:1px solid var(--line)}
+.facts div{display:grid;grid-template-columns:130px 1fr;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.facts dt{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);padding-top:3px}
+.facts dd{margin:0;font-size:15px}
+
+/* Sales Day campaign: mosaic of formats (explicit areas, no holes) */
+.campaign{background:var(--paper);max-width:none;padding-left:max(28px,calc((100vw - 1124px)/2));padding-right:max(28px,calc((100vw - 1124px)/2));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.formats{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:150px;gap:14px;margin-top:40px;
+  grid-template-areas:
+    "ban ban ban ban ban ban ban ban ban ban ban ban"
+    "ban ban ban ban ban ban ban ban ban ban ban ban"
+    "sto sto sto squ squ squ squ a3 a3 a3 web web"
+    "sto sto sto squ squ squ squ a3 a3 a3 scr scr"
+    "sto sto sto cov cov cov cov a3 a3 a3 scr scr"
+    "wb2 wb2 wb2 wb2 wb2 wb2 soc soc soc soc soc soc"}
+.fmt{position:relative;display:block;border-radius:16px;overflow:hidden;background:#e6edf1;border:1px solid var(--line);text-decoration:none;color:#fff;min-width:0;transition:transform .25s,box-shadow .25s}
+.fmt img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.fmt span{position:absolute;left:12px;bottom:12px;padding:5px 9px;border-radius:999px;background:rgba(13,42,69,.88);font-size:11px;font-weight:800;letter-spacing:.04em;font-variant-numeric:tabular-nums;backdrop-filter:blur(6px);white-space:nowrap}
+.fmt span em{font-style:normal;color:#9fd9d6;text-transform:uppercase;letter-spacing:.08em;font-size:10px}
+.fmt:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(16,32,51,.14);z-index:1}
+.f-banner{grid-area:ban}.f-story{grid-area:sto}.f-square{grid-area:squ}.f-a3{grid-area:a3}.f-web1{grid-area:web}
+.f-cover{grid-area:cov}.f-screen{grid-area:scr}.f-web2{grid-area:wb2}.f-social{grid-area:soc}
+.fmt.f-story img,.fmt.f-a3 img{object-position:top}
+.campaign-notes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+.campaign-notes div{padding:20px 22px;border:1px solid var(--line);border-radius:16px;background:var(--bg);min-width:0}
+.campaign-notes b{display:block;margin-bottom:6px;font-size:15px}
+.campaign-notes span{color:var(--muted);font-size:14px}
+
+@media(max-width:900px){
+  .phases.three{grid-template-columns:1fr}
+  .press{grid-template-columns:1fr;gap:28px}
+  .formats{grid-auto-rows:110px;gap:10px}
+  .campaign-notes{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .cover figure{aspect-ratio:21/9}
+  .press-sheet{padding:18px 20px}
+  .facts div{grid-template-columns:1fr;gap:2px}
+  .formats{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:150px;gap:8px;
+    grid-template-areas:"ban ban" "sto squ" "sto squ" "a3 cov" "a3 web" "scr wb2" "soc soc"}
+  .fmt span{left:8px;bottom:8px;padding:4px 7px;font-size:10px}
+}
+@media(prefers-reduced-motion:reduce){.fmt{transition:none}.fmt:hover{transform:none}}

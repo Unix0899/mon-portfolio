@@ -289,3 +289,91 @@ a{color:inherit}
 .open-dot{width:9px;height:9px;border-radius:50%;background:#1f9d6b;box-shadow:0 0 0 0 rgba(31,157,107,.5);animation:openPulse 2.2s infinite}
 @keyframes openPulse{0%{box-shadow:0 0 0 0 rgba(31,157,107,.45)}70%{box-shadow:0 0 0 8px rgba(31,157,107,0)}100%{box-shadow:0 0 0 0 rgba(31,157,107,0)}}
 @media(prefers-reduced-motion:reduce){.open-dot{animation:none}}
+
+/* ===== 02 · Marketing & Communication ===== */
+.family-no{font-weight:900;color:var(--navy);letter-spacing:0;margin-right:2px}
+.mk-section{background:var(--paper);border-top:1px solid var(--line);position:relative;overflow:hidden}
+.mk-section::before{content:"";position:absolute;inset:0 0 auto 0;height:1px;background:linear-gradient(90deg,var(--teal),transparent 60%)}
+.mk-intro{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:end;margin-bottom:56px}
+.mk-intro-head{display:flex;gap:28px;align-items:flex-start;min-width:0}
+.mk-intro-head>div{min-width:0}
+.mk-intro-head h2{font-size:clamp(34px,4.2vw,58px);letter-spacing:-.035em;line-height:1.08;margin:0}
+.mk-family{flex:none;font-size:clamp(64px,8vw,116px);line-height:.82;font-weight:900;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:2px var(--navy);margin-top:4px}
+.mk-intro-copy{min-width:0}
+.mk-intro-copy p{margin:0;font-size:18px;color:#34475c}
+.mk-bridge{list-style:none;padding:0;margin:22px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.mk-bridge li{font-size:11px;font-weight:850;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);padding:6px 11px;border-radius:999px;background:var(--soft);border:1px solid #acd8d6}
+
+.mk-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:22px}
+.mk-card{background:var(--bg);border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 8px 28px rgba(16,32,51,.045);display:flex;flex-direction:column;min-width:0;transition:transform .25s,box-shadow .25s}
+.mk-card:hover{transform:translateY(-3px);box-shadow:0 20px 45px rgba(16,32,51,.1)}
+.mk-komogi{grid-column:span 7}
+.mk-mangetsu{grid-column:span 5}
+.mk-akira,.mk-lje,.mk-salesday{grid-column:span 4}
+
+.mk-visual{display:block;position:relative;overflow:hidden;background:#0c2841;aspect-ratio:16/9}
+.mk-visual img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.mk-card:hover .mk-visual img{transform:scale(1.035)}
+.mk-mangetsu .mk-visual{aspect-ratio:auto;flex:1 1 220px;min-height:230px}
+.mk-mangetsu .mk-visual img{position:absolute;inset:0}
+
+/* Akira: two stories peeking out of a dark frame */
+.mk-stories{aspect-ratio:4/3;display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:24px 26px 0;background:#0b0b0d;background-image:radial-gradient(circle at 30% 20%,rgba(255,255,255,.08),transparent 55%)}
+.mk-stories img{height:auto;aspect-ratio:9/16;object-position:top;border-radius:14px 14px 0 0;box-shadow:0 18px 40px rgba(0,0,0,.45);transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.mk-stories img:last-child{margin-top:26px}
+.mk-card:hover .mk-stories img{transform:translateY(-8px)}
+.mk-card:hover .mk-stories img:last-child{transform:translateY(-16px)}
+
+/* LJE: press release as a sheet of paper */
+.mk-paper{aspect-ratio:4/3;background:linear-gradient(160deg,#0d2a45,#154c67);padding:26px 34px 0}
+.mk-paper img{height:auto;object-position:top;border-radius:10px 10px 0 0;box-shadow:0 22px 44px rgba(0,0,0,.32);transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.mk-card:hover .mk-paper img{transform:translateY(-10px)}
+
+/* Sales Day: mosaic of formats */
+.mk-mosaic{aspect-ratio:4/3;display:grid;grid-template-columns:1.15fr .85fr;grid-template-rows:1fr 1fr;gap:8px;padding:12px;background:#e6edf1}
+.mk-mosaic img{border-radius:10px;width:100%;height:100%}
+.mk-mosaic img:first-child{grid-row:1/3}
+.mk-badge{position:absolute;right:22px;bottom:22px;padding:6px 10px;border-radius:999px;background:var(--navy);color:#fff;font-size:11px;font-weight:850;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 8px 20px rgba(13,42,69,.3)}
+
+.mk-body{padding:24px 28px 28px;display:flex;flex-direction:column;flex:1;min-width:0}
+.mk-kicker{display:flex;gap:10px;align-items:center;margin:0 0 10px;font-size:11px;font-weight:850;letter-spacing:.1em;text-transform:uppercase;color:var(--teal)}
+.mk-kicker span:first-child{color:var(--navy)}
+.mk-kicker span:first-child::after{content:"";display:inline-block;width:18px;height:1px;background:var(--line);vertical-align:middle;margin-left:10px}
+.mk-card h3{font-size:27px;line-height:1.1;letter-spacing:-.025em;margin:0}
+.mk-komogi h3{font-size:36px}
+.mk-cat{margin:6px 0 0;font-weight:700;color:var(--navy);font-size:15px}
+.mk-desc{margin:12px 0 0;color:var(--muted);font-size:15px}
+.mk-figures{display:flex;flex-wrap:wrap;gap:0 18px;margin:20px 0 0;padding:0;border-top:1px solid var(--line)}
+.mk-figures div{flex:1 1 120px;min-width:0;padding:14px 0 12px;border-bottom:1px solid var(--line)}
+.mk-figures dt{font-size:26px;font-weight:900;letter-spacing:-.03em;color:var(--navy);line-height:1;font-variant-numeric:tabular-nums}
+.mk-figures dd{margin:5px 0 0;font-size:12px;color:var(--muted);line-height:1.35}
+.mk-card .tags{margin:18px 0 16px}
+.mk-card .tags span{background:var(--paper)}
+.mk-card .text-link{margin-top:auto;align-self:flex-start;padding:6px 0}
+
+@media(max-width:1100px){
+  .mk-komogi,.mk-mangetsu{grid-column:span 12}
+  .mk-mangetsu .mk-visual{aspect-ratio:16/9;flex:none;min-height:0}
+  .mk-mangetsu .mk-visual img{position:static}
+}
+@media(max-width:950px){
+  .mk-intro{grid-template-columns:1fr;gap:28px;margin-bottom:40px}
+  .mk-akira,.mk-lje,.mk-salesday{grid-column:span 12}
+  .mk-family{font-size:64px}
+  .mk-intro-head{gap:18px}
+}
+@media(max-width:620px){
+  .mk-body{padding:20px 20px 24px}
+  .mk-komogi h3,.mk-card h3{font-size:25px}
+  .mk-stories{padding:18px 18px 0;gap:10px}
+  .mk-paper{padding:18px 22px 0}
+  .mk-figures div{flex-basis:100px}
+  .mk-figures dt{font-size:23px}
+  .mk-card .text-link{padding:10px 0}
+  .mk-intro-copy p{font-size:16px}
+}
+@media(prefers-reduced-motion:reduce){
+  .mk-card,.mk-visual img,.mk-stories img,.mk-paper img{transition:none}
+  .mk-card:hover{transform:none}
+  .mk-card:hover .mk-visual img,.mk-card:hover .mk-stories img,.mk-card:hover .mk-paper img{transform:none}
+}

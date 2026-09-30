@@ -17,6 +17,8 @@ assets/i18n/home.js           FR + NL translations of the home page
 assets/i18n/cryptobel.js      FR + NL translations of the Cryptobel case study
 assets/i18n/lexlau.js         FR + NL translations of the LexLau case study
 assets/i18n/odres.js          FR + NL translations of the ODRES case study
+assets/i18n/{komogi,mangetsu,akira,lje}.js   FR + NL translations of the marketing case studies
+assets/marketing-case.css     Shared base styles of the four marketing case studies (each keeps a small styles.css)
 assets/site.js                Scroll reveal, active nav link, reading progress
 assets/common.css             Styles shared by every page
 vercel.json                   Vercel settings (clean URLs with trailing slash)
@@ -81,3 +83,21 @@ Never publish the full TFE PDF: its annex contains the Reddit API key and workin
 bug cards rendered from the repository). Every figure on the page comes from that repository's
 database, tests and SQL views. Synthetic demonstration data: no real client, legal-case or
 confidential LexLau/Klavis data. Never present the project as "I built Klavis".
+
+## Marketing & Communication (home section 02)
+
+The home page has two project families: `01 · Data, Business & Analytics` (Cryptobel, ODRES, LexLau) and
+`02 · Marketing & Communication` (Komogi, Mangetsu, Akira Fashion, LJE + Mini-Entreprises Sales Day).
+The marketing case studies follow one structure: Context, Challenge, My role, Approach, Insights,
+Strategy / Solution, Deliverables, Skills, Key learnings, Next project.
+
+| Project | Type shown on the page | Source of the figures and images |
+|---|---|---|
+| Komogi | Individual project (TFE, EPHEC 2022–2023) | TFE defence deck: 135 respondents, 8 interviews, 87 %, 70.9 %, 61.5 %, 81.5 %, 12-month media planning, €1,643.60 excl. VAT |
+| Mangetsu | Team project (5 students) | Team deck: 4-stage journey, 9 recommendations, prototypes, quantitative survey charts |
+| Akira Fashion | Entrepreneurial project | Two stories (Black Friday, Fall / Winter collection). No sales, followers, dates or tools are published |
+| LJE | Internship | Press release "Boost Your Planet" (MAD Brussels, ~120 young people) and the 9 formats of the Mini-Entreprises Sales Day campaign |
+
+Rules kept on every page: survey figures are never presented as commercial results, academic strategies are
+labelled as recommendations, the Mangetsu page credits the team, and no KPI, date, tool or budget is invented.
+Images in `projects/<slug>/proof/` are JPEG exports (max 1600 px, < 300 KB) of the original PDF / PNG deliverables.
