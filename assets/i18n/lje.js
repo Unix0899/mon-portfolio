@@ -236,6 +236,7 @@ window.I18N_DICT = {
     'cq.k1': 'designs de prix à partir d’un seul gabarit',
     'cq.k2': 'codes couleur de programme&nbsp;: Mini-Entreprise et YEP Challenge',
     'cq.k3': 'organisations partenaires, chacune avec sa zone logo et son intitulé de prix',
+    'pop.1': 'COMMUNIQUÉ', 'pop.2': 'DOSSIER DE PRESSE', 'pop.3': '9 FORMATS', 'pop.4': 'STORIES', 'pop.5': 'AFFICHE', 'pop.6': '13 PRIX',
     'footer': 'Harry Mulembwe · Data &amp; Business Analyst · Bruxelles · Livrables de stage, aucun chiffre de performance revendiqué'
   },
   nl: {
@@ -474,6 +475,7 @@ window.I18N_DICT = {
     'cq.k1': 'prijsontwerpen uit één sjabloon',
     'cq.k2': 'kleurcodes per programma: Mini-Onderneming en YEP Challenge',
     'cq.k3': 'partnerorganisaties, elk met een eigen logozone en prijsnaam',
+    'pop.1': 'PERSBERICHT', 'pop.2': 'PERSMAP', 'pop.3': '9 FORMATEN', 'pop.4': 'STORIES', 'pop.5': 'AFFICHE', 'pop.6': '13 PRIJZEN',
     'footer': 'Harry Mulembwe · Data- &amp; business-analist · Brussel · Stageopleveringen, geen prestatiecijfers geclaimd'
   }
 };

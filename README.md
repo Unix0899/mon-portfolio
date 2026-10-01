@@ -107,3 +107,5 @@ Images in `projects/<slug>/proof/` are JPEG exports (max 1600 px, < 300 KB) of t
 The Komogi and Mangetsu case studies share a "manga edition" theme in `assets/manga-case.css` (panel layout, halftone, speech bubble, translated ticker, pop reveals). Each project only sets its palette in its own `styles.css`: yellow and black for Komogi, red and black for Mangetsu. All motion is disabled with `prefers-reduced-motion`.
 
 The Akira Fashion case study has its own dark streetwear theme in `projects/akira/styles.css` (glitch title, neon ticker, lookbook grid, banner rail).
+
+The LJE case study has its own pop theme at the end of `projects/lje/styles.css` (colours of the LJE logo, one accent per chapter, confetti, rainbow ticker, bouncing reveals).
