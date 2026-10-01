@@ -335,6 +335,7 @@ window.I18N_DICT = {
     'dc.2a': 'mesures DAX', 'dc.2b': 'pages de dashboard, données synthétiques',
     'tl.titled': 'Des questions marketing aux réponses par la data.',
     'dx.title': 'Des données à faire parler&nbsp;? Parlons-en.',
+    'mx.alt': 'Sur le profil data →',
     'dx.alt': 'Sur le profil marketing →',
 
     'ft.1': 'Harry Mulembwe · Data &amp; Business Analyst',
@@ -676,6 +677,7 @@ window.I18N_DICT = {
     'dc.2a': 'DAX-measures', 'dc.2b': 'dashboardpagina’s, synthetische data',
     'tl.titled': 'Van marketingvragen naar data-antwoorden.',
     'dx.title': 'Data die iets moet zeggen? Laten we praten.',
+    'mx.alt': 'Op het dataprofiel →',
     'dx.alt': 'Op het marketingprofiel →',
 
     'ft.1': 'Harry Mulembwe · Data- &amp; business-analist',

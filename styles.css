@@ -834,3 +834,6 @@ a{color:inherit}
 @media(max-width:950px){.dp .tline::before{background:linear-gradient(180deg,var(--teal2),var(--teal),var(--navy))}}
 @media(prefers-reduced-motion:reduce){.dp .rot b{animation:none}.dp .project-card,.dp .project-card .thumb img{transition:none}}
 .dp .lp-contact{padding-top:80px}
+.mkp:not(.lp):not(.dp) .lp-contact{padding-top:80px}
+.lp-cta-mkt::before{background:radial-gradient(closest-side,rgba(255,79,163,.24),transparent 70%)}
+.lp-cta-mkt .lp-cv-card>span b{color:#ffe51f}
