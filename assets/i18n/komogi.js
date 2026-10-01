@@ -209,6 +209,10 @@ window.I18N_DICT = {
     'nx.alt': 'Prototype du concept d’application Mangetsu',
     'le.contact': 'Me contacter',
     'le.all': 'Tous les projets',
+    'mg.b0': 'n’avaient jamais entendu parler de Komogi',
+    'mg.b1': 'Une super série… que personne ne connaît encore.',
+    'mg.b2': '6 actions',
+    'mg.b3': '12 mois',
     'footer': 'Harry Mulembwe · Data &amp; Business Analyst · Bruxelles · Recommandations académiques, pas des campagnes exécutées'
   },
   nl: {
@@ -420,6 +424,10 @@ window.I18N_DICT = {
     'nx.alt': 'Prototype van het concept voor de Mangetsu-app',
     'le.contact': 'Contacteer me',
     'le.all': 'Alle projecten',
+    'mg.b0': 'had nog nooit van Komogi gehoord',
+    'mg.b1': 'Een geweldige reeks… die nog niemand kent.',
+    'mg.b2': '6 acties',
+    'mg.b3': '12 maanden',
     'footer': 'Harry Mulembwe · Data- &amp; business-analist · Brussel · Academische aanbevelingen, geen uitgevoerde campagnes'
   }
 };

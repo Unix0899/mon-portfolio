@@ -103,3 +103,5 @@ Strategy / Solution, Deliverables, Skills, Key learnings, Next project.
 Rules kept on every page: survey figures are never presented as commercial results, academic strategies are
 labelled as recommendations, the Mangetsu page credits the team, and no KPI, date, tool or budget is invented.
 Images in `projects/<slug>/proof/` are JPEG exports (max 1600 px, < 300 KB) of the original PDF / PNG deliverables.
+
+The Komogi case study has its own "manga edition" theme in `projects/komogi/styles.css` (yellow and black palette of the publisher, panel layout, halftone, speech bubble, ticker, pop reveals). All motion is disabled with `prefers-reduced-motion`.

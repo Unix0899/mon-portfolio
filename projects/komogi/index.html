@@ -42,7 +42,7 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="../../assets/common.css" />
 </head>
-<body>
+<body class="manga">
   <div class="progress" aria-hidden="true"></div>
   <header class="topbar">
     <a class="brand" href="../../marketing/#marketing">← <span class="brand-name">Harry Mulembwe</span></a>
@@ -64,12 +64,25 @@
 
   <main id="top">
     <!-- HERO -->
-    <section class="hero section">
-      <div class="eyebrow" data-i18n="hero.eyebrow">Case study · Marketing strategy &amp; customer research</div>
-      <h1>Éditions Komogi</h1>
-      <p class="hero-sub" data-i18n="hero.sub">Marketing Strategy &amp; Customer Research</p>
-      <span class="type-badge" data-i18n="hero.badge">Individual project</span>
-      <p class="hero-copy" data-i18n="hero.copy">How an independent manga publisher could attract, convert and retain 18–35 readers in French-speaking Belgium: from desk research and interviews to a budgeted 12-month plan.</p>
+    <section class="hero section mg-hero">
+      <div class="mg-top">
+        <div class="mg-text">
+          <div class="eyebrow" data-i18n="hero.eyebrow">Case study · Marketing strategy &amp; customer research</div>
+          <h1><span>Éditions</span> <span class="hl">Komogi</span></h1>
+          <p class="hero-sub" data-i18n="hero.sub">Marketing Strategy &amp; Customer Research</p>
+          <span class="type-badge" data-i18n="hero.badge">Individual project</span>
+          <p class="hero-copy" data-i18n="hero.copy">How an independent manga publisher could attract, convert and retain 18–35 readers in French-speaking Belgium: from desk research and interviews to a budgeted 12-month plan.</p>
+        </div>
+        <div class="mg-panels" aria-hidden="true">
+          <span class="pn pn1"><img src="../../assets/img/gw-komogi-phones.jpg" alt="" width="700" height="984" /></span>
+          <span class="pn pn2"><img src="../../assets/img/gw-collector-box.jpg" alt="" width="800" height="703" /></span>
+          <span class="pn pn3"><img src="proof/komogi_07_goodies.jpg" alt="" width="1600" height="900" /></span>
+          <span class="pn pn4"><b>87%</b><i data-i18n="mg.b0">had never heard of Komogi</i></span>
+          <span class="bubble" data-i18n="mg.b1">A great series… that nobody knows yet.</span>
+          <span class="sfx"><b data-i18n="mg.b2">6 moves</b><i data-i18n="mg.b3">12 months</i></span>
+        </div>
+      </div>
+      <p class="mg-cap" data-i18n="cover.cap">Mock-ups of the recommended social media campaign (deliverable, not an executed campaign).</p>
       <p class="disclosure"><b data-i18n="hero.discL">Scope</b><span data-i18n="hero.disc">Final-year project of my Bachelor in Marketing (EPHEC). The strategy below is a set of recommendations built on my own research. None of the actions were executed or measured, so no commercial result is claimed.</span></p>
       <div class="meta-grid">
         <div><span data-i18n="m.type">Type</span><strong data-i18n="m.typeV">Individual academic project · Final-year thesis</strong></div>
@@ -82,18 +95,16 @@
       </div>
     </section>
 
-    <div class="cover">
-      <figure>
-        <img src="proof/komogi_05_social_campaign.jpg" alt="Mock-ups of the recommended social media campaign for The Lion in a Manga Library" data-i18n-attr="alt:cover.alt" width="1600" height="900" />
-        <figcaption data-i18n="cover.cap">Mock-ups of the recommended social media campaign (deliverable, not an executed campaign).</figcaption>
-      </figure>
+    <div class="mg-ticker" aria-hidden="true">
+      <div class="mg-track"><span>TEASING</span><i>✦</i><span>LAUNCH</span><i>✦</i><span>SUPPORT</span><i>✦</i><span>RELAUNCH</span><i>✦</i><span>135 READERS</span><i>✦</i><span>8 INTERVIEWS</span><i>✦</i><span>12 MONTHS</span><i>✦</i></div>
+      <div class="mg-track"><span>TEASING</span><i>✦</i><span>LAUNCH</span><i>✦</i><span>SUPPORT</span><i>✦</i><span>RELAUNCH</span><i>✦</i><span>135 READERS</span><i>✦</i><span>8 INTERVIEWS</span><i>✦</i><span>12 MONTHS</span><i>✦</i></div>
     </div>
 
     <section class="stats section narrow">
-      <article><strong>135</strong><span data-i18n="stat.1">survey respondents aged 18–35 living in French-speaking Belgium</span></article>
-      <article><strong>8</strong><span data-i18n="stat.2">qualitative interviews with readers from the same target</span></article>
-      <article><strong>6</strong><span data-i18n="stat.3">recommendations planned over 12 months, from teasing to relaunch</span></article>
-      <article><strong>€1,643.60</strong><span data-i18n="stat.4">estimated budget of the recommendations, excluding VAT</span></article>
+      <article class="reveal" style="--i:0"><strong data-count="135">135</strong><span data-i18n="stat.1">survey respondents aged 18–35 living in French-speaking Belgium</span></article>
+      <article class="reveal" style="--i:1"><strong data-count="8">8</strong><span data-i18n="stat.2">qualitative interviews with readers from the same target</span></article>
+      <article class="reveal" style="--i:2"><strong data-count="6">6</strong><span data-i18n="stat.3">recommendations planned over 12 months, from teasing to relaunch</span></article>
+      <article class="reveal" style="--i:3"><strong data-count="€1,643.60">€1,643.60</strong><span data-i18n="stat.4">estimated budget of the recommendations, excluding VAT</span></article>
     </section>
 
     <!-- 01 CONTEXT -->
@@ -156,13 +167,13 @@
     <section id="approach" class="section">
       <div class="eyebrow" data-i18n="ap.eyebrow">04 · Approach &amp; methodology</div>
       <h2 data-i18n="ap.title">Four steps, each one feeding the next.</h2>
-      <ol class="chain">
+      <ol class="chain reveal">
         <li><span>01</span><b data-i18n="ap.1">Desk research</b><small data-i18n="ap.1s">Market, publisher, competitors, target</small></li>
         <li><span>02</span><b data-i18n="ap.2">Qualitative study</b><small data-i18n="ap.2s">8 readers: motivations, barriers, buying habits</small></li>
         <li><span>03</span><b data-i18n="ap.3">Quantitative survey</b><small data-i18n="ap.3s">135 respondents: quantify habits, test ideas</small></li>
         <li class="last"><span>04</span><b data-i18n="ap.4">Recommendations</b><small data-i18n="ap.4s">Actions, planning, budget</small></li>
       </ol>
-      <div class="framework">
+      <div class="framework reveal">
         <b data-i18n="ap.fw">Framework</b>
         <ol>
           <li data-i18n="ap.f1">Teasing</li><li data-i18n="ap.f2">Launch</li><li data-i18n="ap.f3">Support</li><li data-i18n="ap.f4">Relaunch</li>
@@ -177,17 +188,17 @@
       <h2 data-i18n="in.title">What the surveyed readers said.</h2>
       <p class="lead-p" data-i18n="in.p">Figures from the quantitative survey (135 respondents). They describe the readers surveyed, not the whole market, and none of them is a sales result.</p>
       <div class="insights-grid">
-        <article><span data-i18n="in.1n">Awareness</span><strong class="big">87%</strong><h3 data-i18n="in.1t">had never heard of Éditions Komogi.</h3><p data-i18n="in.1p">Yet 26 respondents knew the series without having read it, and 28 had already seen it without remembering the title: the visual is noticed, the name is not.</p></article>
-        <article><span data-i18n="in.2n">Advertising</span><strong class="big">70.9%</strong><h3 data-i18n="in.2t">had already bought a manga after seeing an ad in a bookshop or online.</h3><p data-i18n="in.2p">Ads about manga are welcome as long as they are not too frequent.</p></article>
-        <article><span data-i18n="in.3n">Point of sale</span><strong class="big">29.9%</strong><h3 data-i18n="in.3t">buy their manga regularly in bookshops.</h3><p data-i18n="in.3p">Among respondents already influenced by advertising, 20.5% cited a bookshop display.</p></article>
-        <article><span data-i18n="in.4n">Goodies</span><strong class="big">61.5%</strong><h3 data-i18n="in.4t">rated 5/5 the idea of receiving goodies with a purchase.</h3><p data-i18n="in.4p">Posters (24.8%) and key rings (20.8%) were the favourites.</p></article>
-        <article><span data-i18n="in.5n">Community</span><strong class="big">81.5%</strong><h3 data-i18n="in.5t">gave 4/5 to debates and podcasts about manga.</h3><p data-i18n="in.5p">A format already used by larger publishers to keep readers engaged between volumes.</p></article>
-        <article><span data-i18n="in.6n">Channels</span><strong class="big">TikTok</strong><h3 data-i18n="in.6t">Instagram, Facebook and TikTok were the most used networks.</h3><p data-i18n="in.6p">16.3%, 16.4% and 18.2% of the answers respectively. Collector boxes also drew interest: 26.6% interested, and 83.7% ready to pay more for them.</p></article>
+        <article class="reveal" style="--i:0"><span data-i18n="in.1n">Awareness</span><strong class="big" data-count="87%">87%</strong><h3 data-i18n="in.1t">had never heard of Éditions Komogi.</h3><p data-i18n="in.1p">Yet 26 respondents knew the series without having read it, and 28 had already seen it without remembering the title: the visual is noticed, the name is not.</p></article>
+        <article class="reveal" style="--i:1"><span data-i18n="in.2n">Advertising</span><strong class="big" data-count="70.9%">70.9%</strong><h3 data-i18n="in.2t">had already bought a manga after seeing an ad in a bookshop or online.</h3><p data-i18n="in.2p">Ads about manga are welcome as long as they are not too frequent.</p></article>
+        <article class="reveal" style="--i:2"><span data-i18n="in.3n">Point of sale</span><strong class="big" data-count="29.9%">29.9%</strong><h3 data-i18n="in.3t">buy their manga regularly in bookshops.</h3><p data-i18n="in.3p">Among respondents already influenced by advertising, 20.5% cited a bookshop display.</p></article>
+        <article class="reveal" style="--i:0"><span data-i18n="in.4n">Goodies</span><strong class="big" data-count="61.5%">61.5%</strong><h3 data-i18n="in.4t">rated 5/5 the idea of receiving goodies with a purchase.</h3><p data-i18n="in.4p">Posters (24.8%) and key rings (20.8%) were the favourites.</p></article>
+        <article class="reveal" style="--i:1"><span data-i18n="in.5n">Community</span><strong class="big" data-count="81.5%">81.5%</strong><h3 data-i18n="in.5t">gave 4/5 to debates and podcasts about manga.</h3><p data-i18n="in.5p">A format already used by larger publishers to keep readers engaged between volumes.</p></article>
+        <article class="reveal" style="--i:2"><span data-i18n="in.6n">Channels</span><strong class="big">TikTok</strong><h3 data-i18n="in.6t">Instagram, Facebook and TikTok were the most used networks.</h3><p data-i18n="in.6p">16.3%, 16.4% and 18.2% of the answers respectively. Collector boxes also drew interest: 26.6% interested, and 83.7% ready to pay more for them.</p></article>
       </div>
       <div class="evidence-grid three">
-        <figure class="evidence"><a class="shot" href="proof/komogi_12_chart_awareness.jpg" target="_blank" rel="noopener"><img src="proof/komogi_12_chart_awareness.jpg" alt="Survey chart: number of respondents who know Éditions Komogi" data-i18n-attr="alt:in.c1a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="in.cN">Survey output</span><b data-i18n="in.c1t">Awareness of Komogi</b><span data-i18n="in.c1p">Share of respondents who know the publisher.</span></figcaption></figure>
-        <figure class="evidence"><a class="shot" href="proof/komogi_13_chart_social.jpg" target="_blank" rel="noopener"><img src="proof/komogi_13_chart_social.jpg" alt="Survey chart: social networks most used by respondents" data-i18n-attr="alt:in.c2a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="in.cN">Survey output</span><b data-i18n="in.c2t">Social networks used</b><span data-i18n="in.c2p">Basis for the choice of advertising channels.</span></figcaption></figure>
-        <figure class="evidence"><a class="shot" href="proof/komogi_14_chart_goodies.jpg" target="_blank" rel="noopener"><img src="proof/komogi_14_chart_goodies.jpg" alt="Survey tables: interest in goodies and preferred goodies" data-i18n-attr="alt:in.c3a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="in.cN">Survey output</span><b data-i18n="in.c3t">Goodies</b><span data-i18n="in.c3p">Interest score and preferred items.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:0"><a class="shot" href="proof/komogi_12_chart_awareness.jpg" target="_blank" rel="noopener"><img src="proof/komogi_12_chart_awareness.jpg" alt="Survey chart: number of respondents who know Éditions Komogi" data-i18n-attr="alt:in.c1a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="in.cN">Survey output</span><b data-i18n="in.c1t">Awareness of Komogi</b><span data-i18n="in.c1p">Share of respondents who know the publisher.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:1"><a class="shot" href="proof/komogi_13_chart_social.jpg" target="_blank" rel="noopener"><img src="proof/komogi_13_chart_social.jpg" alt="Survey chart: social networks most used by respondents" data-i18n-attr="alt:in.c2a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="in.cN">Survey output</span><b data-i18n="in.c2t">Social networks used</b><span data-i18n="in.c2p">Basis for the choice of advertising channels.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:0"><a class="shot" href="proof/komogi_14_chart_goodies.jpg" target="_blank" rel="noopener"><img src="proof/komogi_14_chart_goodies.jpg" alt="Survey tables: interest in goodies and preferred goodies" data-i18n-attr="alt:in.c3a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="in.cN">Survey output</span><b data-i18n="in.c3t">Goodies</b><span data-i18n="in.c3p">Interest score and preferred items.</span></figcaption></figure>
       </div>
     </section>
 
@@ -197,27 +208,27 @@
       <h2 data-i18n="st.title">Six recommendations, one per moment of the reader's journey.</h2>
       <p class="lead-p" data-i18n="st.p">Each action is tied to a phase, a goal and a survey result. The main objective: make Komogi visible in French-speaking Belgium and build interest in its series.</p>
       <div class="phases">
-        <div class="phase">
+        <div class="phase reveal" style="--i:0">
           <div class="phase-head"><span data-i18n="st.p1">Teasing</span><b data-i18n="st.p1t">Acquisition</b><small data-i18n="st.p1s">Develop visibility before a new volume</small></div>
           <ul class="recs">
             <li><i>1</i><div><b data-i18n="st.r1">Advertising campaign on social media and in partner bookshops</b><p data-i18n="st.r1p">At least 30 days before a release on Instagram, Facebook and TikTok; posters, flyers and displays placed with partner bookshops.</p></div></li>
           </ul>
         </div>
-        <div class="phase">
+        <div class="phase reveal" style="--i:1">
           <div class="phase-head"><span data-i18n="st.p2">Launch</span><b data-i18n="st.p2t">Conversion</b><small data-i18n="st.p2s">Drive the purchase at release</small></div>
           <ul class="recs">
             <li><i>2</i><div><b data-i18n="st.r2">Bookshop display at release</b><p data-i18n="st.r2p">Point-of-sale presence with partner bookshops, plus manga conventions in French-speaking Belgium.</p></div></li>
             <li><i>3</i><div><b data-i18n="st.r3">Goodies with the purchase</b><p data-i18n="st.r3p">Posters and key rings for a limited period, organised with the bookshops.</p></div></li>
           </ul>
         </div>
-        <div class="phase">
+        <div class="phase reveal" style="--i:2">
           <div class="phase-head"><span data-i18n="st.p3">Support</span><b data-i18n="st.p3t">Retention</b><small data-i18n="st.p3s">Keep new readers interested</small></div>
           <ul class="recs">
             <li><i>4</i><div><b data-i18n="st.r4">Online debates and podcasts</b><p data-i18n="st.r4p">Monthly debate sessions on Discord and podcasts before each release, announced on social media.</p></div></li>
             <li><i>5</i><div><b data-i18n="st.r5">Exclusive collector box</b><p data-i18n="st.r5p">The four volumes with unpublished anecdotes and exclusive drawings by the author.</p></div></li>
           </ul>
         </div>
-        <div class="phase">
+        <div class="phase reveal" style="--i:3">
           <div class="phase-head"><span data-i18n="st.p4">Relaunch</span><b data-i18n="st.p4t">Reactivation</b><small data-i18n="st.p4s">Recruit new readers in slow periods</small></div>
           <ul class="recs">
             <li><i>6</i><div><b data-i18n="st.r6">Special offers</b><p data-i18n="st.r6p">Complete-series box, first volume at €3 or price cuts: the promotions the target rated highest.</p></div></li>
@@ -246,14 +257,14 @@
       </div>
       <p class="note" data-i18n="de.note">Total estimated cost of the six recommendations: €1,643.60 excluding VAT, detailed per action in the budget deliverable.</p>
       <div class="evidence-grid">
-        <figure class="evidence"><a class="shot" href="proof/komogi_01_methodology.jpg" target="_blank" rel="noopener"><img src="proof/komogi_01_methodology.jpg" alt="Methodology slide: desk research, qualitative study, quantitative study, recommendations" data-i18n-attr="alt:de.e1a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e1n">Deliverable 01</span><b data-i18n="de.e1t">Methodology</b><span data-i18n="de.e1p">The four research steps and what each one had to produce.</span></figcaption></figure>
-        <figure class="evidence"><a class="shot" href="proof/komogi_02_funnel.jpg" target="_blank" rel="noopener"><img src="proof/komogi_02_funnel.jpg" alt="Guiding thread: teasing, launch, support, relaunch" data-i18n-attr="alt:de.e2a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e2n">Deliverable 02</span><b data-i18n="de.e2t">Guiding thread</b><span data-i18n="de.e2p">The publishing marketing plan used to structure the recommendations.</span></figcaption></figure>
-        <figure class="evidence"><a class="shot" href="proof/komogi_06_retail_display.jpg" target="_blank" rel="noopener"><img src="proof/komogi_06_retail_display.jpg" alt="Example of a bookshop display for the series" data-i18n-attr="alt:de.e3a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e3n">Deliverable 03</span><b data-i18n="de.e3t">Point-of-sale display</b><span data-i18n="de.e3p">Trade marketing concept for partner bookshops.</span></figcaption></figure>
-        <figure class="evidence"><a class="shot" href="proof/komogi_07_goodies.jpg" target="_blank" rel="noopener"><img src="proof/komogi_07_goodies.jpg" alt="Example of goodies: key rings and posters" data-i18n-attr="alt:de.e4a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e4n">Deliverable 04</span><b data-i18n="de.e4t">Goodies</b><span data-i18n="de.e4p">Posters and key rings, the two items the target preferred.</span></figcaption></figure>
-        <figure class="evidence"><a class="shot" href="proof/komogi_08_podcasts_debates.jpg" target="_blank" rel="noopener"><img src="proof/komogi_08_podcasts_debates.jpg" alt="Examples of podcasts and debate sessions" data-i18n-attr="alt:de.e5a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e5n">Deliverable 05</span><b data-i18n="de.e5t">Podcasts and debates</b><span data-i18n="de.e5p">Community formats to keep readers engaged between volumes.</span></figcaption></figure>
-        <figure class="evidence"><a class="shot" href="proof/komogi_09_collector_box.jpg" target="_blank" rel="noopener"><img src="proof/komogi_09_collector_box.jpg" alt="Concept of an exclusive collector box" data-i18n-attr="alt:de.e6a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e6n">Deliverable 06</span><b data-i18n="de.e6t">Collector box</b><span data-i18n="de.e6p">Retention product for the fan community.</span></figcaption></figure>
-        <figure class="evidence"><a class="shot" href="proof/komogi_10_media_planning.jpg" target="_blank" rel="noopener"><img src="proof/komogi_10_media_planning.jpg" alt="12-month media planning table" data-i18n-attr="alt:de.e7a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e7n">Deliverable 07</span><b data-i18n="de.e7t">Media planning</b><span data-i18n="de.e7p">The six actions spread over twelve months.</span></figcaption></figure>
-        <figure class="evidence"><a class="shot" href="proof/komogi_11_budget.jpg" target="_blank" rel="noopener"><img src="proof/komogi_11_budget.jpg" alt="Budget table per recommendation, total €1,643.60 excluding VAT" data-i18n-attr="alt:de.e8a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e8n">Deliverable 08</span><b data-i18n="de.e8t">Budget</b><span data-i18n="de.e8p">Estimated cost per recommendation and total.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:1"><a class="shot" href="proof/komogi_01_methodology.jpg" target="_blank" rel="noopener"><img src="proof/komogi_01_methodology.jpg" alt="Methodology slide: desk research, qualitative study, quantitative study, recommendations" data-i18n-attr="alt:de.e1a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e1n">Deliverable 01</span><b data-i18n="de.e1t">Methodology</b><span data-i18n="de.e1p">The four research steps and what each one had to produce.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:0"><a class="shot" href="proof/komogi_02_funnel.jpg" target="_blank" rel="noopener"><img src="proof/komogi_02_funnel.jpg" alt="Guiding thread: teasing, launch, support, relaunch" data-i18n-attr="alt:de.e2a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e2n">Deliverable 02</span><b data-i18n="de.e2t">Guiding thread</b><span data-i18n="de.e2p">The publishing marketing plan used to structure the recommendations.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:1"><a class="shot" href="proof/komogi_06_retail_display.jpg" target="_blank" rel="noopener"><img src="proof/komogi_06_retail_display.jpg" alt="Example of a bookshop display for the series" data-i18n-attr="alt:de.e3a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e3n">Deliverable 03</span><b data-i18n="de.e3t">Point-of-sale display</b><span data-i18n="de.e3p">Trade marketing concept for partner bookshops.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:0"><a class="shot" href="proof/komogi_07_goodies.jpg" target="_blank" rel="noopener"><img src="proof/komogi_07_goodies.jpg" alt="Example of goodies: key rings and posters" data-i18n-attr="alt:de.e4a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e4n">Deliverable 04</span><b data-i18n="de.e4t">Goodies</b><span data-i18n="de.e4p">Posters and key rings, the two items the target preferred.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:1"><a class="shot" href="proof/komogi_08_podcasts_debates.jpg" target="_blank" rel="noopener"><img src="proof/komogi_08_podcasts_debates.jpg" alt="Examples of podcasts and debate sessions" data-i18n-attr="alt:de.e5a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e5n">Deliverable 05</span><b data-i18n="de.e5t">Podcasts and debates</b><span data-i18n="de.e5p">Community formats to keep readers engaged between volumes.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:0"><a class="shot" href="proof/komogi_09_collector_box.jpg" target="_blank" rel="noopener"><img src="proof/komogi_09_collector_box.jpg" alt="Concept of an exclusive collector box" data-i18n-attr="alt:de.e6a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e6n">Deliverable 06</span><b data-i18n="de.e6t">Collector box</b><span data-i18n="de.e6p">Retention product for the fan community.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:1"><a class="shot" href="proof/komogi_10_media_planning.jpg" target="_blank" rel="noopener"><img src="proof/komogi_10_media_planning.jpg" alt="12-month media planning table" data-i18n-attr="alt:de.e7a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e7n">Deliverable 07</span><b data-i18n="de.e7t">Media planning</b><span data-i18n="de.e7p">The six actions spread over twelve months.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:0"><a class="shot" href="proof/komogi_11_budget.jpg" target="_blank" rel="noopener"><img src="proof/komogi_11_budget.jpg" alt="Budget table per recommendation, total €1,643.60 excluding VAT" data-i18n-attr="alt:de.e8a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e8n">Deliverable 08</span><b data-i18n="de.e8t">Budget</b><span data-i18n="de.e8p">Estimated cost per recommendation and total.</span></figcaption></figure>
       </div>
     </section>
 
@@ -275,14 +286,14 @@
     <section id="learned" class="section takeaway">
       <div class="eyebrow" data-i18n="le.eyebrow">09 · Key learnings</div>
       <blockquote data-i18n="le.quote">“Before choosing a channel or an incentive, ask the audience. The survey changed the plan more than any assumption I started with.”</blockquote>
-      <ul class="learn-list">
+      <ul class="learn-list reveal">
         <li><b data-i18n="le.1t">Awareness comes first</b><span data-i18n="le.1">When 87% of the target has never heard of you, visibility beats every other lever. The plan starts there.</span></li>
         <li><b data-i18n="le.2t">Test ideas before recommending them</b><span data-i18n="le.2">Goodies, podcasts, boxes and offers were all scored by respondents before entering the plan.</span></li>
         <li><b data-i18n="le.3t">Know the limits of a sample</b><span data-i18n="le.3">135 respondents describe the readers surveyed, not the whole market. The recommendations are framed as a plan to test, not as guaranteed outcomes.</span></li>
       </ul>
 
       <div class="eyebrow" style="margin-top:70px" data-i18n="nx.eyebrow">10 · Next project</div>
-      <a class="next-card" href="../mangetsu/index.html">
+      <a class="next-card reveal" href="../mangetsu/index.html">
         <div>
           <span class="eyebrow" data-i18n="nx.kicker">Team project · Customer insights &amp; omnichannel strategy</span>
           <h3>Mangetsu</h3>
