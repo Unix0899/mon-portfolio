@@ -39,10 +39,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../assets/marketing-case.css" />
+  <link rel="stylesheet" href="../../assets/manga-case.css" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="../../assets/common.css" />
 </head>
-<body>
+<body class="manga mangetsu">
   <div class="progress" aria-hidden="true"></div>
   <header class="topbar">
     <a class="brand" href="../../marketing/#marketing">← <span class="brand-name">Harry Mulembwe</span></a>
@@ -64,12 +65,25 @@
 
   <main id="top">
     <!-- HERO -->
-    <section class="hero section">
-      <div class="eyebrow" data-i18n="hero.eyebrow">Case study · Customer insights &amp; omnichannel marketing</div>
-      <h1>Mangetsu</h1>
-      <p class="hero-sub" data-i18n="hero.sub">Customer Insights &amp; Omnichannel Marketing Strategy</p>
-      <span class="type-badge team" data-i18n="hero.badge">Team project</span>
-      <p class="hero-copy" data-i18n="hero.copy">How a manga publisher can support a series volume after volume through social media, digital marketing and operational marketing, organised along the reader's journey.</p>
+    <section class="hero section mg-hero">
+      <div class="mg-top">
+        <div class="mg-text">
+          <div class="eyebrow" data-i18n="hero.eyebrow">Case study · Customer insights &amp; omnichannel marketing</div>
+          <h1><span class="hl">Mangetsu</span></h1>
+          <p class="hero-sub" data-i18n="hero.sub">Customer Insights &amp; Omnichannel Marketing Strategy</p>
+          <span class="type-badge team" data-i18n="hero.badge">Team project</span>
+          <p class="hero-copy" data-i18n="hero.copy">How a manga publisher can support a series volume after volume through social media, digital marketing and operational marketing, organised along the reader's journey.</p>
+        </div>
+        <div class="mg-panels" aria-hidden="true">
+          <span class="pn pn1"><img src="proof/hero_app.jpg" alt="" width="700" height="951" /></span>
+          <span class="pn pn2"><img src="proof/hero_discord.jpg" alt="" width="900" height="603" /></span>
+          <span class="pn pn3"><img src="proof/hero_box.jpg" alt="" width="900" height="493" /></span>
+          <span class="pn pn4"><b>9</b><i data-i18n="mg.b0">recommendations on the reader's journey</i></span>
+          <span class="bubble" data-i18n="mg.b1">A series is supported volume after volume!</span>
+          <span class="sfx"><b data-i18n="mg.b2">Team</b><i data-i18n="mg.b3">of five</i></span>
+        </div>
+      </div>
+      <p class="mg-cap" data-i18n="cover.cap">Prototype of the app concept (team deliverable, not a released product).</p>
       <p class="disclosure"><b data-i18n="hero.discL">Team work</b><span data-i18n="hero.disc">Academic project delivered by a team of five students (Bachelor in Marketing, EPHEC). Research, recommendations, prototypes and budget were shared work; individual parts were not tracked, so nothing on this page is presented as my personal achievement. The recommendations were not implemented by the publisher.</span></p>
       <div class="meta-grid">
         <div><span data-i18n="m.type">Type</span><strong data-i18n="m.typeV">Team academic project</strong></div>
@@ -82,18 +96,16 @@
       </div>
     </section>
 
-    <div class="cover">
-      <figure>
-        <img src="proof/mangetsu_13_app_actions.jpg" alt="Prototype of the Mangetsu app concept: newsletter, Discord, collection, pre-order and notifications" data-i18n-attr="alt:cover.alt" width="1600" height="900" />
-        <figcaption data-i18n="cover.cap">Prototype of the app concept (team deliverable, not a released product).</figcaption>
-      </figure>
+    <div class="mg-ticker" aria-hidden="true">
+      <div class="mg-track"><span data-i18n="tk.1">AWARENESS</span><i>✦</i><span data-i18n="tk.2">INTEREST</span><i>✦</i><span data-i18n="tk.3">ACTION</span><i>✦</i><span data-i18n="tk.4">LOYALTY</span><i>✦</i><span>TIKTOK</span><i>✦</i><span>DISCORD</span><i>✦</i><span>QR CODE</span><i>✦</i><span>APP</span><i>✦</i></div>
+      <div class="mg-track"><span data-i18n="tk.1">AWARENESS</span><i>✦</i><span data-i18n="tk.2">INTEREST</span><i>✦</i><span data-i18n="tk.3">ACTION</span><i>✦</i><span data-i18n="tk.4">LOYALTY</span><i>✦</i><span>TIKTOK</span><i>✦</i><span>DISCORD</span><i>✦</i><span>QR CODE</span><i>✦</i><span>APP</span><i>✦</i></div>
     </div>
 
     <section class="stats section narrow">
-      <article><strong>4</strong><span data-i18n="stat.1">stages of the reader's journey, from awareness to recommendation</span></article>
-      <article><strong>9</strong><span data-i18n="stat.2">recommendations across social media, digital and operational marketing</span></article>
-      <article><strong>5</strong><span data-i18n="stat.3">concepts prototyped: Discord server, website, manga box, QR code, app</span></article>
-      <article><strong>1</strong><span data-i18n="stat.4">quantitative survey of manga readers to support the recommendations</span></article>
+      <article class="reveal" style="--i:0"><strong data-count="4">4</strong><span data-i18n="stat.1">stages of the reader's journey, from awareness to recommendation</span></article>
+      <article class="reveal" style="--i:1"><strong data-count="9">9</strong><span data-i18n="stat.2">recommendations across social media, digital and operational marketing</span></article>
+      <article class="reveal" style="--i:2"><strong data-count="5">5</strong><span data-i18n="stat.3">concepts prototyped: Discord server, website, manga box, QR code, app</span></article>
+      <article class="reveal" style="--i:3"><strong data-count="1">1</strong><span data-i18n="stat.4">quantitative survey of manga readers to support the recommendations</span></article>
     </section>
 
     <!-- 01 CONTEXT -->
@@ -153,13 +165,13 @@
     <section id="approach" class="section">
       <div class="eyebrow" data-i18n="ap.eyebrow">04 · Approach &amp; methodology</div>
       <h2 data-i18n="ap.title">One journey, four stages, and a recommendation for each moment.</h2>
-      <ol class="chain">
+      <ol class="chain reveal">
         <li><span>01</span><b data-i18n="ap.1">Awareness</b><small data-i18n="ap.1s">Get the series noticed</small></li>
         <li><span>02</span><b data-i18n="ap.2">Interest / Desire</b><small data-i18n="ap.2s">Create a community and anticipation</small></li>
         <li><span>03</span><b data-i18n="ap.3">Action</b><small data-i18n="ap.3s">Make the purchase easy and attractive</small></li>
         <li class="last"><span>04</span><b data-i18n="ap.4">Loyalty / Recommendation</b><small data-i18n="ap.4s">Bring readers back and let them spread the word</small></li>
       </ol>
-      <div class="framework">
+      <div class="framework reveal">
         <b data-i18n="ap.fw">Evidence</b>
         <ol>
           <li data-i18n="ap.f1">Reader survey</li><li data-i18n="ap.f2">Benchmark</li><li data-i18n="ap.f3">Price research</li><li data-i18n="ap.f4">Prototypes</li>
@@ -174,17 +186,17 @@
       <h2 data-i18n="in.title">What guided the recommendations.</h2>
       <p class="lead-p" data-i18n="in.p">Findings from the team's survey and desk research, as used in the project. They are audience insights, not results of an executed campaign.</p>
       <div class="insights-grid">
-        <article><span data-i18n="in.1n">Channels</span><h3 data-i18n="in.1t">TikTok and Instagram ranked among the networks most used by respondents.</h3><p data-i18n="in.1p">Which is why the awareness and interest stages rely on short video and highlighted stories rather than on new platforms.</p></article>
-        <article><span data-i18n="in.2n">Accessibility</span><h3 data-i18n="in.2t">Subtitles are not optional on TikTok.</h3><p data-i18n="in.2p">Many people watch without sound and, as noted in the project, 6.6% of the French population is hearing-impaired. Automatic captions misread manga titles, so captions should be checked by hand.</p></article>
-        <article><span data-i18n="in.3n">Community</span><h3 data-i18n="in.3t">Mangetsu had no Discord server yet.</h3><p data-i18n="in.3p">A gap compared with the way reader communities already gather, and an opportunity to bring followers from every network into one place.</p></article>
-        <article><span data-i18n="in.4n">Goodies</span><h3 data-i18n="in.4t">Figurines, posters, bookmarks and plush toys were the goodies respondents wanted most.</h3><p data-i18n="in.4p">Price research on each item fed the manga box concept and its budget.</p></article>
-        <article><span data-i18n="in.5n">Physical to digital</span><h3 data-i18n="in.5t">The printed volume is the best place to start a digital relationship.</h3><p data-i18n="in.5p">Respondents rated the idea of a QR code, an app and a subscription; the scores are shown on the survey slides below.</p></article>
-        <article><span data-i18n="in.6n">Market</span><h3 data-i18n="in.6t">Gift boxes are a large market that no manga publisher owned.</h3><p data-i18n="in.6p">The project cites a European gift-box market of about €1 billion and benchmarks existing manga boxes (Manga Box, Nihon Box, Meian).</p></article>
+        <article class="reveal" style="--i:0"><span data-i18n="in.1n">Channels</span><h3 data-i18n="in.1t">TikTok and Instagram ranked among the networks most used by respondents.</h3><p data-i18n="in.1p">Which is why the awareness and interest stages rely on short video and highlighted stories rather than on new platforms.</p></article>
+        <article class="reveal" style="--i:1"><span data-i18n="in.2n">Accessibility</span><h3 data-i18n="in.2t">Subtitles are not optional on TikTok.</h3><p data-i18n="in.2p">Many people watch without sound and, as noted in the project, 6.6% of the French population is hearing-impaired. Automatic captions misread manga titles, so captions should be checked by hand.</p></article>
+        <article class="reveal" style="--i:2"><span data-i18n="in.3n">Community</span><h3 data-i18n="in.3t">Mangetsu had no Discord server yet.</h3><p data-i18n="in.3p">A gap compared with the way reader communities already gather, and an opportunity to bring followers from every network into one place.</p></article>
+        <article class="reveal" style="--i:0"><span data-i18n="in.4n">Goodies</span><h3 data-i18n="in.4t">Figurines, posters, bookmarks and plush toys were the goodies respondents wanted most.</h3><p data-i18n="in.4p">Price research on each item fed the manga box concept and its budget.</p></article>
+        <article class="reveal" style="--i:1"><span data-i18n="in.5n">Physical to digital</span><h3 data-i18n="in.5t">The printed volume is the best place to start a digital relationship.</h3><p data-i18n="in.5p">Respondents rated the idea of a QR code, an app and a subscription; the scores are shown on the survey slides below.</p></article>
+        <article class="reveal" style="--i:2"><span data-i18n="in.6n">Market</span><h3 data-i18n="in.6t">Gift boxes are a large market that no manga publisher owned.</h3><p data-i18n="in.6p">The project cites a European gift-box market of about €1 billion and benchmarks existing manga boxes (Manga Box, Nihon Box, Meian).</p></article>
       </div>
       <div class="evidence-grid three">
-        <figure class="evidence"><a class="shot" href="proof/mangetsu_02_tiktok_why.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_02_tiktok_why.jpg" alt="Survey chart: social networks used by respondents, supporting the TikTok recommendation" data-i18n-attr="alt:in.c1a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="in.cN">Survey output</span><b data-i18n="in.c1t">Why TikTok?</b><span data-i18n="in.c1p">Networks used by respondents.</span></figcaption></figure>
-        <figure class="evidence"><a class="shot" href="proof/mangetsu_16_goodies_chart.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_16_goodies_chart.jpg" alt="Survey chart: goodies respondents would like to receive" data-i18n-attr="alt:in.c2a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="in.cN">Survey output</span><b data-i18n="in.c2t">Preferred goodies</b><span data-i18n="in.c2p">Input for the manga box.</span></figcaption></figure>
-        <figure class="evidence"><a class="shot" href="proof/mangetsu_14_respondents_profile.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_14_respondents_profile.jpg" alt="Survey charts: respondents' profile" data-i18n-attr="alt:in.c3a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="in.cN">Survey output</span><b data-i18n="in.c3t">Respondents' profile</b><span data-i18n="in.c3p">Who answered the survey.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:0"><a class="shot" href="proof/mangetsu_02_tiktok_why.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_02_tiktok_why.jpg" alt="Survey chart: social networks used by respondents, supporting the TikTok recommendation" data-i18n-attr="alt:in.c1a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="in.cN">Survey output</span><b data-i18n="in.c1t">Why TikTok?</b><span data-i18n="in.c1p">Networks used by respondents.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:1"><a class="shot" href="proof/mangetsu_16_goodies_chart.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_16_goodies_chart.jpg" alt="Survey chart: goodies respondents would like to receive" data-i18n-attr="alt:in.c2a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="in.cN">Survey output</span><b data-i18n="in.c2t">Preferred goodies</b><span data-i18n="in.c2p">Input for the manga box.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:0"><a class="shot" href="proof/mangetsu_14_respondents_profile.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_14_respondents_profile.jpg" alt="Survey charts: respondents' profile" data-i18n-attr="alt:in.c3a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="in.cN">Survey output</span><b data-i18n="in.c3t">Respondents' profile</b><span data-i18n="in.c3p">Who answered the survey.</span></figcaption></figure>
       </div>
     </section>
 
@@ -194,13 +206,13 @@
       <h2 data-i18n="st.title">Nine recommendations along the reader's journey.</h2>
       <p class="lead-p" data-i18n="st.p">Social media, digital marketing and operational marketing, each used where it does the most for the reader.</p>
       <div class="phases">
-        <div class="phase">
+        <div class="phase reveal" style="--i:0">
           <div class="phase-head"><span data-i18n="st.p1">Awareness</span><b data-i18n="st.p1t">Get noticed</b><small data-i18n="st.p1s">Social media</small></div>
           <ul class="recs">
             <li><i>1</i><div><b>TikTok</b><p data-i18n="st.r1p">Short videos with checked subtitles and author anecdotes, linked to the other networks.</p></div></li>
           </ul>
         </div>
-        <div class="phase">
+        <div class="phase reveal" style="--i:1">
           <div class="phase-head"><span data-i18n="st.p2">Interest / Desire</span><b data-i18n="st.p2t">Build the community</b><small data-i18n="st.p2s">Social media</small></div>
           <ul class="recs">
             <li><i>2</i><div><b>Discord</b><p data-i18n="st.r2p">One channel per series, release announcements, self-assigned roles, spoiler rules, moderation bots and a backup.</p></div></li>
@@ -208,14 +220,14 @@
             <li><i>4</i><div><b data-i18n="st.r4">Video capsules</b><p data-i18n="st.r4p">Reviews of each series and a short trailer for every new volume, on TikTok, YouTube and Instagram.</p></div></li>
           </ul>
         </div>
-        <div class="phase">
+        <div class="phase reveal" style="--i:2">
           <div class="phase-head"><span data-i18n="st.p3">Action</span><b data-i18n="st.p3t">Trigger the purchase</b><small data-i18n="st.p3s">Operational &amp; digital</small></div>
           <ul class="recs">
             <li><i>5</i><div><b data-i18n="st.r5">Manga Box</b><p data-i18n="st.r5p">A themed box sold in bookshops with three volumes of a series and goodies: discover a series and want the next one.</p></div></li>
             <li><i>6</i><div><b data-i18n="st.r6">Website optimisation</b><p data-i18n="st.r6p">Catalogue sorted by collection then series, a search bar, author summaries and links to TikTok and Twitch.</p></div></li>
           </ul>
         </div>
-        <div class="phase">
+        <div class="phase reveal" style="--i:3">
           <div class="phase-head"><span data-i18n="st.p4">Loyalty / Recommendation</span><b data-i18n="st.p4t">Bring readers back</b><small data-i18n="st.p4s">Operational &amp; digital</small></div>
           <ul class="recs">
             <li><i>7</i><div><b data-i18n="st.r7">Subscription</b><p data-i18n="st.r7p">Receive volumes at each release, choose how many and from which volume to start.</p></div></li>
@@ -232,17 +244,17 @@
       <h2 data-i18n="de.title">Concepts you can look at, not just read about.</h2>
       <p class="lead-p" data-i18n="de.p">Prototypes and visuals from the team presentation. Click an image to see it full size.</p>
       <div class="evidence-grid">
-        <figure class="evidence wide"><a class="shot" href="proof/mangetsu_01_customer_journey.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_01_customer_journey.jpg" alt="Customer journey used as the guiding thread: awareness, interest/desire, action, loyalty and recommendation" data-i18n-attr="alt:de.e1a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e1n">Deliverable 01</span><b data-i18n="de.e1t">Customer journey</b><span data-i18n="de.e1p">The guiding thread of the nine recommendations.</span></figcaption></figure>
-        <figure class="evidence"><a class="shot" href="proof/mangetsu_03_discord_server.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_03_discord_server.jpg" alt="Prototype of the Mangetsu Discord server" data-i18n-attr="alt:de.e2a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e2n">Deliverable 02</span><b data-i18n="de.e2t">Discord server</b><span data-i18n="de.e2p">Welcome screen of the prototype server.</span></figcaption></figure>
-        <figure class="evidence"><a class="shot" href="proof/mangetsu_04_discord_channels.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_04_discord_channels.jpg" alt="Prototype of the Discord channels, one per series" data-i18n-attr="alt:de.e3a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e3n">Deliverable 03</span><b data-i18n="de.e3t">Channels and self-roles</b><span data-i18n="de.e3p">One channel per series; readers pick the series they want news about.</span></figcaption></figure>
-        <figure class="evidence"><a class="shot" href="proof/mangetsu_06_discord_announcement.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_06_discord_announcement.jpg" alt="Prototype of a release announcement on Discord" data-i18n-attr="alt:de.e4a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e4n">Deliverable 04</span><b data-i18n="de.e4t">Discord announcement</b><span data-i18n="de.e4p">How a new volume would be announced to the community.</span></figcaption></figure>
-        <figure class="evidence"><a class="shot" href="proof/mangetsu_07_discord_promotion.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_07_discord_promotion.jpg" alt="Social media visuals promoting the Discord server" data-i18n-attr="alt:de.e5a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e5n">Deliverable 05</span><b data-i18n="de.e5t">Promoting the server</b><span data-i18n="de.e5p">Visuals to bring followers from Instagram and Twitter to Discord.</span></figcaption></figure>
-        <figure class="evidence"><a class="shot" href="proof/mangetsu_08_manga_box.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_08_manga_box.jpg" alt="Examples of the manga box concept" data-i18n-attr="alt:de.e6a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e6n">Deliverable 06</span><b data-i18n="de.e6t">Manga Box</b><span data-i18n="de.e6p">Three volumes and goodies in a themed box for bookshops.</span></figcaption></figure>
-        <figure class="evidence"><a class="shot" href="proof/mangetsu_09_website_home.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_09_website_home.jpg" alt="Redesigned home page of the Mangetsu website" data-i18n-attr="alt:de.e7a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e7n">Deliverable 07</span><b data-i18n="de.e7t">Website: home</b><span data-i18n="de.e7p">Mock-up of the optimised home page.</span></figcaption></figure>
-        <figure class="evidence"><a class="shot" href="proof/mangetsu_10_website_catalogue.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_10_website_catalogue.jpg" alt="Redesigned catalogue page sorted by collection and series" data-i18n-attr="alt:de.e8a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e8n">Deliverable 08</span><b data-i18n="de.e8t">Website: catalogue</b><span data-i18n="de.e8p">Sorted by collection, then by series, with a search bar.</span></figcaption></figure>
-        <figure class="evidence"><a class="shot" href="proof/mangetsu_11_qr_code.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_11_qr_code.jpg" alt="Example of a QR code printed at the back of a manga" data-i18n-attr="alt:de.e9a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e9n">Deliverable 09</span><b data-i18n="de.e9t">QR code</b><span data-i18n="de.e9p">Connects the printed volume to the app, the newsletter, Discord and pre-orders.</span></figcaption></figure>
-        <figure class="evidence"><a class="shot" href="proof/mangetsu_12_app_series.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_12_app_series.jpg" alt="App prototype: follow ongoing series and pre-order" data-i18n-attr="alt:de.e10a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e10n">Deliverable 10</span><b data-i18n="de.e10t">App: series</b><span data-i18n="de.e10p">Follow ongoing series, get reminders, pre-order the next volume.</span></figcaption></figure>
-        <figure class="evidence"><a class="shot" href="proof/mangetsu_17_instagram_highlights.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_17_instagram_highlights.jpg" alt="Instagram highlights concept, one per ongoing series" data-i18n-attr="alt:de.e11a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e11n">Deliverable 11</span><b data-i18n="de.e11t">Instagram highlights</b><span data-i18n="de.e11p">One highlight per series for faster navigation.</span></figcaption></figure>
+        <figure class="evidence wide reveal" style="--i:1"><a class="shot" href="proof/mangetsu_01_customer_journey.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_01_customer_journey.jpg" alt="Customer journey used as the guiding thread: awareness, interest/desire, action, loyalty and recommendation" data-i18n-attr="alt:de.e1a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e1n">Deliverable 01</span><b data-i18n="de.e1t">Customer journey</b><span data-i18n="de.e1p">The guiding thread of the nine recommendations.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:0"><a class="shot" href="proof/mangetsu_03_discord_server.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_03_discord_server.jpg" alt="Prototype of the Mangetsu Discord server" data-i18n-attr="alt:de.e2a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e2n">Deliverable 02</span><b data-i18n="de.e2t">Discord server</b><span data-i18n="de.e2p">Welcome screen of the prototype server.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:1"><a class="shot" href="proof/mangetsu_04_discord_channels.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_04_discord_channels.jpg" alt="Prototype of the Discord channels, one per series" data-i18n-attr="alt:de.e3a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e3n">Deliverable 03</span><b data-i18n="de.e3t">Channels and self-roles</b><span data-i18n="de.e3p">One channel per series; readers pick the series they want news about.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:0"><a class="shot" href="proof/mangetsu_06_discord_announcement.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_06_discord_announcement.jpg" alt="Prototype of a release announcement on Discord" data-i18n-attr="alt:de.e4a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e4n">Deliverable 04</span><b data-i18n="de.e4t">Discord announcement</b><span data-i18n="de.e4p">How a new volume would be announced to the community.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:1"><a class="shot" href="proof/mangetsu_07_discord_promotion.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_07_discord_promotion.jpg" alt="Social media visuals promoting the Discord server" data-i18n-attr="alt:de.e5a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e5n">Deliverable 05</span><b data-i18n="de.e5t">Promoting the server</b><span data-i18n="de.e5p">Visuals to bring followers from Instagram and Twitter to Discord.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:0"><a class="shot" href="proof/mangetsu_08_manga_box.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_08_manga_box.jpg" alt="Examples of the manga box concept" data-i18n-attr="alt:de.e6a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e6n">Deliverable 06</span><b data-i18n="de.e6t">Manga Box</b><span data-i18n="de.e6p">Three volumes and goodies in a themed box for bookshops.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:1"><a class="shot" href="proof/mangetsu_09_website_home.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_09_website_home.jpg" alt="Redesigned home page of the Mangetsu website" data-i18n-attr="alt:de.e7a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e7n">Deliverable 07</span><b data-i18n="de.e7t">Website: home</b><span data-i18n="de.e7p">Mock-up of the optimised home page.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:0"><a class="shot" href="proof/mangetsu_10_website_catalogue.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_10_website_catalogue.jpg" alt="Redesigned catalogue page sorted by collection and series" data-i18n-attr="alt:de.e8a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e8n">Deliverable 08</span><b data-i18n="de.e8t">Website: catalogue</b><span data-i18n="de.e8p">Sorted by collection, then by series, with a search bar.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:1"><a class="shot" href="proof/mangetsu_11_qr_code.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_11_qr_code.jpg" alt="Example of a QR code printed at the back of a manga" data-i18n-attr="alt:de.e9a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e9n">Deliverable 09</span><b data-i18n="de.e9t">QR code</b><span data-i18n="de.e9p">Connects the printed volume to the app, the newsletter, Discord and pre-orders.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:0"><a class="shot" href="proof/mangetsu_12_app_series.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_12_app_series.jpg" alt="App prototype: follow ongoing series and pre-order" data-i18n-attr="alt:de.e10a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e10n">Deliverable 10</span><b data-i18n="de.e10t">App: series</b><span data-i18n="de.e10p">Follow ongoing series, get reminders, pre-order the next volume.</span></figcaption></figure>
+        <figure class="evidence reveal" style="--i:1"><a class="shot" href="proof/mangetsu_17_instagram_highlights.jpg" target="_blank" rel="noopener"><img src="proof/mangetsu_17_instagram_highlights.jpg" alt="Instagram highlights concept, one per ongoing series" data-i18n-attr="alt:de.e11a" loading="lazy" width="1600" height="900" /></a><figcaption><span class="ev-n" data-i18n="de.e11n">Deliverable 11</span><b data-i18n="de.e11t">Instagram highlights</b><span data-i18n="de.e11p">One highlight per series for faster navigation.</span></figcaption></figure>
       </div>
     </section>
 
@@ -264,14 +276,14 @@
     <section id="learned" class="section takeaway">
       <div class="eyebrow" data-i18n="le.eyebrow">09 · Key learnings</div>
       <blockquote data-i18n="le.quote">“Each channel has a job at a specific moment of the reader's journey. The strategy is the sequence, not the list of tools.”</blockquote>
-      <ul class="learn-list">
+      <ul class="learn-list reveal">
         <li><b data-i18n="le.1t">Connect the physical and the digital</b><span data-i18n="le.1">The QR code on the printed volume is the smallest idea in the project and the one that links everything else.</span></li>
         <li><b data-i18n="le.2t">Prototype to be understood</b><span data-i18n="le.2">A Discord server or an app is much easier to judge as a mock-up than as a paragraph.</span></li>
         <li><b data-i18n="le.3t">Credit the team</b><span data-i18n="le.3">Presenting shared work honestly matters as much as the ideas themselves.</span></li>
       </ul>
 
       <div class="eyebrow" style="margin-top:70px" data-i18n="nx.eyebrow">10 · Next project</div>
-      <a class="next-card" href="../akira/index.html">
+      <a class="next-card reveal" href="../akira/index.html">
         <div>
           <span class="eyebrow" data-i18n="nx.kicker">Entrepreneurial project · Brand, content &amp; social media</span>
           <h3>Akira Fashion</h3>

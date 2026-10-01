@@ -213,6 +213,7 @@ window.I18N_DICT = {
     'mg.b1': 'Une super série… que personne ne connaît encore.',
     'mg.b2': '6 actions',
     'mg.b3': '12 mois',
+    'tk.1': 'TEASING', 'tk.2': 'LANCEMENT', 'tk.3': 'SOUTIEN', 'tk.4': 'RELANCEMENT', 'tk.5': '135 LECTEURS', 'tk.6': '8 ENTRETIENS', 'tk.7': '12 MOIS',
     'footer': 'Harry Mulembwe · Data &amp; Business Analyst · Bruxelles · Recommandations académiques, pas des campagnes exécutées'
   },
   nl: {
@@ -428,6 +429,7 @@ window.I18N_DICT = {
     'mg.b1': 'Een geweldige reeks… die nog niemand kent.',
     'mg.b2': '6 acties',
     'mg.b3': '12 maanden',
+    'tk.1': 'TEASING', 'tk.2': 'LANCERING', 'tk.3': 'ONDERSTEUNING', 'tk.4': 'RELAUNCH', 'tk.5': '135 LEZERS', 'tk.6': '8 INTERVIEWS', 'tk.7': '12 MAANDEN',
     'footer': 'Harry Mulembwe · Data- &amp; business-analist · Brussel · Academische aanbevelingen, geen uitgevoerde campagnes'
   }
 };

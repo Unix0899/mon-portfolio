@@ -208,6 +208,11 @@ window.I18N_DICT = {
     'nx.alt': 'Story Akira Fashion : collection automne / hiver',
     'le.contact': 'Me contacter',
     'le.all': 'Tous les projets',
+    'mg.b0': 'recommandations sur le parcours du lecteur',
+    'mg.b1': 'Une série se soutient tome après tome&nbsp;!',
+    'mg.b2': 'Équipe',
+    'mg.b3': 'de cinq',
+    'tk.1': 'CONSCIENCE', 'tk.2': 'INTÉRÊT', 'tk.3': 'ACTION', 'tk.4': 'FIDÉLISATION',
     'footer': 'Harry Mulembwe · Data &amp; Business Analyst · Bruxelles · Projet académique d’équipe, recommandations non mises en œuvre'
   },
   nl: {
@@ -418,6 +423,11 @@ window.I18N_DICT = {
     'nx.alt': 'Akira Fashion-story: herfst/wintercollectie',
     'le.contact': 'Contacteer me',
     'le.all': 'Alle projecten',
+    'mg.b0': 'aanbevelingen op het lezerstraject',
+    'mg.b1': 'Een reeks ondersteun je deel na deel!',
+    'mg.b2': 'Team',
+    'mg.b3': 'van vijf',
+    'tk.1': 'BEKENDHEID', 'tk.2': 'INTERESSE', 'tk.3': 'ACTIE', 'tk.4': 'LOYALITEIT',
     'footer': 'Harry Mulembwe · Data- &amp; business-analist · Brussel · Academisch teamproject, aanbevelingen niet uitgevoerd'
   }
 };

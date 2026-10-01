@@ -1,3 +1,15 @@
-/* Mangetsu case study: project-specific touches on top of assets/marketing-case.css */
-.cover img{object-position:center 35%}
+/* Mangetsu case study: red, black and white palette for assets/manga-case.css */
+.manga{--ky:#e3111f;--kon:#fff;--kya:#fff;--kpaper:#fffaf9;--ktint:#fff1f1;--kdisc:#ffe6e7}
+.manga .hero-sub{text-decoration-color:rgba(227,17,31,.35)}
+.manga .insights-grid .big{background:linear-gradient(transparent 62%,rgba(227,17,31,.3) 62%)}
+.manga .claims a{background:linear-gradient(transparent 60%,rgba(227,17,31,.28) 60%)}
+.manga .stats strong,.manga .pn4 b{color:#fff}
+.manga .stats article::after{background-image:radial-gradient(#e3111f 1.3px,transparent 1.5px);opacity:.8}
+.manga .mg-ticker{color:#fff}
+.manga .mg-track i{color:var(--ky)}
+.manga .next-card .go b{color:#ff6b74}
+.pn1 img{object-position:8% top}
+.pn3 img{object-position:center;transform:none}
 .next-card img{object-position:center 30%}
+.mangetsu .hero h1{font-size:clamp(44px,6.1vw,86px)}
+@media(max-width:620px){.mangetsu .hero h1{font-size:46px}}

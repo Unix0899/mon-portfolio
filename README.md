@@ -104,6 +104,6 @@ Rules kept on every page: survey figures are never presented as commercial resul
 labelled as recommendations, the Mangetsu page credits the team, and no KPI, date, tool or budget is invented.
 Images in `projects/<slug>/proof/` are JPEG exports (max 1600 px, < 300 KB) of the original PDF / PNG deliverables.
 
-The Komogi case study has its own "manga edition" theme in `projects/komogi/styles.css` (yellow and black palette of the publisher, panel layout, halftone, speech bubble, ticker, pop reveals). All motion is disabled with `prefers-reduced-motion`.
+The Komogi and Mangetsu case studies share a "manga edition" theme in `assets/manga-case.css` (panel layout, halftone, speech bubble, translated ticker, pop reveals). Each project only sets its palette in its own `styles.css`: yellow and black for Komogi, red and black for Mangetsu. All motion is disabled with `prefers-reduced-motion`.
 
 The Akira Fashion case study has its own dark streetwear theme in `projects/akira/styles.css` (glitch title, neon ticker, lookbook grid, banner rail).

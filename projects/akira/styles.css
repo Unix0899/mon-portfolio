@@ -1,5 +1,6 @@
 /* Akira Fashion case study: dark streetwear lookbook, on top of assets/marketing-case.css */
 .akira{--bg:#08080a;--paper:#131318;--ink:#f4f4f6;--muted:#a5a5b0;--navy:#1b1b22;--teal:#ff4fa3;--teal2:#ff8cc8;--line:#2a2a33;--soft:#1a1a21;--shadow:0 18px 50px rgba(0,0,0,.55);--pink:#ff4fa3;--violet:#8b6cff;background:var(--bg);color:var(--ink)}
+.akira main{overflow-x:clip}
 .akira ::selection{background:var(--pink);color:#08080a}
 .akira .progress{background:linear-gradient(90deg,var(--pink),var(--violet))}
 .akira .topbar{background:rgba(8,8,10,.86);border-bottom:1px solid var(--line)}
