@@ -42,7 +42,7 @@
   <link rel="stylesheet" href="../styles.css" />
   <link rel="stylesheet" href="../assets/common.css" />
 </head>
-<body>
+<body class="mkp dp">
   <header class="site-header">
     <a class="brand" href="../" aria-label="Harry Mulembwe home">
       <span class="brand-mark">HM</span>
@@ -68,24 +68,74 @@
 
   <main id="top">
     <!-- HERO -->
-    <section class="hero-v2 shell has-photo">
-      <div class="hero-text">
-      <p class="hero-name"><a class="crumb" href="../" data-i18n="hero.crumb">← Portfolio</a> Harry Mulembwe</p>
-      <h1 data-i18n="hero.title">Data &amp; Business Analyst</h1>
-      <p class="hero-lead" data-i18n="hero.lead">Turning business, customer and marketing data into clear reporting, actionable insights and practical recommendations.</p>
-      <p class="hero-tools">Power BI <i>·</i> SQL <i>·</i> Excel <i>·</i> Python</p>
-      <p class="hero-loc"><span class="pin"></span><span data-i18n="hero.loc">Brussels, Belgium</span></p>
-      <p class="hero-open"><span class="open-dot" aria-hidden="true"></span><span data-i18n="hero.open">Open to opportunities in Brussels</span></p>
-      <div class="hero-actions">
-        <a class="btn primary" href="#projects" data-i18n="hero.cta1d">View the case studies</a>
-        <a class="btn secondary" href="../assets/cv/Harry_Mulembwe_CV_EN.pdf" data-i18n-attr="href:cv.href" target="_blank" rel="noopener" data-i18n="hero.cta2">Download CV</a>
+    <section class="mkp-hero dp-hero">
+      <div class="shell mkp-hero-in">
+        <div class="hero-text mkp-text">
+          <p class="hero-name"><a class="crumb" href="../" data-i18n="hero.crumb">← Portfolio</a> Harry Mulembwe</p>
+          <h1 data-i18n="hero.title">Data &amp; Business Analyst</h1>
+          <p class="mkp-rot"><span data-i18n="dp.rot0">I turn data into</span> <span class="rot" aria-hidden="true"><b data-i18n="dp.r1" style="--n:0">clear reporting</b><b data-i18n="dp.r2" style="--n:1">actionable insights</b><b data-i18n="dp.r3" style="--n:2">practical recommendations</b></span><span class="sr-only" data-i18n="dp.rotAll">clear reporting, actionable insights and practical recommendations</span></p>
+          <p class="hero-lead" data-i18n="dp.lead">Marketing graduate specialised in Business Data Analysis. I clean and structure the data, build the reporting, and explain what it means for the people who have to decide.</p>
+          <p class="hero-loc"><span class="pin"></span><span data-i18n="hero.loc">Brussels, Belgium</span></p>
+          <p class="hero-open"><span class="open-dot" aria-hidden="true"></span><span data-i18n="hero.open">Open to opportunities in Brussels</span></p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects" data-i18n="hero.cta1d">View the case studies</a>
+            <a class="btn secondary" href="../assets/cv/Harry_Mulembwe_CV_EN.pdf" data-i18n-attr="href:cv.href" target="_blank" rel="noopener" data-i18n="hero.cta2">Download CV</a>
+          </div>
+          <dl class="lp-facts">
+            <div><dt data-count="3">3</dt><dd data-i18n="dp.f1">case studies with evidence</dd></div>
+            <div><dt data-count="4">4</dt><dd data-i18n="dp.f2">core tools: Power BI, SQL, Excel, Python</dd></div>
+            <div><dt data-count="3">3</dt><dd data-i18n="dp.f3">experiences: Cryptobel, ODRES Group, LexLau</dd></div>
+          </dl>
+        </div>
+        <div class="mkp-orbit" aria-hidden="true">
+          <span class="mkp-ring"></span>
+          <img class="mkp-me" src="../assets/img/harry-mulembwe.jpg" alt="" width="640" height="640" />
+          <img class="ob ob1 ob-wide" src="../projects/odres/proof/powerbi_01_executive_overview.jpg" alt="" loading="lazy" />
+          <img class="ob ob2 ob-wide" src="../projects/lexlau/proof/thumb_dashboard.jpg" alt="" loading="lazy" />
+          <img class="ob ob3 ob-wide" src="../projects/odres/proof/powerbi_02_acquisition_funnel.jpg" alt="" loading="lazy" />
+          <img class="ob ob4 ob-wide" src="../projects/cryptobel/proof/01-social-media-overview.jpg" alt="" loading="lazy" />
+          <span class="ob-chip c1">Power BI</span><span class="ob-chip c2">SQL</span><span class="ob-chip c3">Python</span><span class="ob-chip c4">Excel</span>
+        </div>
       </div>
+      <div class="mkp-band" aria-hidden="true">
+        <div class="mkp-track"><span>POWER BI</span><i>✦</i><span>SQL</span><i>✦</i><span>PYTHON</span><i>✦</i><span>EXCEL</span><i>✦</i><span>DAX</span><i>✦</i><span>KPI</span><i>✦</i><span>SEGMENTATION</span><i>✦</i><span>REPORTING</span><i>✦</i></div>
+        <div class="mkp-track"><span>POWER BI</span><i>✦</i><span>SQL</span><i>✦</i><span>PYTHON</span><i>✦</i><span>EXCEL</span><i>✦</i><span>DAX</span><i>✦</i><span>KPI</span><i>✦</i><span>SEGMENTATION</span><i>✦</i><span>REPORTING</span><i>✦</i></div>
       </div>
-      <figure class="hero-photo">
-        <img src="../assets/img/harry-mulembwe.jpg" alt="Portrait of Harry Mulembwe" data-i18n-attr="alt:hero.photoAlt" width="640" height="640" />
-      </figure>
     </section>
 
+    <!-- PITCH -->
+    <section class="section shell mkp-pitch">
+      <div class="fam-intro reveal">
+        <div class="fam-head"><div>
+          <div class="eyebrow" data-i18n="pt.eyebrow">Why me</div>
+          <h2 data-i18n="dq.title">Three things I bring to a data team.</h2>
+        </div></div>
+        <div class="fam-copy"><p data-i18n="dq.p">An analyst who also understands the marketing and business side: I know what the numbers will be used for before I build them.</p></div>
+      </div>
+      <div class="pitch-grid">
+        <article class="pitch p3 reveal" style="--i:0">
+          <span class="pitch-no">01</span>
+          <h3 data-i18n="dq.1t">I make the data trustworthy.</h3>
+          <p data-i18n="dq.1p">Collection, cleaning, validation and documented rules, so that nobody has to wonder whether a figure is right.</p>
+          <dl><div><dt data-count="1,985">1,985</dt><dd data-i18n="dq.1a">posts and comments collected and cleaned (Cryptobel)</dd></div><div><dt data-count="443">443</dt><dd data-i18n="dq.1b">quality issues detected and fixed (ODRES, synthetic data)</dd></div></dl>
+          <a class="text-link" href="../projects/cryptobel/index.html" data-i18n="dq.1l">See it on Cryptobel <b>→</b></a>
+        </article>
+        <article class="pitch p4 reveal" style="--i:1">
+          <span class="pitch-no">02</span>
+          <h3 data-i18n="dq.2t">I build reporting people use.</h3>
+          <p data-i18n="dq.2p">SQL views, a clean data model and Power BI pages that each answer one management question.</p>
+          <dl><div><dt data-count="47">47</dt><dd data-i18n="dq.2a">DAX measures in a star-schema model</dd></div><div><dt data-count="38">38</dt><dd data-i18n="dq.2b">SQL analysis queries (ODRES, synthetic data)</dd></div></dl>
+          <a class="text-link" href="../projects/odres/index.html" data-i18n="dq.2l">See it on ODRES <b>→</b></a>
+        </article>
+        <article class="pitch p1 reveal" style="--i:2">
+          <span class="pitch-no">03</span>
+          <h3 data-i18n="dq.3t">I end with a recommendation.</h3>
+          <p data-i18n="dq.3p">Segments, insights and a clear next step for marketing, sales or product, written in business language.</p>
+          <dl><div><dt data-count="645">645</dt><dd data-i18n="dq.3a">messages clustered into audience profiles (Cryptobel)</dd></div><div><dt data-count="22">22</dt><dd data-i18n="dq.3b">interviews to complete the analysis</dd></div></dl>
+          <a class="text-link" href="../marketing/" data-path="mkt" data-i18n="dq.3l">See the marketing profile <b>→</b></a>
+        </article>
+      </div>
+    </section>
 
     <!-- TEASER: workflow in three steps -->
     <section class="teaser shell reveal" aria-label="How I work">
@@ -144,6 +194,11 @@
             <p class="project-kicker">Cryptobel · 2025</p>
             <h3 data-i18n="p1.title">Audience Segmentation &amp; Business Intelligence</h3>
             <p data-i18n="p1.desc">Using social-media data, NLP, clustering and Power BI to better understand Web3 audiences and support communication decisions.</p>
+            <dl class="mk-figures">
+              <div><dt data-count="1,985">1,985</dt><dd data-i18n="dc.1a">posts and comments collected</dd></div>
+              <div><dt data-count="645">645</dt><dd data-i18n="dc.1b">messages clustered</dd></div>
+              <div><dt data-count="5">5</dt><dd data-i18n="dc.1c">Power BI report pages</dd></div>
+            </dl>
             <div class="tags">
               <span>Python</span><span>SQL / SQLite</span><span data-i18n="tag.clean">Data Cleaning</span><span>NLP</span><span>DistilCamemBERT</span><span>TF-IDF</span><span>K-means</span><span>Power BI</span><span data-i18n="tag.seg">Segmentation</span><span data-i18n="tag.recs">Business Recommendations</span>
             </div>
@@ -168,6 +223,10 @@
             <p class="project-kicker">ODRES Group · 2025–2026</p>
             <h3 data-i18n="p3.title">Marketing Performance &amp; KPI Reporting</h3>
             <p data-i18n="p3.desc">Acquisition, funnel, pipeline and MRR analytics rebuilt publicly with synthetic data: SQL, Python, data quality, Power BI and a budget decision for every campaign.</p>
+            <dl class="mk-figures">
+              <div><dt data-count="47">47</dt><dd data-i18n="dc.2a">DAX measures</dd></div>
+              <div><dt data-count="6">6</dt><dd data-i18n="dc.2b">dashboard pages, synthetic data</dd></div>
+            </dl>
             <div class="tags">
               <span data-i18n="tag.ma">Marketing Analytics</span><span>KPI</span><span data-i18n="tag.rep">Reporting</span><span data-i18n="tag.dig">Digital Performance</span><span data-i18n="tag.ba">Business Analysis</span><span data-i18n="tag.rec">Recommendations</span>
             </div>
@@ -198,6 +257,24 @@
           </div>
         </article>
       </div>
+    </section>
+
+    <!-- PATH -->
+    <section id="path" class="section shell mkp-path">
+      <div class="fam-intro reveal">
+        <div class="fam-head"><div>
+          <div class="eyebrow" data-i18n="tl.eyebrow">My path</div>
+          <h2 data-i18n="tl.titled">From marketing questions to data answers.</h2>
+        </div></div>
+        <div class="fam-copy"><p data-i18n="tl.p">Each step added a tool to the same job: understanding people and helping a team decide.</p></div>
+      </div>
+      <ol class="tline">
+        <li class="reveal" style="--i:0"><span class="tl-date">2020 – 2024</span><b data-i18n="tl.1t">Bachelor in Marketing · Arts &amp; Culture track</b><em>EPHEC</em><p data-i18n="tl.1p">Where the audience research and the manga publishing projects come from.</p></li>
+        <li class="reveal" style="--i:1"><span class="tl-date" data-i18n="tl.2d">Feb – May 2023</span><b data-i18n="tl.2t">Communication Intern</b><em>LJE · Les Jeunes Entreprises</em><p data-i18n="tl.2p">Press release, press kit, poster, stories, campaign formats and award cheques.</p></li>
+        <li class="reveal" style="--i:2"><span class="tl-date">2024 – 2025</span><b data-i18n="tl.3t">Advanced Bachelor in Business Data Analysis</b><em>EPHEC</em><p data-i18n="tl.3p">SQL, Python and Power BI, to measure what marketing does.</p></li>
+        <li class="reveal" style="--i:3"><span class="tl-date" data-i18n="tl.4d">Jan – Jun 2025</span><b data-i18n="tl.4t">Marketing Data Analyst Intern</b><em>Cryptobel</em><p data-i18n="tl.4p">Audience segmentation and Power BI dashboards on social-media data.</p></li>
+        <li class="reveal now" style="--i:4"><span class="tl-date" data-i18n="tl.5d">Nov 2025 – Jun 2026</span><b data-i18n="tl.5t">Digital Marketing &amp; Data Assistant</b><em>ODRES Group</em><p data-i18n="tl.5p">Digital acquisition analysis, KPI tracking, reporting and recommendations.</p></li>
+      </ol>
     </section>
 
     <!-- SKILLS MAP -->
@@ -247,46 +324,32 @@
       </div>
     </section>
 
-    <!-- CV -->
-    <section id="cv" class="section cv-section">
-      <div class="shell cv-card reveal">
-        <div>
-          <div class="eyebrow light" data-i18n="cv.eyebrow">Resume</div>
-          <h2 data-i18n="cv.title">Need the one-page version?</h2>
-          <p data-i18n="cv.p">Download my Data &amp; Business Analytics CV.</p>
-        </div>
-        <div class="cv-actions">
-          <a class="btn light-btn" href="../assets/cv/Harry_Mulembwe_CV_EN.pdf" target="_blank" rel="noopener" lang="en">CV · English</a>
-          <a class="btn outline-light" href="../assets/cv/Harry_Mulembwe_CV_FR.pdf" target="_blank" rel="noopener" lang="fr">CV · Français</a>
-          <a class="cv-alt" href="../marketing/#cv" data-i18n="dcv.alt">Digital Marketing CV →</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section shell contact-section">
-      <div class="contact-card reveal">
-        <div>
-          <div class="eyebrow" data-i18n="ct.eyebrow">Contact</div>
-          <h2 data-i18n="ct.title">Open to opportunities in Brussels.</h2>
+    <!-- CONTACT + CV -->
+    <section id="contact" class="section shell lp-contact">
+      <div class="lp-cta reveal">
+        <div class="lp-cta-text">
+          <p class="hero-open"><span class="open-dot" aria-hidden="true"></span><span data-i18n="hero.open">Open to opportunities in Brussels</span></p>
+          <h2 data-i18n="dx.title">Data that needs to make sense? Let's talk.</h2>
           <p data-i18n="ct.p">Data Analysis, BI &amp; Reporting, Commercial Analytics, CRM / Customer Insights and Marketing Analytics.</p>
+          <div class="lp-cta-actions">
+            <a class="btn light-btn" href="mailto:Harrymulembwe09@gmail.com"><span data-i18n="lc.mail">Send me an email</span> <b>→</b></a>
+            <a class="btn outline-light" href="https://linkedin.com/in/harry-mulembwe" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+          <p class="lp-mail">Harrymulembwe09@gmail.com · <span data-i18n="ct.loc">1150 Woluwe-Saint-Pierre · Brussels</span></p>
         </div>
-        <div class="contact-links">
-          <a href="mailto:Harrymulembwe09@gmail.com">
-            <span data-i18n="ct.email">Email</span>
-            <strong>Harrymulembwe09@gmail.com</strong>
-          </a>
-          <a href="https://linkedin.com/in/harry-mulembwe" target="_blank" rel="noopener">
-            <span>LinkedIn</span>
-            <strong>linkedin.com/in/harry-mulembwe</strong>
-          </a>
-          <div class="contact-item">
-            <span data-i18n="ct.locL">Location</span>
-            <strong data-i18n="ct.loc">1150 Woluwe-Saint-Pierre · Brussels</strong>
+        <div class="lp-cv" id="cv">
+          <div class="lp-cv-card">
+            <span><b>01</b> <span data-i18n="lp.cvData">CV · Data &amp; Business Analyst</span></span>
+            <div><a href="../assets/cv/Harry_Mulembwe_CV_EN.pdf" target="_blank" rel="noopener" lang="en">English ↓</a><a href="../assets/cv/Harry_Mulembwe_CV_FR.pdf" target="_blank" rel="noopener" lang="fr">Français ↓</a></div>
+          </div>
+          <div class="lp-cv-card alt">
+            <span><b>02</b> <span data-i18n="lp.cvMkt">CV · Digital Marketing</span></span>
+            <div><a href="../marketing/#cv" data-i18n="dx.alt">On the marketing profile →</a></div>
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
   <nav class="fam-switch" aria-label="Profiles" data-i18n-attr="aria-label:fs.label">
