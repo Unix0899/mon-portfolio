@@ -308,7 +308,8 @@ window.I18N_DICT = {
     'wb.3t': 'J’en fais une décision.',
     'wb.3p': 'Des reportings et des recommandations écrits pour ceux qui doivent agir&nbsp;: quoi garder, quoi changer, quoi tester ensuite.',
     'wb.3l': 'Parlons-en <b>→</b>',
-    'lc.title': 'Ouvert aux opportunités à Bruxelles.',
+    'lc.title': 'Un poste à pourvoir&nbsp;? Parlons-en.',
+    'lc.mail': 'M’écrire un e-mail',
     'lc.p': 'Analyse de données, BI et reporting, marketing digital, communication, CRM et connaissance client. Prenez le CV qui correspond au poste.',
 
     'ft.1': 'Harry Mulembwe · Data &amp; Business Analyst',
@@ -623,7 +624,8 @@ window.I18N_DICT = {
     'wb.3t': 'Ik maak er een beslissing van.',
     'wb.3p': 'Rapportering en aanbevelingen geschreven voor wie moet handelen: wat behouden, wat veranderen, wat hierna testen.',
     'wb.3l': 'Laten we praten <b>→</b>',
-    'lc.title': 'Open voor kansen in Brussel.',
+    'lc.title': 'Een vacature? Laten we praten.',
+    'lc.mail': 'Stuur me een e-mail',
     'lc.p': 'Data-analyse, BI en rapportering, digitale marketing, communicatie, CRM en klantinzichten. Neem het cv dat bij de functie past.',
 
     'ft.1': 'Harry Mulembwe · Data- &amp; business-analist',
