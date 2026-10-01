@@ -97,7 +97,7 @@ Strategy / Solution, Deliverables, Skills, Key learnings, Next project.
 |---|---|---|
 | Komogi | Individual project (TFE, EPHEC 2022–2023) | TFE defence deck: 135 respondents, 8 interviews, 87 %, 70.9 %, 61.5 %, 81.5 %, 12-month media planning, €1,643.60 excl. VAT |
 | Mangetsu | Team project (5 students) | Team deck: 4-stage journey, 9 recommendations, prototypes, quantitative survey charts |
-| Akira Fashion | Entrepreneurial project | Two stories (Black Friday, Fall / Winter collection). No sales, followers, dates or tools are published |
+| Akira Fashion | Entrepreneurial project (Photoshop + Canva) | 7 web banners, 7 lifestyle mock-ups, 10 product visuals, 2 mobile banners, 2 stories (28 visuals). No sales, followers or engagement figures are published |
 | LJE | Internship (Communication Intern, Feb – May 2023, Canva + Photoshop) | Press release "Boost Your Planet", Boost Your Talent press kit 2023 (5 pages), 9 formats of the Mini-Entreprises Sales Day campaign, 3 contest stories, coach recruitment poster, LJE Challenge 2023 award cheques (13 designs, 17 May 2023) |
 
 Rules kept on every page: survey figures are never presented as commercial results, academic strategies are
@@ -105,3 +105,5 @@ labelled as recommendations, the Mangetsu page credits the team, and no KPI, dat
 Images in `projects/<slug>/proof/` are JPEG exports (max 1600 px, < 300 KB) of the original PDF / PNG deliverables.
 
 The Komogi case study has its own "manga edition" theme in `projects/komogi/styles.css` (yellow and black palette of the publisher, panel layout, halftone, speech bubble, ticker, pop reveals). All motion is disabled with `prefers-reduced-motion`.
+
+The Akira Fashion case study has its own dark streetwear theme in `projects/akira/styles.css` (glitch title, neon ticker, lookbook grid, banner rail).

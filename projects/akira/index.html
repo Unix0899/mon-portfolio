@@ -42,7 +42,7 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="../../assets/common.css" />
 </head>
-<body>
+<body class="akira">
   <div class="progress" aria-hidden="true"></div>
   <header class="topbar">
     <a class="brand" href="../../marketing/#marketing">← <span class="brand-name">Harry Mulembwe</span></a>
@@ -50,8 +50,9 @@
       <nav>
         <a href="#role" data-i18n="nav.role">My role</a>
         <a href="#brand" data-i18n="nav.brand">Brand</a>
-        <a href="#solution" data-i18n="nav.solution">Content</a>
-        <a href="#deliverables" data-i18n="nav.deliverables">Deliverables</a>
+        <a href="#banners" data-i18n="nav.banners">Campaigns</a>
+        <a href="#mockups" data-i18n="nav.mockups">Lookbook</a>
+        <a href="#products" data-i18n="nav.products">Products</a>
       </nav>
       <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:ui.lang">
         <button type="button" data-lang-btn="en" lang="en" title="English" aria-pressed="true">EN</button>
@@ -63,37 +64,49 @@
 
   <main id="top">
     <!-- HERO -->
-    <section class="hero section">
-      <div class="eyebrow" data-i18n="hero.eyebrow">Case study · Brand, content &amp; social media</div>
-      <h1>Akira Fashion</h1>
-      <p class="hero-sub" data-i18n="hero.sub">Brand, Content &amp; Social Media</p>
-      <span class="type-badge" data-i18n="hero.badge">Entrepreneurial project</span>
-      <p class="hero-copy" data-i18n="hero.copy">A real clothing brand, built as an entrepreneurial project rather than a school exercise. My work: social media posts, stories, promotional content, product presentation and input on accessories and the brand's visual universe.</p>
-      <p class="disclosure"><b data-i18n="hero.discL">What is shown</b><span data-i18n="hero.disc">This page shows the work, not results. Sales, followers, engagement or dates are not published because they are not documented here, and nothing is estimated in their place.</span></p>
+    <section class="hero section ak-hero">
+      <div class="ak-top">
+        <div class="ak-text">
+          <div class="eyebrow" data-i18n="hero.eyebrow">Case study · Brand, content &amp; social media</div>
+          <h1 class="glitch" data-text="Akira Fashion">Akira Fashion</h1>
+          <p class="hero-sub" data-i18n="hero.sub">Anime-inspired clothing brand · Brand, content &amp; social media</p>
+          <span class="type-badge" data-i18n="hero.badge">Entrepreneurial project</span>
+          <p class="hero-copy" data-i18n="hero.copy">A real clothing brand, built as an entrepreneurial project rather than a school exercise. I produced its visual communication: campaign banners, stories, lifestyle mock-ups and product visuals, plus input on accessories and the brand's visual universe.</p>
+          <ul class="tool-chips" aria-label="Tools" data-i18n-attr="aria-label:hero.toolsL">
+            <li><b>Photoshop</b><span data-i18n="hero.t1">mock-ups, image editing, product visuals</span></li>
+            <li><b>Canva</b><span data-i18n="hero.t2">banners, stories, format declinations</span></li>
+          </ul>
+        </div>
+        <div class="ak-stack" aria-hidden="true">
+          <img class="sk sk1" src="proof/mockup_03_japan_tee_back.jpg" alt="" width="900" height="1125" />
+          <img class="sk sk2" src="proof/mockup_01_skull_tee.jpg" alt="" width="900" height="1125" />
+          <img class="sk sk3" src="proof/akira_02_fall_winter_story.jpg" alt="" width="900" height="1600" />
+          <span class="sk-tag t1">FW 2023</span><span class="sk-tag t2">New arrival</span>
+        </div>
+      </div>
+      <p class="disclosure"><b data-i18n="hero.discL">What is shown</b><span data-i18n="hero.disc">This page shows the work, not results. Sales, followers or engagement figures are not published because they are not documented here, and nothing is estimated in their place.</span></p>
       <div class="meta-grid">
         <div><span data-i18n="m.type">Type</span><strong data-i18n="m.typeV">Entrepreneurial project</strong></div>
-        <div><span data-i18n="m.sector">Sector</span><strong data-i18n="m.sectorV">Fashion · clothing brand</strong></div>
-        <div><span data-i18n="m.scope">My scope</span><strong data-i18n="m.scopeV">Content, stories, promotional visuals, accessories</strong></div>
-        <div><span data-i18n="m.format">Formats shown</span><strong data-i18n="m.formatV">Instagram-style stories, 1080 × 1920</strong></div>
+        <div><span data-i18n="m.sector">Sector</span><strong data-i18n="m.sectorV">Fashion · anime-inspired clothing</strong></div>
+        <div><span data-i18n="m.scope">My scope</span><strong data-i18n="m.scopeV">Banners, stories, mock-ups, product visuals, accessories</strong></div>
+        <div><span data-i18n="m.tools">Tools</span><strong>Photoshop · Canva</strong></div>
       </div>
       <div class="stack">
         <span data-i18n="tag.br">Branding</span><span data-i18n="tag.sm">Social media</span><span data-i18n="tag.cc">Content creation</span><span data-i18n="tag.fa">Fashion</span><span data-i18n="tag.pr">Product</span><span data-i18n="tag.en">Entrepreneurship</span>
       </div>
     </section>
 
-    <!-- Story pair: the two available deliverables, shown large -->
-    <div class="cover story-cover">
-      <div class="story-pair">
-        <figure>
-          <img src="proof/akira_02_fall_winter_story.jpg" alt="Akira Fashion story: Fall / Winter collection, model wearing the Wise-Man sweatshirt" data-i18n-attr="alt:cover.alt1" width="900" height="1600" />
-          <figcaption data-i18n="cover.cap1">Fall / Winter collection · product-led story</figcaption>
-        </figure>
-        <figure>
-          <img src="proof/akira_01_black_friday_story.jpg" alt="Akira Fashion story: Black Friday, save up to 25%" data-i18n-attr="alt:cover.alt2" width="900" height="1600" />
-          <figcaption data-i18n="cover.cap2">Black Friday · promotional story, “Save up to 25%”</figcaption>
-        </figure>
-      </div>
+    <div class="ak-ticker" aria-hidden="true">
+      <div class="ak-track"><span>NEW ARRIVAL</span><i>東京</i><span>FALL / WINTER 2023</span><i>✦</i><span>BLACK FRIDAY</span><i>日本</i><span>WELCOME GIFT</span><i>✦</i><span>ANIME INSPIRED</span><i>静けさ</i></div>
+      <div class="ak-track"><span>NEW ARRIVAL</span><i>東京</i><span>FALL / WINTER 2023</span><i>✦</i><span>BLACK FRIDAY</span><i>日本</i><span>WELCOME GIFT</span><i>✦</i><span>ANIME INSPIRED</span><i>静けさ</i></div>
     </div>
+
+    <section class="stats section narrow">
+      <article class="reveal" style="--i:0"><strong data-count="28">28</strong><span data-i18n="st.1">visuals shown on this page, made with Photoshop and Canva</span></article>
+      <article class="reveal" style="--i:1"><strong data-count="3">3</strong><span data-i18n="st.2">campaigns: Fall / Winter Collection 2023, Black Friday, Welcome gift</span></article>
+      <article class="reveal" style="--i:2"><strong data-count="5">5</strong><span data-i18n="st.3">formats: web banner, mobile banner, story, portrait post, square product card</span></article>
+      <article class="reveal" style="--i:3"><strong data-count="10">10</strong><span data-i18n="st.4">product visuals, from plain packshots to “New arrival” cards</span></article>
+    </section>
 
     <!-- 01 CONTEXT -->
     <section id="context" class="section split">
@@ -102,7 +115,7 @@
         <h2 data-i18n="ctx.title">A young clothing brand that needed a consistent voice on social media.</h2>
       </div>
       <div class="prose">
-        <p data-i18n="ctx.p1">Akira Fashion is a clothing brand run as a real entrepreneurial project. Like any young brand, it had to become visible and desirable with limited means: a recognisable universe, regular content and clear communication around collections and commercial moments.</p>
+        <p data-i18n="ctx.p1">Akira Fashion is an anime-inspired clothing brand run as a real entrepreneurial project. Like any young brand, it had to become visible and desirable with limited means: a recognisable universe, regular content and clear communication around collections and commercial moments.</p>
         <p data-i18n="ctx.p2">I contributed on the communication and product side, from the content published on social media to the design of accessories and the way products were presented.</p>
       </div>
     </section>
@@ -149,12 +162,17 @@
     <section id="approach" class="section">
       <div class="eyebrow" data-i18n="ap.eyebrow">04 · Approach</div>
       <h2 data-i18n="ap.title">From brand codes to published content.</h2>
-      <ol class="chain">
+      <ol class="chain reveal">
         <li><span>01</span><b data-i18n="ap.1">Brand universe</b><small data-i18n="ap.1s">Codes, tone, logo usage</small></li>
         <li><span>02</span><b data-i18n="ap.2">Content moments</b><small data-i18n="ap.2s">Collections, promotions, product highlights</small></li>
         <li><span>03</span><b data-i18n="ap.3">Formats</b><small data-i18n="ap.3s">Posts and stories, one identity</small></li>
         <li class="last"><span>04</span><b data-i18n="ap.4">Publication</b><small data-i18n="ap.4s">Content shared on the brand's social media</small></li>
       </ol>
+      <div class="framework reveal">
+        <b data-i18n="ap.fw">Tools</b>
+        <ol><li>Photoshop</li><li>Canva</li></ol>
+        <small data-i18n="ap.fws">Photoshop to place the designs on garments and photos (mock-ups) and to edit images; Canva to lay out banners and stories and decline them per format.</small>
+      </div>
     </section>
 
     <!-- 05 BRAND CODES (insights) -->
@@ -163,54 +181,121 @@
       <h2 data-i18n="br.title">Few codes, applied everywhere.</h2>
       <p class="lead-p" data-i18n="br.p">What the published content shows about the brand's identity.</p>
       <div class="insights-grid">
-        <article><span data-i18n="br.1n">Palette</span><h3 data-i18n="br.1t">Black and white, almost nothing else.</h3><p data-i18n="br.1p">Promotional and product visuals share the same monochrome base, so a sale story and a collection story read as one brand.</p></article>
-        <article><span data-i18n="br.2n">Typography</span><h3 data-i18n="br.2t">Large, bold, uppercase.</h3><p data-i18n="br.2p">Headlines carry the message on their own; the copy stays short (“Fall / Winter collection”, “Save up to 25%”).</p></article>
-        <article><span data-i18n="br.3n">Logo</span><h3 data-i18n="br.3t">The A-mark and the wordmark, always present.</h3><p data-i18n="br.3p">Placed as a signature on every visual, small on promotions, large on lifestyle imagery.</p></article>
-        <article><span data-i18n="br.4n">Product</span><h3 data-i18n="br.4t">Statement pieces with a Japanese reference.</h3><p data-i18n="br.4p">The “Wise-Man” sweatshirt pairs an English word with its Japanese characters, in line with the brand name.</p></article>
-        <article><span data-i18n="br.5n">Motifs</span><h3 data-i18n="br.5t">Repeated “SALE” tape for promotions.</h3><p data-i18n="br.5p">A single graphic device that signals a commercial moment without leaving the monochrome universe.</p></article>
-        <article><span data-i18n="br.6n">Imagery</span><h3 data-i18n="br.6t">Lifestyle photography for collections.</h3><p data-i18n="br.6p">Products are shown worn, in a real setting, rather than on a flat background.</p></article>
+        <article class="reveal" style="--i:0"><span data-i18n="br.1n">Palette</span><h3 data-i18n="br.1t">Black and white first, one neon accent.</h3><p data-i18n="br.1p">Campaign layouts are monochrome. Pink and violet live on the products, never on the frame, so the garment is always the loudest thing on screen.</p></article>
+        <article class="reveal" style="--i:1"><span data-i18n="br.2n">Typography</span><h3 data-i18n="br.2t">Large, bold, uppercase.</h3><p data-i18n="br.2p">Headlines carry the message on their own; the copy stays short (“Fall / Winter collection”, “Save up to 25%”).</p></article>
+        <article class="reveal" style="--i:2"><span data-i18n="br.3n">Logo</span><h3 data-i18n="br.3t">The A-mark and the wordmark, always present.</h3><p data-i18n="br.3p">Placed as a signature on every visual, small on promotions, large on lifestyle imagery.</p></article>
+        <article class="reveal" style="--i:0"><span data-i18n="br.4n">Product</span><h3 data-i18n="br.4t">Statement pieces with a Japanese reference.</h3><p data-i18n="br.4p">The “Wise-Man” sweatshirt pairs an English word with its Japanese characters, in line with the brand name.</p></article>
+        <article class="reveal" style="--i:1"><span data-i18n="br.5n">Motifs</span><h3 data-i18n="br.5t">Repeated “SALE” tape for promotions.</h3><p data-i18n="br.5p">A single graphic device that signals a commercial moment without leaving the monochrome universe.</p></article>
+        <article class="reveal" style="--i:2"><span data-i18n="br.6n">Imagery</span><h3 data-i18n="br.6t">Manga line art as a brand character.</h3><p data-i18n="br.6p">Black-and-white anime characters appear on banners next to the logo and give the brand a face without a photo shoot.</p></article>
       </div>
     </section>
 
     <!-- 06 SOLUTION -->
     <section id="solution" class="section">
       <div class="eyebrow" data-i18n="so.eyebrow">06 · Content</div>
-      <h2 data-i18n="so.title">Two kinds of moments, one identity.</h2>
-      <div class="phases two">
-        <div class="phase">
-          <div class="phase-head"><span data-i18n="so.p1">Collection</span><b data-i18n="so.p1t">Product-led content</b><small data-i18n="so.p1s">Make people want the pieces</small></div>
+      <h2 data-i18n="so.title">Three campaigns, one identity.</h2>
+      <div class="phases three">
+        <div class="phase reveal" style="--i:0">
+          <div class="phase-head"><span data-i18n="so.p1">Collection</span><b data-i18n="so.p1t">Fall / Winter Collection 2023</b><small data-i18n="so.p1s">Make people want the pieces</small></div>
           <ul class="recs">
-            <li><i>1</i><div><b data-i18n="so.r1">Fall / Winter collection story</b><p data-i18n="so.r1p">Lifestyle photo, the collection name as headline, the logo as a large signature.</p></div></li>
-            <li><i>2</i><div><b data-i18n="so.r2">Product highlights</b><p data-i18n="so.r2p">Posts that put one product forward, in the same visual codes.</p></div></li>
+            <li><i>1</i><div><b data-i18n="so.r1">Launch banner and story</b><p data-i18n="so.r1p">Collection name as headline, product worn, logo as signature, in web, mobile and story formats.</p></div></li>
+            <li><i>2</i><div><b data-i18n="so.r2">“Collection is available” banners</b><p data-i18n="so.r2p">A product photo on the left, a black column with the logo, the message and a manga character on the right.</p></div></li>
           </ul>
         </div>
-        <div class="phase">
-          <div class="phase-head"><span data-i18n="so.p2">Promotion</span><b data-i18n="so.p2t">Commercial content</b><small data-i18n="so.p2s">Trigger the purchase at key moments</small></div>
+        <div class="phase reveal" style="--i:1">
+          <div class="phase-head"><span data-i18n="so.p2">Promotion</span><b data-i18n="so.p2t">Black Friday</b><small data-i18n="so.p2s">Trigger the purchase at a key moment</small></div>
           <ul class="recs">
-            <li><i>3</i><div><b data-i18n="so.r3">Black Friday story</b><p data-i18n="so.r3p">“Save up to 25%”, the SALE tape motif, the logo as signature: the offer in one glance.</p></div></li>
-            <li><i>4</i><div><b data-i18n="so.r4">Promotional content</b><p data-i18n="so.r4p">Other commercial visuals produced in the same system.</p></div></li>
+            <li><i>3</i><div><b data-i18n="so.r3">Story “Save up to 25%”</b><p data-i18n="so.r3p">The SALE tape motif, the offer in one glance, the logo as signature.</p></div></li>
+            <li><i>4</i><div><b data-i18n="so.r4">Web banner “Discount up to 25%”</b><p data-i18n="so.r4p">The same lock-up adapted to the wide format of the site.</p></div></li>
+          </ul>
+        </div>
+        <div class="phase reveal" style="--i:2">
+          <div class="phase-head"><span data-i18n="so.p3">Acquisition</span><b data-i18n="so.p3t">Welcome gift</b><small data-i18n="so.p3s">Turn a first visit into a first order</small></div>
+          <ul class="recs">
+            <li><i>5</i><div><b data-i18n="so.r5">Banner “10% off on your first order”</b><p data-i18n="so.r5p">A welcoming manga character, one benefit, no small print on the visual.</p></div></li>
+            <li><i>6</i><div><b data-i18n="so.r6">Brand banner</b><p data-i18n="so.r6p">“Anime inspired clothing brand”: the positioning stated once, in the brand's own words.</p></div></li>
           </ul>
         </div>
       </div>
     </section>
 
     <!-- 07 DELIVERABLES -->
-    <section id="deliverables" class="section">
+    <section id="deliverables" class="section ak-intro">
       <div class="eyebrow" data-i18n="de.eyebrow">07 · Deliverables</div>
-      <h2 data-i18n="de.title">Two published stories, shown as delivered.</h2>
-      <p class="lead-p" data-i18n="de.p">The examples available for this portfolio. Click an image to see it full size.</p>
-      <div class="evidence-grid">
-        <figure class="evidence story"><a class="shot" href="proof/akira_02_fall_winter_story.jpg" target="_blank" rel="noopener"><img src="proof/akira_02_fall_winter_story.jpg" alt="Akira Fashion story: Fall / Winter collection" data-i18n-attr="alt:de.e1a" loading="lazy" width="900" height="1600" /></a><figcaption><span class="ev-n" data-i18n="de.e1n">Deliverable 01</span><b data-i18n="de.e1t">Fall / Winter collection</b><span data-i18n="de.e1p">Story announcing the collection, product worn in a lifestyle setting.</span></figcaption></figure>
-        <figure class="evidence story"><a class="shot" href="proof/akira_01_black_friday_story.jpg" target="_blank" rel="noopener"><img src="proof/akira_01_black_friday_story.jpg" alt="Akira Fashion story: Black Friday, save up to 25%" data-i18n-attr="alt:de.e2a" loading="lazy" width="900" height="1600" /></a><figcaption><span class="ev-n" data-i18n="de.e2n">Deliverable 02</span><b data-i18n="de.e2t">Black Friday</b><span data-i18n="de.e2p">Promotional story: “Save up to 25%”.</span></figcaption></figure>
+      <h2 data-i18n="de.title">The lookbook: 28 visuals, four families.</h2>
+      <p class="lead-p" data-i18n="de.p">Campaign banners, lifestyle mock-ups, product visuals and social formats. Click any visual to open it full size.</p>
+    </section>
+
+    <section id="banners" class="section ak-sec">
+      <div class="eyebrow" data-i18n="bn.n">A · Campaign banners</div>
+      <h2 data-i18n="bn.t">Seven web banners on one black canvas.</h2>
+      <p class="lead-p" data-i18n="bn.p">Wide banners (2240 × 1260) for the site: collection launch, promotions, welcome offer and brand statement. Same grid, same typography, same place for the logo.</p>
+      <div class="ak-rail" tabindex="0" aria-label="Campaign banners" data-i18n-attr="aria-label:bn.railL">
+        <a class="ak-banner reveal" style="--i:0" href="proof/banner_01_fw_collection_2023.jpg" target="_blank" rel="noopener"><img src="proof/banner_01_fw_collection_2023.jpg" alt="Fall / Winter Collection 2023" data-i18n-attr="alt:bn.1" loading="lazy" width="1400" height="788" /><span><b>01</b><i data-i18n="bn.1">Fall / Winter Collection 2023</i></span></a>
+        <a class="ak-banner reveal" style="--i:1" href="proof/banner_02_black_friday.jpg" target="_blank" rel="noopener"><img src="proof/banner_02_black_friday.jpg" alt="Black Friday · discount up to 25%" data-i18n-attr="alt:bn.2" loading="lazy" width="1400" height="788" /><span><b>02</b><i data-i18n="bn.2">Black Friday · discount up to 25%</i></span></a>
+        <a class="ak-banner reveal" style="--i:2" href="proof/banner_03_welcome_gift.jpg" target="_blank" rel="noopener"><img src="proof/banner_03_welcome_gift.jpg" alt="Welcome gift · 10% off on the first order" data-i18n-attr="alt:bn.3" loading="lazy" width="1400" height="788" /><span><b>03</b><i data-i18n="bn.3">Welcome gift · 10% off on the first order</i></span></a>
+        <a class="ak-banner reveal" style="--i:0" href="proof/banner_04_fw_available_fearless.jpg" target="_blank" rel="noopener"><img src="proof/banner_04_fw_available_fearless.jpg" alt="Fall / Winter collection is available · Fearless" data-i18n-attr="alt:bn.4" loading="lazy" width="1400" height="788" /><span><b>04</b><i data-i18n="bn.4">Fall / Winter collection is available · Fearless</i></span></a>
+        <a class="ak-banner reveal" style="--i:1" href="proof/banner_05_fw_available_serenity.jpg" target="_blank" rel="noopener"><img src="proof/banner_05_fw_available_serenity.jpg" alt="Fall / Winter collection is available · Serenity" data-i18n-attr="alt:bn.5" loading="lazy" width="1400" height="788" /><span><b>05</b><i data-i18n="bn.5">Fall / Winter collection is available · Serenity</i></span></a>
+        <a class="ak-banner reveal" style="--i:2" href="proof/banner_06_brand_anime_inspired.jpg" target="_blank" rel="noopener"><img src="proof/banner_06_brand_anime_inspired.jpg" alt="Brand banner · Anime inspired clothing brand" data-i18n-attr="alt:bn.6" loading="lazy" width="1400" height="788" /><span><b>06</b><i data-i18n="bn.6">Brand banner · Anime inspired clothing brand</i></span></a>
+        <a class="ak-banner reveal" style="--i:0" href="proof/banner_07_characters.jpg" target="_blank" rel="noopener"><img src="proof/banner_07_characters.jpg" alt="Character line-up" data-i18n-attr="alt:bn.7" loading="lazy" width="1400" height="788" /><span><b>07</b><i data-i18n="bn.7">Character line-up</i></span></a>
       </div>
-      <ul class="deliv-list">
-        <li data-i18n="de.l1">Social media posts</li>
-        <li data-i18n="de.l2">Stories for collections and promotions</li>
-        <li data-i18n="de.l3">Promotional visuals</li>
-        <li data-i18n="de.l4">Product presentation</li>
-        <li data-i18n="de.l5">Input on accessory design</li>
-        <li data-i18n="de.l6">Input on the visual universe</li>
-      </ul>
+    </section>
+
+    <section id="mockups" class="section ak-sec">
+      <div class="eyebrow" data-i18n="lk.n">B · Lifestyle mock-ups</div>
+      <h2 data-i18n="lk.t">The pieces, worn.</h2>
+      <p class="lead-p" data-i18n="lk.p">Seven portrait visuals (1080 × 1350) where the designs are placed on garments in real settings, with the logo as a quiet signature. Made in Photoshop, sized for the social feed.</p>
+      <div class="ak-look">
+        <a class="look reveal" style="--i:0" href="proof/mockup_01_skull_tee.jpg" target="_blank" rel="noopener"><img src="proof/mockup_01_skull_tee.jpg" alt="Akira Fashion lifestyle mock-up" data-i18n-attr="alt:lk.alt" loading="lazy" width="900" height="1125" /></a>
+        <a class="look reveal" style="--i:1" href="proof/mockup_02_leopard_tee.jpg" target="_blank" rel="noopener"><img src="proof/mockup_02_leopard_tee.jpg" alt="Akira Fashion lifestyle mock-up" data-i18n-attr="alt:lk.alt" loading="lazy" width="900" height="1125" /></a>
+        <a class="look reveal" style="--i:2" href="proof/mockup_03_japan_tee_back.jpg" target="_blank" rel="noopener"><img src="proof/mockup_03_japan_tee_back.jpg" alt="Akira Fashion lifestyle mock-up" data-i18n-attr="alt:lk.alt" loading="lazy" width="900" height="1125" /></a>
+        <a class="look reveal" style="--i:3" href="proof/mockup_04_sunset_tee.jpg" target="_blank" rel="noopener"><img src="proof/mockup_04_sunset_tee.jpg" alt="Akira Fashion lifestyle mock-up" data-i18n-attr="alt:lk.alt" loading="lazy" width="900" height="1125" /></a>
+        <a class="look reveal" style="--i:0" href="proof/mockup_05_tokyo_dragon_tee.jpg" target="_blank" rel="noopener"><img src="proof/mockup_05_tokyo_dragon_tee.jpg" alt="Akira Fashion lifestyle mock-up" data-i18n-attr="alt:lk.alt" loading="lazy" width="900" height="1125" /></a>
+        <a class="look reveal" style="--i:1" href="proof/mockup_06_tokyo_dragon_hanger.jpg" target="_blank" rel="noopener"><img src="proof/mockup_06_tokyo_dragon_hanger.jpg" alt="Akira Fashion lifestyle mock-up" data-i18n-attr="alt:lk.alt" loading="lazy" width="900" height="1125" /></a>
+        <a class="look reveal" style="--i:2" href="proof/mockup_07_lion_tee.jpg" target="_blank" rel="noopener"><img src="proof/mockup_07_lion_tee.jpg" alt="Akira Fashion lifestyle mock-up" data-i18n-attr="alt:lk.alt" loading="lazy" width="900" height="1125" /></a>
+      </div>
+    </section>
+
+    <section id="products" class="section ak-sec">
+      <div class="eyebrow" data-i18n="pd.n">C · Product visuals</div>
+      <h2 data-i18n="pd.t">Ten product cards, one template.</h2>
+      <p class="lead-p" data-i18n="pd.p">Square visuals (1500 × 1500) for the shop and the feed: the garment on a neutral ground, the logo in the corner, and a “New arrival” band for the latest pieces.</p>
+      <div class="ak-prod">
+        <a class="prod reveal" style="--i:0" href="proof/product_06_new_arrival_tokyo_anime.jpg" target="_blank" rel="noopener"><img src="proof/product_06_new_arrival_tokyo_anime.jpg" alt="Akira Fashion product visual" data-i18n-attr="alt:pd.alt" loading="lazy" width="900" height="900" /></a>
+        <a class="prod reveal" style="--i:1" href="proof/product_02_tokyo_hoodie.jpg" target="_blank" rel="noopener"><img src="proof/product_02_tokyo_hoodie.jpg" alt="Akira Fashion product visual" data-i18n-attr="alt:pd.alt" loading="lazy" width="900" height="900" /></a>
+        <a class="prod reveal" style="--i:2" href="proof/product_10_kitsune_tee.jpg" target="_blank" rel="noopener"><img src="proof/product_10_kitsune_tee.jpg" alt="Akira Fashion product visual" data-i18n-attr="alt:pd.alt" loading="lazy" width="900" height="900" /></a>
+        <a class="prod reveal" style="--i:3" href="proof/product_07_new_arrival_dragon.jpg" target="_blank" rel="noopener"><img src="proof/product_07_new_arrival_dragon.jpg" alt="Akira Fashion product visual" data-i18n-attr="alt:pd.alt" loading="lazy" width="900" height="900" /></a>
+        <a class="prod reveal" style="--i:4" href="proof/product_03_japan_dragon_tee.jpg" target="_blank" rel="noopener"><img src="proof/product_03_japan_dragon_tee.jpg" alt="Akira Fashion product visual" data-i18n-attr="alt:pd.alt" loading="lazy" width="900" height="900" /></a>
+        <a class="prod reveal" style="--i:0" href="proof/product_05_osaka_hoodie.jpg" target="_blank" rel="noopener"><img src="proof/product_05_osaka_hoodie.jpg" alt="Akira Fashion product visual" data-i18n-attr="alt:pd.alt" loading="lazy" width="900" height="900" /></a>
+        <a class="prod reveal" style="--i:1" href="proof/product_09_new_arrival_serenity_back.jpg" target="_blank" rel="noopener"><img src="proof/product_09_new_arrival_serenity_back.jpg" alt="Akira Fashion product visual" data-i18n-attr="alt:pd.alt" loading="lazy" width="900" height="900" /></a>
+        <a class="prod reveal" style="--i:2" href="proof/product_01_tokyo_kanji_hoodie.jpg" target="_blank" rel="noopener"><img src="proof/product_01_tokyo_kanji_hoodie.jpg" alt="Akira Fashion product visual" data-i18n-attr="alt:pd.alt" loading="lazy" width="900" height="900" /></a>
+        <a class="prod reveal" style="--i:3" href="proof/product_04_japan_dragon_tee_worn.jpg" target="_blank" rel="noopener"><img src="proof/product_04_japan_dragon_tee_worn.jpg" alt="Akira Fashion product visual" data-i18n-attr="alt:pd.alt" loading="lazy" width="900" height="900" /></a>
+        <a class="prod reveal" style="--i:4" href="proof/product_08_new_arrival_serenity_front.jpg" target="_blank" rel="noopener"><img src="proof/product_08_new_arrival_serenity_front.jpg" alt="Akira Fashion product visual" data-i18n-attr="alt:pd.alt" loading="lazy" width="900" height="900" /></a>
+      </div>
+    </section>
+
+    <section id="social" class="section ak-sec">
+      <div class="split">
+        <div>
+          <div class="eyebrow" data-i18n="sc.n">D · Stories &amp; mobile banners</div>
+          <h2 data-i18n="sc.t">The same campaigns, in the palm of the hand.</h2>
+          <p class="lead-p" data-i18n="sc.p">Two stories (1080 × 1920) and two mobile banners adapt the Fall / Winter and Black Friday campaigns to vertical and small screens.</p>
+          <ul class="deliv-list">
+            <li data-i18n="de.l1">Social media posts</li>
+            <li data-i18n="de.l2">Stories for collections and promotions</li>
+            <li data-i18n="de.l3">Promotional visuals</li>
+            <li data-i18n="de.l4">Product presentation</li>
+            <li data-i18n="de.l5">Input on accessory design</li>
+            <li data-i18n="de.l6">Input on the visual universe</li>
+          </ul>
+        </div>
+        <div class="ak-social">
+          <a class="phone reveal" style="--i:0" href="proof/akira_02_fall_winter_story.jpg" target="_blank" rel="noopener"><img src="proof/akira_02_fall_winter_story.jpg" alt="Akira Fashion story: Fall / Winter collection" data-i18n-attr="alt:de.e1a" loading="lazy" width="900" height="1600" /></a>
+          <a class="phone reveal" style="--i:1" href="proof/akira_01_black_friday_story.jpg" target="_blank" rel="noopener"><img src="proof/akira_01_black_friday_story.jpg" alt="Akira Fashion story: Black Friday, save up to 25%" data-i18n-attr="alt:de.e2a" loading="lazy" width="900" height="1600" /></a>
+          <a class="mob reveal" style="--i:2" href="proof/mobile_01_fw_collection_2023.jpg" target="_blank" rel="noopener"><img src="proof/mobile_01_fw_collection_2023.jpg" alt="Mobile banner: Fall / Winter Collection 2023" data-i18n-attr="alt:sc.a1" loading="lazy" width="540" height="550" /></a>
+          <a class="mob reveal" style="--i:3" href="proof/mobile_03_fw_available.jpg" target="_blank" rel="noopener"><img src="proof/mobile_03_fw_available.jpg" alt="Mobile banner: Fall / Winter collection is available" data-i18n-attr="alt:sc.a2" loading="lazy" width="540" height="550" /></a>
+        </div>
+      </div>
     </section>
 
     <!-- 08 SKILLS -->
@@ -219,9 +304,9 @@
       <h2 data-i18n="sk.title">What this experience built.</h2>
       <div class="claims">
         <article><b data-i18n="sk.1t">Branding</b><p data-i18n="sk.1">Keeping a small set of codes consistent across product and promotional content.</p><a href="#brand" data-i18n="sk.1l">→ Brand universe</a></article>
-        <article><b data-i18n="sk.2t">Social media content</b><p data-i18n="sk.2">Posts and stories designed for the platform's format and reading speed.</p><a href="#deliverables" data-i18n="sk.2l">→ Deliverables</a></article>
+        <article><b data-i18n="sk.2t">Social media content</b><p data-i18n="sk.2">Banners, posts and stories laid out in Canva for each platform's format and reading speed.</p><a href="#banners" data-i18n="sk.2l">→ Campaign banners</a></article>
         <article><b data-i18n="sk.3t">Promotional communication</b><p data-i18n="sk.3">An offer made readable in one glance without breaking the brand's look.</p><a href="#solution" data-i18n="sk.3l">→ Content</a></article>
-        <article><b data-i18n="sk.4t">Product thinking</b><p data-i18n="sk.4">Taking part in accessory design and in how products are shown.</p><a href="#role" data-i18n="sk.4l">→ My role</a></article>
+        <article><b data-i18n="sk.4t">Product thinking</b><p data-i18n="sk.4">Mock-ups and product visuals in Photoshop, plus input on accessory design and on how products are shown.</p><a href="#products" data-i18n="sk.4l">→ Product visuals</a></article>
         <article><b data-i18n="sk.5t">Entrepreneurship</b><p data-i18n="sk.5">Working on a real brand, where every visual has to serve a commercial purpose.</p><a href="#context" data-i18n="sk.5l">→ Context</a></article>
         <article><b data-i18n="sk.6t">Fashion</b><p data-i18n="sk.6">Presenting clothing and accessories in a way that fits the sector's visual codes.</p><a href="#brand" data-i18n="sk.6l">→ Brand universe</a></article>
       </div>
@@ -231,14 +316,14 @@
     <section id="learned" class="section takeaway">
       <div class="eyebrow" data-i18n="le.eyebrow">09 · Key learnings</div>
       <blockquote data-i18n="le.quote">“A brand is what stays the same from one post to the next. Consistency does more for recognition than any single visual.”</blockquote>
-      <ul class="learn-list">
+      <ul class="learn-list reveal">
         <li><b data-i18n="le.1t">Less copy, stronger visual</b><span data-i18n="le.1">On a story, the headline and the picture do the work. Everything else is noise.</span></li>
         <li><b data-i18n="le.2t">Commercial moments need their own code</b><span data-i18n="le.2">The SALE motif makes a promotion recognisable without leaving the brand universe.</span></li>
         <li><b data-i18n="le.3t">Show only what you can back up</b><span data-i18n="le.3">Without documented figures, the honest portfolio shows the work and stops there.</span></li>
       </ul>
 
       <div class="eyebrow" style="margin-top:70px" data-i18n="nx.eyebrow">10 · Next project</div>
-      <a class="next-card" href="../lje/index.html">
+      <a class="next-card reveal" href="../lje/index.html">
         <div>
           <span class="eyebrow" data-i18n="nx.kicker">Internship · Content, communication &amp; event marketing</span>
           <h3>LJE · Les Jeunes Entreprises</h3>

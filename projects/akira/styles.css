@@ -1,26 +1,183 @@
-/* Akira Fashion case study: project-specific components on top of assets/marketing-case.css */
+/* Akira Fashion case study: dark streetwear lookbook, on top of assets/marketing-case.css */
+.akira{--bg:#08080a;--paper:#131318;--ink:#f4f4f6;--muted:#a5a5b0;--navy:#1b1b22;--teal:#ff4fa3;--teal2:#ff8cc8;--line:#2a2a33;--soft:#1a1a21;--shadow:0 18px 50px rgba(0,0,0,.55);--pink:#ff4fa3;--violet:#8b6cff;background:var(--bg);color:var(--ink)}
+.akira ::selection{background:var(--pink);color:#08080a}
+.akira .progress{background:linear-gradient(90deg,var(--pink),var(--violet))}
+.akira .topbar{background:rgba(8,8,10,.86);border-bottom:1px solid var(--line)}
+.akira .brand{color:#fff}
+.akira .topbar nav a{color:var(--muted)}
+.akira .topbar nav a.active,.akira .topbar nav a:hover{color:#fff}
+.akira .lang-switch{background:#131318;border-color:var(--line)}
+.akira .lang-switch button{color:var(--muted)}
+.akira .lang-switch button:hover{color:#fff}
+.akira .lang-switch button[aria-pressed="true"]{background:var(--pink);color:#08080a}
+.akira h2{color:#fff}
+.akira .prose,.akira .lead-p{color:#c2c2cc}
+.akira .eyebrow{color:var(--pink)}
+.akira .text-link{color:#fff}
+.akira .question{background:var(--soft);border-left-color:var(--pink);color:#fff}
+.akira .ticks li::before{background:var(--pink)}
+.akira .ticks li::after{border-color:#08080a}
 
-/* Two stories side by side, on a dark stage */
-.story-cover{margin-top:8px}
-.story-pair{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:44px clamp(24px,6vw,90px) 0;border-radius:26px;background:#0b0b0d;background-image:radial-gradient(circle at 25% 10%,rgba(255,255,255,.09),transparent 55%);box-shadow:var(--shadow);overflow:hidden}
-.story-pair figure{margin:0;min-width:0;display:flex;flex-direction:column}
-.story-pair img{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;object-position:top;border-radius:18px 18px 0 0;box-shadow:0 24px 60px rgba(0,0,0,.5)}
-.story-pair figure:last-child{padding-top:40px}
-.story-pair figcaption{order:-1;padding:0 4px 14px;font-size:13px;font-weight:700;color:#c6d4de}
+/* ---------- hero */
+.ak-hero{position:relative;padding-top:104px}
+.ak-hero::before{content:"";position:absolute;inset:0 -20% auto auto;width:70%;height:620px;background:radial-gradient(closest-side,rgba(255,79,163,.22),transparent 70%),radial-gradient(closest-side at 70% 60%,rgba(139,108,255,.2),transparent 70%);filter:blur(10px);pointer-events:none}
+.ak-top{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center;position:relative;margin-bottom:40px}
+.ak-text{min-width:0}
+.akira .hero h1{font-size:clamp(50px,8vw,112px);line-height:.92;letter-spacing:-.05em;text-transform:uppercase;font-weight:900;color:#fff;margin:0 0 20px}
+.glitch{position:relative;display:inline-block}
+.glitch::before,.glitch::after{content:attr(data-text);position:absolute;inset:0;pointer-events:none}
+.glitch::before{color:var(--pink);z-index:-1;transform:translate(4px,3px);animation:glA 3.4s steps(1) infinite}
+.glitch::after{color:var(--violet);z-index:-2;transform:translate(-4px,-3px);animation:glB 3.4s steps(1) infinite}
+@keyframes glA{0%,86%,100%{clip-path:inset(0 0 0 0);transform:translate(4px,3px)}88%{clip-path:inset(12% 0 58% 0);transform:translate(14px,0)}91%{clip-path:inset(62% 0 8% 0);transform:translate(-10px,2px)}94%{clip-path:inset(34% 0 36% 0);transform:translate(8px,-2px)}}
+@keyframes glB{0%,86%,100%{clip-path:inset(0 0 0 0);transform:translate(-4px,-3px)}89%{clip-path:inset(58% 0 12% 0);transform:translate(-14px,0)}92%{clip-path:inset(8% 0 62% 0);transform:translate(10px,-2px)}95%{clip-path:inset(40% 0 30% 0);transform:translate(-8px,2px)}}
+.js .akira .hero h1{opacity:0;animation:akIn .8s cubic-bezier(.2,.9,.2,1) .1s forwards}
+@keyframes akIn{0%{opacity:0;letter-spacing:.2em;filter:blur(10px)}100%{opacity:1;letter-spacing:-.05em;filter:none}}
+.akira .hero-sub{color:var(--pink);font-size:clamp(18px,2vw,24px)}
+.akira .type-badge{background:#fff;color:#08080a}
+.akira .type-badge::before{background:var(--pink)}
+.akira .hero-copy{color:#c2c2cc;margin-bottom:22px}
+.tool-chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.tool-chips li{display:flex;align-items:baseline;gap:9px;padding:10px 16px;border-radius:12px;background:var(--paper);border:1px solid var(--line)}
+.tool-chips b{font-size:15px;color:#fff}
+.tool-chips span{font-size:13px;color:var(--muted)}
 
-/* Deliverables: portrait stories */
-.evidence.story .shot{background:#0b0b0d}
-.evidence.story .shot img{aspect-ratio:9/16;object-fit:contain;max-height:640px;margin:0 auto;width:auto}
+/* stack of looks */
+.ak-stack{position:relative;aspect-ratio:1/1.08;min-width:0}
+.sk{position:absolute;display:block;height:auto;object-fit:cover;border-radius:16px;box-shadow:0 30px 70px rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.14);animation:akFloat 7s ease-in-out infinite}
+.sk1{left:2%;top:6%;width:56%;aspect-ratio:4/5;--r:-7deg;z-index:1}
+.sk2{right:0;top:0;width:52%;aspect-ratio:4/5;--r:6deg;z-index:2;animation-delay:-2.4s}
+.sk3{left:27%;bottom:0;width:38%;aspect-ratio:9/16;--r:-2deg;z-index:3;animation-delay:-4.6s;border-radius:22px;border:5px solid #08080a;outline:1px solid rgba(255,255,255,.2)}
+@keyframes akFloat{0%,100%{transform:rotate(var(--r)) translateY(0)}50%{transform:rotate(calc(var(--r) + 1.4deg)) translateY(-14px)}}
+.sk-tag{position:absolute;z-index:4;padding:7px 13px;border-radius:999px;font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;animation:akFloat 6s ease-in-out infinite;--r:0deg}
+.sk-tag.t1{left:0;bottom:16%;background:var(--pink);color:#08080a;--r:-6deg}
+.sk-tag.t2{right:2%;bottom:30%;background:#fff;color:#08080a;--r:5deg;animation-delay:-3s}
 
-/* Two-column content section */
-.phases.two{grid-template-columns:1fr 1fr}
+.akira .disclosure{background:#1a1420;border-color:#3a2540;color:#e7d7ee}
+.akira .disclosure b{color:var(--pink)}
+.akira .meta-grid{background:var(--line);border-color:var(--line)}
+.akira .meta-grid div{background:var(--paper)}
+.akira .meta-grid span{color:var(--muted)}
+.akira .stack span{background:var(--paper);border-color:var(--line);color:#e9e9ee}
+
+/* ---------- ticker */
+.ak-ticker{display:flex;overflow:hidden;border-block:1px solid var(--line);background:#0d0d11;margin:10px 0 20px}
+.ak-track{display:flex;flex:none;align-items:center;gap:30px;padding:16px 30px 16px 0;animation:akTick 30s linear infinite;font-weight:900;font-size:clamp(18px,2.4vw,30px);letter-spacing:.08em;white-space:nowrap;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.75)}
+.ak-track i{font-style:normal;color:var(--pink);-webkit-text-stroke:0;font-size:.75em;letter-spacing:.1em}
+.ak-track span:nth-child(4n+1){color:#fff;-webkit-text-stroke:0}
+@keyframes akTick{to{transform:translateX(-100%)}}
+
+/* ---------- stats and cards */
+.akira .stats article{background:var(--paper);border:1px solid var(--line);position:relative;overflow:hidden;transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .35s}
+.akira .stats article::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg,var(--pink),var(--violet));transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.akira .stats article:hover{transform:translateY(-6px);border-color:#3a3a46}
+.akira .stats article:hover::after,.akira .stats article.in::after{transform:scaleX(1)}
+.akira .stats strong{color:#fff}
+.akira .stats span{color:#b9b9c4}
+.akira .role-card{background:var(--paper);border:1px solid var(--line)}
+.akira .two-col>div{background:#0f0f14;border-color:var(--line)}
+.akira .chain li{background:var(--paper);border-color:var(--line)}
+.akira .chain li span{background:#fff;color:#08080a}
+.akira .chain li small{color:var(--muted)}
+.akira .chain li.last{background:var(--pink);border-color:var(--pink);color:#08080a}
+.akira .chain li.last span{background:#08080a;color:#fff}
+.akira .chain li.last small{color:#3a0b24}
+.akira .framework{background:var(--paper);border-color:var(--line)}
+.akira .framework li{background:#fff;color:#08080a}
+.akira .framework li+li::before{color:var(--pink)}
+.akira .framework small{color:var(--muted)}
+.akira .insights-grid article{background:var(--paper);border-color:var(--line);transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .35s}
+.akira .insights-grid article:hover{transform:translateY(-6px);border-color:var(--pink)}
+.akira .insights-grid h3{color:#fff}
+.akira .insights-grid p{color:#b9b9c4}
+.phases.three{grid-template-columns:repeat(3,1fr)}
+.akira .phase{background:var(--paper);border-color:var(--line)}
+.akira .phase-head{border-bottom-color:var(--line)}
+.akira .phase-head small,.akira .recs p{color:var(--muted)}
+.akira .recs li i{background:var(--pink);color:#08080a}
+
+/* ---------- lookbook */
+.ak-intro{padding-bottom:10px}
+.ak-sec{padding-top:56px}
+.ak-rail{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x proximity;padding:30px 4px 26px;margin-top:14px;scrollbar-width:thin;scrollbar-color:var(--pink) #131318}
+.ak-banner{flex:0 0 min(620px,84vw);scroll-snap-align:center;text-decoration:none;color:var(--ink);display:grid;gap:12px}
+.ak-banner img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line);box-shadow:var(--shadow);transition:transform .45s cubic-bezier(.2,.8,.2,1),border-color .35s}
+.ak-banner:hover img,.ak-banner:focus-visible img{transform:translateY(-8px) scale(1.015);border-color:var(--pink)}
+.ak-banner span{display:flex;gap:10px;align-items:baseline;font-size:14px}
+.ak-banner b{font-size:11px;font-weight:900;letter-spacing:.08em;color:var(--pink)}
+.ak-banner i{font-style:normal;font-weight:700}
+.ak-look{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:38px}
+.look{display:block;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--paper);position:relative;transition:transform .45s cubic-bezier(.2,.8,.2,1),border-color .35s}
+.look img{display:block;width:100%;height:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.look:first-child{grid-column:span 2;grid-row:span 2}
+.look:hover{transform:translateY(-8px) rotate(-1deg);border-color:var(--pink)}
+.look:hover img{transform:scale(1.05)}
+.ak-prod{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:38px}
+.prod{display:block;border-radius:14px;overflow:hidden;background:#fff;border:1px solid var(--line);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s}
+.prod img{display:block;width:100%;height:auto}
+.prod:hover{transform:translateY(-8px) rotate(1.2deg);box-shadow:0 22px 50px rgba(255,79,163,.28)}
+.prod:nth-child(odd):hover{transform:translateY(-8px) rotate(-1.2deg)}
+.akira #social .split{align-items:center}
+.ak-social{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center}
+.phone{position:relative;display:block;border-radius:28px;border:6px solid #1c1c24;outline:1px solid rgba(255,255,255,.14);overflow:hidden;aspect-ratio:9/16;box-shadow:var(--shadow);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.phone img{display:block;width:100%;height:100%;object-fit:cover}
+.phone:nth-child(2){margin-top:44px}
+.phone::before{content:"";position:absolute;left:10px;right:10px;top:9px;height:3px;border-radius:3px;background:rgba(255,255,255,.35);z-index:2}
+.phone::after{content:"";position:absolute;left:10px;top:9px;height:3px;border-radius:3px;background:#fff;z-index:3;width:0;animation:akProg 7s linear infinite}
+.phone:nth-child(2)::after{animation-delay:3.5s}
+@keyframes akProg{0%{width:0}45%{width:calc(100% - 20px)}50%,100%{width:calc(100% - 20px);opacity:0}}
+.phone:hover{transform:translateY(-10px) rotate(-1.5deg)}
+.mob{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);transition:transform .4s cubic-bezier(.2,.8,.2,1),border-color .35s}
+.mob img{display:block;width:100%;height:auto}
+.mob:hover{transform:translateY(-6px);border-color:var(--pink)}
+.akira .deliv-list{grid-template-columns:1fr 1fr}
+.akira .deliv-list li{background:var(--paper);border-color:var(--line)}
+.akira .deliv-list li::before{background:var(--pink)}
+
+/* ---------- skills, closing */
+.akira .claims article{background:var(--paper);border-color:var(--line)}
+.akira .claims p{color:#b9b9c4}
+.akira .claims a{color:var(--pink)}
+.akira .takeaway blockquote{color:#fff}
+.akira .learn-list li{background:var(--paper);border-color:var(--line)}
+.akira .learn-list span{color:#b9b9c4}
+.akira .next-card{background:#fff;color:#08080a}
+.akira .next-card .eyebrow{color:#b3176a}
+.akira .next-card p{color:#4a4a55}
+.akira .next-card .go{color:#08080a}
+.akira .next-card .go b{color:var(--pink)}
+.akira .btn{background:var(--pink);color:#08080a}
+.akira .btn.ghost{background:transparent;color:#fff;border-color:#3a3a46}
+.akira footer{border-top-color:var(--line);color:var(--muted)}
+
+/* reveal */
+.js .akira .reveal{opacity:0;transform:translateY(30px) scale(.97);transition:opacity .6s ease,transform .7s cubic-bezier(.2,.9,.2,1);transition-delay:calc(var(--i,0)*90ms)}
+.js .akira .reveal.in{opacity:1;transform:none}
 
 @media(max-width:900px){
-  .phases.two{grid-template-columns:1fr}
+  .ak-top{grid-template-columns:1fr;gap:30px}
+  .ak-stack{max-width:440px;width:100%;margin:0 auto}
+  .phases.three{grid-template-columns:1fr}
+  .ak-look{grid-template-columns:repeat(2,1fr)}
+  .look:first-child{grid-column:span 2;grid-row:auto}
+  .ak-prod{grid-template-columns:repeat(3,1fr)}
+  .ak-social{max-width:460px}
 }
 @media(max-width:620px){
-  .story-pair{gap:14px;padding:22px 18px 0;border-radius:18px}
-  .story-pair figure:last-child{padding-top:22px}
-  .story-pair figcaption{font-size:11px;padding-bottom:10px}
-  .story-pair img{border-radius:12px 12px 0 0}
+  .ak-hero{padding-top:74px}
+  .akira .hero h1{font-size:54px}
+  .tool-chips li{flex:1 1 100%}
+  .ak-look{gap:10px}
+  .ak-prod{grid-template-columns:repeat(2,1fr);gap:10px}
+  .akira .deliv-list{grid-template-columns:1fr}
+  .phone{border-width:5px;border-radius:20px}
+  .ak-rail{gap:14px}
+}
+@media(prefers-reduced-motion:reduce){
+  .glitch::before,.glitch::after,.sk,.sk-tag,.ak-track,.phone::after{animation:none}
+  .sk,.sk-tag{transform:rotate(var(--r))}
+  .phone::after{width:calc(100% - 20px)}
+  .js .akira .hero h1{animation:none;opacity:1}
+  .ak-ticker{overflow-x:auto}
+  .js .akira .reveal{opacity:1;transform:none;transition:none}
+  .look,.look img,.prod,.phone,.mob,.ak-banner img,.akira .stats article{transition:none}
 }
