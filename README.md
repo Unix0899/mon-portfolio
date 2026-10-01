@@ -98,7 +98,7 @@ Strategy / Solution, Deliverables, Skills, Key learnings, Next project.
 | Komogi | Individual project (TFE, EPHEC 2022–2023) | TFE defence deck: 135 respondents, 8 interviews, 87 %, 70.9 %, 61.5 %, 81.5 %, 12-month media planning, €1,643.60 excl. VAT |
 | Mangetsu | Team project (5 students) | Team deck: 4-stage journey, 9 recommendations, prototypes, quantitative survey charts |
 | Akira Fashion | Entrepreneurial project | Two stories (Black Friday, Fall / Winter collection). No sales, followers, dates or tools are published |
-| LJE | Internship | Press release "Boost Your Planet" (MAD Brussels, ~120 young people) and the 9 formats of the Mini-Entreprises Sales Day campaign |
+| LJE | Internship (Communication Intern, Feb – May 2023, Canva + Photoshop) | Press release "Boost Your Planet", Boost Your Talent press kit 2023 (5 pages), 9 formats of the Mini-Entreprises Sales Day campaign, 3 contest stories, coach recruitment poster, LJE Challenge award cheques (19 designs, 33 files delivered) |
 
 Rules kept on every page: survey figures are never presented as commercial results, academic strategies are
 labelled as recommendations, the Mangetsu page credits the team, and no KPI, date, tool or budget is invented.
