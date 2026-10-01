@@ -42,7 +42,7 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="assets/common.css" />
 </head>
-<body>
+<body class="mkp lp">
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Harry Mulembwe home">
       <span class="brand-mark">HM</span>
@@ -53,7 +53,8 @@
       <nav class="nav" aria-label="Main navigation">
         <a href="data/" data-i18n="nav.data">Data</a>
         <a href="marketing/" data-i18n="nav.marketing">Marketing</a>
-        <a href="data/#contact" data-i18n="nav.contact">Contact</a>
+        <a href="#how" data-i18n="nav.how">How it works</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
         <a class="nav-cta" href="assets/cv/Harry_Mulembwe_CV_EN.pdf" data-i18n-attr="href:cv.href" target="_blank" rel="noopener">CV</a>
       </nav>
       <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:ui.lang">
@@ -66,22 +67,64 @@
 
   <main id="top">
     <!-- WELCOME -->
-    <section class="hero-v2 shell has-photo welcome">
-      <div class="hero-text">
-        <p class="hero-name" data-i18n="lp.eyebrow">Welcome to my portfolio</p>
-        <h1 data-i18n="lp.title">Hi, I'm Harry Mulembwe.</h1>
-        <p class="hero-lead" data-i18n="lp.lead">Marketing first, then business data analysis. I understand what people need, analyse the information and turn insights into decisions and concrete projects.</p>
-        <p class="hero-tools" data-i18n="lp.tools">Two profiles <i>·</i> one person <i>·</i> Brussels</p>
-        <p class="hero-loc"><span class="pin"></span><span data-i18n="hero.loc">Brussels, Belgium</span></p>
-        <p class="hero-open"><span class="open-dot" aria-hidden="true"></span><span data-i18n="hero.open">Open to opportunities in Brussels</span></p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#paths" data-i18n="lp.cta1">Choose a profile</a>
-          <a class="btn secondary" href="assets/cv/Harry_Mulembwe_CV_EN.pdf" data-i18n-attr="href:cv.href" target="_blank" rel="noopener" data-i18n="hero.cta2">Download CV</a>
+    <section class="mkp-hero lp-hero">
+      <div class="shell mkp-hero-in">
+        <div class="hero-text mkp-text">
+          <p class="hero-name" data-i18n="lp.eyebrow">Welcome to my portfolio</p>
+          <h1 data-i18n="lp.title">Hi, I'm Harry Mulembwe.</h1>
+          <p class="mkp-rot"><span data-i18n="lp.rot0">I help teams</span> <span class="rot" aria-hidden="true"><b data-i18n="lp.r1" style="--n:0">understand their audience</b><b data-i18n="lp.r2" style="--n:1">measure what works</b><b data-i18n="lp.r3" style="--n:2">decide what to do next</b></span><span class="sr-only" data-i18n="lp.rotAll">understand their audience, measure what works and decide what to do next</span></p>
+          <p class="hero-lead" data-i18n="lp.lead">Marketing graduate, then business data analyst. I understand what people need, analyse the information and turn insights into decisions and concrete projects.</p>
+          <p class="hero-loc"><span class="pin"></span><span data-i18n="hero.loc">Brussels, Belgium</span></p>
+          <p class="hero-open"><span class="open-dot" aria-hidden="true"></span><span data-i18n="hero.open">Open to opportunities in Brussels</span></p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#paths" data-i18n="lp.cta1">Choose a profile</a>
+            <a class="btn secondary" href="#contact" data-i18n="lp.cta2">Get in touch</a>
+          </div>
+          <dl class="lp-facts">
+            <div><dt data-count="2">2</dt><dd data-i18n="lp.f1">profiles, one person</dd></div>
+            <div><dt data-count="7">7</dt><dd data-i18n="lp.f2">case studies with evidence</dd></div>
+            <div><dt data-count="3">3</dt><dd data-i18n="lp.f3">languages: EN · FR · NL</dd></div>
+          </dl>
+        </div>
+        <div class="mkp-orbit" aria-hidden="true">
+          <span class="mkp-ring"></span>
+          <img class="mkp-me" src="assets/img/harry-mulembwe.jpg" alt="" width="640" height="640" />
+          <img class="ob ob1 ob-wide" src="projects/odres/proof/powerbi_01_executive_overview.jpg" alt="" loading="lazy" />
+          <img class="ob ob2" src="projects/akira/proof/mockup_03_japan_tee_back.jpg" alt="" loading="lazy" width="900" height="1125" />
+          <img class="ob ob3" src="projects/lje/proof/cheque_05_hub_brussels_creativity_me.jpg" alt="" loading="lazy" width="1000" height="700" />
+          <img class="ob ob4 ob-wide" src="projects/cryptobel/proof/01-social-media-overview.jpg" alt="" loading="lazy" />
+          <span class="ob-chip c1">Power BI</span><span class="ob-chip c2">Canva</span><span class="ob-chip c3">SQL · Python</span><span class="ob-chip c4">GA4 · GTM</span>
         </div>
       </div>
-      <figure class="hero-photo">
-        <img src="assets/img/harry-mulembwe.jpg" alt="Portrait of Harry Mulembwe" data-i18n-attr="alt:hero.photoAlt" width="640" height="640" />
-      </figure>
+      <div class="mkp-band" aria-hidden="true">
+        <div class="mkp-track"><span>DATA</span><i>✦</i><span>MARKETING</span><i>✦</i><span>BUSINESS</span><i>✦</i><span>POWER BI</span><i>✦</i><span>SQL</span><i>✦</i><span>CANVA</span><i>✦</i><span>PHOTOSHOP</span><i>✦</i><span>GA4</span><i>✦</i></div>
+        <div class="mkp-track"><span>DATA</span><i>✦</i><span>MARKETING</span><i>✦</i><span>BUSINESS</span><i>✦</i><span>POWER BI</span><i>✦</i><span>SQL</span><i>✦</i><span>CANVA</span><i>✦</i><span>PHOTOSHOP</span><i>✦</i><span>GA4</span><i>✦</i></div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="section shell lp-how">
+      <div class="gateway-head reveal">
+        <div class="eyebrow" data-i18n="hw.eyebrow">How this portfolio works</div>
+        <h2 data-i18n="hw.title">Three steps, two minutes.</h2>
+      </div>
+      <div class="teaser reveal">
+        <article>
+          <span class="t-step">01 · <span data-i18n="hw.1l">Choose</span></span>
+          <h2 data-i18n="hw.1t">Pick the profile you are hiring for</h2>
+          <p data-i18n="hw.1p">Data &amp; Business Analyst or Digital Marketing Officer. Each has its own page, projects, skills and CV.</p>
+        </article>
+        <article>
+          <span class="t-step">02 · <span data-i18n="hw.2l">Explore</span></span>
+          <h2 data-i18n="hw.2t">Open a case study</h2>
+          <p data-i18n="hw.2p">Context, my role, the method and the deliverables. Team work, academic recommendations and synthetic data are labelled as such.</p>
+        </article>
+        <article>
+          <span class="t-step">03 · <span data-i18n="hw.3l">Contact</span></span>
+          <h2 data-i18n="hw.3t">Take the CV and reach me</h2>
+          <p data-i18n="hw.3p">One CV per profile, in English and French, plus email and LinkedIn at the bottom of every page.</p>
+        </article>
+      </div>
     </section>
 
     <!-- GATEWAY: choose a path -->
@@ -99,6 +142,7 @@
             <span class="path-title" data-i18n="gw.d.t">Data &amp; Business Analyst</span>
             <span class="path-desc" data-i18n="gw.d.p">Power BI, SQL, Excel and Python applied to customer, marketing and business questions: segmentation, KPI reporting, performance analytics, AI testing. Three case studies with evidence.</span>
             <span class="path-tags" aria-hidden="true"><i>Power BI</i><i>SQL</i><i>Python</i><i data-i18n="gw.d.tag">Segmentation</i></span>
+            <span class="path-inside"><b data-i18n="gw.in">Inside</b> Cryptobel · ODRES Group · LexLau</span>
             <span class="path-cta" data-i18n="gw.d.c">Open the data profile <b>→</b></span>
           </span>
           <span class="path-art art-data" aria-hidden="true">
@@ -120,6 +164,7 @@
             <span class="path-title" data-i18n="gw.m.t">Digital Marketing Officer</span>
             <span class="path-desc" data-i18n="gw.m.p">Customer research, strategy, content, social media, branding and events: from audience insights to campaigns and brand experiences. Five projects, from a budgeted 12-month plan to a nine-format campaign.</span>
             <span class="path-tags" aria-hidden="true"><i data-i18n="gw.m.t1">Research</i><i data-i18n="gw.m.t2">Strategy</i><i data-i18n="gw.m.t3">Content</i><i data-i18n="gw.m.t4">Brand</i></span>
+            <span class="path-inside"><b data-i18n="gw.in">Inside</b> Komogi · Mangetsu · Akira Fashion · LJE</span>
             <span class="path-cta" data-i18n="gw.m.c">Open the marketing profile <b>→</b></span>
           </span>
           <span class="path-art art-mkt" aria-hidden="true">
@@ -130,7 +175,46 @@
           <span class="path-count"><b data-count="5">5</b><small data-i18n="gw.m.n">projects</small></span>
         </a>
       </div>
-      <p class="gateway-foot shell reveal" data-i18n="gw.foot">Same person, two toolsets: understanding people, analysing information, turning insights into decisions.</p>
+    </section>
+
+    <!-- WHY BOTH -->
+    <section id="why" class="section shell lp-why">
+      <div class="fam-intro reveal">
+        <div class="fam-head"><div>
+          <div class="eyebrow" data-i18n="wb.eyebrow">Why two profiles</div>
+          <h2 class="eq"><span data-i18n="wb.m">Marketing</span> <i>+</i> <span data-i18n="wb.d">Data</span> <i>+</i> <span data-i18n="wb.b">Business</span></h2>
+        </div></div>
+        <div class="fam-copy"><p data-i18n="wb.p">They are not two careers. Marketing gave me the questions, data gave me better ways to answer them, and business is where the answer has to be useful.</p></div>
+      </div>
+      <div class="pitch-grid">
+        <article class="pitch p1 reveal" style="--i:0">
+          <span class="pitch-no">M</span>
+          <h3 data-i18n="wb.1t">I understand people.</h3>
+          <p data-i18n="wb.1p">Audience research, content, social media, events and branding: what an audience wants and how to speak to it.</p>
+          <a class="text-link" href="marketing/" data-path="mkt" data-i18n="wb.1l">Marketing profile <b>→</b></a>
+        </article>
+        <article class="pitch p3 reveal" style="--i:1">
+          <span class="pitch-no">D</span>
+          <h3 data-i18n="wb.2t">I make it measurable.</h3>
+          <p data-i18n="wb.2p">SQL, Python, Excel and Power BI: clean data, reliable KPIs, segmentation and dashboards a team can trust.</p>
+          <a class="text-link" href="data/" data-path="data" data-i18n="wb.2l">Data profile <b>→</b></a>
+        </article>
+        <article class="pitch p4 reveal" style="--i:2">
+          <span class="pitch-no">B</span>
+          <h3 data-i18n="wb.3t">I turn it into a decision.</h3>
+          <p data-i18n="wb.3p">Reporting and recommendations written for the people who have to act: what to keep, what to change, what to test next.</p>
+          <a class="text-link" href="#contact" data-i18n="wb.3l">Let's talk <b>→</b></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section shell lp-contact">
+      <div class="gateway-head reveal">
+        <div class="eyebrow" data-i18n="ct.eyebrow">Contact</div>
+        <h2 data-i18n="lc.title">Open to opportunities in Brussels.</h2>
+        <p data-i18n="lc.p">Data analysis, BI and reporting, digital marketing, communication, CRM and customer insights. Pick the CV that matches the role.</p>
+      </div>
       <div class="quick-row shell reveal">
         <a href="mailto:Harrymulembwe09@gmail.com"><span data-i18n="ct.email">Email</span><strong>Harrymulembwe09@gmail.com</strong></a>
         <a href="https://linkedin.com/in/harry-mulembwe" target="_blank" rel="noopener"><span>LinkedIn</span><strong>linkedin.com/in/harry-mulembwe</strong></a>

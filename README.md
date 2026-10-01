@@ -6,7 +6,7 @@ Available in English, French and Dutch.
 ## Structure
 
 ```text
-index.html                    Landing page: welcome + choice between the two profiles
+index.html                    Landing page: animated welcome, how the portfolio works, the two profile doors, why both, contact
 data/index.html               Profile 01 · Data & Business Analyst (hero, workflow, data case studies, skills, about, CV, contact)
 marketing/index.html          Profile 02 · Marketing & Communication Officer (hero, marketing projects, skills, about, CV, contact)
 styles.css                    Styles shared by the landing and the two profile pages
