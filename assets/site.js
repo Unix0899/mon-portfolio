@@ -103,7 +103,7 @@
 
   // Floating family switcher: visible once the gateway has been scrolled past
   var famSwitch = document.querySelector('.fam-switch');
-  var gateway = document.getElementById('paths') || document.querySelector('.hero-v2');
+  var gateway = document.getElementById('paths') || document.querySelector('.hero-v2, .mkp-hero');
   if (famSwitch && gateway && 'IntersectionObserver' in window) {
     var contact = document.getElementById('contact');
     var pastGateway = false, atContact = false;
