@@ -51,6 +51,7 @@
         <a href="#problem" data-i18n="nav.problem">Problem</a>
         <a href="#approach" data-i18n="nav.method">Approach</a>
         <a href="#results" data-i18n="nav.results">Results</a>
+        <a href="#reading" data-i18n="nav.reading">Conclusions</a>
         <a href="#dashboard" data-i18n="nav.dash">Dashboard</a>
         <a href="#limits" data-i18n="nav.limits">Limits</a>
       </nav>
@@ -82,7 +83,7 @@
           <span class="ev-live" data-i18n="cg.live">Power BI · real screenshots</span>
         </div>
       </div>
-      <p class="ev-cap" data-i18n="hero.cap">Unedited screenshots of the three-page Power BI report, captured in Power BI Desktop.</p>
+      <p class="ev-cap" data-i18n="hero.cap">The three-page Power BI report I designed and built: unedited screenshots from Power BI Desktop.</p>
       <p class="disclosure"><b data-i18n="hero.discL">Personal project · official open data</b><span data-i18n="hero.disc">No synthetic data: every figure comes from datasets published by Brussels Mobility, MOW Vlaanderen, SPW Wallonie and Statbel. The gaps shown are relative differences between territories, not measured shortages.</span></p>
       <div class="meta-grid">
         <div><span data-i18n="m.type">Type</span><strong data-i18n="m.typeV">Personal project</strong></div>
@@ -316,11 +317,74 @@ ORDER BY points_per_1000_cars DESC;</pre>
       </div>
     </section>
 
-    <!-- 08 DASHBOARD -->
+    <!-- 08 READING THE RESULTS -->
+    <section id="reading" class="section">
+      <div class="eyebrow" data-i18n="rd.eyebrow">08 · What the results mean</div>
+      <h2 data-i18n="rd.title">From numbers to answers: what I conclude, and why.</h2>
+      <p class="lead-p" data-i18n="rd.p">A result is not an explanation. For each finding I state what the data shows, how I read it (a hypothesis, labelled as such, because the data cannot prove it) and what I would do next.</p>
+      <div class="ev-reads">
+        <article class="ev-read reveal">
+          <h3><span class="ev-n">01</span><span data-i18n="rd.1q">Is the network keeping pace with the EV transition?</span></h3>
+          <div class="ev-read-grid">
+            <div><b data-i18n="rd.lf">What the data shows</b><p data-i18n="rd.1f">544,517 battery-electric cars in 2026 against 23,983 in 2020, and 110,161 public charging points: one point per 4.9 electric cars.</p></div>
+            <div class="hyp"><b data-i18n="rd.lr">My reading (hypothesis)</b><p data-i18n="rd.1r">At national level, today's supply is sizeable. But the sources have no installation dates: I can describe the level, not the speed. Whether the network grows as fast as the fleet cannot be said from these files.</p></div>
+            <div class="act"><b data-i18n="rd.la">What I would do</b><p data-i18n="rd.1a">Save the same snapshot every month. After a year, the growth of the network can be compared with the growth of the fleet.</p></div>
+          </div>
+        </article>
+        <article class="ev-read reveal">
+          <h3><span class="ev-n">02</span><span data-i18n="rd.2q">Why is Wallonia so far behind per car?</span></h3>
+          <div class="ev-read-grid">
+            <div><b data-i18n="rd.lf">What the data shows</b><p data-i18n="rd.2f">7.9 points per 1,000 household cars in Wallonia, 26 in Flanders and Brussels. Wallonia holds 13% of the points for 34% of the cars.</p></div>
+            <div class="hyp"><b data-i18n="rd.lr">My reading (hypothesis)</b><p data-i18n="rd.2r">Three hypotheses, none proven here. Density: 219 inhabitants per km² in Wallonia against 504 in Flanders, so a charging site serves fewer people. Housing: more private parking would mean more home charging, which open data do not show. Timing: the Walloon file is six months older than the two others.</p></div>
+            <div class="act"><b data-i18n="rd.la">What I would do</b><p data-i18n="rd.2a">Start with reach, not volume: the nine municipalities without any public point, then the large fleets with weak ratios such as La Louvière (129 points for 36,623 household cars).</p></div>
+          </div>
+        </article>
+        <article class="ev-read reveal">
+          <h3><span class="ev-n">03</span><span data-i18n="rd.3q">Why does the thinnest network have the most fast charging?</span></h3>
+          <div class="ev-read-grid">
+            <div><b data-i18n="rd.lf">What the data shows</b><p data-i18n="rd.3f">14.6% of Walloon points are fast-capable against 7.0% in Flanders, yet only 66% of residents live within 1 km of a charging location.</p></div>
+            <div class="hyp"><b data-i18n="rd.lr">My reading (hypothesis)</b><p data-i18n="rd.3r">Hypothesis: in a low-density territory, operators favour fast sites that passing drivers can use, over slow neighbourhood points that need local density to pay off. The mix is consistent with it; the data cannot confirm the intent.</p></div>
+            <div class="act"><b data-i18n="rd.la">What I would do</b><p data-i18n="rd.3a">Complement the fast sites with slow, local points where people live: the gap is distance, not speed.</p></div>
+          </div>
+        </article>
+        <article class="ev-read reveal">
+          <h3><span class="ev-n">04</span><span data-i18n="rd.4q">Brussels is dense but slow: is that a problem?</span></h3>
+          <div class="ev-read-grid">
+            <div><b data-i18n="rd.lf">What the data shows</b><p data-i18n="rd.4f">50 points per km² and every resident within 1 km of a charger, but only 2.6% fast-capable. Households have 0.53 cars on average.</p></div>
+            <div class="hyp"><b data-i18n="rd.lr">My reading (hypothesis)</b><p data-i18n="rd.4r">Hypothesis: on-street slow charging plays the role that home charging plays elsewhere. If so, the slow mix is a logical choice rather than a weakness. Brussels publishes no kW, so the fast share is inferred from AC/DC.</p></div>
+            <div class="act"><b data-i18n="rd.la">What I would do</b><p data-i18n="rd.4a">Before adding fast chargers, find out who needs them. That requires usage data, which is not open.</p></div>
+          </div>
+        </article>
+        <article class="ev-read reveal">
+          <h3><span class="ev-n">05</span><span data-i18n="rd.5q">Why are car-dependent municipalities the least served?</span></h3>
+          <div class="ev-read-grid">
+            <div><b data-i18n="rd.lf">What the data shows</b><p data-i18n="rd.5f">The more cars per household, the fewer public points per car: 24.3 points per 1,000 cars in the least car-dependent third of municipalities, 12.2 in the most car-dependent. Rank correlation -0.28, also inside each region.</p></div>
+            <div class="hyp"><b data-i18n="rd.lr">My reading (hypothesis)</b><p data-i18n="rd.5r">Hypothesis: public chargers follow dense, mixed land use (centres, shops, offices), while car-dependent municipalities are residential, with private parking where people can charge at home. A low public ratio there may reflect a lower need, not a shortage. An association is not a cause.</p></div>
+            <div class="act"><b data-i18n="rd.la">What I would do</b><p data-i18n="rd.5a">Cross the list of candidate municipalities with housing and private-charging data before any investment decision.</p></div>
+          </div>
+        </article>
+      </div>
+      <div class="ev-answer reveal">
+        <span class="ev-n" data-i18n="rd.ansK">My answer to the question</span>
+        <h3 data-i18n="rd.ansT">Keeping up on average. Not everywhere.</h3>
+        <p data-i18n="rd.ansP">Nationally the supply is real: one public point per 4.9 electric cars. But Belgium does not have one network, it has three. Flanders and Brussels are well supplied per car; Wallonia is not, and its first gap is distance, not speed. The 88 candidate municipalities are where I would look first: leads to check against private charging and local conditions, not proven shortages.</p>
+      </div>
+      <div class="ev-next reveal">
+        <b data-i18n="rd.nxT">What I would do with more time</b>
+        <ul>
+          <li data-i18n="rd.nx1">Monthly snapshots, to measure how fast the network grows.</li>
+          <li data-i18n="rd.nx2">Distances along the road network instead of straight lines.</li>
+          <li data-i18n="rd.nx3">A source on private charging or housing types, to separate real needs from apparent gaps.</li>
+          <li data-i18n="rd.nx4">Motorway corridors and through-traffic, which municipal demand ignores.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 09 DASHBOARD -->
     <section id="dashboard" class="section">
-      <div class="eyebrow" data-i18n="db.eyebrow">08 · The dashboard</div>
-      <h2 data-i18n="db.title">Three pages, checked against SQL.</h2>
-      <p class="lead-p" data-i18n="db.p">The Power BI project (PBIP / TMDL) reuses the star schema: 55 DAX measures and three report pages. The screenshots below come from Power BI Desktop with the project open and refreshed; 75 measure values were compared with SQL and all match.</p>
+      <div class="eyebrow" data-i18n="db.eyebrow">09 · The dashboard</div>
+      <h2 data-i18n="db.title">A three-page Power BI report I built, checked against SQL.</h2>
+      <p class="lead-p" data-i18n="db.p">I designed the star schema, wrote the 55 DAX measures and built the three report pages as a Power BI Project (PBIP / TMDL). Each page answers one business question. I then compared 75 measure values with SQL: all match.</p>
       <ul class="ev-facts">
         <li><b>3</b><span data-i18n="db.f1">report pages</span></li>
         <li><b>55</b><span data-i18n="db.f2">DAX measures</span></li>
@@ -346,7 +410,7 @@ ORDER BY points_per_1000_cars DESC;</pre>
 
     <!-- 09 ANALYSIS FIGURES -->
     <section id="proof" class="section">
-      <div class="eyebrow" data-i18n="pw.eyebrow">09 · Analysis outputs</div>
+      <div class="eyebrow" data-i18n="pw.eyebrow">10 · Analysis outputs</div>
       <h2 data-i18n="pw.title">Seven figures, straight from the pipeline.</h2>
       <p class="lead-p" data-i18n="pw.p">These seven figures are analysis outputs produced by the Python pipeline (<code>python -m src.figures</code>). They are not Power BI screenshots. Click an image to see it full size.</p>
       <div class="evidence-grid">
@@ -384,7 +448,7 @@ ORDER BY points_per_1000_cars DESC;</pre>
     <!-- 10 LIMITS -->
     <section id="limits" class="section split">
       <div>
-        <div class="eyebrow" data-i18n="li.eyebrow">10 · The limits</div>
+        <div class="eyebrow" data-i18n="li.eyebrow">11 · The limits</div>
         <h2 data-i18n="li.title">What this analysis can claim, and what it cannot.</h2>
       </div>
       <ul class="ev-limits">
@@ -398,7 +462,7 @@ ORDER BY points_per_1000_cars DESC;</pre>
 
     <!-- 11 TAKEAWAY + NEXT -->
     <section id="learned" class="section takeaway">
-      <div class="eyebrow" data-i18n="le.eyebrow">11 · What to take away</div>
+      <div class="eyebrow" data-i18n="le.eyebrow">12 · What to take away</div>
       <blockquote data-i18n="le.quote">“The candidate list is a screening tool: it says where to look first, not where a charger is missing.”</blockquote>
       <div class="ev-repo reveal">
         <b data-i18n="le.repoT">Project contents</b>
