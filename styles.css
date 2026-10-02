@@ -837,3 +837,45 @@ a{color:inherit}
 .mkp:not(.lp):not(.dp) .lp-contact{padding-top:80px}
 .lp-cta-mkt::before{background:radial-gradient(closest-side,rgba(255,79,163,.24),transparent 70%)}
 .lp-cta-mkt .lp-cv-card>span b{color:#ffe51f}
+
+/* ---- Data profile: "Personal project" showcase (EV Charging). Additive block, used only by data/index.html ---- */
+.pp-section{padding-top:0;scroll-margin-top:70px}
+.pp-card{position:relative;isolation:isolate;overflow:hidden;border-radius:34px;padding:50px 54px 46px;background:linear-gradient(135deg,#0a2238 0%,#0f3a58 58%,#0f6a72 130%);color:#fff;box-shadow:0 30px 70px rgba(13,42,69,.25)}
+.pp-card::before{content:"";position:absolute;right:-10%;top:-34%;width:52%;aspect-ratio:1;border-radius:50%;background:radial-gradient(closest-side,rgba(143,216,213,.3),transparent 70%);z-index:-1}
+.pp-head{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:end}
+.pp-head>*{min-width:0}
+.pp-kicker{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+.pp-kicker span{font-size:11px;font-weight:850;letter-spacing:.1em;text-transform:uppercase;padding:6px 11px;border-radius:999px;border:1px solid rgba(255,255,255,.42);color:#fff}
+.pp-kicker span:first-child{background:#8fd8d5;border-color:#8fd8d5;color:#0a2238}
+.pp-card h3{font-size:clamp(28px,3.5vw,46px);line-height:1.05;letter-spacing:-.035em;margin:0 0 16px;color:#fff}
+.pp-desc{margin:0;color:#d3dfe8;font-size:18px;max-width:580px}
+.pp-figures{display:grid;grid-template-columns:1fr 1fr;gap:0 28px;margin:0}
+.pp-figures div{min-width:0;padding:14px 0 13px;border-top:1px solid rgba(255,255,255,.22)}
+.pp-figures dt{font-size:36px;font-weight:900;letter-spacing:-.04em;line-height:1;color:#8fd8d5;font-variant-numeric:tabular-nums}
+.pp-figures dd{margin:6px 0 0;font-size:13px;color:#d3dfe8;line-height:1.35}
+.pp-shot{display:block;margin-top:38px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.28);background:#f3f3f2;box-shadow:0 26px 60px rgba(0,0,0,.35)}
+.pp-shot img{display:block;width:100%;height:auto;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.pp-shot:hover img{transform:scale(1.015)}
+.pp-shot:focus-visible{outline:3px solid #8fd8d5;outline-offset:3px}
+.pp-cap{margin:14px 0 0;font-size:13px;color:#b9cad6}
+.pp-foot{display:flex;flex-wrap:wrap;gap:18px 26px;align-items:center;justify-content:space-between;margin-top:24px;padding-top:24px;border-top:1px solid rgba(255,255,255,.22)}
+.pp-card .tags{margin:0}
+.pp-card .tags span{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.3);color:#fff}
+.pp-foot .btn{padding:15px 22px;font-size:16px}
+.pp-foot .light-btn b{color:var(--teal);margin-left:6px;display:inline-block;transition:transform .2s}
+.pp-foot .light-btn:hover b{transform:translateX(5px)}
+@media(max-width:900px){
+  .pp-card{padding:40px 30px 34px;border-radius:28px}
+  .pp-head{grid-template-columns:1fr;gap:28px}
+}
+@media(max-width:620px){
+  .pp-card{padding:30px 20px 26px;border-radius:24px}
+  .pp-desc{font-size:16px}
+  .pp-figures{gap:0 18px}
+  .pp-figures dt{font-size:28px}
+  .pp-shot{margin-top:26px;border-radius:10px}
+  .pp-foot .btn{width:100%}
+}
+/* the extra nav link only where the desktop nav has room for it */
+@media(min-width:951px) and (max-width:1260px){.dp .nav a[href="#personal"]{display:none}}
+@media(prefers-reduced-motion:reduce){.pp-shot img,.pp-foot .light-btn b{transition:none}.pp-shot:hover img{transform:none}}
