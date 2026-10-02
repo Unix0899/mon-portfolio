@@ -862,6 +862,7 @@ a{color:inherit}
 .pp-card .tags{margin:0}
 .pp-card .tags span{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.3);color:#fff}
 .pp-foot .btn{padding:15px 22px;font-size:16px}
+.pp-actions{display:flex;flex-wrap:wrap;gap:12px}
 .pp-foot .light-btn b{color:var(--teal);margin-left:6px;display:inline-block;transition:transform .2s}
 .pp-foot .light-btn:hover b{transform:translateX(5px)}
 @media(max-width:900px){
@@ -874,6 +875,7 @@ a{color:inherit}
   .pp-figures{gap:0 18px}
   .pp-figures dt{font-size:28px}
   .pp-shot{margin-top:26px;border-radius:10px}
+  .pp-actions{width:100%}
   .pp-foot .btn{width:100%}
 }
 /* the extra nav link only where the desktop nav has room for it */
