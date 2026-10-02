@@ -72,7 +72,7 @@
           <h1><span>Belgian</span> <span class="hl">EV Charging</span> <span>Infrastructure</span> <span>Intelligence</span></h1>
           <p class="hero-sub" data-i18n="hero.sub">Is the charging network keeping pace with the EV transition?</p>
           <span class="type-badge" data-i18n="hero.badge">Personal project · official open data</span>
-          <p class="hero-copy" data-i18n="hero.copy">A geospatial Data &amp; BI project analysing whether Belgium's charging infrastructure is keeping pace with the EV transition and identifying potential territorial coverage gaps.</p>
+          <p class="hero-copy" data-i18n="hero.copy">I built a geospatial Data &amp; BI project to find out whether Belgium's charging infrastructure is keeping pace with the EV transition, and to identify potential territorial coverage gaps.</p>
         </div>
         <div class="ev-collage" aria-hidden="true">
           <span class="sc sc1"><img src="proof/powerbi_01_executive_overview.jpg" alt="" width="1288" height="748" /></span>
@@ -84,7 +84,7 @@
         </div>
       </div>
       <p class="ev-cap" data-i18n="hero.cap">The three-page Power BI report I designed and built: unedited screenshots from Power BI Desktop.</p>
-      <p class="disclosure"><b data-i18n="hero.discL">Personal project · official open data</b><span data-i18n="hero.disc">No synthetic data: every figure comes from datasets published by Brussels Mobility, MOW Vlaanderen, SPW Wallonie and Statbel. The gaps shown are relative differences between territories, not measured shortages.</span></p>
+      <p class="disclosure"><b data-i18n="hero.discL">Personal project · official open data</b><span data-i18n="hero.disc">I used no synthetic data: every figure comes from datasets published by Brussels Mobility, MOW Vlaanderen, SPW Wallonie and Statbel. The gaps I show are relative differences between territories, not measured shortages.</span></p>
       <div class="meta-grid">
         <div><span data-i18n="m.type">Type</span><strong data-i18n="m.typeV">Personal project</strong></div>
         <div><span data-i18n="m.data">Data</span><strong data-i18n="m.dataV">Official open data</strong></div>
@@ -102,10 +102,10 @@
     </div>
 
     <section class="stats section narrow">
-      <article class="reveal" style="--i:0"><strong data-i18n="num.points">110,161</strong><span data-i18n="stat.1">public charging points analysed, at 27,163 locations</span></article>
+      <article class="reveal" style="--i:0"><strong data-i18n="num.points">110,161</strong><span data-i18n="stat.1">public charging points I analysed, at 27,163 locations</span></article>
       <article class="reveal" style="--i:1"><strong data-count="565">565</strong><span data-i18n="stat.2">municipalities, 20,781 statistical sectors</span></article>
       <article class="reveal" style="--i:2"><strong data-i18n="num.gap">3.3×</strong><span data-i18n="stat.3">more charging points per car in Flanders and Brussels than in Wallonia</span></article>
-      <article class="reveal" style="--i:3"><strong data-count="88">88</strong><span data-i18n="stat.4">candidate municipalities for additional capacity</span></article>
+      <article class="reveal" style="--i:3"><strong data-count="88">88</strong><span data-i18n="stat.4">municipalities I flag as candidates for additional capacity</span></article>
     </section>
 
     <!-- 01 PROBLEM -->
@@ -116,7 +116,7 @@
       </div>
       <div class="prose">
         <p data-i18n="pb.p1">Belgium went from 23,983 battery-electric cars in 2020 to 544,517 in 2026.</p>
-        <p data-i18n="pb.p2">Charging infrastructure is planned by three regions, and each publishes its own dataset: different language, schema, grain and coordinate system. There is no ready-made answer to a simple question a mobility manager would ask.</p>
+        <p data-i18n="pb.p2">Charging infrastructure is planned by three regions, and each publishes its own dataset: different language, schema, grain and coordinate system. I found no ready-made answer to the simple question a mobility manager would ask.</p>
         <p class="question" data-i18n="pb.q">Is supply proportional to demand everywhere, and if not, where should we look first?</p>
         <p data-i18n="pb.p3">So I merged the three regional charging datasets with Statbel statistics into one comparable, Belgium-wide model.</p>
       </div>
@@ -127,11 +127,11 @@
       <div class="eyebrow" data-i18n="ap.eyebrow">02 · My approach</div>
       <h2 data-i18n="ap.title">Audit first. Profile next. Let the data decide the model.</h2>
       <div class="insights-grid ev-steps">
-        <article class="reveal" style="--i:0"><span data-i18n="ap.1n">Step 01</span><h3 data-i18n="ap.1t">Source audit before any analysis</h3><p data-i18n="ap.1p">Eight official datasets registered with publisher, licence, coordinate system and role; downloaded by script with checksums.</p></article>
+        <article class="reveal" style="--i:0"><span data-i18n="ap.1n">Step 01</span><h3 data-i18n="ap.1t">Source audit before any analysis</h3><p data-i18n="ap.1p">I registered eight official datasets with their publisher, licence, coordinate system and role, and wrote the script that downloads them with checksums.</p></article>
         <article class="reveal" style="--i:1"><span data-i18n="ap.2n">Step 02</span><h3 data-i18n="ap.2t">Profile, then decide the grain</h3><p data-i18n="ap.2p">I profiled every file before writing a transformation, and let the data decide the model.</p></article>
-        <article class="reveal" style="--i:2"><span data-i18n="ap.3n">Step 03</span><h3 data-i18n="ap.3t">One reproducible pipeline</h3><p data-i18n="ap.3p">Python for cleaning and normalisation, GeoPandas for the spatial work, SQLite for the model, Power BI for the semantic layer. One command rebuilds everything.</p></article>
-        <article class="reveal" style="--i:0"><span data-i18n="ap.4n">Step 04</span><h3 data-i18n="ap.4t">Business questions first</h3><p data-i18n="ap.4p">Seven questions drive the SQL analysis and the three dashboard pages.</p></article>
-        <article class="reveal" style="--i:1"><span data-i18n="ap.5n">Step 05</span><h3 data-i18n="ap.5t">Controls before publication</h3><p data-i18n="ap.5p">54 automated checks and 18 tests; no figure reaches the dashboard without a passing check.</p></article>
+        <article class="reveal" style="--i:2"><span data-i18n="ap.3n">Step 03</span><h3 data-i18n="ap.3t">One reproducible pipeline</h3><p data-i18n="ap.3p">I wrote the cleaning and normalisation in Python, did the spatial work with GeoPandas, built the model in SQLite and the semantic layer in Power BI. One command rebuilds everything.</p></article>
+        <article class="reveal" style="--i:0"><span data-i18n="ap.4n">Step 04</span><h3 data-i18n="ap.4t">Business questions first</h3><p data-i18n="ap.4p">I framed seven business questions; they drive my SQL analysis and my three dashboard pages.</p></article>
+        <article class="reveal" style="--i:1"><span data-i18n="ap.5n">Step 05</span><h3 data-i18n="ap.5t">Controls before publication</h3><p data-i18n="ap.5p">I wrote 54 automated checks and 18 tests: no figure reaches my dashboard without a passing check.</p></article>
       </div>
     </section>
 
@@ -139,7 +139,7 @@
     <section id="data" class="section">
       <div class="eyebrow" data-i18n="da.eyebrow">03 · The data</div>
       <h2 data-i18n="da.title">Official sources only. Nothing simulated.</h2>
-      <p class="lead-p" data-i18n="da.p">Supply comes from the three regional publishers, potential demand and the spatial layer from Statbel. A missing value stays missing.</p>
+      <p class="lead-p" data-i18n="da.p">I took supply from the three regional publishers, and potential demand and the spatial layer from Statbel. I simulated nothing: when a value is missing, I leave it missing.</p>
       <div class="table-wrap reveal">
         <table class="data-table">
           <thead><tr><th data-i18n="da.th1">Source</th><th data-i18n="da.th2">Publisher</th><th data-i18n="da.th3">Used for</th></tr></thead>
@@ -160,7 +160,7 @@
     <!-- 04 STACK + PIPELINE -->
     <section id="stack" class="section">
       <div class="eyebrow" data-i18n="st.eyebrow">04 · The stack</div>
-      <h2 data-i18n="st.title">One command, from raw official files to Power BI.</h2>
+      <h2 data-i18n="st.title">I built one pipeline, from the raw official files to Power BI.</h2>
       <ol class="chain reveal">
         <li><span>01</span><b data-i18n="st.c1">Official open data</b><small>Brussels Mobility · MOW · SPW · Statbel</small></li>
         <li><span>02</span><b>Python</b><small data-i18n="st.c2s">Scripted download, SHA-256, WFS paging, profiling</small></li>
@@ -171,7 +171,7 @@
         <li><span>07</span><b>Power BI</b><small data-i18n="st.c6s">PBIP / TMDL model, 55 DAX measures, 3 pages</small></li>
         <li class="last"><span>08</span><b data-i18n="st.c7">Business insights</b><small data-i18n="st.c7s">Regional gap, coverage index, candidate areas</small></li>
       </ol>
-      <p class="note"><code>python run_pipeline.py</code> · <span data-i18n="st.note">staging, cleaning, spatial join, model, SQLite, then 54 automated checks. pytest adds 18 tests on the cleaning rules and the database.</span></p>
+      <p class="note"><code>python run_pipeline.py</code> · <span data-i18n="st.note">I chain staging, cleaning, spatial join, model and SQLite, then run my 54 automated checks. With pytest I add 18 tests on the cleaning rules and the database.</span></p>
       <div class="ev-kit">
         <article><b>Python</b><p>pandas · GeoPandas · Shapely · pyproj</p></article>
         <article><b>SQL / SQLite</b><p data-i18n="st.k2">CTEs · window functions · views</p></article>
@@ -180,9 +180,9 @@
       </div>
       <div class="ev-code-grid">
         <div class="prose">
-          <p data-i18n="st.geo1">The spatial join is the centre of the model: 103,756 charging records joined to 20,781 Statbel statistical sectors by point-in-polygon in EPSG:3812, 100% matched.</p>
-          <p data-i18n="st.geo2">81 points were re-assigned to the region they actually lie in. Areas and distances are computed in metres, never on degrees.</p>
-          <p class="note" data-i18n="st.geoNote">Extract of <code>src/geo.py</code>, as it runs in the pipeline.</p>
+          <p data-i18n="st.geo1">The spatial join is the centre of my model: I joined 103,756 charging records to 20,781 Statbel statistical sectors by point-in-polygon in EPSG:3812, and matched 100% of them.</p>
+          <p data-i18n="st.geo2">I re-assigned 81 points to the region they actually lie in. I compute areas and distances in metres, never on degrees.</p>
+          <p class="note" data-i18n="st.geoNote">An extract of my <code>src/geo.py</code>, as it runs in the pipeline.</p>
         </div>
         <pre class="ev-code" tabindex="0">def join_points_to_sectors(points: gpd.GeoDataFrame, sectors: gpd.GeoDataFrame) -&gt; gpd.GeoDataFrame:
     """Attach the statistical sector to each charging record.
@@ -228,13 +228,13 @@
     <section id="difficulties" class="section">
       <div class="eyebrow" data-i18n="df.eyebrow">05 · The difficulties</div>
       <h2 data-i18n="df.title">Six traps in the real data, and what I decided.</h2>
-      <p class="lead-p" data-i18n="df.p">Every problem below was found by profiling the files, not assumed in advance.</p>
+      <p class="lead-p" data-i18n="df.p">I found every problem below by profiling the files; I assumed none of them in advance.</p>
       <div class="insights-grid">
         <article class="reveal" style="--i:0"><span data-i18n="df.1n">Trap 01</span><h3 data-i18n="df.1t">A silently truncated download.</h3><p data-i18n="df.1p">The Flemish web service returned exactly 20,000 rows. The server actually held 87,381. I rewrote the download with paging and a completeness check: without it, every Flemish figure would have been wrong by a factor of four.</p></article>
         <article class="reveal" style="--i:1"><span data-i18n="df.2n">Trap 02</span><h3 data-i18n="df.2t">Three grains.</h3><p data-i18n="df.2p">Brussels publishes one row per location, the other regions one row per charging point. Counting rows would have compared 1,752 with 87,381. I kept one row per source record with an additive point count.</p></article>
         <article class="reveal" style="--i:2"><span data-i18n="df.3n">Trap 03</span><h3 data-i18n="df.3t">A power field that was not power.</h3><p data-i18n="df.3p">Brussels' <code>power</code> column contains voltages (230, 400, 1000), not kW. I left kW empty rather than invent it, and derived a cross-region “fast-capable” flag from AC/DC, validated on Flemish data (99.6% of AC points are at most 22 kW).</p></article>
-        <article class="reveal" style="--i:0"><span data-i18n="df.4n">Trap 04</span><h3 data-i18n="df.4t">Three coordinate systems.</h3><p data-i18n="df.4p">Everything is reprojected to Belgian Lambert 2008 (metres) before any join or distance.</p></article>
-        <article class="reveal" style="--i:1"><span data-i18n="df.5n">Trap 05</span><h3 data-i18n="df.5t">A site counted twice.</h3><p data-i18n="df.5p">The same 100-point site appeared in two regional files with coordinates 5 km apart. Identified by location id, operator and size; removed once, with an audit trail.</p></article>
+        <article class="reveal" style="--i:0"><span data-i18n="df.4n">Trap 04</span><h3 data-i18n="df.4t">Three coordinate systems.</h3><p data-i18n="df.4p">I reproject everything to Belgian Lambert 2008 (metres) before any join or distance.</p></article>
+        <article class="reveal" style="--i:1"><span data-i18n="df.5n">Trap 05</span><h3 data-i18n="df.5t">A site counted twice.</h3><p data-i18n="df.5p">The same 100-point site appeared in two regional files with coordinates 5 km apart. I identified it by location id, operator and size, and removed it once, with an audit trail.</p></article>
         <article class="reveal" style="--i:2"><span data-i18n="df.6n">Trap 06</span><h3 data-i18n="df.6t">A tempting but wrong denominator.</h3><p data-i18n="df.6p">Registered cars per municipality are distorted by leasing companies (239,830 cars “in” Zaventem). I used Statbel's household-based car counts instead.</p></article>
       </div>
     </section>
@@ -242,19 +242,19 @@
     <!-- 06 ANALYSIS -->
     <section id="analysis" class="section">
       <div class="eyebrow" data-i18n="an.eyebrow">06 · The analysis</div>
-      <h2 data-i18n="an.title">Supply against potential demand, from region to municipality.</h2>
+      <h2 data-i18n="an.title">I compared supply with potential demand, from region to municipality.</h2>
       <div class="ev-code-grid">
         <div class="prose">
           <ul class="ticks">
-            <li data-i18n="an.1">Regional scorecard: supply share vs demand share.</li>
-            <li data-i18n="an.2">Municipality ranking on points per 1,000 household cars, density per km² and fast-charging supply.</li>
-            <li data-i18n="an.3">Geographic accessibility: population within 1 km of a charging location.</li>
-            <li data-i18n="an.4">Car dependence vs coverage: do highly motorised municipalities get good coverage?</li>
-            <li data-i18n="an.5">Operator market structure (shares, concentration index).</li>
-            <li data-i18n="an.6">A documented EV Charging Coverage Index (project-created, not official) with sensitivity analysis, and a cross-check against the official Flemish 2030 needs estimate.</li>
+            <li data-i18n="an.1">I built a regional scorecard: supply share vs demand share.</li>
+            <li data-i18n="an.2">I ranked the municipalities on points per 1,000 household cars, density per km² and fast-charging supply.</li>
+            <li data-i18n="an.3">I measured geographic accessibility: the population within 1 km of a charging location.</li>
+            <li data-i18n="an.4">I tested car dependence against coverage: do highly motorised municipalities get good coverage?</li>
+            <li data-i18n="an.5">I analysed the operator market structure (shares, concentration index).</li>
+            <li data-i18n="an.6">I designed and documented an EV Charging Coverage Index (my own composite, not an official indicator), tested its sensitivity and cross-checked it against the official Flemish 2030 needs estimate.</li>
           </ul>
-          <p class="note" data-i18n="an.note">“Cars” always means cars owned or used by households: a proxy for potential demand, not a count of electric vehicles.</p>
-          <p class="note" data-i18n="an.sqlNote">Opposite: query q01 of <code>sql/analysis_queries.sql</code>, the regional scorecard.</p>
+          <p class="note" data-i18n="an.note">When I write “cars”, I always mean cars owned or used by households: a proxy for potential demand, not a count of electric vehicles.</p>
+          <p class="note" data-i18n="an.sqlNote">Opposite: my query q01 in <code>sql/analysis_queries.sql</code>, the regional scorecard.</p>
         </div>
         <pre class="ev-code" tabindex="0">-- @name: q01_regional_scorecard
 -- Is supply proportional to demand? Share of national supply vs share of national cars.
@@ -305,15 +305,15 @@ ORDER BY points_per_1000_cars DESC;</pre>
     <!-- 07 RESULTS -->
     <section id="results" class="section ev-results">
       <div class="eyebrow" data-i18n="rs.eyebrow">07 · The results</div>
-      <h2 data-i18n="rs.title">A sizeable network. Very unevenly spread.</h2>
-      <p class="ev-caveat" data-i18n="rs.note">These are relative gaps against other territories, not measured shortages. Associations are not causal claims.</p>
+      <h2 data-i18n="rs.title">What I found: a sizeable network, very unevenly spread.</h2>
+      <p class="ev-caveat" data-i18n="rs.note">What I measure are relative gaps against other territories, not measured shortages. The associations I report are not causal claims.</p>
       <div class="insights-grid">
-        <article class="reveal" style="--i:0"><span data-i18n="rs.1n">Result 01</span><strong class="big" data-i18n="rs.1b">4.9</strong><h3 data-i18n="rs.1t">The national average hides a regional divide.</h3><p data-i18n="rs.1p">One public point per 4.9 battery-electric cars nationally, but Flanders holds 79% of the points for 61% of household cars, Wallonia 13% for 34%.</p></article>
-        <article class="reveal" style="--i:1"><span data-i18n="rs.2n">Result 02</span><strong class="big" data-i18n="num.gap">3.3×</strong><h3 data-i18n="rs.2t">The gap in points per car.</h3><p data-i18n="rs.2p">26 points per 1,000 household cars in Flanders and Brussels, 7.9 in Wallonia.</p></article>
-        <article class="reveal" style="--i:2"><span data-i18n="rs.3n">Result 03</span><strong class="big" data-i18n="rs.3b">66%</strong><h3 data-i18n="rs.3t">Reach is Wallonia's first gap.</h3><p data-i18n="rs.3p">66% of residents live within 1 km of a charging location, against 96% in Flanders and 100% in Brussels. Nine municipalities have no public point.</p></article>
-        <article class="reveal" style="--i:0"><span data-i18n="rs.4n">Result 04</span><strong class="big" data-i18n="rs.4b">2.6%</strong><h3 data-i18n="rs.4t">Brussels is dense but slow.</h3><p data-i18n="rs.4p">50 points per km², only 2.6% fast-capable.</p></article>
-        <article class="reveal" style="--i:1"><span data-i18n="rs.5n">Result 05</span><strong class="big" data-i18n="rs.5b">−0.28</strong><h3 data-i18n="rs.5t">Car-dependent municipalities are the least served by public charging.</h3><p data-i18n="rs.5p">Rank correlation of -0.28 between cars per household and points per car, also within each region.</p></article>
-        <article class="reveal" style="--i:2"><span data-i18n="rs.6n">Result 06</span><strong class="big" data-count="88">88</strong><h3 data-i18n="rs.6t">Candidate municipalities.</h3><p data-i18n="rs.6p">88 candidate municipalities (365,000 household cars) combine low coverage and high car dependence; a second, within-region lens highlights 98, including 50 in Flanders.</p></article>
+        <article class="reveal" style="--i:0"><span data-i18n="rs.1n">Result 01</span><strong class="big" data-i18n="rs.1b">4.9</strong><h3 data-i18n="rs.1t">The national average hides a regional divide.</h3><p data-i18n="rs.1p">I count one public point per 4.9 battery-electric cars nationally, but Flanders holds 79% of the points for 61% of household cars, Wallonia 13% for 34%.</p></article>
+        <article class="reveal" style="--i:1"><span data-i18n="rs.2n">Result 02</span><strong class="big" data-i18n="num.gap">3.3×</strong><h3 data-i18n="rs.2t">The gap in points per car.</h3><p data-i18n="rs.2p">I measured 26 points per 1,000 household cars in Flanders and Brussels, and 7.9 in Wallonia.</p></article>
+        <article class="reveal" style="--i:2"><span data-i18n="rs.3n">Result 03</span><strong class="big" data-i18n="rs.3b">66%</strong><h3 data-i18n="rs.3t">Reach is Wallonia's first gap.</h3><p data-i18n="rs.3p">By my calculation, 66% of Walloon residents live within 1 km of a charging location, against 96% in Flanders and 100% in Brussels. I found nine municipalities without any public point.</p></article>
+        <article class="reveal" style="--i:0"><span data-i18n="rs.4n">Result 04</span><strong class="big" data-i18n="rs.4b">2.6%</strong><h3 data-i18n="rs.4t">Brussels is dense but slow.</h3><p data-i18n="rs.4p">I measured 50 points per km² in Brussels, but only 2.6% of them are fast-capable.</p></article>
+        <article class="reveal" style="--i:1"><span data-i18n="rs.5n">Result 05</span><strong class="big" data-i18n="rs.5b">−0.28</strong><h3 data-i18n="rs.5t">Car-dependent municipalities are the least served by public charging.</h3><p data-i18n="rs.5p">I measured a rank correlation of -0.28 between cars per household and points per car, and I find it again inside each region.</p></article>
+        <article class="reveal" style="--i:2"><span data-i18n="rs.6n">Result 06</span><strong class="big" data-count="88">88</strong><h3 data-i18n="rs.6t">Candidate municipalities.</h3><p data-i18n="rs.6p">I flag 88 candidate municipalities (365,000 household cars) that combine low coverage and high car dependence; my second, within-region lens highlights 98, including 50 in Flanders.</p></article>
       </div>
     </section>
 
@@ -393,26 +393,26 @@ ORDER BY points_per_1000_cars DESC;</pre>
       <figure class="ev-dash reveal" id="pbi1">
         <figcaption><span class="ev-n" data-i18n="db.1n">Page 1</span><b data-i18n="db.1t">Executive Overview</b><span class="q" data-i18n="db.1q">Is the public charging network keeping pace with the EV transition, and is supply proportional to demand?</span></figcaption>
         <a class="shot" href="proof/powerbi_01_executive_overview.jpg" target="_blank" rel="noopener"><img src="proof/powerbi_01_executive_overview.jpg" alt="Power BI report, page 1: executive overview with headline cards, regional scorecard, battery-electric fleet trend and charging mix" width="1288" height="748" /></a>
-        <p class="ev-dash-note" data-i18n="db.1p">Six headline cards, supply share against demand share, the battery-electric fleet since 2018, the regional scorecard and the charging mix.</p>
+        <p class="ev-dash-note" data-i18n="db.1p">On this page I show six headline cards, supply share against demand share, the battery-electric fleet since 2018, my regional scorecard and the charging mix.</p>
       </figure>
       <figure class="ev-dash reveal" id="pbi2">
         <figcaption><span class="ev-n" data-i18n="db.2n">Page 2</span><b data-i18n="db.2t">Geographic Coverage &amp; Infrastructure</b><span class="q" data-i18n="db.2q">Where is the network dense, who operates it, and where is fast charging concentrated?</span></figcaption>
         <a class="shot" href="proof/powerbi_02_geographic_coverage.jpg" target="_blank" rel="noopener"><img src="proof/powerbi_02_geographic_coverage.jpg" alt="Power BI report, page 2: dot map of charging points by municipality, density by province, operators and municipality detail" loading="lazy" width="1288" height="748" /></a>
-        <p class="ev-dash-note" data-i18n="db.2p">A dot map with one bubble per municipality, density per km² by province, operators by charging points and the municipality detail.</p>
+        <p class="ev-dash-note" data-i18n="db.2p">I drew a dot map with one bubble per municipality, and added the density per km² by province, the operators by charging points and the municipality detail.</p>
       </figure>
       <figure class="ev-dash reveal" id="pbi3">
         <figcaption><span class="ev-n" data-i18n="db.3n">Page 3</span><b data-i18n="db.3t">Supply vs Demand &amp; Opportunity Areas</b><span class="q" data-i18n="db.3q">Do car-dependent municipalities get good coverage, and which areas are candidates for more capacity?</span></figcaption>
         <a class="shot" href="proof/powerbi_03_opportunity_areas.jpg" target="_blank" rel="noopener"><img src="proof/powerbi_03_opportunity_areas.jpg" alt="Power BI report, page 3: car dependence against the coverage index, coverage tiers by region and the opportunity ranking" loading="lazy" width="1288" height="748" /></a>
-        <p class="ev-dash-note" data-i18n="db.3p">Car dependence against the coverage index, coverage tiers by region and the opportunity ranking. The page states it itself: candidates to investigate, not proven shortages.</p>
+        <p class="ev-dash-note" data-i18n="db.3p">I plot car dependence against my coverage index, show the coverage tiers by region and rank the opportunities. I wrote it on the page itself: candidates to investigate, not proven shortages.</p>
       </figure>
-      <p class="note" data-i18n="db.note">Unedited screenshots. Power BI Desktop displays numbers in Belgian format (110.161 for 110,161). The Coverage Index shown on page 3 is a project-created composite, not an official indicator.</p>
+      <p class="note" data-i18n="db.note">My screenshots are unedited. Power BI Desktop displays numbers in Belgian format (110.161 for 110,161). The Coverage Index on page 3 is a composite I created for this project, not an official indicator.</p>
     </section>
 
     <!-- 09 ANALYSIS FIGURES -->
     <section id="proof" class="section">
       <div class="eyebrow" data-i18n="pw.eyebrow">10 · Analysis outputs</div>
-      <h2 data-i18n="pw.title">Seven figures, straight from the pipeline.</h2>
-      <p class="lead-p" data-i18n="pw.p">These seven figures are analysis outputs produced by the Python pipeline (<code>python -m src.figures</code>). They are not Power BI screenshots. Click an image to see it full size.</p>
+      <h2 data-i18n="pw.title">Seven figures I produced with my pipeline.</h2>
+      <p class="lead-p" data-i18n="pw.p">I produced these seven analysis figures with my Python pipeline (<code>python -m src.figures</code>). They are not Power BI screenshots. Click an image to see it full size.</p>
       <div class="evidence-grid">
         <figure class="evidence reveal" style="--i:0" id="ev1">
           <a class="shot" href="proof/fig_02_points_per_1000_cars_map.jpg" target="_blank" rel="noopener"><img src="proof/fig_02_points_per_1000_cars_map.jpg" alt="Map of Belgium: public charging points per 1,000 household cars, by municipality" loading="lazy" width="1600" height="1280" /></a>
@@ -420,7 +420,7 @@ ORDER BY points_per_1000_cars DESC;</pre>
         </figure>
         <figure class="evidence reveal" style="--i:1" id="ev2">
           <a class="shot" href="proof/fig_01_coverage_index_map.jpg" target="_blank" rel="noopener"><img src="proof/fig_01_coverage_index_map.jpg" alt="Map of Belgium: EV Charging Coverage Index by municipality, in five tiers" loading="lazy" width="1600" height="1280" /></a>
-          <figcaption><span class="ev-n" data-i18n="pw.e2n">Analysis figure 02</span><b data-i18n="pw.e2t">EV Charging Coverage Index</b><span data-i18n="pw.e2p">Project-created composite index, not an official indicator. Darker means better relative coverage.</span></figcaption>
+          <figcaption><span class="ev-n" data-i18n="pw.e2n">Analysis figure 02</span><b data-i18n="pw.e2t">EV Charging Coverage Index</b><span data-i18n="pw.e2p">A composite index I created, not an official indicator. Darker means better relative coverage.</span></figcaption>
         </figure>
         <figure class="evidence reveal" style="--i:0" id="ev3">
           <a class="shot" href="proof/fig_03_regional_supply_vs_demand.jpg" target="_blank" rel="noopener"><img src="proof/fig_03_regional_supply_vs_demand.jpg" alt="Bar chart: charging points per 1,000 household cars in Brussels, Flanders and Wallonia" loading="lazy" width="1440" height="736" /></a>
@@ -449,14 +449,14 @@ ORDER BY points_per_1000_cars DESC;</pre>
     <section id="limits" class="section split">
       <div>
         <div class="eyebrow" data-i18n="li.eyebrow">11 · The limits</div>
-        <h2 data-i18n="li.title">What this analysis can claim, and what it cannot.</h2>
+        <h2 data-i18n="li.title">What my analysis can claim, and what it cannot.</h2>
       </div>
       <ul class="ev-limits">
         <li data-i18n="li.1">Wallonia's file is a six-month-older snapshot than the two others.</li>
         <li data-i18n="li.2">Household cars are a proxy for demand, not EV counts.</li>
         <li data-i18n="li.3">Private and workplace charging, usage and availability are not in open data: a low public ratio is a lead to investigate, not a proven shortage.</li>
         <li data-i18n="li.4">Brussels publishes neither kW nor accessibility.</li>
-        <li data-i18n="li.5">The coverage index is relative by construction and is not an official indicator.</li>
+        <li data-i18n="li.5">My coverage index is relative by construction and is not an official indicator.</li>
       </ul>
     </section>
 
@@ -466,7 +466,7 @@ ORDER BY points_per_1000_cars DESC;</pre>
       <blockquote data-i18n="le.quote">“The candidate list is a screening tool: it says where to look first, not where a charger is missing.”</blockquote>
       <div class="ev-repo reveal">
         <b data-i18n="le.repoT">Project contents</b>
-        <p data-i18n="le.repoP">Source registry, download and profiling scripts, Python pipeline, SQLite star schema, 23 SQL queries, tests, Power BI project (PBIP / TMDL) and documentation. One command rebuilds everything: <code>python run_pipeline.py</code>.</p>
+        <p data-i18n="le.repoP">I wrote the source registry, the download and profiling scripts, the Python pipeline, the SQLite star schema, 23 SQL queries, the tests, the Power BI project (PBIP / TMDL) and the documentation. One command rebuilds everything: <code>python run_pipeline.py</code>.</p>
       </div>
 
       <div class="eyebrow" style="margin-top:70px" data-i18n="nx.eyebrow">Next project</div>
