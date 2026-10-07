@@ -162,3 +162,41 @@ a{color:inherit}.topbar{position:sticky;top:0;z-index:10;display:flex;justify-co
   .topbar nav::-webkit-scrollbar{display:none}
   .topbar nav a{white-space:nowrap;font-size:14px}
 }
+
+/* ===== Case study v3: business storytelling ===== */
+.type-badge{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border-radius:999px;background:var(--navy);color:#fff;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;margin:0 0 20px}
+.type-badge::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--teal2)}
+.chain.steps{grid-template-columns:repeat(3,1fr)}
+.chain.steps li small{margin-top:6px;line-height:1.5;font-size:14px}
+.method-foot{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px}
+.why{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:28px}
+.why h3{margin:14px 0 6px;font-size:17px}
+.why p{margin:0;color:var(--muted);font-size:15px}
+.why .text-link{margin-top:18px}
+.segs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.seg{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;flex-direction:column;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s}
+.seg:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.seg-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.seg-share{font-size:12px;font-weight:700;color:var(--muted)}
+.seg h3{margin:14px 0 10px;font-size:20px;letter-spacing:-.01em}
+.seg p{margin:0;color:var(--muted);font-size:15px}
+.seg-l{font-size:11px !important;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--teal) !important;margin:14px 0 4px !important}
+.seg-l.act{color:var(--navy) !important}
+.seg-do{color:var(--ink) !important;font-weight:600}
+.findings .lead-p{color:#c6d4de}
+.fraud-stats.four{grid-template-columns:1fr 1fr}
+.fraud-stats.four strong{font-size:26px}
+.rec-lead{max-width:860px}
+.prio-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:34px 0 18px}
+.prio{background:var(--navy);color:#fff;border-radius:20px;padding:28px}
+.prio-l{display:block;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--teal2);margin-bottom:10px}
+.prio h3{margin:0 0 10px;font-size:22px;letter-spacing:-.01em}
+.prio p{margin:0;color:#c6d4de}
+.skills-box{margin-top:28px}
+.skills-box b{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin-bottom:12px}
+.skills-box .stack{margin:0}
+@media(max-width:900px){.chain.steps,.segs{grid-template-columns:1fr 1fr}.method-foot,.prio-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.chain.steps,.segs{grid-template-columns:1fr}.fraud-stats.four{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){.seg{transition:none}}
+#recommendations .rec-grid{grid-template-columns:repeat(2,1fr)}
+@media(max-width:620px){#recommendations .rec-grid{grid-template-columns:1fr}}

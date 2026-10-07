@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title data-i18n="meta.title">Cryptobel Case Study | Harry Mulembwe</title>
-  <meta name="description" content="Audience segmentation & business intelligence case study: social-media data, NLP, clustering and Power BI for Cryptobel." data-i18n-attr="content:meta.desc" />
+  <meta name="description" content="Who talks about Web3, and how should Cryptobel speak to them? Final-year thesis: 1,985 public Reddit and Instagram messages turned into six audience profiles and a communication plan." data-i18n-attr="content:meta.desc" />
   <meta name="theme-color" content="#0d2a45" />
   <link rel="canonical" href="https://harry-mulembwe.vercel.app/projects/cryptobel/" />
   <link rel="alternate" hreflang="en" href="https://harry-mulembwe.vercel.app/projects/cryptobel/?lang=en" />
@@ -15,7 +15,7 @@
   <meta property="og:site_name" content="Harry Mulembwe" />
   <meta property="og:url" content="https://harry-mulembwe.vercel.app/projects/cryptobel/" />
   <meta property="og:title" content="Cryptobel Case Study | Harry Mulembwe" />
-  <meta property="og:description" content="Audience segmentation &amp; business intelligence case study: social-media data, NLP, clustering and Power BI for Cryptobel." />
+  <meta property="og:description" content="Who talks about Web3, and how should Cryptobel speak to them? Final-year thesis: 1,985 public Reddit and Instagram messages turned into six audience profiles and a communication plan." />
   <meta property="og:image" content="https://harry-mulembwe.vercel.app/assets/og/og-cryptobel.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -25,7 +25,7 @@
   <meta property="og:locale:alternate" content="nl_BE" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Cryptobel Case Study | Harry Mulembwe" />
-  <meta name="twitter:description" content="Audience segmentation &amp; business intelligence case study: social-media data, NLP, clustering and Power BI for Cryptobel." />
+  <meta name="twitter:description" content="Who talks about Web3, and how should Cryptobel speak to them? Final-year thesis: 1,985 public Reddit and Instagram messages turned into six audience profiles and a communication plan." />
   <meta name="twitter:image" content="https://harry-mulembwe.vercel.app/assets/og/og-cryptobel.jpg" />
   <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" />
   <script>
@@ -44,13 +44,14 @@
 <body>
   <div class="progress" aria-hidden="true"></div>
   <header class="topbar">
-    <a class="brand" href="../../data/">← <span class="brand-name">Harry Mulembwe</span></a>
+    <a class="brand" href="../../projects/">← <span class="brand-name">Harry Mulembwe</span></a>
     <div class="topbar-right">
       <nav>
-        <a href="#problem" data-i18n="nav.problem">Problem</a>
-        <a href="#pipeline" data-i18n="nav.method">Method</a>
-        <a href="#proof" data-i18n="nav.proof">Proof</a>
+        <a href="#context" data-i18n="nav.context">Context</a>
+        <a href="#method" data-i18n="nav.method">Method</a>
+        <a href="#segments" data-i18n="nav.segments">Segments</a>
         <a href="#recommendations" data-i18n="nav.recs">Recommendations</a>
+        <a href="#proof" data-i18n="nav.proof">Evidence</a>
       </nav>
       <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:ui.lang">
         <button type="button" data-lang-btn="en" lang="en" title="English" aria-pressed="true">EN</button>
@@ -63,327 +64,282 @@
   <main id="top">
     <!-- HERO -->
     <section class="hero section">
-      <div class="eyebrow" data-i18n="hero.eyebrow">Case study · Data / BI / Customer insights</div>
+      <div class="eyebrow" data-i18n="hero.eyebrow">Case study · Marketing research · Data · BI</div>
       <h1>Cryptobel</h1>
-      <p class="hero-sub" data-i18n="hero.sub">Audience Segmentation &amp; Business Intelligence</p>
-      <p class="hero-copy" data-i18n="hero.copy">How we transformed public Web3 conversations into audience segments, insights and communication recommendations.</p>
+      <p class="hero-sub" data-i18n="hero.sub">Who talks about Web3, and how should Cryptobel speak to them?</p>
+      <span class="type-badge" data-i18n="hero.badge">Final-year thesis · partner organisation · team of two</span>
+      <p class="hero-copy" data-i18n="hero.copy">Final-year thesis of my Business Data Analysis specialisation, carried out with Cryptobel, a Belgian non-profit that helps the French-speaking public understand crypto safely. Starting point: 1,985 public Reddit and Instagram messages. End point: six audience profiles and a communication plan for each of them.</p>
       <div class="meta-grid">
-        <div><span data-i18n="m.role">Role</span><strong data-i18n="m.roleV">Marketing Data Analyst / Business Data Analysis project</strong></div>
-        <div><span data-i18n="m.context">Context</span><strong>EPHEC × Cryptobel</strong></div>
-        <div><span data-i18n="m.period">Period</span><strong>2025</strong></div>
-        <div><span data-i18n="m.team">Team</span><strong data-i18n="m.teamV">2-person project</strong></div>
+        <div><span data-i18n="m.type">Type</span><strong data-i18n="m.typeV">Final-year thesis (EPHEC) with a partner organisation</strong></div>
+        <div><span data-i18n="m.partner">Partner</span><strong data-i18n="m.partnerV">Cryptobel, non-profit, Brussels</strong></div>
+        <div><span data-i18n="m.period">Period</span><strong data-i18n="m.periodV">February – May 2025</strong></div>
+        <div><span data-i18n="m.team">Team</span><strong data-i18n="m.teamV">2 students · my part detailed below</strong></div>
       </div>
       <div class="stack">
-        <span>Python</span><span>PRAW</span><span>Apify</span><span>SQLite</span><span>DistilCamemBERT</span><span>TF-IDF</span><span>K-means</span><span>Power BI</span>
+        <span>Python</span><span>SQL · SQLite</span><span>NLP · CamemBERT</span><span>K-means</span><span>Power BI</span><span>Google Forms</span>
       </div>
     </section>
 
     <section class="stats section narrow">
-      <article><strong data-i18n="num.1985">1,985</strong><span data-i18n="stat.1">public posts and comments collected from Reddit and Instagram</span></article>
-      <article><strong>645</strong><span data-i18n="stat.2">messages kept after cleaning and segmented with K-means</span></article>
-      <article><strong>22</strong><span data-i18n="stat.3">interviews with people affected by crypto scams</span></article>
-      <article><strong>6</strong><span data-i18n="stat.4">strategic audience profiles identified</span></article>
+      <article><strong data-count="1,985">1,985</strong><span data-i18n="stat.1">public posts and comments collected from Reddit and Instagram</span></article>
+      <article><strong data-count="645">645</strong><span data-i18n="stat.2">messages kept after cleaning and grouped into clusters</span></article>
+      <article><strong data-count="6">6</strong><span data-i18n="stat.3">audience profiles, each with a communication approach</span></article>
+      <article><strong data-count="22">22</strong><span data-i18n="stat.4">phone interviews with people who had been scammed</span></article>
     </section>
 
-    <!-- 01 PROBLEM -->
-    <section id="problem" class="section split">
+    <!-- 01 CONTEXT -->
+    <section id="context" class="section split">
       <div>
-        <div class="eyebrow" data-i18n="pb.eyebrow">01 · Business problem</div>
-        <h2 data-i18n="pb.title">Cryptobel had an audience, but little structured data about who it was.</h2>
+        <div class="eyebrow" data-i18n="cx.eyebrow">01 · Context &amp; challenge</div>
+        <h2 data-i18n="cx.title">An organisation that educates about crypto, in a market where adoption and scams grow together.</h2>
       </div>
       <div class="prose">
-        <p data-i18n="pb.p">Cryptobel helps a French-speaking audience understand Web3 and cryptocurrencies. The organisation had little structured information to identify precisely who its audience was, what it was looking for and how it expressed itself.</p>
-        <p class="question" data-i18n="pb.q">How can Cryptobel better identify and segment its French-speaking audience to improve its communication strategy?</p>
+        <p data-i18n="cx.p1">Cryptobel, founded in May 2023, offers training, webinars, a phone line for questions and scam reports, and events such as the Crypto Brocante. Its public is mixed: by its own account about 40% seniors (a quarter of them scam victims), 30% working adults looking for investment guidance and 20% young people who arrive through Instagram.</p>
+        <p data-i18n="cx.p2">The timing matters. About 17% of Belgians hold crypto-assets (Adan &amp; Deloitte, 2025), yet trading and crypto platforms accounted for roughly half of the investment-fraud reports received by the FSMA in the second half of 2024, around €12.5 million of declared losses. People want to understand, and they want to avoid being trapped.</p>
+        <p data-i18n="cx.p3">Cryptobel communicated actively on several channels but had almost no structured knowledge of who its audience was, what each group was looking for and how it talked about crypto. Without that, every message was written for everyone.</p>
+        <p class="question" data-i18n="cx.q">How can Cryptobel identify and segment its French-speaking audience to make its communication more effective?</p>
       </div>
     </section>
 
-    <!-- 02 CONTRIBUTION -->
-    <section id="contribution" class="section role-card">
-      <div class="eyebrow" data-i18n="co.eyebrow">02 · My contribution</div>
-      <h2 data-i18n="co.title">A two-person project. Here is what I did.</h2>
+    <!-- 02 ROLE -->
+    <section id="role" class="section role-card">
+      <div class="eyebrow" data-i18n="ro.eyebrow">02 · My role</div>
+      <h2 data-i18n="ro.title">A two-person thesis. Here is what I did.</h2>
+      <p class="lead-p" data-i18n="ro.p">I owned the data side from collection to dashboards. The interviews, the recommendations and the written report were shared work.</p>
       <div class="contrib-split">
         <div>
-          <h3 data-i18n="co.mine">My work</h3>
+          <h3 data-i18n="ro.mine">My work</h3>
           <ul class="ticks">
-            <li data-i18n="co.m1">Reddit and Instagram data collection</li>
-            <li data-i18n="co.m2">Data preparation in Python</li>
-            <li data-i18n="co.m3">Storage in SQLite</li>
-            <li data-i18n="co.m4">Sentiment analysis with DistilCamemBERT and TF-IDF features</li>
-            <li data-i18n="co.m5">K-means clustering</li>
-            <li data-i18n="co.m6">Cluster analysis and interpretation</li>
-            <li data-i18n="co.m7">Power BI dashboards</li>
-            <li data-i18n="co.m8">Scam-victim dashboard and star-schema model</li>
+            <li data-i18n="ro.m1">Collection scripts: Reddit API (PRAW), Instagram via Apify, scheduled runs</li><li data-i18n="ro.m2">Cleaning and preparation in Python, storage in SQLite</li><li data-i18n="ro.m3">Sentiment analysis (CamemBERT family) and TF-IDF features</li><li data-i18n="ro.m4">K-means clustering and its validation</li><li data-i18n="ro.m5">Reading and naming the clusters</li><li data-i18n="ro.m6">Power BI reports: audience analysis and scam-victim study</li><li data-i18n="ro.m7">Star-schema model for the questionnaire data</li>
           </ul>
         </div>
         <div class="shared">
-          <h3 data-i18n="co.shared">Shared with my project partner</h3>
+          <h3 data-i18n="ro.shared">Shared with my thesis partner</h3>
           <ul class="ticks muted-ticks">
-            <li data-i18n="co.s1">Interviews with the 22 scam victims</li>
-            <li data-i18n="co.s2">Business recommendations</li>
-            <li data-i18n="co.s3">Final report</li>
+            <li data-i18n="ro.s1">The 22 phone interviews</li><li data-i18n="ro.s2">Business recommendations and the action plan</li><li data-i18n="ro.s3">Written report and oral defence</li>
           </ul>
-          <p class="note" data-i18n="co.note">I describe my own part precisely rather than presenting the whole project as individual work.</p>
+          <p class="note" data-i18n="ro.note">I describe my own part rather than presenting the whole thesis as individual work.</p>
         </div>
       </div>
     </section>
 
-    <!-- 03 PIPELINE -->
-    <section id="pipeline" class="section">
-      <div class="eyebrow" data-i18n="pl.eyebrow">03 · Data pipeline</div>
-      <h2 data-i18n="pl.title">From public conversations to recommendations.</h2>
-      <ol class="chain">
-        <li><span>01</span><b data-i18n="pl.1">Sources</b><small>Reddit + Instagram</small></li>
-        <li><span>02</span><b data-i18n="pl.2">Data collection</b><small>PRAW · Apify</small></li>
-        <li><span>03</span><b data-i18n="pl.3">Cleaning</b><small>Python · pandas</small></li>
-        <li><span>04</span><b data-i18n="pl.4">Storage</b><small>SQL · SQLite</small></li>
-        <li><span>05</span><b data-i18n="pl.5">NLP enrichment</b><small data-i18n="pl.5s">Text features</small></li>
-        <li><span>06</span><b data-i18n="pl.6">Sentiment</b><small>DistilCamemBERT</small></li>
-        <li><span>07</span><b data-i18n="pl.7">Features</b><small>TF-IDF</small></li>
-        <li><span>08</span><b data-i18n="pl.8">Clustering</b><small>K-means</small></li>
-        <li><span>09</span><b data-i18n="pl.9">Dashboards</b><small>Power BI</small></li>
-        <li><span>10</span><b data-i18n="pl.10">Business insights</b><small data-i18n="pl.10s">Interpretation</small></li>
-        <li class="last"><span>11</span><b data-i18n="pl.11">Recommendations</b><small data-i18n="pl.11s">Communication strategy</small></li>
+    <!-- 03 METHOD -->
+    <section id="method" class="section">
+      <div class="eyebrow" data-i18n="me.eyebrow">03 · Method</div>
+      <h2 data-i18n="me.title">Listen to what people write in public, then let the data group them.</h2>
+      <p class="lead-p" data-i18n="me.p">Instead of a survey of Cryptobel’s followers, we analysed how French speakers actually talk about crypto on two very different platforms: Reddit, where people argue and ask questions, and Instagram, where they react and share. Six steps, in plain words.</p>
+      <ol class="chain steps">
+        <li><span>01</span><b data-i18n="me.1">Collect</b><small data-i18n="me.1s">1,985 public posts and comments: r/CryptoFR and r/BitcoinFrance (daily), five French-speaking crypto accounts on Instagram (three times a week). Public content only, no personal identifiers.</small></li>
+        <li><span>02</span><b data-i18n="me.2">Clean</b><small data-i18n="me.2s">Emojis, links, hashtags, mentions and filler words removed; French-language messages only. 645 messages were rich enough to analyse.</small></li>
+        <li><span>03</span><b data-i18n="me.3">Enrich</b><small data-i18n="me.3s">Each message received a tone (positive, neutral, negative) from a French language model, plus four scores measuring how close it was to a developer, an idealist, a curious investor or a sceptic.</small></li>
+        <li><span>04</span><b data-i18n="me.4">Group</b><small data-i18n="me.4s">K-means clustering, run separately per platform. Five groups each, a number validated by the elbow and silhouette methods.</small></li>
+        <li><span>05</span><b data-i18n="me.5">Interpret</b><small data-i18n="me.5s">For each group: its size, its tone and its most frequent words. Groups with the same discourse were merged into six profiles that a marketing team can name and address.</small></li>
+        <li class="last"><span>06</span><b data-i18n="me.6">Recommend</b><small data-i18n="me.6s">Priority segments, a tone and formats per platform, and an action plan, all visualised in Power BI for the Cryptobel team.</small></li>
       </ol>
-    </section>
-
-    <!-- 04 COLLECTION -->
-    <section id="collection" class="section">
-      <div class="eyebrow" data-i18n="dc.eyebrow">04 · Data collection</div>
-      <h2 data-i18n="dc.title">Two public sources, one database.</h2>
-      <div class="three-grid">
-        <article><h3>Reddit</h3><p class="tool-line">Python + PRAW</p><p data-i18n="dc.r">Posts from r/CryptoFR and r/BitcoinFrance containing a crypto keyword and at least 3 upvotes, with up to 10 comments each. Collected daily through the Windows Task Scheduler.</p><p class="count" data-i18n="dc.rc">58 posts · 361 comments</p></article>
-        <article><h3>Instagram</h3><p class="tool-line">Apify + Python</p><p data-i18n="dc.i">Public posts and first comments from five French-speaking crypto accounts, collected three times a week and imported from CSV.</p><p class="count" data-i18n="dc.ic">906 posts · 660 comments</p></article>
-        <article><h3 data-i18n="dc.st">Storage</h3><p class="tool-line">SQLite</p><p data-i18n="dc.s">Posts and comments stored in relational tables (linked by post ID) before cleaning, enrichment and analysis.</p><p class="count"><a href="#ev6" data-i18n="dc.code">See the collection code: Evidence 06 →</a></p></article>
-      </div>
-      <p class="note" data-i18n="dc.note">Only publicly accessible content was used, stored locally, with no personal identifiers kept.</p>
-    </section>
-
-    <!-- 05 PREPARATION -->
-    <section id="preparation" class="section split">
-      <div>
-        <div class="eyebrow" data-i18n="pp.eyebrow">05 · Data preparation</div>
-        <h2 data-i18n="pp.title">Cleaning social-media text before any analysis.</h2>
-        <ul class="clean-list">
-          <li>Emojis</li>
-          <li data-i18n="pp.1">Mentions</li>
-          <li>URLs</li>
-          <li>Hashtags</li>
-          <li data-i18n="pp.2">Residual HTML</li>
-          <li data-i18n="pp.3">Repeated punctuation</li>
-          <li data-i18n="pp.4">Normalisation</li>
-          <li data-i18n="pp.5">Stopwords</li>
-        </ul>
-      </div>
-      <div class="before-after">
-        <p class="ba-label" data-i18n="pp.illus">Example taken from the report</p>
-        <div class="ba raw"><span data-i18n="pp.raw">Raw text</span><code lang="fr">🔥🔥 @cryptobel ça c’est trop stylé les gars !! #Bitcoin #Liberté https://bit.ly/wallet</code></div>
-        <div class="ba-arrow" aria-hidden="true">↓</div>
-        <div class="ba clean"><span data-i18n="pp.clean">Clean data</span><code lang="fr">stylé gars liberté</code></div>
+      <div class="method-foot">
+        <div class="before-after">
+          <p class="ba-label" data-i18n="me.exL">What cleaning does to a real message</p>
+          <div class="ba raw"><span data-i18n="me.raw">Raw text</span><code lang="fr">🔥🔥 @cryptobel ça c’est trop stylé les gars !! #Bitcoin #Liberté https://bit.ly/wallet</code></div>
+          <div class="ba-arrow" aria-hidden="true">↓</div>
+          <div class="ba clean"><span data-i18n="me.clean">Kept for analysis</span><code lang="fr">stylé gars liberté</code></div>
+        </div>
+        <div class="why">
+          <p class="ba-label" data-i18n="me.whyL">Two choices worth explaining</p>
+          <h3 data-i18n="me.w1t">A French model rather than a word list</h3><p data-i18n="me.w1p">Simple tools score words one by one and are built for English. A CamemBERT-family model reads the whole sentence in French, which matters for slang, typos and irony.</p>
+          <h3 data-i18n="me.w2t">K-means rather than HDBSCAN</h3><p data-i18n="me.w2p">HDBSCAN was tested first. It labelled many messages as noise and produced tiny, unstable groups. K-means gave stable, readable groups and let us compare the two platforms with the same number of segments.</p>
+          <a class="text-link" href="#ev5" data-i18n="me.link">See the validation charts: Evidence 05 →</a>
+        </div>
       </div>
     </section>
 
-    <!-- 06 NLP -->
-    <section id="nlp" class="section">
-      <div class="eyebrow" data-i18n="nl.eyebrow">06 · NLP &amp; feature engineering</div>
-      <h2 data-i18n="nl.title">Adding emotion and meaning to each message.</h2>
-      <div class="nlp-grid">
-        <article class="sentiment-card">
-          <h3 data-i18n="nl.st">Sentiment analysis</h3>
-          <p data-i18n="nl.sp">DistilCamemBERT (<code>cmarkea/distilcamembert-base-sentiment</code>), a French model of the CamemBERT family, assigned a sentiment to each message.</p>
-          <div class="pills"><span class="pos" data-i18n="nl.pos">Positive</span><span class="neu" data-i18n="nl.neu">Neutral</span><span class="neg" data-i18n="nl.neg">Negative</span></div>
+    <!-- 04 SEGMENTS -->
+    <section id="segments" class="section">
+      <div class="eyebrow" data-i18n="sg.eyebrow">04 · Insights: the six audience profiles</div>
+      <h2 data-i18n="sg.title">Six ways of talking about crypto, and what each one asks of Cryptobel.</h2>
+      <p class="lead-p" data-i18n="sg.p">Shares are the weight of each group among the analysed messages of its platform. Tones come from the sentiment model. A profile describes a way of speaking, not a fixed type of person.</p>
+      <div class="segs">
+        <article class="seg reveal" style="--i:0">
+          <div class="seg-top"><span class="where ig">Instagram</span><span class="seg-share" data-i18n="sg.1s">49% of Instagram · all positive</span></div>
+          <h3 data-i18n="sg.1t">Enthusiastic idealists</h3>
+          <p class="seg-l" data-i18n="sg.who">Who they are</p><p data-i18n="sg.1w">They see Web3 as freedom, community and opportunity. Short, confident, future-oriented messages: “buy”, “best year”, “the world”.</p>
+          <p class="seg-l act" data-i18n="sg.do">What it means for Cryptobel</p><p class="seg-do" data-i18n="sg.1d">The natural relays of the brand. Mobilise them with stories, member testimonials and participative campaigns, not with tutorials.</p>
         </article>
-        <article>
-          <h3 data-i18n="nl.ft">Feature matrix used for clustering</h3>
-          <dl class="features">
-            <div><dt>TF-IDF</dt><dd data-i18n="nl.f1">The vocabulary of each message</dd></div>
-            <div><dt data-i18n="nl.f2t">Sentiment score</dt><dd data-i18n="nl.f2">Its emotional tone</dd></div>
-            <div><dt data-i18n="nl.f3t">Text length</dt><dd data-i18n="nl.f3">How developed the message is</dd></div>
-            <div><dt data-i18n="nl.f4t">Profile scores</dt><dd data-i18n="nl.f4">Proximity to four recurring Web3 discourse profiles</dd></div>
-          </dl>
+        <article class="seg reveal" style="--i:1">
+          <div class="seg-top"><span class="where ig">Instagram</span><span class="seg-share" data-i18n="sg.2s">37% of Instagram · 62% negative</span></div>
+          <h3 data-i18n="sg.2t">Disillusioned idealists</h3>
+          <p class="seg-l" data-i18n="sg.who">Who they are</p><p data-i18n="sg.2w">Same values, but tired or disappointed: they talk about the market, paying, missed trains. They have not left, they are waiting for something honest.</p>
+          <p class="seg-l act" data-i18n="sg.do">What it means for Cryptobel</p><p class="seg-do" data-i18n="sg.2d">No overpromising. Re-engage with transparent, proof-based content that also names the risks and the past mistakes of the sector.</p>
+        </article>
+        <article class="seg reveal" style="--i:2">
+          <div class="seg-top"><span class="where rd">Reddit</span><span class="seg-share" data-i18n="sg.3s">40% of Reddit · half neutral, half negative</span></div>
+          <h3 data-i18n="sg.3t">Cautious financial explorers</h3>
+          <p class="seg-l" data-i18n="sg.who">Who they are</p><p data-i18n="sg.3w">The largest group. They ask about wallets, fees, Binance, Ledger, transfers. They want to understand before they act, and they fear making a mistake.</p>
+          <p class="seg-l act" data-i18n="sg.do">What it means for Cryptobel</p><p class="seg-do" data-i18n="sg.3d">The priority segment. Step-by-step tutorials, security guides, comparisons, and quick personal answers by phone or WhatsApp. Reassured, they become loyal.</p>
+        </article>
+        <article class="seg reveal" style="--i:0">
+          <div class="seg-top"><span class="where rd">Reddit</span><span class="seg-share" data-i18n="sg.4s">38% + 9% of Reddit · 89–100% positive</span></div>
+          <h3 data-i18n="sg.4t">Enthusiastic financial explorers</h3>
+          <p class="seg-l" data-i18n="sg.who">Who they are</p><p data-i18n="sg.4w">Already active: they use the platforms, compare Kraken, Coinbase and Ledger, share their experience and look for better returns.</p>
+          <p class="seg-l act" data-i18n="sg.do">What it means for Cryptobel</p><p class="seg-do" data-i18n="sg.4d">Advanced guides, tool comparisons, a specialised newsletter. The base for a long-term relationship built on usefulness.</p>
+        </article>
+        <article class="seg reveal" style="--i:1">
+          <div class="seg-top"><span class="where both">Reddit · Instagram</span><span class="seg-share" data-i18n="sg.5s">6% of Reddit · 1% of Instagram · mostly positive</span></div>
+          <h3 data-i18n="sg.5t">Technical developers</h3>
+          <p class="seg-l" data-i18n="sg.who">Who they are</p><p data-i18n="sg.5w">Smart contracts, wallets, security, Phantom. Calm, precise, educational. Few messages, strong influence on the others.</p>
+          <p class="seg-l act" data-i18n="sg.do">What it means for Cryptobel</p><p class="seg-do" data-i18n="sg.5d">Potential partners and speakers: webinars, open resources, invitations to events. Convince them with quality, not emotion.</p>
+        </article>
+        <article class="seg reveal" style="--i:2">
+          <div class="seg-top"><span class="where both">Reddit · Instagram</span><span class="seg-share" data-i18n="sg.6s">7% of Reddit · 2% of Instagram · 62% negative</span></div>
+          <h3 data-i18n="sg.6t">Critical sceptics</h3>
+          <p class="seg-l" data-i18n="sg.who">Who they are</p><p data-i18n="sg.6w">Scams, manipulation, loss, “never again”. Often speaking from a bad experience. Angry or ironic, but not closed to dialogue.</p>
+          <p class="seg-l act" data-i18n="sg.do">What it means for Cryptobel</p><p class="seg-do" data-i18n="sg.6d">Do not ignore them: they point at real risks. Sober, factual communication, no marketing promises. Treat them as an alert, not as a problem.</p>
         </article>
       </div>
     </section>
 
-    <!-- 07 CLUSTERING -->
-    <section id="clustering" class="section split">
-      <div>
-        <div class="eyebrow" data-i18n="cl.eyebrow">07 · Clustering</div>
-        <h2 data-i18n="cl.title">Why K-means?</h2>
-      </div>
-      <div class="prose">
-        <p data-i18n="cl.p1">HDBSCAN was tested first, then set aside: it labelled many messages as noise and produced very small, unstable clusters. K-means gave more stable and more interpretable groups, and let us fix the number of segments.</p>
-        <p data-i18n="cl.p2">k was tested from 2 to 10. The elbow curve flattens after k = 5, and the silhouette score reaches a local maximum at k = 5 (≈ 0.43). Higher values of k scored only marginally better, at the cost of more complexity and less stable groups, so k = 5 was kept for both platforms.</p>
-        <a class="text-link" href="#ev5" data-i18n="cl.link">See the validation: Evidence 05 →</a>
-      </div>
-    </section>
-
-    <!-- 08 SEGMENTATION -->
-    <section id="segmentation" class="section">
-      <div class="eyebrow" data-i18n="sg.eyebrow">08 · Audience segmentation</div>
-      <h2 data-i18n="sg.title">Six audience profiles.</h2>
-      <p class="lead-p" data-i18n="sg.p">Each platform was clustered separately (k = 5, ten clusters in total). The clusters were then interpreted together: clusters with the same discourse were grouped, and very small clusters were not kept as separate profiles. The result: six strategic profiles, two on Instagram and four on Reddit.</p>
-      <div class="profiles">
-        <article><span class="where ig">Instagram</span><h3 data-i18n="sg.1t">Enthusiastic idealists</h3><p data-i18n="sg.1p">Optimistic, value-driven discourse about Web3 and its community.</p></article>
-        <article><span class="where ig">Instagram</span><h3 data-i18n="sg.2t">Disillusioned idealists</h3><p data-i18n="sg.2p">Share Web3 values but express disappointment and frustration.</p></article>
-        <article><span class="where rd">Reddit</span><h3 data-i18n="sg.3t">Cautious financial explorers</h3><p data-i18n="sg.3p">Curious about crypto but wary: many questions about security, fees and platforms. The largest group on Reddit.</p></article>
-        <article><span class="where rd">Reddit</span><h3 data-i18n="sg.4t">Enthusiastic financial explorers</h3><p data-i18n="sg.4p">Already active: they use platforms, compare services and share their experience.</p></article>
-        <article><span class="where rd">Reddit</span><h3 data-i18n="sg.5t">Technical developers</h3><p data-i18n="sg.5p">Talk about smart contracts, audits and tools in a calm, educational tone. Few in number, high in influence.</p></article>
-        <article><span class="where rd">Reddit</span><h3 data-i18n="sg.6t">Critical sceptics</h3><p data-i18n="sg.6p">Question promises and raise concerns about scams, manipulation and risk.</p></article>
-      </div>
-    </section>
-
-    <!-- 09 PLATFORMS -->
     <section id="platforms" class="section findings">
-      <div class="eyebrow" data-i18n="pf.eyebrow">09 · Reddit vs Instagram</div>
-      <h2 data-i18n="pf.title">Two platforms, two ways of talking about Web3.</h2>
+      <h2 data-i18n="pf.title">Two platforms, two audiences.</h2>
+      <p class="lead-p" data-i18n="pf.p">The same topic produces two different conversations. On Instagram, idealists dominate and the tone is emotional. On Reddit, curious investors dominate and the tone is practical and critical.</p>
       <div class="chart-grid">
         <article class="chart-card">
           <h3>Reddit</h3>
-          <div class="traits"><span data-i18n="pf.r1">Technical</span><span data-i18n="pf.r2">Practical</span><span data-i18n="pf.r3">Question-driven</span><span data-i18n="pf.r4">Critical</span><span data-i18n="pf.r5">Risk-conscious</span></div>
-          <p class="muted small" data-i18n="pf.dist">Distribution of discussion profiles</p>
+          <div class="traits"><span data-i18n="pf.r1">Practical</span><span data-i18n="pf.r2">Question-driven</span><span data-i18n="pf.r3">Critical</span><span data-i18n="pf.r4">Risk-conscious</span></div>
+          <p class="muted small" data-i18n="pf.dist">Share of analysed messages</p>
           <div class="bars">
-            <div><label data-i18n="fi.r1">Curious · cautious <em>40.13%</em></label><span style="--w:40.13%"></span></div>
-            <div><label data-i18n="fi.r2">Curious · enthusiastic <em>38.49%</em></label><span style="--w:38.49%"></span></div>
-            <div><label data-i18n="fi.r3">Experienced / pragmatic <em>8.88%</em></label><span style="--w:8.88%"></span></div>
-            <div><label data-i18n="fi.r4">Sceptical <em>6.91%</em></label><span style="--w:6.91%"></span></div>
-            <div><label data-i18n="fi.r5">Technical <em>5.59%</em></label><span style="--w:5.59%"></span></div>
+            <div><label data-i18n="fi.r1">Cautious explorers <em>40.1%</em></label><span style="--w:40.13%"></span></div>
+            <div><label data-i18n="fi.r2">Enthusiastic explorers <em>38.5%</em></label><span style="--w:38.49%"></span></div>
+            <div><label data-i18n="fi.r3">Experienced explorers <em>8.9%</em></label><span style="--w:8.88%"></span></div>
+            <div><label data-i18n="fi.r4">Sceptics <em>6.9%</em></label><span style="--w:6.91%"></span></div>
+            <div><label data-i18n="fi.r5">Developers <em>5.6%</em></label><span style="--w:5.59%"></span></div>
           </div>
         </article>
         <article class="chart-card">
           <h3>Instagram</h3>
           <div class="traits"><span data-i18n="pf.i1">Emotional</span><span data-i18n="pf.i2">Community-driven</span><span data-i18n="pf.i3">Positive</span><span data-i18n="pf.i4">Aspirational</span></div>
-          <p class="muted small" data-i18n="pf.dist">Distribution of discussion profiles</p>
+          <p class="muted small" data-i18n="pf.dist">Share of analysed messages</p>
           <div class="bars alt">
-            <div><label data-i18n="fi.i1">Idealist · enthusiastic <em>49.27%</em></label><span style="--w:49.27%"></span></div>
-            <div><label data-i18n="fi.i2">Idealist · disillusioned <em>37.24%</em></label><span style="--w:37.24%"></span></div>
-            <div><label data-i18n="fi.i3">Curious · practical <em>9.68%</em></label><span style="--w:9.68%"></span></div>
-            <div><label data-i18n="fi.i4">Sceptical <em>2.35%</em></label><span style="--w:2.35%"></span></div>
-            <div><label data-i18n="fi.i5">Technical <em>1.47%</em></label><span style="--w:1.47%"></span></div>
+            <div><label data-i18n="fi.i1">Enthusiastic idealists <em>49.3%</em></label><span style="--w:49.27%"></span></div>
+            <div><label data-i18n="fi.i2">Disillusioned idealists <em>37.2%</em></label><span style="--w:37.24%"></span></div>
+            <div><label data-i18n="fi.i3">Practical explorers <em>9.7%</em></label><span style="--w:9.68%"></span></div>
+            <div><label data-i18n="fi.i4">Sceptics <em>2.4%</em></label><span style="--w:2.35%"></span></div>
+            <div><label data-i18n="fi.i5">Developers <em>1.5%</em></label><span style="--w:1.47%"></span></div>
           </div>
         </article>
       </div>
-      <div class="implication"><b data-i18n="pf.implL">Business implication</b><span data-i18n="pf.impl">Communication should not be identical across platforms.</span></div>
+      <div class="implication"><b data-i18n="pf.implL">What it means</b><span data-i18n="pf.impl">One core message, but a different tone, depth and format per platform: inspire on Instagram, explain on Reddit.</span></div>
     </section>
 
-    <!-- 10 PROOF -->
+    <!-- 05 SCAM STUDY -->
+    <section id="scam" class="section fraud">
+      <div>
+        <div class="eyebrow" data-i18n="sc.eyebrow">05 · Complementary study</div>
+        <h2 data-i18n="sc.title">22 people who had been scammed told us how it happened.</h2>
+        <p data-i18n="sc.p">To check the segments against real experiences, we interviewed by phone 22 people living in Belgium who had contacted Cryptobel after a crypto scam (19–23 May 2025, aged 30 to 75, average age 61, about 15 minutes each, structured questionnaire).</p>
+      </div>
+      <div class="fraud-stats four">
+        <div><strong>13 / 22</strong><span data-i18n="sc.s1">described themselves as beginners</span></div>
+        <div><strong>12 / 22</strong><span data-i18n="sc.s2">had been interested in crypto for less than six months</span></div>
+        <div><strong>13 / 22</strong><span data-i18n="sc.s3">were trapped by a fake investment website</span></div>
+        <div><strong>16 / 22</strong><span data-i18n="sc.s4">stopped investing afterwards</span></div>
+      </div>
+      <div class="prose wide">
+        <p data-i18n="sc.p2">A professional-looking website (13 answers) and promises of high returns (9) were the main reasons people trusted the offer. Half of the respondents said yes to educational prevention content and four more said maybe, with explanatory videos (12) and practical guides (10) as the preferred formats.</p>
+        <p data-i18n="sc.p3">What it adds to the segmentation: the people who get trapped are the beginners and the curious, exactly the groups that dominate the online conversations. Prevention content is not a side topic for Cryptobel, it is the core of the offer for its largest audience.</p>
+        <a class="text-link" href="#ev3" data-i18n="sc.link">See the questionnaire model and dashboard: Evidence 03–04 →</a>
+      </div>
+    </section>
+
+    <!-- 06 RECOMMENDATIONS -->
+    <section id="recommendations" class="section recommendations">
+      <div class="eyebrow" data-i18n="re.eyebrow">06 · Strategy &amp; recommendations</div>
+      <h2 data-i18n="re.title">Two priority audiences, one rule: the same message never arrives in the same form twice.</h2>
+      <p class="lead-p rec-lead" data-i18n="re.p">Recommendations delivered to Cryptobel in May 2025 as part of the thesis. Their implementation was not tracked in this study, so no result is claimed.</p>
+      <div class="prio-grid">
+        <article class="prio"><span class="prio-l" data-i18n="re.p1L">Priority 1 · Reddit</span><h3 data-i18n="re.p1t">Reassure the curious explorers</h3><p data-i18n="re.p1p">A regular series of practical guides and short videos on security, fees and common mistakes; factual answers on the forum; personal follow-up by phone or WhatsApp. They are the most numerous and the most exposed to scams.</p></article>
+        <article class="prio"><span class="prio-l" data-i18n="re.p2L">Priority 2 · Instagram</span><h3 data-i18n="re.p2t">Turn the enthusiastic idealists into relays</h3><p data-i18n="re.p2p">Stories, member testimonials, visuals that celebrate the community, participative campaigns and physical events. Identify engaged members who can become ambassadors and give a human face to the organisation.</p></article>
+      </div>
+      <div class="rec-grid">
+        <article><h3 data-i18n="re.1t">For the disillusioned and the sceptics</h3><p data-i18n="re.1p">An honest “we explain” format: risks named, limits admitted, concrete examples, humble tone. No sales promise.</p></article>
+        <article><h3 data-i18n="re.2t">For technical profiles</h3><p data-i18n="re.2p">A monthly tech newsletter, LinkedIn posts on tools and trends, targeted invitations to specialised events.</p></article>
+        <article><h3 data-i18n="re.3t">For scam prevention</h3><p data-i18n="re.3p">Warning-sign checklists, testimonials of former victims, explanatory videos: the formats the 22 respondents asked for.</p></article>
+        <article><h3 data-i18n="re.4t">One message, several formats</h3><p data-i18n="re.4p">“Secure your wallet” becomes a tutorial on the website, a visual summary on Instagram, a printable PDF for seniors helped by phone, and a talk at an event.</p></article>
+      </div>
+    </section>
+
+    <!-- 07 EVIDENCE -->
     <section id="proof" class="section">
-      <div class="eyebrow" data-i18n="pw.eyebrow">10 · Proof of work</div>
-      <h2 data-i18n="pw.title">Proof of work.</h2>
-      <p class="lead-p" data-i18n="pw.p">Screenshots from the project deliverables: the 5-page Power BI report, the scam-study dashboard, the data model, the clustering validation and the collection code. Click any image to see it full size.</p>
+      <div class="eyebrow" data-i18n="pw.eyebrow">07 · Deliverables &amp; evidence</div>
+      <h2 data-i18n="pw.title">What was delivered, and what each piece lets you see.</h2>
+      <p class="lead-p" data-i18n="pw.p">Screenshots from the real deliverables: the five-page Power BI report, the scam-study dashboard, the data model, the clustering validation and the collection code. Click any image to see it full size.</p>
       <div class="evidence-grid">
         <figure class="evidence" id="ev1">
-          <a class="shot" href="proof/01-social-media-overview.jpg" target="_blank" rel="noopener"><img src="proof/01-social-media-overview.jpg" alt="Power BI report, page 1: overview of Web3 discussions" width="1600" height="900" loading="lazy" onerror="this.closest('figure').classList.add('missing');this.remove()" /></a>
+          <a class="shot" href="proof/01-social-media-overview.jpg" target="_blank" rel="noopener"><img src="proof/01-social-media-overview.jpg" alt="Power BI · overview" loading="lazy" /></a>
           <div class="shot-missing"><span data-i18n="pw.soon">Screenshot being prepared</span><code>proof/01-social-media-overview.jpg</code></div>
-          <figcaption><span class="ev-n" data-i18n="pw.e1n">Evidence 01</span><b data-i18n="pw.e1t">Social Media Overview</b><span data-i18n="pw.e1p">Power BI · comments collected per platform and over time.</span></figcaption>
-          <div class="more"><span data-i18n="pw.more">Also in the report:</span><a href="proof/01b-profiles-by-platform.jpg" target="_blank" rel="noopener"><img src="proof/01b-profiles-by-platform.jpg" alt="Power BI: profiles detected per platform" loading="lazy" /><small data-i18n="pw.m1">Profiles per platform</small></a></div>
+          <figcaption><span class="ev-n" data-i18n="pw.e1n">Evidence 01</span><b data-i18n="pw.e1t">Power BI · overview</b><span data-i18n="pw.e1p">Where the conversation happens: 660 Instagram and 361 Reddit comments, and their volume over time. The page a manager opens first.</span></figcaption>
+          <div class="more"><span data-i18n="pw.more">Also in the report:</span><a href="proof/01b-profiles-by-platform.jpg" target="_blank" rel="noopener"><img src="proof/01b-profiles-by-platform.jpg" alt="" loading="lazy" /><small data-i18n="pw.e1m">Profiles per platform</small></a></div>
         </figure>
         <figure class="evidence" id="ev2">
-          <a class="shot" href="proof/02-final-segmentation.jpg" target="_blank" rel="noopener"><img src="proof/02-final-segmentation.jpg" alt="Power BI report: final segmentation by platform and sentiment" width="1600" height="899" loading="lazy" onerror="this.closest('figure').classList.add('missing');this.remove()" /></a>
+          <a class="shot" href="proof/02-final-segmentation.jpg" target="_blank" rel="noopener"><img src="proof/02-final-segmentation.jpg" alt="Power BI · final segmentation" loading="lazy" /></a>
           <div class="shot-missing"><span data-i18n="pw.soon">Screenshot being prepared</span><code>proof/02-final-segmentation.jpg</code></div>
-          <figcaption><span class="ev-n" data-i18n="pw.e2n">Evidence 02</span><b data-i18n="pw.e2t">Sentiment &amp; Segmentation</b><span data-i18n="pw.e2p">Power BI · final segmentation, with the sentiment of each profile on each platform.</span></figcaption>
-          <div class="more"><span data-i18n="pw.more">Also in the report:</span><a href="proof/02b-sentiment.jpg" target="_blank" rel="noopener"><img src="proof/02b-sentiment.jpg" alt="Power BI: sentiment analysis" loading="lazy" /><small data-i18n="pw.m2">Sentiment</small></a><a href="proof/02c-cross-analysis.jpg" target="_blank" rel="noopener"><img src="proof/02c-cross-analysis.jpg" alt="Power BI: profiles by sentiment" loading="lazy" /><small data-i18n="pw.m3">Profiles × sentiment</small></a></div>
+          <figcaption><span class="ev-n" data-i18n="pw.e2n">Evidence 02</span><b data-i18n="pw.e2t">Power BI · final segmentation</b><span data-i18n="pw.e2p">Each profile with its size and its tone, per platform. This is the page the recommendations are built on.</span></figcaption>
+          <div class="more"><span data-i18n="pw.more">Also in the report:</span><a href="proof/02b-sentiment.jpg" target="_blank" rel="noopener"><img src="proof/02b-sentiment.jpg" alt="" loading="lazy" /><small data-i18n="pw.e2m1">Sentiment</small></a><a href="proof/02c-cross-analysis.jpg" target="_blank" rel="noopener"><img src="proof/02c-cross-analysis.jpg" alt="" loading="lazy" /><small data-i18n="pw.e2m2">Profiles × sentiment</small></a></div>
         </figure>
         <figure class="evidence" id="ev3">
-          <a class="shot" href="proof/03-data-model.jpg" target="_blank" rel="noopener"><img src="proof/03-data-model.jpg" alt="Star-schema data model of the scam-victim survey" width="1600" height="1478" loading="lazy" onerror="this.closest('figure').classList.add('missing');this.remove()" /></a>
+          <a class="shot" href="proof/03-data-model.jpg" target="_blank" rel="noopener"><img src="proof/03-data-model.jpg" alt="Data model of the interview study" loading="lazy" /></a>
           <div class="shot-missing"><span data-i18n="pw.soon">Screenshot being prepared</span><code>proof/03-data-model.jpg</code></div>
-          <figcaption><span class="ev-n" data-i18n="pw.e3n">Evidence 03</span><b data-i18n="pw.e3t">Data Modelling</b><span data-i18n="pw.e3p">Star schema: one survey table linked to separate tables for each multiple-answer question (scam type, channel, trust factors…).</span></figcaption>
+          <figcaption><span class="ev-n" data-i18n="pw.e3n">Evidence 03</span><b data-i18n="pw.e3t">Data model of the interview study</b><span data-i18n="pw.e3p">Star schema: one answer table linked to one table per multiple-choice question (scam type, channel, trust factors), so the 22 interviews can be filtered freely in Power BI.</span></figcaption>
         </figure>
         <figure class="evidence" id="ev4">
-          <a class="shot" href="proof/04-scam-analysis.jpg" target="_blank" rel="noopener"><img src="proof/04-scam-analysis.jpg" alt="Power BI: scam types, channels and trust factors" width="1538" height="872" loading="lazy" onerror="this.closest('figure').classList.add('missing');this.remove()" /></a>
+          <a class="shot" href="proof/04-scam-analysis.jpg" target="_blank" rel="noopener"><img src="proof/04-scam-analysis.jpg" alt="Power BI · scam study" loading="lazy" /></a>
           <div class="shot-missing"><span data-i18n="pw.soon">Screenshot being prepared</span><code>proof/04-scam-analysis.jpg</code></div>
-          <figcaption><span class="ev-n" data-i18n="pw.e4n">Evidence 04</span><b data-i18n="pw.e4t">Scam Victim Analysis</b><span data-i18n="pw.e4p">Power BI · scam types, channels and trust factors across the 22 interviews.</span></figcaption>
-          <div class="more"><span data-i18n="pw.more">Also in the report:</span><a href="proof/04b-victim-profile.jpg" target="_blank" rel="noopener"><img src="proof/04b-victim-profile.jpg" alt="Power BI: profile of the respondents" loading="lazy" /><small data-i18n="pw.m4">Respondent profile</small></a><a href="proof/04c-prevention.jpg" target="_blank" rel="noopener"><img src="proof/04c-prevention.jpg" alt="Power BI: prevention needs" loading="lazy" /><small data-i18n="pw.m5">Prevention needs</small></a></div>
+          <figcaption><span class="ev-n" data-i18n="pw.e4n">Evidence 04</span><b data-i18n="pw.e4t">Power BI · scam study</b><span data-i18n="pw.e4p">Scam types, channels used and reasons for trusting, across the 22 interviews. Fake websites and professional design come first.</span></figcaption>
+          <div class="more"><span data-i18n="pw.more">Also in the report:</span><a href="proof/04b-victim-profile.jpg" target="_blank" rel="noopener"><img src="proof/04b-victim-profile.jpg" alt="" loading="lazy" /><small data-i18n="pw.e4m1">Respondent profile</small></a><a href="proof/04c-prevention.jpg" target="_blank" rel="noopener"><img src="proof/04c-prevention.jpg" alt="" loading="lazy" /><small data-i18n="pw.e4m2">Prevention needs</small></a></div>
         </figure>
         <figure class="evidence" id="ev5">
-          <a class="shot" href="proof/05-clustering-validation.jpg" target="_blank" rel="noopener"><img src="proof/05-clustering-validation.jpg" alt="Elbow method and silhouette score for k from 2 to 10 (Reddit)" width="1200" height="1200" loading="lazy" onerror="this.closest('figure').classList.add('missing');this.remove()" /></a>
+          <a class="shot" href="proof/05-clustering-validation.jpg" target="_blank" rel="noopener"><img src="proof/05-clustering-validation.jpg" alt="Clustering validation" loading="lazy" /></a>
           <div class="shot-missing"><span data-i18n="pw.soon">Screenshot being prepared</span><code>proof/05-clustering-validation.jpg</code></div>
-          <figcaption><span class="ev-n" data-i18n="pw.e5n">Evidence 05</span><b data-i18n="pw.e5t">Clustering Validation</b><span data-i18n="pw.e5p">Elbow method and silhouette score for k = 2 to 10 (Reddit data). k = 5 is a local silhouette maximum.</span></figcaption>
+          <figcaption><span class="ev-n" data-i18n="pw.e5n">Evidence 05</span><b data-i18n="pw.e5t">Clustering validation</b><span data-i18n="pw.e5p">Elbow method and silhouette score for k = 2 to 10 on the Reddit data: the curve flattens at k = 5, where the silhouette reaches a local maximum.</span></figcaption>
         </figure>
         <figure class="evidence code-evidence" id="ev6">
           <pre class="code-shot" data-proof-code="proof/06-pipeline-snippet.py"></pre>
           <div class="shot-missing"><span data-i18n="pw.soonCode">Code extract being prepared</span><code>proof/06-pipeline-snippet.py</code></div>
-          <figcaption><span class="ev-n" data-i18n="pw.e6n">Evidence 06</span><b data-i18n="pw.e6t">Technical Pipeline</b><span data-i18n="pw.e6p">Extract from the Reddit collection script: filters posts by keyword, score and date, then stores posts and comments in SQLite. API keys removed.</span></figcaption>
+          <figcaption><span class="ev-n" data-i18n="pw.e6n">Evidence 06</span><b data-i18n="pw.e6t">Collection code</b><span data-i18n="pw.e6p">Extract from the Reddit script: keyword, score and date filters, then posts and comments stored in SQLite. API keys removed. Full code on GitHub.</span></figcaption>
         </figure>
       </div>
-    </section>
-
-    <!-- 11 SCAM STUDY -->
-    <section id="scam" class="section fraud">
-      <div>
-        <div class="eyebrow" data-i18n="sc.eyebrow">11 · Complementary study</div>
-        <h2 data-i18n="sc.title">22 interviews with people affected by crypto scams.</h2>
-        <p data-i18n="sc.p">The project also looked at people living in Belgium who had contacted Cryptobel after a crypto-related scam. A structured questionnaire (Google Forms) was completed during phone interviews from 19 to 23 May 2025, with respondents aged 30 to 75.</p>
-      </div>
-      <div class="fraud-stats">
-        <div><strong>22</strong><span data-i18n="sc.s1">participants</span></div>
-        <div><strong>30–75</strong><span data-i18n="sc.s2">age range</span></div>
-        <div><strong>~15 min</strong><span data-i18n="sc.s3">average interview duration</span></div>
-      </div>
-      <div class="prose wide">
-        <p data-i18n="sc.p2">13 of the 22 respondents described themselves as beginners, and 12 had been interested in crypto for less than six months. Fake investment websites were the most common scam (13 cases). A professional-looking website (13) and promises of high returns (9) were the main reasons people trusted the scam. Afterwards, most stopped investing (16 of 22). Half said yes to educational prevention content, and 4 more said maybe, with explanatory videos (12) and practical guides (10) as preferred formats.</p>
-        <p data-i18n="sc.p3">A star-schema model normalised the multi-answer questionnaire data so it could be analysed flexibly in Power BI.</p>
-        <div class="shows"><b data-i18n="sc.showsL">What this part demonstrates</b><div class="stack"><span data-i18n="sc.d1">Primary data collection</span><span data-i18n="sc.d2">Interviews</span><span data-i18n="sc.d3">Questionnaire design</span><span data-i18n="sc.d4">Data modelling</span><span>Power BI</span><span data-i18n="sc.d5">Business insights</span></div></div>
-        <a class="text-link" href="#ev3" data-i18n="sc.link">See the data model and dashboard: Evidence 03–04 →</a>
-      </div>
-    </section>
-
-    <!-- 12 INSIGHTS -->
-    <section id="insights" class="section">
-      <div class="eyebrow" data-i18n="in.eyebrow">12 · Business insights</div>
-      <h2 data-i18n="in.title">What the data showed.</h2>
-      <div class="insights-grid">
-        <article><span data-i18n="in.1n">Insight 01</span><h3 data-i18n="in.1">Reddit audiences showed stronger demand for practical, transparent and risk-oriented information.</h3></article>
-        <article><span data-i18n="in.2n">Insight 02</span><h3 data-i18n="in.2">Instagram audiences were more emotionally engaged and receptive to community-driven communication.</h3></article>
-        <article><span data-i18n="in.3n">Insight 03</span><h3 data-i18n="in.3">Beginner and cautious audiences showed a strong need for educational content about risks and security.</h3></article>
-      </div>
-    </section>
-
-    <!-- 13 RECOMMENDATIONS -->
-    <section id="recommendations" class="section recommendations">
-      <div class="eyebrow" data-i18n="re.eyebrow">13 · Recommendations</div>
-      <h2 data-i18n="re.title">Different audiences should not receive the same message in the same format.</h2>
-      <div class="rec-grid">
-        <article><h3 data-i18n="re.1t">For cautious users</h3><p data-i18n="re.1p">Tutorials, security guides and comparison content.</p></article>
-        <article><h3 data-i18n="re.2t">For enthusiastic audiences</h3><p data-i18n="re.2p">Community content, stories, events and participative formats.</p></article>
-        <article><h3 data-i18n="re.3t">For sceptical audiences</h3><p data-i18n="re.3p">Transparency, evidence and clear communication about risk.</p></article>
-        <article><h3 data-i18n="re.4t">For technical users</h3><p data-i18n="re.4p">Advanced resources, webinars and technical collaboration.</p></article>
-        <article><h3 data-i18n="re.5t">For scam prevention</h3><p data-i18n="re.5p">Warning-sign checklists, victim stories and educational videos.</p></article>
-        <article><h3 data-i18n="re.6t">Across channels</h3><p data-i18n="re.6p">Keep the core message consistent, but adapt tone, depth and format to each platform.</p></article>
-      </div>
-    </section>
-
-    <!-- 14 LIMITATIONS -->
-    <section id="limitations" class="section split limitations">
-      <div>
-        <div class="eyebrow" data-i18n="li.eyebrow">14 · Limitations</div>
-        <h2 data-i18n="li.title">What the analysis can and cannot claim.</h2>
-      </div>
-      <ul class="limits">
-        <li data-i18n="li.1">Only French-speaking public communities were analysed.</li>
-        <li data-i18n="li.2">Reddit and Instagram have different content structures, which creates a platform bias.</li>
-        <li data-i18n="li.3">Social-media sentiment can be noisy.</li>
-        <li data-i18n="li.4">Clusters describe discourse patterns, not fixed identities.</li>
-        <li data-i18n="li.5">Results support decisions; they are not an absolute truth about customers.</li>
-      </ul>
-    </section>
-
-    <!-- 15 LEARNED -->
-    <section id="learned" class="section takeaway">
-      <div class="eyebrow" data-i18n="le.eyebrow">15 · What I learned</div>
-      <blockquote data-i18n="le.quote">“A technically sophisticated analysis only becomes useful when the resulting segments are understandable and connected to a concrete business decision.”</blockquote>
       <div class="repo-card">
-        <div><b data-i18n="le.repoT">Technical repository</b><p data-i18n="le.repoP">Collection, cleaning, sentiment and clustering code (credentials removed), aggregated results of the final runs and a synthetic sample to run it. No raw data or personal data is published.</p></div>
-        <a class="btn repo-btn" href="https://github.com/Unix0899/cryptobel-web3-audience-segmentation" target="_blank" rel="noopener" data-i18n="le.soon">View on GitHub →</a>
+        <div><b data-i18n="pw.repoT">Technical repository</b><p data-i18n="pw.repoP">Collection, cleaning, sentiment and clustering code, with the aggregated results. The portfolio tells the story; GitHub holds the code.</p></div>
+        <a class="btn repo-btn" href="https://github.com/Unix0899/cryptobel-web3-audience-segmentation" target="_blank" rel="noopener" data-i18n="pw.repo">View on GitHub →</a>
       </div>
+    </section>
+
+    <!-- 08 LIMITS, SKILLS, TAKEAWAY -->
+    <section id="learned" class="section split limitations">
+      <div>
+        <div class="eyebrow" data-i18n="li.eyebrow">08 · Limits, skills and takeaway</div>
+        <h2 data-i18n="li.title">What the study can and cannot say.</h2>
+        <div class="skills-box">
+          <b data-i18n="sk.title">Skills demonstrated</b>
+          <div class="stack"><span data-i18n="sk.1">Market &amp; audience research</span><span data-i18n="sk.2">Social listening</span><span data-i18n="sk.3">Data cleaning (Python, SQL)</span><span data-i18n="sk.4">Text analysis (NLP)</span><span data-i18n="sk.5">Customer segmentation</span><span data-i18n="sk.6">Power BI reporting</span><span data-i18n="sk.7">Interviews &amp; questionnaire design</span><span data-i18n="sk.8">Communication strategy</span></div>
+        </div>
+      </div>
+      <div>
+        <ul class="limits">
+          <li data-i18n="li.1">Only French-speaking public communities on two platforms. Telegram, Discord, TikTok and people who do not post are absent.</li><li data-i18n="li.2">Instagram and Reddit have different formats, so part of the difference in tone is the platform itself.</li><li data-i18n="li.3">Sentiment on short, slangy, ironic messages is noisy, even with a French model.</li><li data-i18n="li.4">A profile describes a way of talking at one moment, not a fixed customer type. Naming the clusters involves judgement.</li><li data-i18n="li.5">22 interviews describe the people who contacted Cryptobel, not all scam victims. Figures are counts, not percentages of a population.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section takeaway">
+      <blockquote data-i18n="le.quote">“A sophisticated analysis is only useful once the segments have a name, a size, a tone, and a decision attached to them.”</blockquote>
       <div class="cta-row">
         <a class="btn" href="mailto:Harrymulembwe09@gmail.com" data-i18n="le.contact">Contact me</a>
-        <a class="btn ghost" href="https://linkedin.com/in/harry-mulembwe" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn ghost" href="../../data/#projects" data-i18n="le.all">All projects</a>
+        <a class="btn ghost" href="../odres/index.html" data-i18n="le.next">Next case study: ODRES Group →</a>
+        <a class="btn ghost" href="../../projects/" data-i18n="le.all">All projects</a>
       </div>
     </section>
   </main>
 
-  <footer data-i18n="footer">Harry Mulembwe · Data &amp; Business Analyst · Brussels</footer>
+  <footer data-i18n="footer">Harry Mulembwe · Marketing · Digital · Data · Brussels</footer>
 
   <script src="../../assets/i18n/cryptobel.js"></script>
   <script src="../../assets/i18n.js"></script>
