@@ -1,7 +1,7 @@
 /* LexLau / Klavis.app case study translations. English is the default text in projects/lexlau/index.html. */
 window.I18N_DICT = {
   fr: {
-    'meta.title': 'Étude de cas LexLau / Klavis.app | Harry Mulembwe',
+    'meta.title': 'Étude de cas LexLau · Klavis | Harry Mulembwe',
     'meta.desc': 'Tester et améliorer des workflows IA qui transforment des documents juridiques en informations de dossier structurées et vérifiables. Reconstruction publique avec des données synthétiques.',
     'ui.lang': 'Langue',
     'nav.role': 'Mon rôle',
@@ -9,10 +9,10 @@ window.I18N_DICT = {
     'nav.testing': 'Tests',
     'nav.proof': 'Preuves',
 
-    'hero.eyebrow': 'Étude de cas · Workflows IA / Data / QA',
-    'hero.sub': 'Gestion de dossiers juridiques assistée par IA',
-    'hero.quote': '« Tester et améliorer des workflows IA qui transforment des documents juridiques en informations de dossier structurées et vérifiables. »',
-    'hero.copy': 'Expérience professionnelle sous supervision technique. La reconstruction publique utilise uniquement des données synthétiques.',
+    'hero.eyebrow': 'Étude de cas · Data · IA · Application',
+    'hero.sub': 'Data et IA pour une application de gestion de dossiers juridiques',
+    'hero.quote': '«&nbsp;J’ai géré les données de l’application et participé à la création des workflows assistés par IA qui transforment des documents juridiques en informations de dossier structurées.&nbsp;»',
+    'hero.copy': 'Stage chez LexLau, juin – septembre 2026, avec la revue technique du CTO. La reconstruction publique utilise uniquement des données synthétiques.',
     'hero.discL': 'Données synthétiques',
     'hero.disc': 'Données de démonstration synthétiques. Aucune donnée réelle de client, de dossier juridique ni aucune donnée confidentielle de LexLau/Klavis n’est incluse. Le projet public est une reconstruction indépendante, pas une copie du code de Klavis.',
     'm.role': 'Rôle',
@@ -34,8 +34,8 @@ window.I18N_DICT = {
 
     'cx.eyebrow': '01 · Contexte',
     'cx.title': 'Une application juridique avec de nombreuses fonctionnalités IA, et une équipe qui avait besoin qu’elles soient fiables.',
-    'cx.p1': 'Klavis.app / KlavIA, développée par LexLau, est une application de gestion de dossiers juridiques qui utilise l’IA dans ses workflows. En tant que stagiaire AI Engineer &amp; Data Analyst, j’ai travaillé dans cet environnement sous la supervision du CTO.',
-    'cx.p2': 'Mon travail portait sur la fiabilité : tester systématiquement les fonctionnalités IA, structurer et analyser les données utilisées par les workflows, reproduire des bugs, documenter les écarts entre comportement attendu et réel, et traduire les résultats en feedback produit et technique, tout en manipulant des données potentiellement confidentielles.',
+    'cx.p1': 'Klavis.app / KlavIA, développée par LexLau, est une application de gestion de dossiers juridiques qui utilise l’IA dans ses workflows. Comme stagiaire Data &amp; IA, j’ai travaillé dans cet environnement sous la supervision du CTO.',
+    'cx.p2': 'Mon travail avait deux volets. La gestion des données&nbsp;: structurer, contrôler et analyser les données sur lesquelles reposent les workflows. La création de l’application&nbsp;: développer et tester des fonctionnalités intégrant l’IA, reproduire les bugs, documenter le comportement attendu et observé et transformer les résultats en feedback produit, en manipulant des données potentiellement confidentielles.',
     'cx.p3': 'Ce travail étant confidentiel, cette étude de cas présente une <strong>reconstruction publique</strong> : le même type de workflow, reconstruit de zéro avec des documents synthétiques et une architecture indépendante.',
 
     'pb.eyebrow': '02 · Problème métier / produit',
@@ -46,16 +46,16 @@ window.I18N_DICT = {
 
     'ro.eyebrow': '03 · Mon rôle',
     'ro.title': 'Ce que j’ai fait chez LexLau, et ce que j’ai reconstruit publiquement.',
-    'ro.p': 'J’ai contribué au développement, aux tests et à l’amélioration de workflows IA au sein de Klavis, comme contributeur de l’équipe, avec la revue technique et la supervision du CTO.',
+    'ro.p': 'Deux responsabilités&nbsp;: les données derrière les workflows, et les fonctionnalités de l’application qui les utilisent. Travail au sein de l’équipe, sur des branches, avec la revue technique du CTO.',
     'ro.realT': 'Expérience professionnelle réelle · LexLau',
-    'ro.r1': 'Tests d’une application intégrant de l’IA',
-    'ro.r2': 'Analyse et structuration de données',
-    'ro.r3': 'Validation de workflows IA',
-    'ro.r4': 'Reproduction de bugs',
-    'ro.r5': 'Documentation',
+    'ro.r1': 'Gestion des données&nbsp;: structuration, contrôles qualité, analyse',
+    'ro.r2': 'Création de fonctionnalités applicatives intégrant l’IA',
+    'ro.r3': 'Tests et validation des workflows IA',
+    'ro.r4': 'Reproduction et correction de bugs',
+    'ro.r5': 'Documentation du comportement attendu et observé',
     'ro.r6': 'Feedback produit / technique',
-    'ro.r7': 'Sensibilité aux données confidentielles',
-    'ro.r8': 'Travail sous supervision du CTO / superviseur technique',
+    'ro.r7': 'Manipulation de données potentiellement confidentielles',
+    'ro.r8': 'Revue du code par le CTO avant fusion',
     'ro.pubT': 'Reconstruction publique pour le portfolio',
     'ro.p1': 'Documents juridiques synthétiques',
     'ro.p2': 'Base de données synthétique',
@@ -84,7 +84,7 @@ window.I18N_DICT = {
     'ct.s8': 'Retest',
     'ct.s9': 'Clôture',
 
-    'wf.eyebrow': '05 · Workflow IA',
+    'wf.eyebrow': '04 · Workflow IA',
     'wf.title': 'L’IA propose, un humain vérifie, l’application enregistre.',
     'wf.1': 'Un document arrive',
     'wf.2': 'L’application extrait le texte',
@@ -101,7 +101,7 @@ window.I18N_DICT = {
     'wf.lSys': 'Étape système / qualité',
     'wf.note': 'Abstraction des fournisseurs : un moteur local déterministe par défaut (aucune clé API), un moteur de secours plus simple, et des fournisseurs OpenAI / Anthropic optionnels via variables d’environnement. Si le principal échoue, le secours répond ; si les deux échouent, l’utilisateur reçoit une erreur structurée et rien n’est enregistré.',
 
-    'dp.eyebrow': '06 · Traitement des documents',
+    'dp.eyebrow': '05 · Traitement des documents',
     'dp.title': 'PDF, DOCX et images, dans l’état où arrivent les vrais documents.',
     'dp.th1': 'Format',
     'dp.th2': 'Lecture du texte',
@@ -114,12 +114,12 @@ window.I18N_DICT = {
     'dp.v3': 'propre · photo dégradée (inclinée, floue, bruitée)',
     'dp.note': 'Le format est détecté à partir du contenu du fichier, pas de son nom. Les fichiers vides, trop lourds (plus de 5 Mo) ou non supportés sont refusés avant tout appel à l’IA.',
 
-    'sd.eyebrow': '07 · Données structurées',
+    'sd.eyebrow': '06 · Données structurées',
     'sd.title': 'D’une photo bruitée à un JSON qu’une personne peut vérifier.',
     'sd.p': 'Neuf champs sont comparés à la vérité terrain : titre, référence, client, partie adverse, type de document, juridiction, dates étiquetées, montants étiquetés et catégorie. Chaque champ conserve sa valeur, sa confiance, la méthode qui l’a trouvé, et s’il est manquant ou contradictoire.',
     'sd.note': 'Sortie réelle pour l’exemple de photo dégradée prise au téléphone : les valeurs manquantes restent null. Elles ne sont jamais devinées ni mises à zéro.',
 
-    'hl.eyebrow': '08 · Humain dans la boucle',
+    'hl.eyebrow': '07 · Humain dans la boucle',
     'hl.title': 'L’IA ne crée jamais un dossier seule.',
     'hl.1': 'La personne qui valide voit chaque champ avec sa confiance ; champs manquants en rouge, conflits en orange.',
     'hl.2': 'Chaque champ peut être corrigé ; la catégorie n’est qu’une suggestion.',
@@ -127,7 +127,7 @@ window.I18N_DICT = {
     'hl.4': 'Chaque correction est enregistrée champ par champ et devient du feedback produit.',
     'hl.note': 'Mentions obligatoires : « AI-generated draft for demonstration purposes. Human validation required. » et « Demo assistant — not legal advice. »',
 
-    'te.eyebrow': '09 · Approche de test',
+    'te.eyebrow': '08 · Approche de test',
     'te.title': 'Quatorze scénarios, et la preuve qu’ils détectent de vrais problèmes.',
     'te.p': 'Les tests unitaires, d’intégration et de bout en bout (73, tous réussis) incluent la suite de scénarios TEST 001–014 : PDF propre, DOCX, image propre et dégradée, champ manquant, dates multiples, panne du fournisseur, deux fournisseurs en panne, double soumission, correction humaine, fichier invalide, fichier trop lourd, formats mixtes et régression. Chaque bug synthétique peut être réactivé, et la suite doit alors échouer.',
     'te.c1t': 'Cas nominaux',
@@ -137,7 +137,7 @@ window.I18N_DICT = {
     'te.c3t': 'Historique',
     'te.c3': 'Huit exécutions enregistrées : de 7/14 à 14/14 au fil des corrections, dont une régression détectée après un merge.',
 
-    'bg.eyebrow': '10 · Investigation de bugs',
+    'bg.eyebrow': '09 · Investigation de bugs',
     'bg.title': 'Symptôme → reproduction → cause racine → correction → retest.',
     'bg.p': 'Ces scénarios reproduisent le type de problèmes de workflow IA investigués pendant l’expérience professionnelle, avec des implémentations entièrement synthétiques. Ce ne sont pas des bugs de production de Klavis.',
     'bg.th1': 'Bug',
@@ -159,7 +159,7 @@ window.I18N_DICT = {
     'bg.5r': 'Montant absent remplacé par 0,00, donc jamais signalé comme manquant',
     'bg.5f': 'Manquant = null : le champ est signalé et le dossier attend l’information',
 
-    'dq.eyebrow': '11 · Qualité des données',
+    'dq.eyebrow': '10 · Qualité des données',
     'dq.title': 'Chaque sortie est comparée à ce que dit vraiment le document.',
     'dq.p1': 'Chaque document synthétique a sa vérité terrain. Les règles de comparaison sont explicites : « absent du document et signalé manquant » est correct, et un champ sans vérité terrain est inconnu, pas faux.',
     'dq.p2': 'La base de données impose les règles par des clés, des contraintes CHECK et des garde-fous d’unicité : un dossier ne peut pas être enregistré sans décision de revue humaine, et une exécution de tests ne peut pas avoir plus de résultats que de tests. Les contrôles d’intégrité tournent à chaque reconstruction.',
@@ -168,7 +168,7 @@ window.I18N_DICT = {
     'dq.after': 'Documents propres',
     'dq.afterV': '99,7 % de précision par champ · environ 0,4 % des champs corrigés',
 
-    'mt.eyebrow': '12 · Métriques de qualité IA',
+    'mt.eyebrow': '11 · Métriques de qualité IA',
     'mt.title': 'Une définition par métrique, en SQL, en DAX et dans l’application.',
     'mt.1': 'Taux de succès documents',
     'mt.1p': 'extractions sans erreur',
@@ -200,7 +200,7 @@ window.I18N_DICT = {
     'mt.d6': 'Les mêmes métriques en direct dans l’application de démo',
     'mt.note': 'Dans le jeu de données synthétique de démonstration, pas des chiffres de Klavis. Constat clé : les exécutions avec une confiance ≥ 0,90 ont 98 % de précision par champ, celles sous 0,70 seulement 54 % ; la confiance est donc un bon signal pour orienter les brouillons vers une revue attentive.',
 
-    'pw.eyebrow': '13 · Preuves du travail',
+    'pw.eyebrow': '12 · Preuves du travail',
     'pw.title': 'Preuves du travail.',
     'pw.p': 'Captures de la démo en fonctionnement et rendus du vrai code SQL. Cliquez sur une image pour l’agrandir.',
     'pw.e1n': 'Preuve 01',
@@ -228,7 +228,7 @@ window.I18N_DICT = {
     'pw.e8t': 'Journal d’audit',
     'pw.e8p': 'Chaque étape tracée avec des métadonnées uniquement : aucun texte de document, aucun contenu extrait.',
 
-    'pr.eyebrow': '14 · Protection des données',
+    'pr.eyebrow': '13 · Protection des données',
     'pr.title': 'Construit comme si les documents étaient réels.',
     'pr.1t': 'Minimisation',
     'pr.1': 'La base stocke des métadonnées et des champs structurés, jamais le texte des documents. Le résumé et l’assistant ne reçoivent que les champs validés.',
@@ -243,7 +243,7 @@ window.I18N_DICT = {
     'pr.6t': 'Séparation',
     'pr.6': 'Jeu de données de référence, base d’exécution jetable et une base temporaire par scénario de test.',
 
-    'st.eyebrow': '15 · Stack technique',
+    'st.eyebrow': '14 · Stack technique',
     'st.title': 'Chaque compétence, avec ce que j’ai construit et où le vérifier.',
     'st.1t': 'Tests IA',
     'st.1': 'Conception de scénarios de test systématiques sur les workflows PDF, DOCX et image, avec documentation des échecs, régressions et retests.',
@@ -261,7 +261,7 @@ window.I18N_DICT = {
     'st.6': 'Schéma en étoile (9 tables), 42 mesures DAX et un rapport de 5 pages, rapproché du SQL (85/85 contrôles).',
     'st.l6': '→ Rapport Power BI',
 
-    'li.eyebrow': '16 · Limites',
+    'li.eyebrow': '15 · Limites',
     'li.title': 'Ce que cette étude de cas peut et ne peut pas affirmer.',
     'li.ncT': 'Non revendiqué',
     'li.nc': 'Klavis est le produit de LexLau ; j’y ai contribué au sein de l’équipe. Les bugs présentés sont synthétiques, et les métriques décrivent le jeu de données synthétique, pas le système de production.',
@@ -272,20 +272,21 @@ window.I18N_DICT = {
     'li.5': 'Le repository ne reproduit pas le code propriétaire de LexLau/Klavis.',
     'li.6': 'Le projet démontre une méthode et des compétences, pas le système de production lui-même.',
 
-    'le.eyebrow': '17 · Ce que j’ai appris',
+    'le.eyebrow': '16 · Ce que j’ai appris',
     'le.quote': '« La qualité de l’IA ne dépend pas seulement de la réponse du modèle. La fiabilité dépend aussi du traitement des documents, des données structurées, de la validation, du comportement de secours, de la couverture de tests et de la revue humaine. »',
     'le.p': 'Une fonctionnalité n’est pas terminée quand le modèle renvoie une réponse plausible. Elle l’est quand tout le workflow se comporte de façon prévisible, que les échecs sont visibles et que l’utilisateur peut valider le résultat en toute sécurité.',
-    'rp.eyebrow': '18 · Repository technique',
+    'rp.eyebrow': '17 · Repository technique',
     'rp.t': 'lexlau-klavis-ai-workflow-demo',
     'rp.p': 'Application de démo (8 pages), couche IA avec fallback, documents synthétiques et vérité terrain, base SQLite avec analyses SQL, 73 tests, projet Power BI et DAX, investigations de bugs, documentation protection des données et QA. Une seule commande reconstruit tout : <code>python run_pipeline.py</code>.',
     'rp.soon': 'Voir sur GitHub →',
     'le.contact': 'Me contacter',
     'le.all': 'Tous les projets',
+    'm.roleV': 'Stagiaire Data &amp; IA · gestion des données, création de l’application',
     'footer': 'Harry Mulembwe · Data &amp; Business Analyst · Bruxelles · Données de démonstration synthétiques, aucune donnée LexLau/Klavis'
   },
 
   nl: {
-    'meta.title': 'Case study LexLau / Klavis.app | Harry Mulembwe',
+    'meta.title': 'Case study LexLau · Klavis | Harry Mulembwe',
     'meta.desc': 'AI-workflows testen en verbeteren die juridische documenten omzetten in gestructureerde, controleerbare dossierinformatie. Publieke reconstructie met synthetische data.',
     'ui.lang': 'Taal',
     'nav.role': 'Mijn rol',
@@ -293,10 +294,10 @@ window.I18N_DICT = {
     'nav.testing': 'Testen',
     'nav.proof': 'Bewijs',
 
-    'hero.eyebrow': 'Case study · AI-workflows / Data / QA',
-    'hero.sub': 'AI-ondersteund beheer van juridische dossiers',
-    'hero.quote': '“AI-workflows testen en verbeteren die juridische documenten omzetten in gestructureerde, controleerbare dossierinformatie.”',
-    'hero.copy': 'Professionele ervaring onder technische supervisie. De publieke reconstructie gebruikt uitsluitend synthetische data.',
+    'hero.eyebrow': 'Case study · Data · AI · Applicatie',
+    'hero.sub': 'Data en AI voor een applicatie voor juridisch dossierbeheer',
+    'hero.quote': '“Ik beheerde de data van de applicatie en hielp de AI-ondersteunde workflows bouwen die juridische documenten omzetten in gestructureerde dossierinformatie.”',
+    'hero.copy': 'Stage bij LexLau, juni – september 2026, met technische review door de CTO. De publieke reconstructie gebruikt uitsluitend synthetische data.',
     'hero.discL': 'Synthetische data',
     'hero.disc': 'Synthetische demonstratiedata. Er zijn geen echte klantgegevens, juridische dossiers of vertrouwelijke gegevens van LexLau/Klavis opgenomen. Het publieke project is een onafhankelijke reconstructie, geen kopie van de code van Klavis.',
     'm.role': 'Rol',
@@ -318,8 +319,8 @@ window.I18N_DICT = {
 
     'cx.eyebrow': '01 · Context',
     'cx.title': 'Een juridische applicatie met veel AI-functies, en een team dat nodig had dat ze betrouwbaar waren.',
-    'cx.p1': 'Klavis.app / KlavIA, ontwikkeld door LexLau, is een applicatie voor het beheer van juridische dossiers die AI in haar workflows gebruikt. Als stagiair AI Engineer &amp; Data Analyst werkte ik in deze omgeving onder supervisie van de CTO.',
-    'cx.p2': 'Mijn werk ging over betrouwbaarheid: AI-functies systematisch testen, de data van de workflows structureren en analyseren, bugs reproduceren, verschillen tussen verwacht en werkelijk gedrag documenteren en de resultaten omzetten in product- en technische feedback, terwijl ik met mogelijk vertrouwelijke data werkte.',
+    'cx.p1': 'Klavis.app / KlavIA, ontwikkeld door LexLau, is een applicatie voor het beheer van juridische dossiers die AI in haar workflows gebruikt. Als Data &amp; AI-stagiair werkte ik in die omgeving onder supervisie van de CTO.',
+    'cx.p2': 'Mijn werk had twee kanten. Databeheer: de data waarop de workflows steunen structureren, controleren en analyseren. Bouw van de applicatie: AI-functies ontwikkelen en testen, bugs reproduceren, verwacht versus werkelijk gedrag documenteren en de resultaten omzetten in productfeedback, met mogelijk vertrouwelijke data.',
     'cx.p3': 'Omdat dat werk vertrouwelijk is, toont deze case study een <strong>publieke reconstructie</strong>: hetzelfde soort workflow, van nul opgebouwd met synthetische documenten en een onafhankelijke architectuur.',
 
     'pb.eyebrow': '02 · Business- / productprobleem',
@@ -330,16 +331,16 @@ window.I18N_DICT = {
 
     'ro.eyebrow': '03 · Mijn rol',
     'ro.title': 'Wat ik bij LexLau deed, en wat ik publiek heb gereconstrueerd.',
-    'ro.p': 'Ik droeg bij aan de ontwikkeling, het testen en de verbetering van AI-workflows binnen Klavis, als teamlid, met technische review en supervisie door de CTO.',
+    'ro.p': 'Twee verantwoordelijkheden: de data achter de workflows, en de applicatiefuncties die ze gebruiken. Werk binnen het team, op branches, met technische review door de CTO.',
     'ro.realT': 'Echte professionele ervaring · LexLau',
-    'ro.r1': 'Testen van een applicatie met AI-functies',
-    'ro.r2': 'Data-analyse en -structurering',
-    'ro.r3': 'Validatie van AI-workflows',
-    'ro.r4': 'Bugs reproduceren',
-    'ro.r5': 'Documentatie',
+    'ro.r1': 'Databeheer: structurering, kwaliteitscontroles, analyse',
+    'ro.r2': 'Bouw van applicatiefuncties met AI',
+    'ro.r3': 'Testen en valideren van de AI-workflows',
+    'ro.r4': 'Bugs reproduceren en oplossen',
+    'ro.r5': 'Documentatie van verwacht en werkelijk gedrag',
     'ro.r6': 'Product- / technische feedback',
-    'ro.r7': 'Bewustzijn rond vertrouwelijke data',
-    'ro.r8': 'Werken onder supervisie van de CTO / technisch supervisor',
+    'ro.r7': 'Omgaan met mogelijk vertrouwelijke data',
+    'ro.r8': 'Codereview door de CTO vóór het mergen',
     'ro.pubT': 'Publieke reconstructie voor het portfolio',
     'ro.p1': 'Synthetische juridische documenten',
     'ro.p2': 'Synthetische database',
@@ -368,7 +369,7 @@ window.I18N_DICT = {
     'ct.s8': 'Hertest',
     'ct.s9': 'Afsluiting',
 
-    'wf.eyebrow': '05 · AI-workflow',
+    'wf.eyebrow': '04 · AI-workflow',
     'wf.title': 'De AI stelt voor, een mens controleert, de applicatie bewaart.',
     'wf.1': 'Een document komt binnen',
     'wf.2': 'De applicatie extraheert de tekst',
@@ -385,7 +386,7 @@ window.I18N_DICT = {
     'wf.lSys': 'Systeem- / kwaliteitsstap',
     'wf.note': 'Provider-abstractie: standaard een deterministische lokale engine (geen API-sleutel), een eenvoudigere fallback-engine, en optionele OpenAI- / Anthropic-providers via omgevingsvariabelen. Faalt de primaire, dan antwoordt de fallback; falen beide, dan krijgt de gebruiker een gestructureerde fout en wordt niets opgeslagen.',
 
-    'dp.eyebrow': '06 · Documentverwerking',
+    'dp.eyebrow': '05 · Documentverwerking',
     'dp.title': 'PDF, DOCX en afbeeldingen, in de staat waarin echte documenten binnenkomen.',
     'dp.th1': 'Formaat',
     'dp.th2': 'Hoe de tekst gelezen wordt',
@@ -398,12 +399,12 @@ window.I18N_DICT = {
     'dp.v3': 'proper · gedegradeerde foto (scheef, wazig, met ruis)',
     'dp.note': 'Het formaat wordt herkend aan de inhoud van het bestand, niet aan de naam. Lege, te grote (meer dan 5 MB) en niet-ondersteunde bestanden worden geweigerd vóór elke AI-oproep.',
 
-    'sd.eyebrow': '07 · Gestructureerde data',
+    'sd.eyebrow': '06 · Gestructureerde data',
     'sd.title': 'Van een foto met ruis naar een JSON die iemand kan controleren.',
     'sd.p': 'Negen velden worden vergeleken met de ground truth: titel, referentie, cliënt, tegenpartij, documenttype, rechtbank, gelabelde datums, gelabelde bedragen en categorie. Elk veld bewaart zijn waarde, zijn betrouwbaarheid, hoe het gevonden werd, en of het ontbreekt of tegenstrijdig is.',
     'sd.note': 'Echte output voor het voorbeeld van een gedegradeerde gsm-foto: ontbrekende waarden blijven null. Ze worden nooit geraden en nooit op nul gezet.',
 
-    'hl.eyebrow': '08 · Mens in de lus',
+    'hl.eyebrow': '07 · Mens in de lus',
     'hl.title': 'De AI maakt nooit zelf een dossier aan.',
     'hl.1': 'De reviewer ziet elk veld met zijn betrouwbaarheid; ontbrekende velden in het rood, conflicten in het oranje.',
     'hl.2': 'Elk veld kan gecorrigeerd worden; de categorie is een suggestie.',
@@ -411,7 +412,7 @@ window.I18N_DICT = {
     'hl.4': 'Elke correctie wordt per veld bewaard en wordt productfeedback.',
     'hl.note': 'Verplichte vermeldingen: “AI-generated draft for demonstration purposes. Human validation required.” en “Demo assistant — not legal advice.”',
 
-    'te.eyebrow': '09 · Testaanpak',
+    'te.eyebrow': '08 · Testaanpak',
     'te.title': 'Veertien scenario’s, en het bewijs dat ze echte problemen opvangen.',
     'te.p': 'Unit-, integratie- en end-to-endtests (73, allemaal geslaagd) omvatten de scenariosuite TEST 001–014: propere PDF, DOCX, propere en gedegradeerde afbeelding, ontbrekend veld, meerdere datums, provider-storing, beide providers uit, dubbele indiening, menselijke correctie, ongeldig bestand, te groot bestand, gemengde formaten en regressie. Elke synthetische bug kan opnieuw aangezet worden, en dan moet de suite falen.',
     'te.c1t': 'Normale scenario’s',
@@ -421,7 +422,7 @@ window.I18N_DICT = {
     'te.c3t': 'Geschiedenis',
     'te.c3': 'Acht opgeslagen runs: van 7/14 naar 14/14 naarmate de correcties kwamen, met één regressie opgevangen na een merge.',
 
-    'bg.eyebrow': '10 · Bugonderzoek',
+    'bg.eyebrow': '09 · Bugonderzoek',
     'bg.title': 'Symptoom → reproductie → oorzaak → correctie → hertest.',
     'bg.p': 'Deze scenario’s reproduceren het soort AI-workflowproblemen dat tijdens de professionele ervaring onderzocht werd, met volledig synthetische implementaties. Het zijn geen productiebugs van Klavis.',
     'bg.th1': 'Bug',
@@ -443,7 +444,7 @@ window.I18N_DICT = {
     'bg.5r': 'Ontbrekend bedrag vervangen door 0,00, dus nooit als ontbrekend gemeld',
     'bg.5f': 'Ontbrekend = null: het veld wordt gemeld en het dossier wacht op informatie',
 
-    'dq.eyebrow': '11 · Datakwaliteit',
+    'dq.eyebrow': '10 · Datakwaliteit',
     'dq.title': 'Elke output wordt vergeleken met wat het document echt zegt.',
     'dq.p1': 'Elk synthetisch document heeft zijn ground truth. De vergelijkingsregels zijn expliciet: “afwezig in het document en als ontbrekend gemeld” is correct, en een veld zonder ground truth is onbekend, niet fout.',
     'dq.p2': 'De database dwingt de regels af met sleutels, CHECK-constraints en uniciteitsbeveiligingen: een dossier kan niet bewaard worden zonder beslissing van een menselijke review, en een testrun kan niet meer resultaten hebben dan tests. Integriteitscontroles lopen bij elke heropbouw.',
@@ -452,7 +453,7 @@ window.I18N_DICT = {
     'dq.after': 'Propere documenten',
     'dq.afterV': '99,7% nauwkeurigheid per veld · ongeveer 0,4% van de velden gecorrigeerd',
 
-    'mt.eyebrow': '12 · AI-kwaliteitsmetrieken',
+    'mt.eyebrow': '11 · AI-kwaliteitsmetrieken',
     'mt.title': 'Eén definitie per metriek, in SQL, DAX en de applicatie.',
     'mt.1': 'Slaagpercentage documenten',
     'mt.1p': 'extracties zonder fout',
@@ -484,7 +485,7 @@ window.I18N_DICT = {
     'mt.d6': 'Dezelfde metrieken live in de demo-applicatie',
     'mt.note': 'In de synthetische demonstratiedataset, geen cijfers van Klavis. Belangrijkste vaststelling: runs met een betrouwbaarheid ≥ 0,90 hebben 98% nauwkeurigheid per veld, runs onder 0,70 slechts 54%; betrouwbaarheid is dus een bruikbaar signaal om drafts naar een zorgvuldige review te sturen.',
 
-    'pw.eyebrow': '13 · Bewijs van het werk',
+    'pw.eyebrow': '12 · Bewijs van het werk',
     'pw.title': 'Bewijs van het werk.',
     'pw.p': 'Screenshots van de werkende demo en weergaven van de echte SQL-code. Klik op een afbeelding om ze groot te zien.',
     'pw.e1n': 'Bewijs 01',
@@ -512,7 +513,7 @@ window.I18N_DICT = {
     'pw.e8t': 'Auditlog',
     'pw.e8p': 'Elke stap gelogd met enkel metadata: geen documenttekst, geen geëxtraheerde inhoud.',
 
-    'pr.eyebrow': '14 · Gegevensbescherming',
+    'pr.eyebrow': '13 · Gegevensbescherming',
     'pr.title': 'Gebouwd alsof de documenten echt waren.',
     'pr.1t': 'Minimalisatie',
     'pr.1': 'De database bewaart metadata en gestructureerde velden, nooit documenttekst. De samenvatting en de assistent krijgen enkel de gevalideerde velden.',
@@ -527,7 +528,7 @@ window.I18N_DICT = {
     'pr.6t': 'Scheiding',
     'pr.6': 'Referentiedataset, wegwerp-runtimedatabase en één tijdelijke database per testscenario.',
 
-    'st.eyebrow': '15 · Technische stack',
+    'st.eyebrow': '14 · Technische stack',
     'st.title': 'Elke vaardigheid, met wat ik bouwde en waar je het kunt nakijken.',
     'st.1t': 'AI-testen',
     'st.1': 'Systematische testscenario’s opgezet voor PDF-, DOCX- en afbeeldingsworkflows, met documentatie van fouten, regressies en hertests.',
@@ -545,7 +546,7 @@ window.I18N_DICT = {
     'st.6': 'Sterschema (9 tabellen), 42 DAX-measures en een rapport van 5 pagina’s, afgestemd op SQL (85/85 controles).',
     'st.l6': '→ Power BI-rapport',
 
-    'li.eyebrow': '16 · Beperkingen',
+    'li.eyebrow': '15 · Beperkingen',
     'li.title': 'Wat deze case study wel en niet kan beweren.',
     'li.ncT': 'Niet beweerd',
     'li.nc': 'Klavis is het product van LexLau; ik droeg eraan bij binnen het team. De getoonde bugs zijn synthetisch, en de metrieken beschrijven de synthetische dataset, niet het productiesysteem.',
@@ -556,15 +557,16 @@ window.I18N_DICT = {
     'li.5': 'De repository reproduceert geen propriëtaire code van LexLau/Klavis.',
     'li.6': 'Het project toont methode en vaardigheden, niet het productiesysteem zelf.',
 
-    'le.eyebrow': '17 · Wat ik geleerd heb',
+    'le.eyebrow': '16 · Wat ik geleerd heb',
     'le.quote': '“AI-kwaliteit gaat niet alleen over de output van het model. Betrouwbaarheid hangt ook af van documentverwerking, gestructureerde data, validatie, fallbackgedrag, testdekking en menselijke review.”',
     'le.p': 'Een functie is niet klaar wanneer het model een plausibel antwoord geeft. Ze is klaar wanneer de hele workflow voorspelbaar werkt, fouten zichtbaar zijn en de gebruiker het resultaat veilig kan valideren.',
-    'rp.eyebrow': '18 · Technische repository',
+    'rp.eyebrow': '17 · Technische repository',
     'rp.t': 'lexlau-klavis-ai-workflow-demo',
     'rp.p': 'Demo-applicatie (8 pagina’s), AI-laag met fallback, synthetische documenten en ground truth, SQLite-database met SQL-analyses, 73 tests, Power BI-project en DAX, bugonderzoeken, documentatie over gegevensbescherming en QA. Eén commando bouwt alles opnieuw op: <code>python run_pipeline.py</code>.',
     'rp.soon': 'Bekijk op GitHub →',
     'le.contact': 'Contacteer mij',
     'le.all': 'Alle projecten',
+    'm.roleV': 'Data &amp; AI-stagiair · databeheer, bouw van de applicatie',
     'footer': 'Harry Mulembwe · Data &amp; Business Analyst · Brussel · Synthetische demonstratiedata, geen LexLau/Klavis-data'
   }
 };
