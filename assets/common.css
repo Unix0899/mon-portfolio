@@ -29,3 +29,6 @@
 }
 h1,h2,h3,blockquote{overflow-wrap:break-word;hyphens:auto}
 .section-heading>*,.about-grid>*,.split>*{min-width:0}
+.is-extra{display:none!important}
+.collapse-btn{display:block;margin:22px auto 0;padding:12px 22px;border-radius:999px;border:1px solid currentColor;background:transparent;color:inherit;font:inherit;font-weight:800;font-size:14px;cursor:pointer;opacity:.85}
+.collapse-btn:hover{opacity:1}

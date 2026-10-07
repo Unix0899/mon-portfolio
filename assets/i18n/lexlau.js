@@ -282,6 +282,7 @@ window.I18N_DICT = {
     'le.contact': 'Me contacter',
     'le.all': 'Tous les projets',
     'm.roleV': 'Stagiaire Data &amp; IA · gestion des données, création de l’application',
+    'le.next': 'Étude de cas suivante&nbsp;: Belgian EV Charging →',
     'footer': 'Harry Mulembwe · Data &amp; Business Analyst · Bruxelles · Données de démonstration synthétiques, aucune donnée LexLau/Klavis'
   },
 
@@ -567,6 +568,7 @@ window.I18N_DICT = {
     'le.contact': 'Contacteer mij',
     'le.all': 'Alle projecten',
     'm.roleV': 'Data &amp; AI-stagiair · databeheer, bouw van de applicatie',
+    'le.next': 'Volgende case study: Belgian EV Charging →',
     'footer': 'Harry Mulembwe · Data &amp; Business Analyst · Brussel · Synthetische demonstratiedata, geen LexLau/Klavis-data'
   }
 };

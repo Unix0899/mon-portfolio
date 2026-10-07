@@ -175,3 +175,21 @@
       .catch(missing);
   });
 })();
+
+  // Galleries: show the first N items, the rest behind a button (keeps the page readable)
+  document.querySelectorAll('[data-collapse]').forEach(function (box) {
+    var n = parseInt(box.getAttribute('data-collapse'), 10) || 4;
+    var items = Array.prototype.slice.call(box.children);
+    if (items.length <= n) return;
+    var extra = items.slice(n); extra.forEach(function (el) { el.classList.add('is-extra'); });
+    var btn = document.createElement('button'); btn.type = 'button'; btn.className = 'collapse-btn';
+    var more = (box.getAttribute('data-more') || 'Show all') + ' (' + items.length + ')', less = box.getAttribute('data-less') || 'Show less';
+    btn.textContent = more; btn.setAttribute('aria-expanded', 'false');
+    btn.addEventListener('click', function () {
+      var open = box.classList.toggle('is-open');
+      extra.forEach(function (el) { el.classList.toggle('is-extra', !open); if (open) el.classList.add('in'); });
+      btn.textContent = open ? less : more; btn.setAttribute('aria-expanded', String(open));
+      if (!open) box.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    });
+    box.parentNode.insertBefore(btn, box.nextSibling);
+  });

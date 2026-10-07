@@ -189,6 +189,8 @@ window.I18N_DICT = {
     'sc.p': 'Deux stories (1080 × 1920) et deux bannières mobiles adaptent les campagnes automne / hiver et Black Friday aux écrans verticaux et petits.',
     'sc.a1': 'Bannière mobile : collection automne / hiver 2023',
     'sc.a2': 'Bannière mobile : la collection automne / hiver est disponible',
+    'ui.more': 'Tout afficher',
+    'ui.less': 'Réduire',
     'footer': 'Harry Mulembwe · Data &amp; Business Analyst · Bruxelles · Projet entrepreneurial, travail montré sans chiffres de performance'
   },
   nl: {
@@ -380,6 +382,8 @@ window.I18N_DICT = {
     'sc.p': 'Twee stories (1080 × 1920) en twee mobiele banners passen de herfst/winter- en Black Friday-campagnes aan voor verticale en kleine schermen.',
     'sc.a1': 'Mobiele banner: herfst/wintercollectie 2023',
     'sc.a2': 'Mobiele banner: de herfst/wintercollectie is beschikbaar',
+    'ui.more': 'Alles tonen',
+    'ui.less': 'Minder tonen',
     'footer': 'Harry Mulembwe · Data- &amp; business-analist · Brussel · Ondernemersproject, werk getoond zonder prestatiecijfers'
   }
 };

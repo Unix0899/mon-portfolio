@@ -227,6 +227,7 @@ window.I18N_DICT = {
     'le.contact': 'Me contacter',
     'le.all': 'Tous les projets',
 
+    'le.next': 'Étude de cas suivante&nbsp;: LexLau · Klavis →',
     'footer': 'Harry Mulembwe · Data &amp; Business Analyst · Bruxelles · Données synthétiques, pas des chiffres d’ODRES'
   },
 
@@ -457,6 +458,7 @@ window.I18N_DICT = {
     'le.contact': 'Contacteer me',
     'le.all': 'Alle projecten',
 
+    'le.next': 'Volgende case study: LexLau · Klavis →',
     'footer': 'Harry Mulembwe · Data- &amp; business-analist · Brussel · Synthetische data, geen cijfers van ODRES'
   }
 };
