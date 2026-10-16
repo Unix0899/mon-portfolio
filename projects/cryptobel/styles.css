@@ -200,3 +200,5 @@ a{color:inherit}.topbar{position:sticky;top:0;z-index:10;display:flex;justify-co
 @media(prefers-reduced-motion:reduce){.seg{transition:none}}
 #recommendations .rec-grid{grid-template-columns:repeat(2,1fr)}
 @media(max-width:620px){#recommendations .rec-grid{grid-template-columns:1fr}}
+.intern-box{margin-top:22px;padding:24px 26px;border-radius:18px;background:var(--soft);border:1px solid #cfe3e3}
+.intern-box h3{margin:0 0 14px;font-size:16px}
