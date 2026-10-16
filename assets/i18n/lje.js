@@ -121,7 +121,7 @@ window.I18N_DICT = {
     'so.r6p': 'Affiche de recrutement, stories de concours et système de chèques du LJE Challenge, en plus de la coordination d’événements avec collègues et partenaires.',
 
     'de.eyebrow': '07 · Livrables',
-    'de.title': 'Le mur&nbsp;: tout ce que j’ai réalisé, pièce par pièce.',
+    'de.title': 'Ce que j’ai réalisé, pièce par pièce.',
     'de.pn': 'Livrable A · Communiqué de presse',
     'de.pa': 'Communiqué de presse : Boost Your Planet revient pour sa deuxième édition au MAD Brussels',
     'de.pt': '«&nbsp;Boost Your Planet revient pour sa deuxième édition au MAD Brussels&nbsp;»',
@@ -360,7 +360,7 @@ window.I18N_DICT = {
     'so.r6p': 'Wervingsaffiche, wedstrijdstories en het chequesysteem van de LJE Challenge, naast eventcoördinatie met collega’s en partners.',
 
     'de.eyebrow': '07 · Opleveringen',
-    'de.title': 'De muur: alles wat ik maakte, stuk voor stuk.',
+    'de.title': 'Wat ik maakte, stuk voor stuk.',
     'de.pn': 'Oplevering A · Persbericht',
     'de.pa': 'Persbericht: Boost Your Planet keert terug voor een tweede editie in MAD Brussels',
     'de.pt': '“Boost Your Planet keert terug voor een tweede editie in MAD Brussels”',
