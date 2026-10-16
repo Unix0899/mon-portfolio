@@ -271,7 +271,7 @@ window.I18N_DICT = {
     'le.all': 'Tous les projets',
 
     'le.next': 'Étude de cas suivante&nbsp;: Cryptobel →',
-    'footer': 'Harry Mulembwe · Data &amp; Business Analyst · Bruxelles · Projet personnel sur des données ouvertes officielles'
+    'footer': 'Harry Mulembwe · Data &amp; Reporting Analyst · Bruxelles · Projet personnel sur des données ouvertes officielles'
   },
 
   nl: {
@@ -545,6 +545,6 @@ window.I18N_DICT = {
     'le.all': 'Alle projecten',
 
     'le.next': 'Volgende case study: Cryptobel →',
-    'footer': 'Harry Mulembwe · Data- &amp; business-analist · Brussel · Persoonlijk project op officiële open data'
+    'footer': 'Harry Mulembwe · Data &amp; Reporting Analyst · Brussel · Persoonlijk project op officiële open data'
   }
 };

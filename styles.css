@@ -926,3 +926,7 @@ a{color:inherit}
 @media(max-width:1100px){.sw-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:800px){.pj-grid{grid-template-columns:1fr}.sw-grid{grid-template-columns:1fr}.pj-section{padding-top:50px}}
 @media(prefers-reduced-motion:reduce){.pj-card,.pj-visual img,.pj-filters button{transition:none}}
+.mk-cryptobel,.mk-odres{grid-column:span 6}
+.mk-cryptobel .mk-visual,.mk-odres .mk-visual{aspect-ratio:16/9}
+.mk-cryptobel .mk-visual img,.mk-odres .mk-visual img{object-position:top left}
+@media(max-width:900px){.mk-cryptobel,.mk-odres{grid-column:1/-1}}

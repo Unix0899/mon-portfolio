@@ -216,7 +216,7 @@ window.I18N_DICT = {
     'tk.1': 'TEASING', 'tk.2': 'LANCEMENT', 'tk.3': 'SOUTIEN', 'tk.4': 'RELANCEMENT', 'tk.5': '135 LECTEURS', 'tk.6': '8 ENTRETIENS', 'tk.7': '12 MOIS',
     'ui.more': 'Tout afficher',
     'ui.less': 'Réduire',
-    'footer': 'Harry Mulembwe · Data &amp; Business Analyst · Bruxelles · Recommandations académiques, pas des campagnes exécutées'
+    'footer': 'Harry Mulembwe · Data &amp; Reporting Analyst · Bruxelles · Recommandations académiques, pas des campagnes exécutées'
   },
   nl: {
     'meta.title': 'Case study Komogi | Harry Mulembwe',
@@ -434,6 +434,6 @@ window.I18N_DICT = {
     'tk.1': 'TEASING', 'tk.2': 'LANCERING', 'tk.3': 'ONDERSTEUNING', 'tk.4': 'RELAUNCH', 'tk.5': '135 LEZERS', 'tk.6': '8 INTERVIEWS', 'tk.7': '12 MAANDEN',
     'ui.more': 'Alles tonen',
     'ui.less': 'Minder tonen',
-    'footer': 'Harry Mulembwe · Data- &amp; business-analist · Brussel · Academische aanbevelingen, geen uitgevoerde campagnes'
+    'footer': 'Harry Mulembwe · Data &amp; Reporting Analyst · Brussel · Academische aanbevelingen, geen uitgevoerde campagnes'
   }
 };

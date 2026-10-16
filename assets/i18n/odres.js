@@ -229,7 +229,7 @@ window.I18N_DICT = {
 
     'le.next': 'Étude de cas suivante&nbsp;: LexLau · Klavis →',
     'ro.r5': 'Structuration des données d’entreprises, de fournisseurs et de produits lors de l’onboarding de clients',
-    'footer': 'Harry Mulembwe · Data &amp; Business Analyst · Bruxelles · Données synthétiques, pas des chiffres d’ODRES'
+    'footer': 'Harry Mulembwe · Data &amp; Reporting Analyst · Bruxelles · Données synthétiques, pas des chiffres d’ODRES'
   },
 
   nl: {
@@ -461,6 +461,6 @@ window.I18N_DICT = {
 
     'le.next': 'Volgende case study: LexLau · Klavis →',
     'ro.r5': 'Structureren van bedrijfs-, leveranciers- en productdata bij de onboarding van klanten',
-    'footer': 'Harry Mulembwe · Data- &amp; business-analist · Brussel · Synthetische data, geen cijfers van ODRES'
+    'footer': 'Harry Mulembwe · Data &amp; Reporting Analyst · Brussel · Synthetische data, geen cijfers van ODRES'
   }
 };

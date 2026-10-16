@@ -191,7 +191,7 @@ window.I18N_DICT = {
     'sc.a2': 'Bannière mobile : la collection automne / hiver est disponible',
     'ui.more': 'Tout afficher',
     'ui.less': 'Réduire',
-    'footer': 'Harry Mulembwe · Data &amp; Business Analyst · Bruxelles · Projet entrepreneurial, travail montré sans chiffres de performance'
+    'footer': 'Harry Mulembwe · Data &amp; Reporting Analyst · Bruxelles · Projet entrepreneurial, travail montré sans chiffres de performance'
   },
   nl: {
     'meta.title': 'Case study Akira Fashion | Harry Mulembwe',
@@ -384,6 +384,6 @@ window.I18N_DICT = {
     'sc.a2': 'Mobiele banner: de herfst/wintercollectie is beschikbaar',
     'ui.more': 'Alles tonen',
     'ui.less': 'Minder tonen',
-    'footer': 'Harry Mulembwe · Data- &amp; business-analist · Brussel · Ondernemersproject, werk getoond zonder prestatiecijfers'
+    'footer': 'Harry Mulembwe · Data &amp; Reporting Analyst · Brussel · Ondernemersproject, werk getoond zonder prestatiecijfers'
   }
 };

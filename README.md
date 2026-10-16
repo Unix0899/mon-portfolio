@@ -1,13 +1,13 @@
 # Harry Mulembwe — Portfolio
 
-Personal portfolio of Harry Mulembwe, Brussels. One hybrid profile, Marketing · Digital · Data, with two entry points by role (Data & Business Analyst, Digital Marketing Officer) and eight case studies.
+Personal portfolio of Harry Mulembwe, Brussels. One hybrid profile, Marketing · Digital · Data, with two entry points by role (Data & Reporting Analyst, Marketing Analytics & Customer Insights) and eight case studies.
 Available in English, French and Dutch.
 
 ## Structure
 
 ```text
 index.html                    Landing page: animated welcome, how the portfolio works, the two profile doors, why both, contact
-data/index.html               Profile 01 · Data & Business Analyst (hero, workflow, data case studies, personal project, skills, about, CV, contact)
+data/index.html               Profile 01 · Data & Reporting Analyst (hero, workflow, data case studies, personal project, skills, about, CV, contact)
 marketing/index.html          Profile 02 · Marketing & Communication Officer (hero, marketing projects, skills, about, CV, contact)
 styles.css                    Styles shared by the landing and the two profile pages
 projects/cryptobel/           Cryptobel case study

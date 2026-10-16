@@ -215,7 +215,7 @@ window.I18N_DICT = {
     'tk.1': 'CONSCIENCE', 'tk.2': 'INTÉRÊT', 'tk.3': 'ACTION', 'tk.4': 'FIDÉLISATION',
     'ui.more': 'Tout afficher',
     'ui.less': 'Réduire',
-    'footer': 'Harry Mulembwe · Data &amp; Business Analyst · Bruxelles · Projet académique d’équipe, recommandations non mises en œuvre'
+    'footer': 'Harry Mulembwe · Data &amp; Reporting Analyst · Bruxelles · Projet académique d’équipe, recommandations non mises en œuvre'
   },
   nl: {
     'meta.title': 'Case study Mangetsu | Harry Mulembwe',
@@ -432,6 +432,6 @@ window.I18N_DICT = {
     'tk.1': 'BEKENDHEID', 'tk.2': 'INTERESSE', 'tk.3': 'ACTIE', 'tk.4': 'LOYALITEIT',
     'ui.more': 'Alles tonen',
     'ui.less': 'Minder tonen',
-    'footer': 'Harry Mulembwe · Data- &amp; business-analist · Brussel · Academisch teamproject, aanbevelingen niet uitgevoerd'
+    'footer': 'Harry Mulembwe · Data &amp; Reporting Analyst · Brussel · Academisch teamproject, aanbevelingen niet uitgevoerd'
   }
 };
